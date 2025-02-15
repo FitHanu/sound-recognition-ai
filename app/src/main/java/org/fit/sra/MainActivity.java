@@ -4,6 +4,7 @@ import static android.Manifest.permission.RECORD_AUDIO;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.media.AudioRecord;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,17 +17,23 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.lifecycle.ViewModelProvider;
 
-import org.fit.sra.data.AppViewModel;
 import org.tensorflow.lite.support.audio.TensorAudio;
+import org.tensorflow.lite.support.label.Category;
 import org.tensorflow.lite.task.audio.classifier.AudioClassifier;
+import org.tensorflow.lite.task.audio.classifier.Classifications;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
+
+    private final int VERSION = Build.VERSION.SDK_INT;
 
     /**
      * Layouts
@@ -41,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
     AudioClassifier classifier;
     private TensorAudio tensor;
     private AudioRecord record;
-
-
+    private TimerTask timerTask;
+    private final float probabilityThreshold = 0.3f;
 
     public static final int REQUEST_AUDIO_PERMISSION_CODE = 1;
 
@@ -50,30 +57,35 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        AppViewModel appViewModel = new ViewModelProvider(this).get(AppViewModel.class);
         // initialize all variables with their layout items.
         this.tvStatus = findViewById(R.id.tvStatus);
         this.tvClassifier = findViewById(R.id.tvClassifier);
         this.bRecord = findViewById(R.id.bRecord);
-
+        // Apply the theme based on the current mode
+        int currentNightMode = getResources().getConfiguration().uiMode &
+                android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        if (currentNightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
+            this.tvStatus.setTextColor(Color.WHITE);
+            this.tvClassifier.setTextColor(Color.WHITE);
+            this.bRecord.setTextColor(Color.WHITE);
+        }
 
         try {
             String modelPath = getString(R.string.model_path);
             classifier = AudioClassifier.createFromFile(this, modelPath);
-            tvClassifier.setText(classifier.toString());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-//        appViewModel.getData().observe(this, data -> {
-//            int lastPos = data.size();
-//            mainRecogText.setText(data.get(lastPos - 1));
-//        });
+        this.tensor = classifier.createInputTensorAudio();
+        TensorAudio.TensorAudioFormat format = classifier.getRequiredTensorAudioFormat();
+        String specs = "Number of channels: " + format.getChannels() + "\n" + "Sample Rate: " +
+                format.getSampleRate();
+        Log.d("Input format", specs);
 
         bRecord.setOnClickListener(v -> {
             if (!checkPermission()) {
-                return;
+                requestPermissions();
             }
             this.isRecording = !isRecording;
             updateLayout();
@@ -82,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateLayout() {
-        //handle button logic
+        //handle change layout
         if (isRecording) {
             this.bRecord.setText(R.string.button_recording);
             this.tvStatus.setText(R.string.status_recoding);
@@ -95,7 +107,59 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleRecordButton() {
+        if (this.isRecording) {
+            this.record = this.classifier.createAudioRecord();
+            this.record.startRecording();
+            this.timerTask = new TimerTask() {
+                @Override
+                public void run() {
+                    // Classifying audio data
+                    // val numberOfSamples = tensor.load(record)
+                    // val output = classifier.classify(tensor)
+                    int numberOfSamples = tensor.load(record);
+                    List<Classifications> output = classifier.classify(tensor);
 
+                    // Filtering out classifications with low probability
+                    List<Category> finalOutput = new ArrayList<>();
+                    for (Classifications classifications : output) {
+                        for (Category category : classifications.getCategories()) {
+                            if (category.getScore() > probabilityThreshold) {
+                                finalOutput.add(category);
+                            }
+                        }
+                    }
+
+                    // Sorting the results
+                    finalOutput.sort((o1, o2) -> (int) (o1.getScore() - o2.getScore()));
+
+                    // Creating a multiline string with the filtered results
+                    StringBuilder outputStr = new StringBuilder();
+                    for (Category category : finalOutput) {
+                        outputStr
+                                .append(category.getLabel())
+                                .append(": ")
+                                .append(category.getScore())
+                                .append("\n");
+                    }
+
+                    // Updating the UI
+                    runOnUiThread(() -> {
+                        if (finalOutput.isEmpty()) {
+                            MainActivity.this.tvClassifier.setText(R.string.classifier_initial);
+                        } else {
+                            MainActivity.this.tvClassifier.setText(outputStr.toString());
+                        }
+                    });
+                }
+            };
+
+            int TASK_PERIOD_MS = 500;
+            int TASK_DELAY_MS = 1;
+            new Timer().schedule(timerTask, TASK_DELAY_MS, TASK_PERIOD_MS);
+        } else {
+            timerTask.cancel();
+            record.stop();
+        }
     }
 
     @Override
@@ -134,40 +198,44 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean checkPermission() {
         boolean hasRecordPermission = this.checkRecordPermission();
-        if (!hasRecordPermission) {
-            Log.w("Permission", "No record permission.");
-        }
-        boolean hasWritePermission;
-        Log.d("Permission", "Checking permissions ...");
-        int version = Build.VERSION.SDK_INT;
-        Log.d("Permission", "SDK " + version);
-        if (version <= 32) {
-            hasWritePermission = this.checkWritePermission32();
-        } else {
-//            hasWritePermission = Environment.isExternalStorageManager(getFilesDir());
-            File filesDir = getFilesDir();
-            hasWritePermission =  filesDir.exists() && filesDir.canWrite();
-        }
+        boolean hasWritePermission = this.checkWritePermission();
         if (!hasWritePermission) {
             Log.w("Permission", "No write permission.");
+        }
+        if (!hasRecordPermission) {
+            Log.w("Permission", "No record permission.");
         }
         return hasRecordPermission && hasWritePermission;
     }
 
-    private boolean checkWritePermission32() {
-        return ContextCompat.checkSelfPermission(getApplicationContext(),
-                WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED ;
+    private boolean checkWritePermission() {
+        boolean hasWritePermission;
+        if (this.VERSION <= 32) {
+            hasWritePermission = ContextCompat.checkSelfPermission(getApplicationContext(),
+                    WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
+        } else {
+            File filesDir = getFilesDir();
+            hasWritePermission = filesDir.exists() && filesDir.canWrite();
+        }
+        return hasWritePermission;
     }
 
     private boolean checkRecordPermission() {
-        return ContextCompat.checkSelfPermission(getApplicationContext(),
-                RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED;
+        return ContextCompat.checkSelfPermission(getApplicationContext(), RECORD_AUDIO) ==
+                PackageManager.PERMISSION_GRANTED;
     }
 
     private void requestPermissions() {
-        ActivityCompat.requestPermissions(MainActivity.this,
-                new String[]{RECORD_AUDIO, WRITE_EXTERNAL_STORAGE},
-                REQUEST_AUDIO_PERMISSION_CODE);
+        if (!this.checkRecordPermission()) {
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{RECORD_AUDIO},
+                    REQUEST_AUDIO_PERMISSION_CODE);
+        }
+        if (!this.checkWritePermission()) {
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{WRITE_EXTERNAL_STORAGE},
+                    REQUEST_AUDIO_PERMISSION_CODE);
+        }
     }
 
 }
