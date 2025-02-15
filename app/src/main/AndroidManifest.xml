@@ -3,7 +3,7 @@
         xmlns:tools="http://schemas.android.com/tools">
     <!--Permission for recording audio and storage of audio in users device-->
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
     <uses-permission android:name="android.permission.STORAGE"/>
     <application
             android:allowBackup="true"
