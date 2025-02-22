@@ -44,6 +44,8 @@ dependencies {
         exclude group: 'org.tensorflow', module: 'tensorflow-lite-api'
     }
     implementation libs.tensorflow.lite
+    implementation libs.commons.csv
+
 
 
 

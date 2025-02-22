@@ -32,7 +32,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
-
     private final int VERSION = Build.VERSION.SDK_INT;
 
     /**
