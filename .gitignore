@@ -15,3 +15,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+
+# Python module
+python/.venv
