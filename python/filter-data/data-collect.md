@@ -6,3 +6,4 @@
 2. Extract ra (kaggle thì thôi)
 3. Map các sound class mặc định của dataset với từng class mà mình đã định nghĩa sẵn trong file /proto/classes.proto/SoundClass
 4. Script lọc từng sound tương ứng, label sao cho đúng với class name mà mình đã định nghĩa sẵn, tổng hợp vào 1 file dataset chung
+5. Normalize thành một chiều dài nhất định 
