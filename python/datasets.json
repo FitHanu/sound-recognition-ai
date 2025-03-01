@@ -1,0 +1,34 @@
+{
+    "us8k": {
+        "name": "Urbansound8K",
+        "format": "kaggle",
+        "kaggle_path": "chrisfilo/urbansound8k",
+        "url": "https://www.kaggle.com/datasets/chrisfilo/urbansound8k",
+        "csv_meta_path": [],
+        "data_path": []
+    },
+    "esc50": {
+        "name": "ESC-50",
+        "format": "kaggle",
+        "kaggle_path": "ludovick/esc50dataset",
+        "url": "https://www.kaggle.com/datasets/ludovick/esc50dataset",
+        "csv_meta_path": ["ESC-50-master", "ESC-50-master", "meta", "esc50.csv"],
+        "data_path": ["ESC-50-master", "ESC-50-master", "audio"]
+    },
+    "gad": {
+        "name": "Gunshot audio dataset",
+        "format": "kaggle",
+        "kaggle_path": "emrahaydemr/gunshot-audio-dataset",
+        "url": "https://www.kaggle.com/datasets/emrahaydemr/gunshot-audio-dataset/data",
+        "csv_meta_path": [],
+        "data_path": []
+    },
+    "bdlib2": {
+        "name": "BDLIb2",
+        "format": "zip",
+        "kaggle_path": "",
+        "url": "https://research.playcompass.com/files/BDLib-2.zip",
+        "csv_meta_path": [],
+        "data_path": []
+    }
+}
