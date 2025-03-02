@@ -1,6 +1,7 @@
 import abc
 import os
 import pandas as pd
+import constants as C
 from pathlib import Path
 from typing import final
 
@@ -8,13 +9,22 @@ from typing import final
 Default Schema for each dataset meta file/ pandas DataFrame
 """
 PD_SCHEMA = {
-    "id": "int64",
-    "file_name": "string",
-    "file_path": "string",
-    "class_id": "int16",
-    "class_name": "string",
-    "sub_ds_name": "string",
-    "sub_ds_id": "string"
+    # Unique ID for each audio file
+    # C.DF_ID_COL: "int64",
+    # File name
+    C.DF_NAME_COL: "string",
+    # Audio file path
+    C.DF_PATH_COL: "string",
+    # Audio file length (must be in milliseconds)
+    C.DF_LENGTH_COL: "int64",
+    # Class Name ID
+    C.DF_CLASS_ID_COL: "int16",
+    # Class Name (string)
+    C.DF_CLASS_NAME_COL: "string",
+    # Original dataset name
+    C.DF_SUB_DS_NAME_COL: "string",
+    # ID in the original dataset
+    C.DF_SUB_DS_ID_COL: "string", 
 }
 
 class DataSet(abc.ABC):
@@ -51,11 +61,11 @@ class DataSet(abc.ABC):
         self.kaggle_path = info["kaggle_path"]
         self.url = info["url"]
         ds_abs_path = self.download()
-        self.init_class_names()
         self.ds_abs_path = ds_abs_path
-        self.meta_sub_path = os.path.join(ds_abs_path, *info["meta_sub_path"])
-        self.data_sub_path = os.path.join(ds_abs_path, *info["data_sub_path"])
-        # Need to be reinitialized in the child class filter_by_class function
+        self.meta_sub_path = os.path.join(ds_abs_path, *info["csv_meta_path"])
+        self.data_sub_path = os.path.join(ds_abs_path, *info["data_path"])
+        self.init_class_names()
+        # self.df need to be reinitialized/ poured with data in the child class filter_by_class function
         self.df = pd.DataFrame(columns=PD_SCHEMA.keys()).astype(PD_SCHEMA)
 
 
@@ -110,8 +120,7 @@ class DataSet(abc.ABC):
     @abc.abstractmethod
     def create_meta(self):
         """
-        - Create a meta file for the dataset
-        - The meta file should contain the audio file path and the class name
+        - Create a new meta file for the dataset with "PD_SCHEMA" defined above
         """
         pass
     
@@ -126,7 +135,7 @@ class DataSet(abc.ABC):
     @final
     def hell_yeah(self):
         """
-        Main flow of the dataset processing
+        Main flow/ life cycle :v of the dataset processing
         """
         self.download()
         self.filter_by_class()

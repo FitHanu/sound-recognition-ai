@@ -29,8 +29,11 @@ def get_dataset_info(key: str):
             "data_path": obj["data_path"]
         }
         
-def append_empty_mapping_to_config(ds: DataSet,
-                                overwrite: bool = False):
+def append_empty_mapping_to_config(ds: DataSet, overwrite: bool = False):
+    """
+    Append empty class mapping to `config.json`. Should be called with `overwrite=False`\n
+    Unless you want to reset the class mapping to remap manually
+    """
     l.info(f"Writing config to {config_file_path}, Overiding: {overwrite}")
     parent_property = "class_mapping"
     ds_key = ds["key"]
@@ -71,6 +74,9 @@ def append_empty_mapping_to_config(ds: DataSet,
         
 
 def init_default_class_name():
+    """
+    Initialize default class names to `config.json`
+    """
     parent_property = "class_mapping"
     default_cn_property = "default"
     df = pd.read_csv(DataSet.DEFAULT_CLASSNAME_PATH)
@@ -78,7 +84,50 @@ def init_default_class_name():
         data = json.load(f)
         data[parent_property][default_cn_property] = {}
         for _, row in df.iterrows():
-            data[parent_property][default_cn_property][row["class_name"]] = row["id"]
+            data[parent_property][default_cn_property][row["id"]] = row["class_name"]
     with open(config_file_path, "w") as file:
         json.dump(data, file, indent=2)
     l.info(f"default class names written to config.{parent_property}.{default_cn_property}")
+
+
+def get_post_class_mapping(key: str):
+    """
+    Get class mapping from `config.json` based on the dataset key\n
+    Returns a `dict` of class mapping for the dataset\n
+    Throws `KeyError` if key is not found
+    """
+    parent_property = "class_mapping"
+    default_class = {}
+    dataset_class_map = {}
+    result = {}
+    with open(config_file_path, "r") as f:
+        data = json.load(f)
+        try:
+            if key not in data[parent_property]:
+                msg = f"No class mapping found for key: {key}, have you initialized it to {config_file_path}?"
+                raise KeyError(msg)
+            default_class = data[parent_property]["default"]
+            default_class = {int(k): v for k, v in default_class.items()}
+            dataset_class_map = data[parent_property][key]
+        except Exception as e:
+            l.error(e)
+            raise e
+    
+    for k, v in dataset_class_map.items():
+        if v != 0:
+            result[k] = [v, default_class[v]]
+
+    return result
+
+def get_default_class_mapping():
+    """
+    Get default class mapping from `config.json`\n
+    Returns a `dict` of default class mapping
+    """
+    parent_property = "class_mapping"
+    default_class = {}
+    with open(config_file_path, "r") as f:
+        data = json.load(f)
+        default_class = data[parent_property]["default"]
+        default_class = {int(k): v for k, v in default_class.items()}
+    return default_class
