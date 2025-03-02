@@ -9,10 +9,10 @@ Default Schema for each dataset meta file/ pandas DataFrame
 """
 PD_SCHEMA = {
     "id": "int64",
-    "filename": "string",
-    "filepath": "string",
-    "classid": "int16",
-    "classname": "string",
+    "file_name": "string",
+    "file_path": "string",
+    "class_id": "int16",
+    "class_name": "string",
     "sub_ds_name": "string",
     "sub_ds_id": "string"
 }

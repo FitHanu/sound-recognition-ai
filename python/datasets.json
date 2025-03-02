@@ -10,8 +10,8 @@
     "esc50": {
         "name": "ESC-50",
         "format": "kaggle",
-        "kaggle_path": "ludovick/esc50dataset",
-        "url": "https://www.kaggle.com/datasets/ludovick/esc50dataset",
+        "kaggle_path": "mmoreaux/environmental-sound-classification-50",
+        "url": "https://www.kaggle.com/datasets/mmoreaux/environmental-sound-classification-50",
         "csv_meta_path": ["ESC-50-master", "ESC-50-master", "meta", "esc50.csv"],
         "data_path": ["ESC-50-master", "ESC-50-master", "audio"]
     },
