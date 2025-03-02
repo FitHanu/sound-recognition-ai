@@ -67,6 +67,9 @@ class DataSet(abc.ABC):
         self.init_class_names()
         # self.df need to be reinitialized/ poured with data in the child class filter_by_class function
         self.df = pd.DataFrame(columns=PD_SCHEMA.keys()).astype(PD_SCHEMA)
+        
+    def get_key(self):
+        return self.key
 
 
     def __str__(self):

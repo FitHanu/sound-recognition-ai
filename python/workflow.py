@@ -18,7 +18,7 @@ def main():
     init_class_folds(DATASET_PATH_FILTERED)
 
     for ds in datasets_registry:
-        append_empty_mapping_to_config(ds.key, overwrite=False)
+        append_empty_mapping_to_config(ds, overwrite=False)
         ds.hell_yeah()
     
     

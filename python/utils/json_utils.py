@@ -36,7 +36,7 @@ def append_empty_mapping_to_config(ds: DataSet, overwrite: bool = False):
     """
     l.info(f"Writing config to {config_file_path}, Overiding: {overwrite}")
     parent_property = "class_mapping"
-    ds_key = ds["key"]
+    ds_key = ds.get_key()
 
     def is_key_empty():
         """

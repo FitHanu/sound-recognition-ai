@@ -70,24 +70,7 @@ def main():
     print(df.columns) # Index(['filename', 'fold', 'target', 'category', 'esc10', 'src_file', 'take'], dtype='object')
     
     ds.filter_by_class()
-    # print("thunderstorm1" in class_map)
-    
-    
-    # Step 1
-    
-    # #src_col -> original dataset column name | target_col -> our filtered dataset column name
-    # column_mapping = {
-    # #src_col: target_col
-    # "filename": "file_name",
-    # "target": "class_id",
-    # "category": "class_name"
-    # }
 
-    
-    # # Copy data from df to ds.df based on the mapping
-    # for src_col, target_col in column_mapping.items():
-    #     if src_col in df.columns and target_col in ds.df.columns:
-    #         ds.df[target_col] = df[src_col]
     
 if __name__ == "__main__":
     main()
