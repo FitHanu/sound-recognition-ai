@@ -71,6 +71,11 @@ class DataSet(abc.ABC):
     def get_key(self):
         return self.key
 
+    @abc.abstractmethod  
+    def get_filtered_meta_path(self):
+        """
+        After filter & create meta
+        """
 
     def __str__(self):
         return (f"DataSet(\n"

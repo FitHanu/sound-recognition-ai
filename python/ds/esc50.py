@@ -28,11 +28,7 @@ class ESC50(DataSet):
         df = pd.read_csv(self.meta_sub_path)
         class_map = get_post_class_mapping(self.key)
         df_filtered = df[df["category"].isin(class_map.keys())]
-        # print(f"df shape before filter: {df.shape}")
         df = df_filtered
-        # print(f"df shape after filter: {df_filtered.shape}")
-        # print(df.head(5))
-        # print(df.tail(5))
         
         # Map filtered dataframe to self.df with the right schema
         # self.df[C.DF_ID_COL] = range(len(df))
@@ -52,8 +48,12 @@ class ESC50(DataSet):
 
     def create_meta(self):
         df = pd.read_csv(self.meta_sub_path)
-        write_csv_meta(self.df, self.key + ".filtered")
-        write_csv_meta(df, self.key + ".original")
+        path = write_csv_meta(self.df, self.key + ".filtered")
+        _ = write_csv_meta(df, self.key + ".original")
+        self.filtered_meta_path = path
+    
+    def get_filtered_meta_path(self):
+        return self.filtered_meta_path
 
     def move_files(self):
         """

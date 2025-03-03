@@ -31,7 +31,7 @@ def validate_dataframe(df: pd.DataFrame, schema: dict) -> bool:
     return True
 
 
-def write_csv_meta(df: pd.DataFrame, file_name: str):
+def write_csv_meta(df: pd.DataFrame, file_name: str) -> str:
     """
     Write df to csv file in the constant meta directory.
     """
@@ -45,3 +45,19 @@ def write_csv_meta(df: pd.DataFrame, file_name: str):
     # Write the dataframe to the meta directory
     file_path = os.path.join(META_DIR, file_name + ".csv")
     df.to_csv(file_path, index=False)
+    
+    return file_path
+
+def read_csv_as_dataframe(file_path: str) -> pd.DataFrame:
+    """
+    Read a csv file from the constant meta directory 
+    and return it as `pd.DataFrame`.
+    """
+    # Ensure the file exists
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"No such file: '{file_path}'")
+
+    # Ensure the file is a CSV
+    if not file_path.endswith('.csv'):
+        raise ValueError(f"File is not a CSV: '{file_path}'")
+    return pd.read_csv(file_path)

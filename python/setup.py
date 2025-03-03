@@ -28,6 +28,9 @@ def install_requirements():
 
 
 def append_project_path():
+    """
+    Python modules type shit
+    """
     pth_file = SITE_PKG_PATH + os.path.sep + "sra.pth"
     with open(pth_file, "w") as f:
         for module in MODULE_REG:
