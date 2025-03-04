@@ -73,6 +73,18 @@
       "cat": 0,
       "door_wood_creaks": 0,
       "crickets": 0
+    },
+    "us8k": {
+      "air_conditioner": 0,
+      "car_horn": 2,
+      "children_playing": 0,
+      "dog_bark": 0,
+      "drilling": 0,
+      "engine_idling": 0,
+      "gun_shot": 4,
+      "jackhammer": 0,
+      "siren": 1,
+      "street_music": 0
     }
   }
 }

@@ -10,15 +10,19 @@ from utils.file_utils import init_class_folds
 from utils.csv_utils import read_csv_as_dataframe, write_csv_meta
 from utils.dframe_utils import plot_classname_distribution
 from ds.esc50 import ESC50
+from ds.us8k import UrbanSound8K
 
 datasets_registry = [
     # TODO: Add more datasets instance here
     ESC50(),
+    UrbanSound8K()
 ]
 
 def main():
     # Main procedure
     DATASET_PATH_FILTERED = os.path.join(PROJECT_ROOT, "dataset")
+    os.makedirs(DATASET_PATH_FILTERED, exist_ok=True)
+
     init_default_class_name()
     init_class_folds(DATASET_PATH_FILTERED)
     main_df = pd.DataFrame(columns=PD_SCHEMA.keys()).astype(PD_SCHEMA)
