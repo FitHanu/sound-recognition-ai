@@ -10,10 +10,12 @@ from utils.file_utils import init_class_folds
 from utils.csv_utils import read_csv_as_dataframe, write_csv_meta
 from utils.dframe_utils import plot_classname_distribution
 from ds.esc50 import ESC50
+from ds.gad import GAD
 
 datasets_registry = [
     # TODO: Add more datasets instance here
     ESC50(),
+    GAD(),
 ]
 
 def main():

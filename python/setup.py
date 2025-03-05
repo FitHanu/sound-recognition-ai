@@ -45,10 +45,15 @@ def validate_packages(package_names):
             print(f"✅ {package} is available.")
         except ImportError:
             print(f"❌ {package} is missing or failed to install.")
+            
+def force_reinstall_kaggle():
+    args = ["pip", "install", "--upgrade", "--force-reinstall", "--no-deps", "kaggle"]
+    subprocess.run(args)
     
 def main():
     install_requirements()
     append_project_path()
+    # force_reinstall_kaggle()
     validate_packages(["ds.dataset", "utils.json_utils"])
     
 
