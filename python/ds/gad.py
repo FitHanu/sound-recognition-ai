@@ -31,7 +31,7 @@ class GAD(DataSet):
         df = pd.DataFrame(folders, columns=["category"])
         self.class_names = df["category"].unique()
 
-        columns = ["idx", "filename", "filepath" "category"]        
+        columns = ["idx", "filename", "filepath", "category"]        
         original_ds_df = pd.DataFrame(columns=columns)
         index = 0;
         for category in folders:
@@ -91,10 +91,10 @@ class GAD(DataSet):
         """
         pass
     
-def main():
-    ds = GAD()
-    append_empty_mapping_to_config(ds, overwrite=False)
-    ds.hell_yeah()
+# def main():
+#     ds = GAD()
+#     append_empty_mapping_to_config(ds, overwrite=False)
+#     ds.hell_yeah()
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
