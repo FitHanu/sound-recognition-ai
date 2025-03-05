@@ -11,11 +11,13 @@ from utils.csv_utils import read_csv_as_dataframe, write_csv_meta
 from utils.dframe_utils import plot_classname_distribution
 from ds.esc50 import ESC50
 from ds.us8k import UrbanSound8K
+from ds.bdlib2 import BDLib2
 
 datasets_registry = [
     # TODO: Add more datasets instance here
     ESC50(),
-    UrbanSound8K()
+    UrbanSound8K(),
+    BDLib2()
 ]
 
 def main():
