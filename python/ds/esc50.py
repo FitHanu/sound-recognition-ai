@@ -15,9 +15,8 @@ class ESC50(DataSet):
         super().__init__("esc50")
 
     def download(self):
-        print(f"kg path: {self.kaggle_path}")
-        ds_abs_path = kagglehub.dataset_download(self.kaggle_path)
-        return ds_abs_path
+        path = kagglehub.dataset_download("emrahaydemr/gunshot-audio-dataset")
+        return path
     
     def init_class_names(self):
         df = pd.read_csv(self.meta_sub_path)

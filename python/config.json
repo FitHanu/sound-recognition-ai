@@ -73,6 +73,17 @@
       "cat": 0,
       "door_wood_creaks": 0,
       "crickets": 0
+    },
+    "gad": {
+      "M16": 5,
+      "Zastava M92": 5,
+      "AK-47": 5,
+      "M4": 5,
+      "M249": 6,
+      "IMI Desert Eagle": 4,
+      "MG-42": 6,
+      "MP5": 5,
+      "AK-12": 5
     }
   }
 }

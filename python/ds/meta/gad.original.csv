@@ -1,0 +1,852 @@
+idx,filename,category
+0,5 (98).wav,M16
+1,5 (97).wav,M16
+2,5 (59).wav,M16
+3,5 (74).wav,M16
+4,5 (79).wav,M16
+5,5 (96).wav,M16
+6,5 (62).wav,M16
+7,5 (84).wav,M16
+8,5 (76).wav,M16
+9,5 (15).wav,M16
+10,5 (26).wav,M16
+11,5 (56).wav,M16
+12,5 (45).wav,M16
+13,5 (85).wav,M16
+14,5 (60).wav,M16
+15,5 (49).wav,M16
+16,5 (66).wav,M16
+17,5 (52).wav,M16
+18,5 (46).wav,M16
+19,5 (35).wav,M16
+20,5 (21).wav,M16
+21,5 (23).wav,M16
+22,5 (18).wav,M16
+23,5 (54).wav,M16
+24,5 (75).wav,M16
+25,5 (4).wav,M16
+26,5 (24).wav,M16
+27,5 (40).wav,M16
+28,5 (5).wav,M16
+29,5 (72).wav,M16
+30,5 (32).wav,M16
+31,5 (44).wav,M16
+32,5 (34).wav,M16
+33,5 (27).wav,M16
+34,5 (71).wav,M16
+35,5 (64).wav,M16
+36,5 (6).wav,M16
+37,5 (100).wav,M16
+38,5 (53).wav,M16
+39,5 (95).wav,M16
+40,5 (36).wav,M16
+41,5 (19).wav,M16
+42,5 (77).wav,M16
+43,5 (1).wav,M16
+44,5 (10).wav,M16
+45,5 (2).wav,M16
+46,5 (94).wav,M16
+47,5 (70).wav,M16
+48,5 (57).wav,M16
+49,5 (13).wav,M16
+50,5 (37).wav,M16
+51,5 (80).wav,M16
+52,5 (81).wav,M16
+53,5 (87).wav,M16
+54,5 (39).wav,M16
+55,5 (58).wav,M16
+56,5 (91).wav,M16
+57,5 (92).wav,M16
+58,5 (68).wav,M16
+59,5 (20).wav,M16
+60,5 (17).wav,M16
+61,5 (88).wav,M16
+62,5 (8).wav,M16
+63,5 (61).wav,M16
+64,5 (43).wav,M16
+65,5 (30).wav,M16
+66,5 (93).wav,M16
+67,5 (69).wav,M16
+68,5 (73).wav,M16
+69,5 (67).wav,M16
+70,5 (29).wav,M16
+71,5 (82).wav,M16
+72,5 (38).wav,M16
+73,5 (99).wav,M16
+74,5 (12).wav,M16
+75,5 (47).wav,M16
+76,5 (28).wav,M16
+77,5 (22).wav,M16
+78,5 (7).wav,M16
+79,5 (50).wav,M16
+80,5 (86).wav,M16
+81,5 (16).wav,M16
+82,5 (11).wav,M16
+83,5 (55).wav,M16
+84,5 (14).wav,M16
+85,5 (63).wav,M16
+86,5 (31).wav,M16
+87,5 (42).wav,M16
+88,5 (89).wav,M16
+89,5 (78).wav,M16
+90,5 (65).wav,M16
+91,5 (3).wav,M16
+92,5 (90).wav,M16
+93,5 (51).wav,M16
+94,5 (25).wav,M16
+95,5 (48).wav,M16
+96,5 (33).wav,M16
+97,5 (83).wav,M16
+98,5 (9).wav,M16
+99,5 (41).wav,M16
+100,9 (63).wav,Zastava M92
+101,9 (40).wav,Zastava M92
+102,9 (59).wav,Zastava M92
+103,9 (61).wav,Zastava M92
+104,9 (35).wav,Zastava M92
+105,9 (6).wav,Zastava M92
+106,9 (57).wav,Zastava M92
+107,9 (80).wav,Zastava M92
+108,9 (47).wav,Zastava M92
+109,9 (73).wav,Zastava M92
+110,9 (62).wav,Zastava M92
+111,9 (7).wav,Zastava M92
+112,9 (65).wav,Zastava M92
+113,9 (46).wav,Zastava M92
+114,9 (55).wav,Zastava M92
+115,9 (66).wav,Zastava M92
+116,9 (14).wav,Zastava M92
+117,9 (56).wav,Zastava M92
+118,9 (60).wav,Zastava M92
+119,9 (13).wav,Zastava M92
+120,9 (42).wav,Zastava M92
+121,9 (74).wav,Zastava M92
+122,9 (64).wav,Zastava M92
+123,9 (1).wav,Zastava M92
+124,9 (16).wav,Zastava M92
+125,9 (29).wav,Zastava M92
+126,9 (27).wav,Zastava M92
+127,9 (52).wav,Zastava M92
+128,9 (81).wav,Zastava M92
+129,9 (72).wav,Zastava M92
+130,9 (49).wav,Zastava M92
+131,9 (31).wav,Zastava M92
+132,9 (33).wav,Zastava M92
+133,9 (23).wav,Zastava M92
+134,9 (18).wav,Zastava M92
+135,9 (37).wav,Zastava M92
+136,9 (38).wav,Zastava M92
+137,9 (53).wav,Zastava M92
+138,9 (76).wav,Zastava M92
+139,9 (43).wav,Zastava M92
+140,9 (2).wav,Zastava M92
+141,9 (25).wav,Zastava M92
+142,9 (4).wav,Zastava M92
+143,9 (69).wav,Zastava M92
+144,9 (54).wav,Zastava M92
+145,9 (24).wav,Zastava M92
+146,9 (41).wav,Zastava M92
+147,9 (70).wav,Zastava M92
+148,9 (8).wav,Zastava M92
+149,9 (78).wav,Zastava M92
+150,9 (11).wav,Zastava M92
+151,9 (9).wav,Zastava M92
+152,9 (75).wav,Zastava M92
+153,9 (45).wav,Zastava M92
+154,9 (68).wav,Zastava M92
+155,9 (51).wav,Zastava M92
+156,9 (36).wav,Zastava M92
+157,9 (17).wav,Zastava M92
+158,9 (44).wav,Zastava M92
+159,9 (50).wav,Zastava M92
+160,9 (39).wav,Zastava M92
+161,9 (79).wav,Zastava M92
+162,9 (77).wav,Zastava M92
+163,9 (30).wav,Zastava M92
+164,9 (3).wav,Zastava M92
+165,9 (22).wav,Zastava M92
+166,9 (34).wav,Zastava M92
+167,9 (32).wav,Zastava M92
+168,9 (5).wav,Zastava M92
+169,9 (15).wav,Zastava M92
+170,9 (48).wav,Zastava M92
+171,9 (10).wav,Zastava M92
+172,9 (28).wav,Zastava M92
+173,9 (26).wav,Zastava M92
+174,9 (21).wav,Zastava M92
+175,9 (71).wav,Zastava M92
+176,9 (12).wav,Zastava M92
+177,9 (82).wav,Zastava M92
+178,9 (20).wav,Zastava M92
+179,9 (67).wav,Zastava M92
+180,9 (58).wav,Zastava M92
+181,9 (19).wav,Zastava M92
+182,1 (26).wav,AK-47
+183,1 (6).wav,AK-47
+184,1 (36).wav,AK-47
+185,1 (54).wav,AK-47
+186,1 (17).wav,AK-47
+187,1 (15).wav,AK-47
+188,1 (53).wav,AK-47
+189,1 (14).wav,AK-47
+190,1 (57).wav,AK-47
+191,1 (31).wav,AK-47
+192,1 (40).wav,AK-47
+193,1 (7).wav,AK-47
+194,1 (16).wav,AK-47
+195,1 (18).wav,AK-47
+196,1 (39).wav,AK-47
+197,1 (45).wav,AK-47
+198,1 (29).wav,AK-47
+199,1 (3).wav,AK-47
+200,1 (44).wav,AK-47
+201,1 (67).wav,AK-47
+202,1 (46).wav,AK-47
+203,1 (47).wav,AK-47
+204,1 (37).wav,AK-47
+205,1 (43).wav,AK-47
+206,1 (69).wav,AK-47
+207,1 (20).wav,AK-47
+208,1 (30).wav,AK-47
+209,1 (58).wav,AK-47
+210,1 (71).wav,AK-47
+211,1 (13).wav,AK-47
+212,1 (27).wav,AK-47
+213,1 (38).wav,AK-47
+214,1 (63).wav,AK-47
+215,1 (55).wav,AK-47
+216,1 (70).wav,AK-47
+217,1 (61).wav,AK-47
+218,1 (4).wav,AK-47
+219,1 (9).wav,AK-47
+220,1 (25).wav,AK-47
+221,1 (12).wav,AK-47
+222,1 (23).wav,AK-47
+223,1 (51).wav,AK-47
+224,1 (21).wav,AK-47
+225,1 (33).wav,AK-47
+226,1 (62).wav,AK-47
+227,1 (1).wav,AK-47
+228,1 (8).wav,AK-47
+229,1 (48).wav,AK-47
+230,1 (52).wav,AK-47
+231,1 (60).wav,AK-47
+232,1 (64).wav,AK-47
+233,1 (56).wav,AK-47
+234,1 (50).wav,AK-47
+235,1 (42).wav,AK-47
+236,1 (68).wav,AK-47
+237,1 (19).wav,AK-47
+238,1 (24).wav,AK-47
+239,1 (22).wav,AK-47
+240,1 (10).wav,AK-47
+241,1 (72).wav,AK-47
+242,1 (2).wav,AK-47
+243,1 (66).wav,AK-47
+244,1 (5).wav,AK-47
+245,1 (11).wav,AK-47
+246,1 (35).wav,AK-47
+247,1 (34).wav,AK-47
+248,1 (32).wav,AK-47
+249,1 (59).wav,AK-47
+250,1 (41).wav,AK-47
+251,1 (28).wav,AK-47
+252,1 (49).wav,AK-47
+253,1 (65).wav,AK-47
+254,4 (99).wav,M4
+255,4 (30).wav,M4
+256,4 (79).wav,M4
+257,4 (68).wav,M4
+258,4 (100).wav,M4
+259,4 (97).wav,M4
+260,4 (7).wav,M4
+261,4 (40).wav,M4
+262,4 (5).wav,M4
+263,4 (16).wav,M4
+264,4 (88).wav,M4
+265,4 (52).wav,M4
+266,4 (2).wav,M4
+267,4 (82).wav,M4
+268,4 (10).wav,M4
+269,4 (31).wav,M4
+270,4 (41).wav,M4
+271,4 (39).wav,M4
+272,4 (64).wav,M4
+273,4 (73).wav,M4
+274,4 (80).wav,M4
+275,4 (57).wav,M4
+276,4 (4).wav,M4
+277,4 (35).wav,M4
+278,4 (59).wav,M4
+279,4 (93).wav,M4
+280,4 (60).wav,M4
+281,4 (33).wav,M4
+282,4 (25).wav,M4
+283,4 (8).wav,M4
+284,4 (95).wav,M4
+285,4 (54).wav,M4
+286,4 (6).wav,M4
+287,4 (15).wav,M4
+288,4 (43).wav,M4
+289,4 (75).wav,M4
+290,4 (32).wav,M4
+291,4 (38).wav,M4
+292,4 (28).wav,M4
+293,4 (71).wav,M4
+294,4 (78).wav,M4
+295,4 (58).wav,M4
+296,4 (27).wav,M4
+297,4 (17).wav,M4
+298,4 (3).wav,M4
+299,4 (76).wav,M4
+300,4 (9).wav,M4
+301,4 (42).wav,M4
+302,4 (66).wav,M4
+303,4 (36).wav,M4
+304,4 (72).wav,M4
+305,4 (83).wav,M4
+306,4 (19).wav,M4
+307,4 (37).wav,M4
+308,4 (34).wav,M4
+309,4 (65).wav,M4
+310,4 (21).wav,M4
+311,4 (63).wav,M4
+312,4 (29).wav,M4
+313,4 (70).wav,M4
+314,4 (94).wav,M4
+315,4 (89).wav,M4
+316,4 (50).wav,M4
+317,4 (46).wav,M4
+318,4 (85).wav,M4
+319,4 (67).wav,M4
+320,4 (77).wav,M4
+321,4 (81).wav,M4
+322,4 (12).wav,M4
+323,4 (55).wav,M4
+324,4 (47).wav,M4
+325,4 (13).wav,M4
+326,4 (45).wav,M4
+327,4 (44).wav,M4
+328,4 (26).wav,M4
+329,4 (56).wav,M4
+330,4 (1).wav,M4
+331,4 (69).wav,M4
+332,4 (49).wav,M4
+333,4 (86).wav,M4
+334,4 (14).wav,M4
+335,4 (11).wav,M4
+336,4 (53).wav,M4
+337,4 (98).wav,M4
+338,4 (18).wav,M4
+339,4 (62).wav,M4
+340,4 (48).wav,M4
+341,4 (90).wav,M4
+342,4 (24).wav,M4
+343,4 (87).wav,M4
+344,4 (91).wav,M4
+345,4 (23).wav,M4
+346,4 (22).wav,M4
+347,4 (96).wav,M4
+348,4 (20).wav,M4
+349,4 (74).wav,M4
+350,4 (51).wav,M4
+351,4 (84).wav,M4
+352,4 (61).wav,M4
+353,4 (92).wav,M4
+354,6 (63).wav,M249
+355,6 (15).wav,M249
+356,6 (81).wav,M249
+357,6 (1).wav,M249
+358,6 (46).wav,M249
+359,6 (79).wav,M249
+360,6 (47).wav,M249
+361,6 (23).wav,M249
+362,6 (26).wav,M249
+363,6 (84).wav,M249
+364,6 (27).wav,M249
+365,6 (49).wav,M249
+366,6 (30).wav,M249
+367,6 (43).wav,M249
+368,6 (62).wav,M249
+369,6 (95).wav,M249
+370,6 (80).wav,M249
+371,6 (7).wav,M249
+372,6 (52).wav,M249
+373,6 (56).wav,M249
+374,6 (19).wav,M249
+375,6 (55).wav,M249
+376,6 (94).wav,M249
+377,6 (59).wav,M249
+378,6 (2).wav,M249
+379,6 (22).wav,M249
+380,6 (73).wav,M249
+381,6 (29).wav,M249
+382,6 (37).wav,M249
+383,6 (36).wav,M249
+384,6 (39).wav,M249
+385,6 (17).wav,M249
+386,6 (66).wav,M249
+387,6 (54).wav,M249
+388,6 (9).wav,M249
+389,6 (97).wav,M249
+390,6 (83).wav,M249
+391,6 (41).wav,M249
+392,6 (45).wav,M249
+393,6 (24).wav,M249
+394,6 (8).wav,M249
+395,6 (60).wav,M249
+396,6 (67).wav,M249
+397,6 (53).wav,M249
+398,6 (70).wav,M249
+399,6 (98).wav,M249
+400,6 (4).wav,M249
+401,6 (28).wav,M249
+402,6 (35).wav,M249
+403,6 (68).wav,M249
+404,6 (61).wav,M249
+405,6 (64).wav,M249
+406,6 (69).wav,M249
+407,6 (92).wav,M249
+408,6 (65).wav,M249
+409,6 (75).wav,M249
+410,6 (93).wav,M249
+411,6 (21).wav,M249
+412,6 (32).wav,M249
+413,6 (72).wav,M249
+414,6 (57).wav,M249
+415,6 (14).wav,M249
+416,6 (58).wav,M249
+417,6 (76).wav,M249
+418,6 (85).wav,M249
+419,6 (31).wav,M249
+420,6 (88).wav,M249
+421,6 (82).wav,M249
+422,6 (10).wav,M249
+423,6 (3).wav,M249
+424,6 (42).wav,M249
+425,6 (99).wav,M249
+426,6 (38).wav,M249
+427,6 (74).wav,M249
+428,6 (44).wav,M249
+429,6 (5).wav,M249
+430,6 (77).wav,M249
+431,6 (50).wav,M249
+432,6 (25).wav,M249
+433,6 (87).wav,M249
+434,6 (90).wav,M249
+435,6 (71).wav,M249
+436,6 (51).wav,M249
+437,6 (86).wav,M249
+438,6 (96).wav,M249
+439,6 (18).wav,M249
+440,6 (12).wav,M249
+441,6 (11).wav,M249
+442,6 (91).wav,M249
+443,6 (78).wav,M249
+444,6 (20).wav,M249
+445,6 (40).wav,M249
+446,6 (48).wav,M249
+447,6 (6).wav,M249
+448,6 (13).wav,M249
+449,6 (16).wav,M249
+450,6 (34).wav,M249
+451,6 (33).wav,M249
+452,6 (89).wav,M249
+453,2 (82).wav,IMI Desert Eagle
+454,2 (18).wav,IMI Desert Eagle
+455,2 (15).wav,IMI Desert Eagle
+456,2 (92).wav,IMI Desert Eagle
+457,2 (31).wav,IMI Desert Eagle
+458,2 (91).wav,IMI Desert Eagle
+459,2 (67).wav,IMI Desert Eagle
+460,2 (64).wav,IMI Desert Eagle
+461,2 (62).wav,IMI Desert Eagle
+462,2 (61).wav,IMI Desert Eagle
+463,2 (33).wav,IMI Desert Eagle
+464,2 (79).wav,IMI Desert Eagle
+465,2 (46).wav,IMI Desert Eagle
+466,2 (71).wav,IMI Desert Eagle
+467,2 (40).wav,IMI Desert Eagle
+468,2 (32).wav,IMI Desert Eagle
+469,2 (49).wav,IMI Desert Eagle
+470,2 (43).wav,IMI Desert Eagle
+471,2 (56).wav,IMI Desert Eagle
+472,2 (6).wav,IMI Desert Eagle
+473,2 (24).wav,IMI Desert Eagle
+474,2 (54).wav,IMI Desert Eagle
+475,2 (8).wav,IMI Desert Eagle
+476,2 (65).wav,IMI Desert Eagle
+477,2 (51).wav,IMI Desert Eagle
+478,2 (90).wav,IMI Desert Eagle
+479,2 (25).wav,IMI Desert Eagle
+480,2 (19).wav,IMI Desert Eagle
+481,2 (70).wav,IMI Desert Eagle
+482,2 (35).wav,IMI Desert Eagle
+483,2 (98).wav,IMI Desert Eagle
+484,2 (52).wav,IMI Desert Eagle
+485,2 (95).wav,IMI Desert Eagle
+486,2 (81).wav,IMI Desert Eagle
+487,2 (34).wav,IMI Desert Eagle
+488,2 (10).wav,IMI Desert Eagle
+489,2 (72).wav,IMI Desert Eagle
+490,2 (5).wav,IMI Desert Eagle
+491,2 (55).wav,IMI Desert Eagle
+492,2 (38).wav,IMI Desert Eagle
+493,2 (12).wav,IMI Desert Eagle
+494,2 (4).wav,IMI Desert Eagle
+495,2 (75).wav,IMI Desert Eagle
+496,2 (42).wav,IMI Desert Eagle
+497,2 (47).wav,IMI Desert Eagle
+498,2 (3).wav,IMI Desert Eagle
+499,2 (77).wav,IMI Desert Eagle
+500,2 (53).wav,IMI Desert Eagle
+501,2 (76).wav,IMI Desert Eagle
+502,2 (89).wav,IMI Desert Eagle
+503,2 (9).wav,IMI Desert Eagle
+504,2 (29).wav,IMI Desert Eagle
+505,2 (84).wav,IMI Desert Eagle
+506,2 (36).wav,IMI Desert Eagle
+507,2 (60).wav,IMI Desert Eagle
+508,2 (28).wav,IMI Desert Eagle
+509,2 (44).wav,IMI Desert Eagle
+510,2 (20).wav,IMI Desert Eagle
+511,2 (97).wav,IMI Desert Eagle
+512,2 (37).wav,IMI Desert Eagle
+513,2 (63).wav,IMI Desert Eagle
+514,2 (58).wav,IMI Desert Eagle
+515,2 (73).wav,IMI Desert Eagle
+516,2 (11).wav,IMI Desert Eagle
+517,2 (80).wav,IMI Desert Eagle
+518,2 (57).wav,IMI Desert Eagle
+519,2 (30).wav,IMI Desert Eagle
+520,2 (99).wav,IMI Desert Eagle
+521,2 (74).wav,IMI Desert Eagle
+522,2 (48).wav,IMI Desert Eagle
+523,2 (2).wav,IMI Desert Eagle
+524,2 (1).wav,IMI Desert Eagle
+525,2 (27).wav,IMI Desert Eagle
+526,2 (50).wav,IMI Desert Eagle
+527,2 (78).wav,IMI Desert Eagle
+528,2 (96).wav,IMI Desert Eagle
+529,2 (45).wav,IMI Desert Eagle
+530,2 (41).wav,IMI Desert Eagle
+531,2 (23).wav,IMI Desert Eagle
+532,2 (86).wav,IMI Desert Eagle
+533,2 (22).wav,IMI Desert Eagle
+534,2 (69).wav,IMI Desert Eagle
+535,2 (7).wav,IMI Desert Eagle
+536,2 (94).wav,IMI Desert Eagle
+537,2 (66).wav,IMI Desert Eagle
+538,2 (85).wav,IMI Desert Eagle
+539,2 (88).wav,IMI Desert Eagle
+540,2 (83).wav,IMI Desert Eagle
+541,2 (14).wav,IMI Desert Eagle
+542,2 (13).wav,IMI Desert Eagle
+543,2 (26).wav,IMI Desert Eagle
+544,2 (100).wav,IMI Desert Eagle
+545,2 (68).wav,IMI Desert Eagle
+546,2 (16).wav,IMI Desert Eagle
+547,2 (39).wav,IMI Desert Eagle
+548,2 (93).wav,IMI Desert Eagle
+549,2 (87).wav,IMI Desert Eagle
+550,2 (21).wav,IMI Desert Eagle
+551,2 (17).wav,IMI Desert Eagle
+552,2 (59).wav,IMI Desert Eagle
+553,7 (74).wav,MG-42
+554,7 (80).wav,MG-42
+555,7 (73).wav,MG-42
+556,7 (70).wav,MG-42
+557,7 (64).wav,MG-42
+558,7 (50).wav,MG-42
+559,7 (1).wav,MG-42
+560,7 (10).wav,MG-42
+561,7 (2).wav,MG-42
+562,7 (13).wav,MG-42
+563,7 (28).wav,MG-42
+564,7 (48).wav,MG-42
+565,7 (6).wav,MG-42
+566,7 (60).wav,MG-42
+567,7 (84).wav,MG-42
+568,7 (37).wav,MG-42
+569,7 (90).wav,MG-42
+570,7 (57).wav,MG-42
+571,7 (40).wav,MG-42
+572,7 (59).wav,MG-42
+573,7 (63).wav,MG-42
+574,7 (20).wav,MG-42
+575,7 (67).wav,MG-42
+576,7 (51).wav,MG-42
+577,7 (52).wav,MG-42
+578,7 (96).wav,MG-42
+579,7 (49).wav,MG-42
+580,7 (32).wav,MG-42
+581,7 (91).wav,MG-42
+582,7 (66).wav,MG-42
+583,7 (45).wav,MG-42
+584,7 (100).wav,MG-42
+585,7 (95).wav,MG-42
+586,7 (29).wav,MG-42
+587,7 (54).wav,MG-42
+588,7 (83).wav,MG-42
+589,7 (33).wav,MG-42
+590,7 (85).wav,MG-42
+591,7 (62).wav,MG-42
+592,7 (22).wav,MG-42
+593,7 (44).wav,MG-42
+594,7 (98).wav,MG-42
+595,7 (4).wav,MG-42
+596,7 (27).wav,MG-42
+597,7 (9).wav,MG-42
+598,7 (56).wav,MG-42
+599,7 (65).wav,MG-42
+600,7 (39).wav,MG-42
+601,7 (89).wav,MG-42
+602,7 (58).wav,MG-42
+603,7 (43).wav,MG-42
+604,7 (11).wav,MG-42
+605,7 (75).wav,MG-42
+606,7 (18).wav,MG-42
+607,7 (15).wav,MG-42
+608,7 (78).wav,MG-42
+609,7 (71).wav,MG-42
+610,7 (82).wav,MG-42
+611,7 (94).wav,MG-42
+612,7 (47).wav,MG-42
+613,7 (38).wav,MG-42
+614,7 (16).wav,MG-42
+615,7 (34).wav,MG-42
+616,7 (92).wav,MG-42
+617,7 (21).wav,MG-42
+618,7 (17).wav,MG-42
+619,7 (3).wav,MG-42
+620,7 (8).wav,MG-42
+621,7 (68).wav,MG-42
+622,7 (76).wav,MG-42
+623,7 (30).wav,MG-42
+624,7 (41).wav,MG-42
+625,7 (86).wav,MG-42
+626,7 (12).wav,MG-42
+627,7 (35).wav,MG-42
+628,7 (69).wav,MG-42
+629,7 (61).wav,MG-42
+630,7 (99).wav,MG-42
+631,7 (36).wav,MG-42
+632,7 (55).wav,MG-42
+633,7 (79).wav,MG-42
+634,7 (14).wav,MG-42
+635,7 (23).wav,MG-42
+636,7 (88).wav,MG-42
+637,7 (97).wav,MG-42
+638,7 (25).wav,MG-42
+639,7 (19).wav,MG-42
+640,7 (93).wav,MG-42
+641,7 (24).wav,MG-42
+642,7 (53).wav,MG-42
+643,7 (31).wav,MG-42
+644,7 (77).wav,MG-42
+645,7 (26).wav,MG-42
+646,7 (42).wav,MG-42
+647,7 (81).wav,MG-42
+648,7 (72).wav,MG-42
+649,7 (5).wav,MG-42
+650,7 (7).wav,MG-42
+651,7 (46).wav,MG-42
+652,7 (87).wav,MG-42
+653,8 (93).wav,MP5
+654,8 (67).wav,MP5
+655,8 (1).wav,MP5
+656,8 (61).wav,MP5
+657,8 (41).wav,MP5
+658,8 (5).wav,MP5
+659,8 (33).wav,MP5
+660,8 (36).wav,MP5
+661,8 (32).wav,MP5
+662,8 (37).wav,MP5
+663,8 (56).wav,MP5
+664,8 (27).wav,MP5
+665,8 (94).wav,MP5
+666,8 (17).wav,MP5
+667,8 (2).wav,MP5
+668,8 (75).wav,MP5
+669,8 (80).wav,MP5
+670,8 (45).wav,MP5
+671,8 (4).wav,MP5
+672,8 (72).wav,MP5
+673,8 (89).wav,MP5
+674,8 (64).wav,MP5
+675,8 (14).wav,MP5
+676,8 (92).wav,MP5
+677,8 (29).wav,MP5
+678,8 (79).wav,MP5
+679,8 (77).wav,MP5
+680,8 (53).wav,MP5
+681,8 (47).wav,MP5
+682,8 (97).wav,MP5
+683,8 (39).wav,MP5
+684,8 (35).wav,MP5
+685,8 (13).wav,MP5
+686,8 (24).wav,MP5
+687,8 (3).wav,MP5
+688,8 (83).wav,MP5
+689,8 (44).wav,MP5
+690,8 (86).wav,MP5
+691,8 (96).wav,MP5
+692,8 (40).wav,MP5
+693,8 (95).wav,MP5
+694,8 (34).wav,MP5
+695,8 (81).wav,MP5
+696,8 (11).wav,MP5
+697,8 (63).wav,MP5
+698,8 (82).wav,MP5
+699,8 (19).wav,MP5
+700,8 (18).wav,MP5
+701,8 (25).wav,MP5
+702,8 (62).wav,MP5
+703,8 (66).wav,MP5
+704,8 (7).wav,MP5
+705,8 (85).wav,MP5
+706,8 (28).wav,MP5
+707,8 (55).wav,MP5
+708,8 (15).wav,MP5
+709,8 (73).wav,MP5
+710,8 (68).wav,MP5
+711,8 (50).wav,MP5
+712,8 (31).wav,MP5
+713,8 (84).wav,MP5
+714,8 (98).wav,MP5
+715,8 (43).wav,MP5
+716,8 (69).wav,MP5
+717,8 (26).wav,MP5
+718,8 (57).wav,MP5
+719,8 (87).wav,MP5
+720,8 (100).wav,MP5
+721,8 (8).wav,MP5
+722,8 (16).wav,MP5
+723,8 (65).wav,MP5
+724,8 (46).wav,MP5
+725,8 (71).wav,MP5
+726,8 (30).wav,MP5
+727,8 (99).wav,MP5
+728,8 (42).wav,MP5
+729,8 (52).wav,MP5
+730,8 (59).wav,MP5
+731,8 (10).wav,MP5
+732,8 (76).wav,MP5
+733,8 (23).wav,MP5
+734,8 (91).wav,MP5
+735,8 (22).wav,MP5
+736,8 (74).wav,MP5
+737,8 (6).wav,MP5
+738,8 (20).wav,MP5
+739,8 (48).wav,MP5
+740,8 (58).wav,MP5
+741,8 (88).wav,MP5
+742,8 (9).wav,MP5
+743,8 (60).wav,MP5
+744,8 (21).wav,MP5
+745,8 (51).wav,MP5
+746,8 (78).wav,MP5
+747,8 (70).wav,MP5
+748,8 (38).wav,MP5
+749,8 (12).wav,MP5
+750,8 (90).wav,MP5
+751,8 (54).wav,MP5
+752,8 (49).wav,MP5
+753,3 (3).wav,AK-12
+754,3 (91).wav,AK-12
+755,3 (23).wav,AK-12
+756,3 (81).wav,AK-12
+757,3 (87).wav,AK-12
+758,3 (45).wav,AK-12
+759,3 (13).wav,AK-12
+760,3 (56).wav,AK-12
+761,3 (43).wav,AK-12
+762,3 (17).wav,AK-12
+763,3 (26).wav,AK-12
+764,3 (25).wav,AK-12
+765,3 (73).wav,AK-12
+766,3 (52).wav,AK-12
+767,3 (38).wav,AK-12
+768,3 (9).wav,AK-12
+769,3 (76).wav,AK-12
+770,3 (53).wav,AK-12
+771,3 (29).wav,AK-12
+772,3 (63).wav,AK-12
+773,3 (21).wav,AK-12
+774,3 (75).wav,AK-12
+775,3 (49).wav,AK-12
+776,3 (74).wav,AK-12
+777,3 (48).wav,AK-12
+778,3 (34).wav,AK-12
+779,3 (90).wav,AK-12
+780,3 (82).wav,AK-12
+781,3 (94).wav,AK-12
+782,3 (62).wav,AK-12
+783,3 (67).wav,AK-12
+784,3 (68).wav,AK-12
+785,3 (51).wav,AK-12
+786,3 (50).wav,AK-12
+787,3 (40).wav,AK-12
+788,3 (30).wav,AK-12
+789,3 (86).wav,AK-12
+790,3 (78).wav,AK-12
+791,3 (44).wav,AK-12
+792,3 (97).wav,AK-12
+793,3 (36).wav,AK-12
+794,3 (24).wav,AK-12
+795,3 (93).wav,AK-12
+796,3 (77).wav,AK-12
+797,3 (6).wav,AK-12
+798,3 (4).wav,AK-12
+799,3 (98).wav,AK-12
+800,3 (28).wav,AK-12
+801,3 (71).wav,AK-12
+802,3 (59).wav,AK-12
+803,3 (84).wav,AK-12
+804,3 (69).wav,AK-12
+805,3 (10).wav,AK-12
+806,3 (7).wav,AK-12
+807,3 (8).wav,AK-12
+808,3 (20).wav,AK-12
+809,3 (96).wav,AK-12
+810,3 (35).wav,AK-12
+811,3 (85).wav,AK-12
+812,3 (65).wav,AK-12
+813,3 (83).wav,AK-12
+814,3 (41).wav,AK-12
+815,3 (31).wav,AK-12
+816,3 (58).wav,AK-12
+817,3 (88).wav,AK-12
+818,3 (80).wav,AK-12
+819,3 (70).wav,AK-12
+820,3 (1).wav,AK-12
+821,3 (54).wav,AK-12
+822,3 (19).wav,AK-12
+823,3 (37).wav,AK-12
+824,3 (14).wav,AK-12
+825,3 (5).wav,AK-12
+826,3 (11).wav,AK-12
+827,3 (64).wav,AK-12
+828,3 (15).wav,AK-12
+829,3 (79).wav,AK-12
+830,3 (72).wav,AK-12
+831,3 (60).wav,AK-12
+832,3 (39).wav,AK-12
+833,3 (42).wav,AK-12
+834,3 (33).wav,AK-12
+835,3 (22).wav,AK-12
+836,3 (57).wav,AK-12
+837,3 (92).wav,AK-12
+838,3 (12).wav,AK-12
+839,3 (27).wav,AK-12
+840,3 (89).wav,AK-12
+841,3 (46).wav,AK-12
+842,3 (16).wav,AK-12
+843,3 (95).wav,AK-12
+844,3 (66).wav,AK-12
+845,3 (55).wav,AK-12
+846,3 (61).wav,AK-12
+847,3 (2).wav,AK-12
+848,3 (18).wav,AK-12
+849,3 (32).wav,AK-12
+850,3 (47).wav,AK-12
