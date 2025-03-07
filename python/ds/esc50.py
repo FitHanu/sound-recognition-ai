@@ -3,9 +3,9 @@ import os
 import pandas as pd
 import constants as C
 from dataset import DataSet
-from json_utils import get_post_class_mapping
-from wav_utils import get_wav_data_length
-from csv_utils import write_csv_meta
+from utils.json_utils import get_post_class_mapping
+from utils.wav_utils import get_wav_data_length
+from utils.csv_utils import write_csv_meta
 # from concurrent.futures import ProcessPoolExecutor
 
 
