@@ -131,3 +131,13 @@ def get_default_class_mapping():
         default_class = data[parent_property]["default"]
         default_class = {int(k): v for k, v in default_class.items()}
     return default_class
+
+
+def get_config_json():
+    """
+    Get `config.json` content\n
+    Returns a `dict` of `config.json`
+    """
+    with open(config_file_path, "r") as f:
+        data = json.load(f)
+    return data
