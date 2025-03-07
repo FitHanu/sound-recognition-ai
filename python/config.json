@@ -1,4 +1,9 @@
 {
+  "partition": {
+    "train": 0.8,
+    "dev": 0.1,
+    "test": 0.1
+  },
   "class_mapping": {
     "default": {
       "0": "NOISE",
