@@ -4,9 +4,9 @@ Steps:
 1. get ratio from config.json
 2. read the full meta csv
 3. determine the median of datapoints of all classes
-4. for each classnames
+4. for each classname
     (update dataframe (2) in place)
-    if number of classnames datapoints < median
+    if number of classname datapoints < median
         sample up
     else
         sample down
