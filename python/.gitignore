@@ -180,3 +180,5 @@ cython_debug/
 # Project specifics
 test.py
 test/test.py
+ds/meta/*
+logs/*
