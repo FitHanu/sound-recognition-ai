@@ -4,6 +4,9 @@ import uuid
 import os
 import kagglehub
 
+# Download datasets
+# 1. ESC-50 https://github.com/karoldvl/ESC-50/archive/master.zip
+# 2. UrbanSound8k https://goo.gl/8hY5ER
 
 def download(url, file_path=".", file_name=None):
     if file_name is None:
@@ -52,3 +55,8 @@ def download_and_extract(url):
     local_path = download(url=url)
     extract(file_path=local_path)
     print("Done download and extracting dataset")
+
+
+# Download latest version
+path = kagglehub.dataset_download("emrahaydemr/gunshot-audio-dataset")
+print("Path to dataset files:", path)

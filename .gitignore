@@ -19,4 +19,3 @@ local.properties
 
 # Python module
 python/.venv
-dataset/*

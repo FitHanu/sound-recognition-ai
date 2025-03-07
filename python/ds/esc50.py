@@ -15,8 +15,9 @@ class ESC50(DataSet):
         super().__init__("esc50")
 
     def download(self):
-        path = kagglehub.dataset_download(self.kaggle_path)
-        return path
+        print(f"kg path: {self.kaggle_path}")
+        ds_abs_path = kagglehub.dataset_download(self.kaggle_path)
+        return ds_abs_path
     
     def init_class_names(self):
         df = pd.read_csv(self.meta_sub_path)
@@ -62,14 +63,14 @@ class ESC50(DataSet):
     
 
 
-# def main():
-#     ds = ESC50()
-#     df = pd.read_csv(ds.meta_sub_path)
-#     print(ds.df) # Columns: [id, file_name, file_path, length, class_id, class_name, sub_ds_name, sub_ds_id]
-#     print(df.columns) # Index(['filename', 'fold', 'target', 'category', 'esc10', 'src_file', 'take'], dtype='object')
+def main():
+    ds = ESC50()
+    df = pd.read_csv(ds.meta_sub_path)
+    print(ds.df) # Columns: [id, file_name, file_path, length, class_id, class_name, sub_ds_name, sub_ds_id]
+    print(df.columns) # Index(['filename', 'fold', 'target', 'category', 'esc10', 'src_file', 'take'], dtype='object')
     
-#     ds.filter_by_class()
+    ds.filter_by_class()
 
     
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
