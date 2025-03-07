@@ -18,7 +18,7 @@ datasets_registry = [
     # TODO: Add more datasets instance here
     ESC50(),
     UrbanSound8K(),
-    BDLib2(),
+    BDLib2()
     GAD(),
 ]
 
