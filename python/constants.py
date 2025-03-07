@@ -1,3 +1,8 @@
+import os
+from pathlib import Path
+import site
+
+
 # default meta column config
 DF_ID_COL = "id"
 DF_NAME_COL = "file_name"
@@ -11,3 +16,14 @@ DF_SUB_DS_ID_COL = "sub_ds_index"
 # Constant when working with class mapping
 CLASS_ID = 0
 CLASS_NAME = 1
+
+
+# Config directory
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PY_PROJECT_ROOT = os.path.join(PROJECT_ROOT, "python")
+SITE_PKG_PATH = site.getsitepackages()[0]
+CONFIG_JSON = os.path.join(PY_PROJECT_ROOT, "config.json")
+DATASET_JSON = os.path.join(PY_PROJECT_ROOT, "datasets.json")
+FULL_META_CSV = os.path.join(PY_PROJECT_ROOT, "ds", "meta", "merged.csv")
+CLASSES_CSV = os.path.join(PY_PROJECT_ROOT, "classes.csv")
+
