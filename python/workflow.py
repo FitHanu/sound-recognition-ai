@@ -3,7 +3,7 @@ The project main function
 """
 import os
 import pandas as pd
-from setup import PROJECT_ROOT
+from constants import PROJECT_ROOT
 from dataset import PD_SCHEMA
 from utils.json_utils import init_default_class_name, append_empty_mapping_to_config
 from utils.file_utils import init_class_folds
