@@ -12,15 +12,16 @@ from utils.dframe_utils import plot_classname_distribution
 from ds.esc50 import ESC50
 from ds.us8k import UrbanSound8K
 from ds.bdlib2 import BDLib2
+from ds.gad import GAD
 
 from logging_cfg import get_logger
 l = get_logger(__name__)
 
 datasets_registry = [
-    # TODO: Add more datasets instance here
     ESC50(),
     UrbanSound8K(),
-    BDLib2()
+    BDLib2(),
+    GAD()
 ]
 
 def main():
