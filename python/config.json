@@ -102,6 +102,17 @@
       "rivers": 0,
       "seawaves": 0,
       "thunders": 8
+    },
+    "gad": {
+      "M16": 0,
+      "Zastava M92": 0,
+      "AK-47": 0,
+      "M4": 0,
+      "M249": 0,
+      "IMI Desert Eagle": 0,
+      "MG-42": 0,
+      "MP5": 0,
+      "AK-12": 0
     }
   }
 }

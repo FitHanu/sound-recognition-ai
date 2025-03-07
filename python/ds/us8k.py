@@ -3,10 +3,11 @@ import os
 import pandas as pd
 import constants as C
 from dataset import DataSet
-from json_utils import get_post_class_mapping
-from wav_utils import get_wav_data_length
-from csv_utils import write_csv_meta
-
+from utils.json_utils import get_post_class_mapping
+from utils.wav_utils import get_wav_data_length
+from utils.csv_utils import write_csv_meta
+from logging_cfg import get_logger
+l = get_logger(__name__)
 
 class UrbanSound8K(DataSet):
     def __init__(self):
@@ -14,7 +15,7 @@ class UrbanSound8K(DataSet):
 
     def download(self):
         """Download dataset using Kaggle API."""
-        print(f"📥 Downloading dataset from: {self.kaggle_path}")
+        l.info(f"📥 Downloading dataset from: {self.kaggle_path}")
         ds_abs_path = kagglehub.dataset_download(self.kaggle_path)
         return ds_abs_path
 
@@ -39,10 +40,10 @@ class UrbanSound8K(DataSet):
         )
 
         # Check if all files exist before proceeding
-        missing_files = self.df[~self.df[C.DF_PATH_COL].apply(os.path.isfile)]
-        if not missing_files.empty:
-            print("⚠️ Warning: Some files do not exist!")
-            print(missing_files[C.DF_PATH_COL])
+        # missing_files = self.df[~self.df[C.DF_PATH_COL].apply(os.path.isfile)]
+        # if not missing_files.empty:
+        #     l.warning("⚠️ Warning: Some files do not exist!")
+        #     l.warning(f"Theres are the missing files: {missing_files.shape[0]}")
 
         # Apply `get_wav_data_length()` only to existing files
         self.df[C.DF_LENGTH_COL] = self.df[C.DF_PATH_COL].apply(
@@ -74,14 +75,14 @@ class UrbanSound8K(DataSet):
         pass
 
 
-def main():
-    ds = UrbanSound8K()
-    df = pd.read_csv(ds.meta_sub_path)
-    print(ds.df)  # Expected columns: [id, file_name, file_path, length, class_id, class_name, sub_ds_name, sub_ds_id]
-    print(df.columns)  # Expected: ['slice_file_name', 'fold', 'classID', 'class', ...]
+# def main():
+#     ds = UrbanSound8K()
+#     df = pd.read_csv(ds.meta_sub_path)
+#     print(ds.df)  # Expected columns: [id, file_name, file_path, length, class_id, class_name, sub_ds_name, sub_ds_id]
+#     print(df.columns)  # Expected: ['slice_file_name', 'fold', 'classID', 'class', ...]
 
-    ds.filter_by_class()
+#     ds.filter_by_class()
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()

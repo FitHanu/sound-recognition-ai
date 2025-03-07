@@ -1,7 +1,8 @@
 from ds.dataset import DataSet
 from utils.csv_utils import write_csv_meta
-from utils.json_utils import append_empty_mapping_to_config, get_post_class_mapping
+from utils.json_utils import get_post_class_mapping
 from utils.wav_utils import get_wav_data_length
+from platformdirs import user_cache_dir
 import constants as C
 import pandas as pd
 import os
@@ -14,7 +15,8 @@ class BDLib2(DataSet):
 
     def __init__(self):
         # Determine the dataset path
-        self.ds_abs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "datasets", "bdlib2"))
+        cache_dir = user_cache_dir()
+        self.ds_abs_path = os.path.join(cache_dir, "datasets", "bdlib2")
 
         # Ensure the directory exists before calling super()
         os.makedirs(self.ds_abs_path, exist_ok=True)

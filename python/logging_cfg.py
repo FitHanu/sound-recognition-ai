@@ -5,11 +5,14 @@ import os
 
 # Define log file location
 from constants import PY_PROJECT_ROOT
-LOG_DIR = "logs"
+LOG_DIR = os.path.join(PY_PROJECT_ROOT, "logs")
 LOG_FILE = os.path.join(PY_PROJECT_ROOT, LOG_DIR, "app.log")
 
-# Ensure log directory exists
+# Init log dir and file
 os.makedirs(LOG_DIR, exist_ok=True)
+with open(LOG_FILE, "w") as f:
+    f.write("Hello, World!")
+
 
 # Logging configuration
 LOGGING_CONFIG = {

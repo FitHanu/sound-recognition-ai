@@ -3,8 +3,9 @@ The project main function
 """
 import os
 import pandas as pd
+import constants as C
 from constants import PROJECT_ROOT
-from dataset import PD_SCHEMA
+from ds.dataset import PD_SCHEMA
 from utils.json_utils import init_default_class_name, append_empty_mapping_to_config
 from utils.file_utils import init_class_folds
 from utils.csv_utils import read_csv_as_dataframe, write_csv_meta
@@ -19,9 +20,9 @@ l = get_logger(__name__)
 
 datasets_registry = [
     ESC50(),
+    GAD(),
     UrbanSound8K(),
     BDLib2(),
-    GAD()
 ]
 
 def main():
@@ -39,7 +40,7 @@ def main():
         append_empty_mapping_to_config(ds, overwrite=False)
         ds.hell_yeah()
         df = read_csv_as_dataframe(ds.get_filtered_meta_path())
-        print(df.shape)
+        l.info(f"\"{ds.key}\" shape after filter: {df.shape}")
         main_df = pd.concat([main_df, df], ignore_index=True)
 
     l.info(f"Done filtering & mapping class names for all datasets")
@@ -48,6 +49,10 @@ def main():
     from constants import FULL_META_CSV
     l.info(f"Writing metafile {FULL_META_CSV}")
     write_csv_meta(main_df, "merged")
+    missing_files = main_df[main_df[C.DF_PATH_COL].apply(os.path.isfile)]
+    l.info(f"Missing files: {missing_files.shape[0]}")
+    missing_files.to_csv(C.PY_PROJECT_ROOT + os.path.sep + "missing_files.csv", index=False)
+    
     plot_classname_distribution(main_df)
     
     #TODO: construct dataset folds for each class_name, normalize file numbers each fold
