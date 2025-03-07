@@ -19,3 +19,5 @@ local.properties
 
 # Python module
 python/.venv
+logs/*
+ds/meta/*
