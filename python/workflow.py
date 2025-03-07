@@ -12,6 +12,9 @@ from utils.dframe_utils import plot_classname_distribution
 from ds.esc50 import ESC50
 from ds.gad import GAD
 
+from logging_cfg import get_logger
+l = get_logger(__name__)
+
 datasets_registry = [
     # TODO: Add more datasets instance here
     ESC50(),
@@ -21,19 +24,25 @@ datasets_registry = [
 def main():
     # Main procedure
     DATASET_PATH_FILTERED = os.path.join(PROJECT_ROOT, "dataset")
+    l.info(f"Creating empty dataset directory to {DATASET_PATH_FILTERED}")
     init_default_class_name()
     init_class_folds(DATASET_PATH_FILTERED)
     main_df = pd.DataFrame(columns=PD_SCHEMA.keys()).astype(PD_SCHEMA)
 
     # Data filtering & class mapping
     for ds in datasets_registry:
+        l.info(f"Filtering & mapping class names for {ds.key}")
         append_empty_mapping_to_config(ds, overwrite=False)
         ds.hell_yeah()
         df = read_csv_as_dataframe(ds.get_filtered_meta_path())
         print(df.shape)
         main_df = pd.concat([main_df, df], ignore_index=True)
 
+    l.info(f"Done filtering & mapping class names for all datasets")
+    l.info(f"Main dataframe shape: {main_df.shape}")
     print(main_df.shape)
+    from constants import FULL_META_CSV
+    l.info(f"Writing metafile {FULL_META_CSV}")
     write_csv_meta(main_df, "merged")
     plot_classname_distribution(main_df)
     

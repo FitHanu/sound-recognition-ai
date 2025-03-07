@@ -3,6 +3,9 @@ from setup import PY_PROJECT_ROOT
 import pandas as pd
 import os
 
+from logging_cfg import get_logger
+l = get_logger(__name__)
+
 # Path to the meta directory
 META_DIR = os.path.join(PY_PROJECT_ROOT, "ds", "meta")
 
@@ -17,17 +20,17 @@ def validate_dataframe(df: pd.DataFrame, schema: dict) -> bool:
     # Check if all required columns exist
     missing_columns = [col for col in schema if col not in df.columns]
     if missing_columns:
-        print(f"Missing columns: {missing_columns}")
+        l.warning(f"Missing columns: {missing_columns}")
         return False
 
     # Check if all columns have the correct data type
     for col, expected_dtype in schema.items():
         actual_dtype = str(df[col].dtype)
         if actual_dtype != expected_dtype:
-            print(f"Column {col} has incorrect type: expected {expected_dtype}, got {actual_dtype}")
+            l.warning(f"Column {col} has incorrect type: expected {expected_dtype}, got {actual_dtype}")
             return False
 
-    print("DataFrame is valid")
+    l.warning("DataFrame is valid")
     return True
 
 
