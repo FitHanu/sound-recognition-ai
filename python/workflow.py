@@ -50,7 +50,7 @@ def main():
     l.info(f"Writing metafile {FULL_META_CSV}")
     write_csv_meta(main_df, "merged")
     missing_files = main_df[main_df[C.DF_PATH_COL].apply(os.path.isfile)]
-    l.info(f"Missing files: {missing_files.shape[0]}")
+    l.warning(f"Missing files: {missing_files.shape[0]}")
     missing_files.to_csv(C.PY_PROJECT_ROOT + os.path.sep + "missing_files.csv", index=False)
     
     plot_classname_distribution(main_df)

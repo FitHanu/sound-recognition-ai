@@ -3,9 +3,8 @@ import os
 import pandas as pd
 from pathlib import Path
 from ds.dataset import DataSet
-import logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-l = logging.getLogger(__name__)
+from logging_cfg import get_logger
+l = get_logger(__name__)
 
 cwd = Path(__file__).resolve().parent.parent
 datasets_file_path = os.path.join(cwd, "datasets.json")
