@@ -18,3 +18,10 @@ def init_class_folds(path: str):
     default_class = get_default_class_mapping()
     for k, _ in default_class.items():
         os.makedirs(os.path.join(path, str(k)), exist_ok=True)
+        
+
+def get_filename_without_extension(file: str) -> str:
+    """
+    Get the filename without extension from the given file path.
+    """
+    return os.path.splitext(os.path.basename(file))[0]

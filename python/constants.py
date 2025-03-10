@@ -24,6 +24,7 @@ PY_PROJECT_ROOT = os.path.join(PROJECT_ROOT, "python")
 SITE_PKG_PATH = site.getsitepackages()[0]
 CONFIG_JSON = os.path.join(PY_PROJECT_ROOT, "config.json")
 DATASET_JSON = os.path.join(PY_PROJECT_ROOT, "datasets.json")
+META_PATH = os.path.join(PY_PROJECT_ROOT, "ds", "meta")
 FULL_META_CSV = os.path.join(PY_PROJECT_ROOT, "ds", "meta", "merged.csv")
 CLASSES_CSV = os.path.join(PY_PROJECT_ROOT, "classes.csv")
 

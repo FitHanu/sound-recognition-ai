@@ -132,7 +132,7 @@ def get_default_class_mapping():
     return default_class
 
 
-def get_config_json():
+def get_config_json() -> dict:
     """
     Get `config.json` content\n
     Returns a `dict` of `config.json`
@@ -140,3 +140,16 @@ def get_config_json():
     with open(config_file_path, "r") as f:
         data = json.load(f)
     return data
+
+def get_config_json(key: str) -> dict:
+    """
+    Get `config.json` content for the given key\n
+    Returns a `dict` of `config.json`
+    """
+    with open(config_file_path, "r") as f:
+        data = json.load(f)
+        try:
+            return data[key]
+        except KeyError:
+            msg = f"No content found in {config_file_path} for key: {key}"
+            raise KeyError(msg)
