@@ -34,6 +34,9 @@ from logging_cfg import get_logger
 l = get_logger(__name__)
 
 class SplitCfg:
+    """_summary_
+    Class storing partition config (train, dev, test, folds) for dataset
+    """
     
     FOLDS: int = 0
 
@@ -67,6 +70,9 @@ class SplitCfg:
         return self.test
     
     def throw_f_not_initialized(self):
+        """
+        Throws ValueError if FOLDS is not initialized
+        """
         if self.FOLDS == 0:
             raise ValueError("SplitCfg.Folds not initialized")
         pass
@@ -114,7 +120,7 @@ def init_cfg() -> SplitCfg:
 
 
 
-def get_median(df: pd.DataFrame) -> int:
+def get_median(df: pd.DataFrame, rtype: type) -> int:
     """_summary_
     Get the median of classnames datapoints
     Args:
@@ -123,9 +129,13 @@ def get_median(df: pd.DataFrame) -> int:
     Returns:
         _type_: _description_
     """
+    if rtype not in [int, float]:
+        raise ValueError("rtype must be either int or float")
     median = df['class_name'].value_counts().median()
-    return int(median)
-
+    if rtype == int:
+        return int(median)
+    else:
+        return float(median)
 
 
 def augment_df(df: pd.DataFrame) -> pd.DataFrame:
@@ -135,7 +145,7 @@ def augment_df(df: pd.DataFrame) -> pd.DataFrame:
         median (int): _description_
     """
     augmented_df = pd.DataFrame()
-    median = get_median(df)
+    median = get_median(df, int)
 
     for _class_name, group in df.groupby('class_name'):
         if len(group) < median:
