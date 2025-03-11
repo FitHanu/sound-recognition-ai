@@ -1,552 +1,552 @@
 file_name,file_path,length,class_id,class_name,sub_ds_name,sub_ds_index
-9 (63).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (63).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,100
-9 (40).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (40).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,101
-9 (59).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (59).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,102
-9 (61).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (61).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,103
-9 (35).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (35).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,104
-9 (6).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (6).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,105
-9 (57).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (57).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,106
-9 (80).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (80).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,107
-9 (47).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (47).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,108
-9 (73).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (73).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,109
-9 (62).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (62).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,110
-9 (7).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (7).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,111
-9 (65).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (65).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,112
-9 (46).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (46).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,113
-9 (55).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (55).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,114
-9 (66).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (66).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,115
-9 (14).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (14).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,116
-9 (56).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (56).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,117
-9 (60).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (60).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,118
-9 (13).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (13).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,119
-9 (42).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (42).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,120
-9 (74).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (74).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,121
-9 (64).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (64).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,122
-9 (1).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (1).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,123
-9 (16).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (16).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,124
-9 (29).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (29).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,125
-9 (27).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (27).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,126
-9 (52).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (52).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,127
-9 (81).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (81).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,128
-9 (72).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (72).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,129
-9 (49).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (49).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,130
-9 (31).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (31).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,131
-9 (33).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (33).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,132
-9 (23).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (23).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,133
-9 (18).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (18).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,134
-9 (37).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (37).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,135
-9 (38).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (38).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,136
-9 (53).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (53).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,137
-9 (76).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (76).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,138
-9 (43).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (43).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,139
-9 (2).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (2).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,140
-9 (25).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (25).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,141
-9 (4).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (4).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,142
-9 (69).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (69).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,143
-9 (54).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (54).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,144
-9 (24).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (24).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,145
-9 (41).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (41).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,146
-9 (70).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (70).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,147
-9 (8).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (8).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,148
-9 (78).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (78).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,149
-9 (11).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (11).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,150
-9 (9).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (9).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,151
-9 (75).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (75).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,152
-9 (45).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (45).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,153
-9 (68).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (68).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,154
-9 (51).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (51).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,155
-9 (36).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (36).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,156
-9 (17).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (17).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,157
-9 (44).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (44).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,158
-9 (50).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (50).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,159
-9 (39).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (39).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,160
-9 (79).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (79).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,161
-9 (77).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (77).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,162
-9 (30).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (30).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,163
-9 (3).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (3).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,164
-9 (22).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (22).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,165
-9 (34).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (34).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,166
-9 (32).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (32).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,167
-9 (5).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (5).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,168
-9 (15).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (15).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,169
-9 (48).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (48).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,170
-9 (10).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (10).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,171
-9 (28).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (28).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,172
-9 (26).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (26).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,173
-9 (21).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (21).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,174
-9 (71).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (71).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,175
-9 (12).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (12).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,176
-9 (82).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (82).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,177
-9 (20).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (20).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,178
-9 (67).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (67).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,179
-9 (58).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (58).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,180
-9 (19).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (19).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,181
-1 (26).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (26).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,182
-1 (6).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (6).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,183
-1 (36).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (36).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,184
-1 (54).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (54).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,185
-1 (17).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (17).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,186
-1 (15).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (15).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,187
-1 (53).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (53).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,188
-1 (14).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (14).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,189
-1 (57).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (57).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,190
-1 (31).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (31).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,191
-1 (40).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (40).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,192
-1 (7).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (7).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,193
-1 (16).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (16).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,194
-1 (18).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (18).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,195
-1 (39).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (39).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,196
-1 (45).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (45).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,197
-1 (29).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (29).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,198
-1 (3).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (3).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,199
-1 (44).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (44).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,200
-1 (67).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (67).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,201
-1 (46).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (46).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,202
-1 (47).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (47).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,203
-1 (37).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (37).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,204
-1 (43).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (43).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,205
-1 (69).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (69).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,206
-1 (20).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (20).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,207
-1 (30).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (30).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,208
-1 (58).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (58).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,209
-1 (71).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (71).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,210
-1 (13).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (13).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,211
-1 (27).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (27).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,212
-1 (38).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (38).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,213
-1 (63).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (63).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,214
-1 (55).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (55).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,215
-1 (70).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (70).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,216
-1 (61).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (61).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,217
-1 (4).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (4).wav,3000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,218
-1 (9).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (9).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,219
-1 (25).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (25).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,220
-1 (12).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (12).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,221
-1 (23).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (23).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,222
-1 (51).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (51).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,223
-1 (21).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (21).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,224
-1 (33).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (33).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,225
-1 (62).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (62).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,226
-1 (1).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (1).wav,3000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,227
-1 (8).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (8).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,228
-1 (48).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (48).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,229
-1 (52).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (52).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,230
-1 (60).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (60).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,231
-1 (64).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (64).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,232
-1 (56).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (56).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,233
-1 (50).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (50).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,234
-1 (42).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (42).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,235
-1 (68).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (68).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,236
-1 (19).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (19).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,237
-1 (24).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (24).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,238
-1 (22).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (22).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,239
-1 (10).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (10).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,240
-1 (72).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (72).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,241
-1 (2).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (2).wav,4000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,242
-1 (66).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (66).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,243
-1 (5).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (5).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,244
-1 (11).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (11).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,245
-1 (35).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (35).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,246
-1 (34).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (34).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,247
-1 (32).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (32).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,248
-1 (59).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (59).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,249
-1 (41).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (41).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,250
-1 (28).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (28).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,251
-1 (49).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (49).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,252
-1 (65).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (65).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,253
-6 (63).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (63).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,354
-6 (15).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (15).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,355
-6 (81).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (81).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,356
-6 (1).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (1).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,357
-6 (46).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (46).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,358
-6 (79).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (79).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,359
-6 (47).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (47).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,360
-6 (23).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (23).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,361
-6 (26).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (26).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,362
-6 (84).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (84).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,363
-6 (27).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (27).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,364
-6 (49).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (49).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,365
-6 (30).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (30).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,366
-6 (43).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (43).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,367
-6 (62).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (62).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,368
-6 (95).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (95).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,369
-6 (80).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (80).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,370
-6 (7).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (7).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,371
-6 (52).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (52).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,372
-6 (56).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (56).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,373
-6 (19).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (19).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,374
-6 (55).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (55).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,375
-6 (94).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (94).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,376
-6 (59).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (59).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,377
-6 (2).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (2).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,378
-6 (22).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (22).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,379
-6 (73).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (73).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,380
-6 (29).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (29).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,381
-6 (37).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (37).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,382
-6 (36).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (36).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,383
-6 (39).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (39).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,384
-6 (17).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (17).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,385
-6 (66).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (66).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,386
-6 (54).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (54).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,387
-6 (9).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (9).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,388
-6 (97).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (97).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,389
-6 (83).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (83).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,390
-6 (41).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (41).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,391
-6 (45).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (45).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,392
-6 (24).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (24).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,393
-6 (8).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (8).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,394
-6 (60).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (60).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,395
-6 (67).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (67).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,396
-6 (53).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (53).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,397
-6 (70).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (70).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,398
-6 (98).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (98).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,399
-6 (4).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (4).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,400
-6 (28).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (28).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,401
-6 (35).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (35).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,402
-6 (68).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (68).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,403
-6 (61).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (61).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,404
-6 (64).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (64).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,405
-6 (69).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (69).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,406
-6 (92).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (92).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,407
-6 (65).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (65).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,408
-6 (75).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (75).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,409
-6 (93).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (93).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,410
-6 (21).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (21).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,411
-6 (32).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (32).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,412
-6 (72).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (72).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,413
-6 (57).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (57).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,414
-6 (14).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (14).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,415
-6 (58).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (58).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,416
-6 (76).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (76).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,417
-6 (85).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (85).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,418
-6 (31).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (31).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,419
-6 (88).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (88).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,420
-6 (82).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (82).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,421
-6 (10).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (10).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,422
-6 (3).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (3).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,423
-6 (42).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (42).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,424
-6 (99).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (99).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,425
-6 (38).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (38).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,426
-6 (74).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (74).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,427
-6 (44).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (44).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,428
-6 (5).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (5).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,429
-6 (77).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (77).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,430
-6 (50).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (50).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,431
-6 (25).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (25).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,432
-6 (87).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (87).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,433
-6 (90).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (90).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,434
-6 (71).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (71).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,435
-6 (51).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (51).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,436
-6 (86).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (86).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,437
-6 (96).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (96).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,438
-6 (18).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (18).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,439
-6 (12).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (12).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,440
-6 (11).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (11).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,441
-6 (91).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (91).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,442
-6 (78).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (78).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,443
-6 (20).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (20).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,444
-6 (40).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (40).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,445
-6 (48).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (48).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,446
-6 (6).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (6).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,447
-6 (13).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (13).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,448
-6 (16).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (16).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,449
-6 (34).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (34).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,450
-6 (33).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (33).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,451
-6 (89).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (89).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,452
-2 (82).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (82).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,453
-2 (18).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (18).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,454
-2 (15).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (15).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,455
-2 (92).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (92).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,456
-2 (31).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (31).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,457
-2 (91).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (91).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,458
-2 (67).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (67).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,459
-2 (64).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (64).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,460
-2 (62).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (62).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,461
-2 (61).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (61).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,462
-2 (33).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (33).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,463
-2 (79).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (79).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,464
-2 (46).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (46).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,465
-2 (71).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (71).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,466
-2 (40).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (40).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,467
-2 (32).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (32).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,468
-2 (49).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (49).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,469
-2 (43).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (43).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,470
-2 (56).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (56).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,471
-2 (6).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (6).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,472
-2 (24).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (24).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,473
-2 (54).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (54).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,474
-2 (8).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (8).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,475
-2 (65).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (65).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,476
-2 (51).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (51).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,477
-2 (90).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (90).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,478
-2 (25).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (25).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,479
-2 (19).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (19).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,480
-2 (70).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (70).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,481
-2 (35).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (35).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,482
-2 (98).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (98).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,483
-2 (52).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (52).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,484
-2 (95).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (95).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,485
-2 (81).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (81).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,486
-2 (34).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (34).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,487
-2 (10).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (10).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,488
-2 (72).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (72).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,489
-2 (5).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (5).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,490
-2 (55).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (55).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,491
-2 (38).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (38).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,492
-2 (12).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (12).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,493
-2 (4).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (4).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,494
-2 (75).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (75).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,495
-2 (42).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (42).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,496
-2 (47).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (47).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,497
-2 (3).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (3).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,498
-2 (77).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (77).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,499
-2 (53).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (53).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,500
-2 (76).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (76).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,501
-2 (89).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (89).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,502
-2 (9).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (9).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,503
-2 (29).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (29).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,504
-2 (84).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (84).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,505
-2 (36).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (36).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,506
-2 (60).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (60).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,507
-2 (28).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (28).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,508
-2 (44).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (44).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,509
-2 (20).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (20).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,510
-2 (97).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (97).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,511
-2 (37).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (37).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,512
-2 (63).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (63).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,513
-2 (58).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (58).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,514
-2 (73).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (73).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,515
-2 (11).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (11).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,516
-2 (80).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (80).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,517
-2 (57).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (57).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,518
-2 (30).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (30).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,519
-2 (99).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (99).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,520
-2 (74).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (74).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,521
-2 (48).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (48).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,522
-2 (2).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (2).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,523
-2 (1).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (1).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,524
-2 (27).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (27).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,525
-2 (50).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (50).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,526
-2 (78).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (78).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,527
-2 (96).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (96).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,528
-2 (45).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (45).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,529
-2 (41).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (41).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,530
-2 (23).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (23).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,531
-2 (86).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (86).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,532
-2 (22).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (22).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,533
-2 (69).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (69).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,534
-2 (7).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (7).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,535
-2 (94).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (94).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,536
-2 (66).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (66).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,537
-2 (85).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (85).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,538
-2 (88).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (88).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,539
-2 (83).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (83).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,540
-2 (14).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (14).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,541
-2 (13).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (13).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,542
-2 (26).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (26).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,543
-2 (100).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (100).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,544
-2 (68).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (68).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,545
-2 (16).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (16).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,546
-2 (39).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (39).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,547
-2 (93).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (93).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,548
-2 (87).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (87).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,549
-2 (21).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (21).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,550
-2 (17).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (17).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,551
-2 (59).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (59).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,552
-7 (74).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (74).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,553
-7 (80).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (80).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,554
-7 (73).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (73).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,555
-7 (70).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (70).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,556
-7 (64).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (64).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,557
-7 (50).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (50).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,558
-7 (1).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (1).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,559
-7 (10).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (10).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,560
-7 (2).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (2).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,561
-7 (13).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (13).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,562
-7 (28).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (28).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,563
-7 (48).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (48).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,564
-7 (6).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (6).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,565
-7 (60).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (60).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,566
-7 (84).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (84).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,567
-7 (37).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (37).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,568
-7 (90).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (90).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,569
-7 (57).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (57).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,570
-7 (40).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (40).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,571
-7 (59).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (59).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,572
-7 (63).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (63).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,573
-7 (20).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (20).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,574
-7 (67).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (67).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,575
-7 (51).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (51).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,576
-7 (52).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (52).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,577
-7 (96).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (96).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,578
-7 (49).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (49).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,579
-7 (32).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (32).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,580
-7 (91).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (91).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,581
-7 (66).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (66).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,582
-7 (45).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (45).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,583
-7 (100).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (100).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,584
-7 (95).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (95).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,585
-7 (29).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (29).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,586
-7 (54).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (54).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,587
-7 (83).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (83).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,588
-7 (33).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (33).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,589
-7 (85).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (85).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,590
-7 (62).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (62).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,591
-7 (22).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (22).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,592
-7 (44).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (44).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,593
-7 (98).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (98).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,594
-7 (4).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (4).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,595
-7 (27).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (27).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,596
-7 (9).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (9).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,597
-7 (56).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (56).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,598
-7 (65).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (65).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,599
-7 (39).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (39).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,600
-7 (89).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (89).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,601
-7 (58).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (58).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,602
-7 (43).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (43).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,603
-7 (11).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (11).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,604
-7 (75).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (75).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,605
-7 (18).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (18).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,606
-7 (15).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (15).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,607
-7 (78).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (78).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,608
-7 (71).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (71).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,609
-7 (82).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (82).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,610
-7 (94).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (94).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,611
-7 (47).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (47).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,612
-7 (38).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (38).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,613
-7 (16).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (16).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,614
-7 (34).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (34).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,615
-7 (92).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (92).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,616
-7 (21).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (21).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,617
-7 (17).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (17).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,618
-7 (3).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (3).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,619
-7 (8).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (8).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,620
-7 (68).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (68).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,621
-7 (76).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (76).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,622
-7 (30).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (30).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,623
-7 (41).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (41).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,624
-7 (86).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (86).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,625
-7 (12).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (12).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,626
-7 (35).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (35).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,627
-7 (69).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (69).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,628
-7 (61).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (61).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,629
-7 (99).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (99).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,630
-7 (36).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (36).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,631
-7 (55).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (55).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,632
-7 (79).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (79).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,633
-7 (14).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (14).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,634
-7 (23).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (23).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,635
-7 (88).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (88).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,636
-7 (97).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (97).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,637
-7 (25).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (25).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,638
-7 (19).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (19).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,639
-7 (93).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (93).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,640
-7 (24).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (24).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,641
-7 (53).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (53).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,642
-7 (31).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (31).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,643
-7 (77).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (77).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,644
-7 (26).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (26).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,645
-7 (42).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (42).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,646
-7 (81).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (81).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,647
-7 (72).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (72).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,648
-7 (5).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (5).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,649
-7 (7).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (7).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,650
-7 (46).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (46).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,651
-7 (87).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (87).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,652
-3 (3).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (3).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,753
-3 (91).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (91).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,754
-3 (23).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (23).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,755
-3 (81).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (81).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,756
-3 (87).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (87).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,757
-3 (45).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (45).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,758
-3 (13).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (13).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,759
-3 (56).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (56).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,760
-3 (43).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (43).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,761
-3 (17).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (17).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,762
-3 (26).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (26).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,763
-3 (25).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (25).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,764
-3 (73).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (73).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,765
-3 (52).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (52).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,766
-3 (38).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (38).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,767
-3 (9).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (9).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,768
-3 (76).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (76).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,769
-3 (53).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (53).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,770
-3 (29).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (29).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,771
-3 (63).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (63).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,772
-3 (21).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (21).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,773
-3 (75).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (75).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,774
-3 (49).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (49).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,775
-3 (74).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (74).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,776
-3 (48).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (48).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,777
-3 (34).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (34).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,778
-3 (90).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (90).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,779
-3 (82).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (82).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,780
-3 (94).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (94).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,781
-3 (62).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (62).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,782
-3 (67).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (67).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,783
-3 (68).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (68).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,784
-3 (51).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (51).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,785
-3 (50).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (50).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,786
-3 (40).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (40).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,787
-3 (30).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (30).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,788
-3 (86).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (86).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,789
-3 (78).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (78).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,790
-3 (44).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (44).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,791
-3 (97).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (97).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,792
-3 (36).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (36).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,793
-3 (24).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (24).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,794
-3 (93).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (93).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,795
-3 (77).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (77).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,796
-3 (6).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (6).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,797
-3 (4).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (4).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,798
-3 (98).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (98).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,799
-3 (28).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (28).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,800
-3 (71).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (71).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,801
-3 (59).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (59).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,802
-3 (84).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (84).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,803
-3 (69).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (69).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,804
-3 (10).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (10).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,805
-3 (7).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (7).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,806
-3 (8).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (8).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,807
-3 (20).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (20).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,808
-3 (96).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (96).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,809
-3 (35).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (35).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,810
-3 (85).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (85).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,811
-3 (65).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (65).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,812
-3 (83).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (83).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,813
-3 (41).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (41).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,814
-3 (31).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (31).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,815
-3 (58).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (58).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,816
-3 (88).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (88).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,817
-3 (80).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (80).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,818
-3 (70).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (70).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,819
-3 (1).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (1).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,820
-3 (54).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (54).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,821
-3 (19).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (19).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,822
-3 (37).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (37).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,823
-3 (14).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (14).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,824
-3 (5).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (5).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,825
-3 (11).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (11).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,826
-3 (64).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (64).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,827
-3 (15).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (15).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,828
-3 (79).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (79).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,829
-3 (72).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (72).wav,320000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,830
-3 (60).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (60).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,831
-3 (39).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (39).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,832
-3 (42).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (42).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,833
-3 (33).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (33).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,834
-3 (22).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (22).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,835
-3 (57).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (57).wav,360000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,836
-3 (92).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (92).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,837
-3 (12).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (12).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,838
-3 (27).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (27).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,839
-3 (89).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (89).wav,305000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,840
-3 (46).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (46).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,841
-3 (16).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (16).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,842
-3 (95).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (95).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,843
-3 (66).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (66).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,844
-3 (55).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (55).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,845
-3 (61).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (61).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,846
-3 (2).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (2).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,847
-3 (18).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (18).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,848
-3 (32).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (32).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,849
-3 (47).wav,/home/codespace/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (47).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,850
+9 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (80).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,0
+9 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (36).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,1
+9 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (44).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,2
+9 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (74).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,3
+9 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (46).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,4
+9 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (14).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,5
+9 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (47).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,6
+9 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (28).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,7
+9 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (19).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,8
+9 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (38).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,9
+9 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (12).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,10
+9 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (64).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,11
+9 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (81).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,12
+9 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (13).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,13
+9 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (1).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,14
+9 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (60).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,15
+9 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (22).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,16
+9 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (33).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,17
+9 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (77).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,18
+9 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (63).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,19
+9 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (59).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,20
+9 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (26).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,21
+9 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (8).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,22
+9 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (35).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,23
+9 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (30).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,24
+9 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (23).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,25
+9 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (53).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,26
+9 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (73).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,27
+9 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (24).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,28
+9 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (2).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,29
+9 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (71).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,30
+9 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (45).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,31
+9 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (20).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,32
+9 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (18).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,33
+9 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (70).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,34
+9 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (7).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,35
+9 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (39).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,36
+9 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (76).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,37
+9 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (3).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,38
+9 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (65).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,39
+9 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (40).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,40
+9 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (54).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,41
+9 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (67).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,42
+9 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (75).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,43
+9 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (6).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,44
+9 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (55).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,45
+9 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (58).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,46
+9 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (11).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,47
+9 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (5).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,48
+9 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (9).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,49
+9 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (72).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,50
+9 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (56).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,51
+9 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (82).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,52
+9 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (79).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,53
+9 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (43).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,54
+9 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (25).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,55
+9 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (37).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,56
+9 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (41).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,57
+9 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (27).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,58
+9 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (78).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,59
+9 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (57).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,60
+9 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (61).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,61
+9 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (66).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,62
+9 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (68).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,63
+9 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (29).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,64
+9 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (48).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,65
+9 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (21).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,66
+9 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (32).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,67
+9 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (4).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,68
+9 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (15).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,69
+9 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (51).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,70
+9 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (69).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,71
+9 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (17).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,72
+9 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (62).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,73
+9 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (10).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,74
+9 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (50).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,75
+9 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (49).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,76
+9 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (42).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,77
+9 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (34).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,78
+9 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (16).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,79
+9 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (31).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,80
+9 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (52).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,81
+3 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (52).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,82
+3 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (65).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,83
+3 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (17).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,84
+3 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (23).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,85
+3 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (11).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,86
+3 (94).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (94).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,87
+3 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (8).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,88
+3 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (26).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,89
+3 (95).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (95).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,90
+3 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (55).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,91
+3 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (2).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,92
+3 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (75).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,93
+3 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (38).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,94
+3 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (1).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,95
+3 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (82).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,96
+3 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (35).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,97
+3 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (18).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,98
+3 (83).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (83).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,99
+3 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (27).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,100
+3 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (78).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,101
+3 (85).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (85).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,102
+3 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (37).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,103
+3 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (80).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,104
+3 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (25).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,105
+3 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (4).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,106
+3 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (7).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,107
+3 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (71).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,108
+3 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (44).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,109
+3 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (9).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,110
+3 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (76).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,111
+3 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (54).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,112
+3 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (24).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,113
+3 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (56).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,114
+3 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (64).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,115
+3 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (58).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,116
+3 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (70).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,117
+3 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (14).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,118
+3 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (67).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,119
+3 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (40).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,120
+3 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (41).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,121
+3 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (28).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,122
+3 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (77).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,123
+3 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (19).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,124
+3 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (68).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,125
+3 (87).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (87).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,126
+3 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (60).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,127
+3 (93).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (93).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,128
+3 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (20).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,129
+3 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (57).wav,360000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,130
+3 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (73).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,131
+3 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (49).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,132
+3 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (45).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,133
+3 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (81).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,134
+3 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (74).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,135
+3 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (31).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,136
+3 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (62).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,137
+3 (91).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (91).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,138
+3 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (46).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,139
+3 (96).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (96).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,140
+3 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (36).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,141
+3 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (16).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,142
+3 (90).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (90).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,143
+3 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (13).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,144
+3 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (10).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,145
+3 (86).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (86).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,146
+3 (97).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (97).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,147
+3 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (29).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,148
+3 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (22).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,149
+3 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (48).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,150
+3 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (32).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,151
+3 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (15).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,152
+3 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (69).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,153
+3 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (6).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,154
+3 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (53).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,155
+3 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (50).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,156
+3 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (51).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,157
+3 (89).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (89).wav,305000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,158
+3 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (79).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,159
+3 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (39).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,160
+3 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (3).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,161
+3 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (21).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,162
+3 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (12).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,163
+3 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (5).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,164
+3 (92).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (92).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,165
+3 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (33).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,166
+3 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (66).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,167
+3 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (63).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,168
+3 (98).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (98).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,169
+3 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (30).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,170
+3 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (42).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,171
+3 (88).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (88).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,172
+3 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (59).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,173
+3 (84).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (84).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,174
+3 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (47).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,175
+3 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (34).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,176
+3 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (43).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,177
+3 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (72).wav,320000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,178
+3 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (61).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,179
+2 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (67).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,280
+2 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (19).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,281
+2 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (74).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,282
+2 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (22).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,283
+2 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (53).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,284
+2 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (82).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,285
+2 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (52).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,286
+2 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (40).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,287
+2 (95).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (95).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,288
+2 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (80).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,289
+2 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (34).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,290
+2 (87).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (87).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,291
+2 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (59).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,292
+2 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (70).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,293
+2 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (73).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,294
+2 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (38).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,295
+2 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (68).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,296
+2 (98).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (98).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,297
+2 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (35).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,298
+2 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (14).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,299
+2 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (66).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,300
+2 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (42).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,301
+2 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (71).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,302
+2 (84).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (84).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,303
+2 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (16).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,304
+2 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (36).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,305
+2 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (79).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,306
+2 (92).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (92).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,307
+2 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (51).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,308
+2 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (39).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,309
+2 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (3).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,310
+2 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (72).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,311
+2 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (26).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,312
+2 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (18).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,313
+2 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (45).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,314
+2 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (63).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,315
+2 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (17).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,316
+2 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (5).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,317
+2 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (23).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,318
+2 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (65).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,319
+2 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (60).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,320
+2 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (78).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,321
+2 (88).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (88).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,322
+2 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (49).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,323
+2 (89).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (89).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,324
+2 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (2).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,325
+2 (96).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (96).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,326
+2 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (6).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,327
+2 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (29).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,328
+2 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (43).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,329
+2 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (9).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,330
+2 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (44).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,331
+2 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (30).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,332
+2 (91).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (91).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,333
+2 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (12).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,334
+2 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (1).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,335
+2 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (7).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,336
+2 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (33).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,337
+2 (93).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (93).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,338
+2 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (4).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,339
+2 (90).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (90).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,340
+2 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (57).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,341
+2 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (58).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,342
+2 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (77).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,343
+2 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (69).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,344
+2 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (15).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,345
+2 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (32).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,346
+2 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (47).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,347
+2 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (11).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,348
+2 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (37).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,349
+2 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (31).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,350
+2 (94).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (94).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,351
+2 (85).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (85).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,352
+2 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (48).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,353
+2 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (64).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,354
+2 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (46).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,355
+2 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (10).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,356
+2 (100).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (100).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,357
+2 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (24).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,358
+2 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (75).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,359
+2 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (8).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,360
+2 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (56).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,361
+2 (97).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (97).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,362
+2 (99).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (99).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,363
+2 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (50).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,364
+2 (86).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (86).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,365
+2 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (13).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,366
+2 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (27).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,367
+2 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (25).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,368
+2 (83).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (83).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,369
+2 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (61).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,370
+2 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (62).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,371
+2 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (28).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,372
+2 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (54).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,373
+2 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (21).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,374
+2 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (55).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,375
+2 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (20).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,376
+2 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (81).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,377
+2 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (41).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,378
+2 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (76).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,379
+7 (90).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (90).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,480
+7 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (73).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,481
+7 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (68).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,482
+7 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (57).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,483
+7 (96).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (96).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,484
+7 (87).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (87).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,485
+7 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (79).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,486
+7 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (80).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,487
+7 (99).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (99).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,488
+7 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (5).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,489
+7 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (72).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,490
+7 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (37).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,491
+7 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (28).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,492
+7 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (6).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,493
+7 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (35).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,494
+7 (91).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (91).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,495
+7 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (41).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,496
+7 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (21).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,497
+7 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (34).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,498
+7 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (29).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,499
+7 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (11).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,500
+7 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (71).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,501
+7 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (52).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,502
+7 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (20).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,503
+7 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (75).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,504
+7 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (40).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,505
+7 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (55).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,506
+7 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (26).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,507
+7 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (13).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,508
+7 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (33).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,509
+7 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (10).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,510
+7 (85).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (85).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,511
+7 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (67).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,512
+7 (94).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (94).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,513
+7 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (63).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,514
+7 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (15).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,515
+7 (88).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (88).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,516
+7 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (61).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,517
+7 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (82).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,518
+7 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (76).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,519
+7 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (59).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,520
+7 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (38).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,521
+7 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (45).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,522
+7 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (60).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,523
+7 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (77).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,524
+7 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (42).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,525
+7 (89).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (89).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,526
+7 (98).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (98).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,527
+7 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (27).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,528
+7 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (50).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,529
+7 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (8).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,530
+7 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (53).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,531
+7 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (2).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,532
+7 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (24).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,533
+7 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (36).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,534
+7 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (74).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,535
+7 (84).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (84).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,536
+7 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (14).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,537
+7 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (3).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,538
+7 (97).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (97).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,539
+7 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (47).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,540
+7 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (19).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,541
+7 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (64).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,542
+7 (93).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (93).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,543
+7 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (81).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,544
+7 (95).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (95).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,545
+7 (100).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (100).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,546
+7 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (70).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,547
+7 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (23).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,548
+7 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (1).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,549
+7 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (54).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,550
+7 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (48).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,551
+7 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (44).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,552
+7 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (51).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,553
+7 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (46).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,554
+7 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (39).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,555
+7 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (12).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,556
+7 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (30).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,557
+7 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (7).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,558
+7 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (65).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,559
+7 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (62).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,560
+7 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (25).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,561
+7 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (22).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,562
+7 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (18).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,563
+7 (86).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (86).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,564
+7 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (9).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,565
+7 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (78).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,566
+7 (92).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (92).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,567
+7 (83).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (83).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,568
+7 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (16).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,569
+7 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (31).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,570
+7 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (66).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,571
+7 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (56).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,572
+7 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (4).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,573
+7 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (32).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,574
+7 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (43).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,575
+7 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (49).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,576
+7 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (58).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,577
+7 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (17).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,578
+7 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (69).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,579
+6 (90).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (90).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,580
+6 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (36).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,581
+6 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (5).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,582
+6 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (67).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,583
+6 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (8).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,584
+6 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (40).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,585
+6 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (47).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,586
+6 (85).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (85).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,587
+6 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (33).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,588
+6 (94).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (94).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,589
+6 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (52).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,590
+6 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (76).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,591
+6 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (39).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,592
+6 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (29).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,593
+6 (99).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (99).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,594
+6 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (1).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,595
+6 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (28).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,596
+6 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (79).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,597
+6 (91).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (91).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,598
+6 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (46).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,599
+6 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (37).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,600
+6 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (70).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,601
+6 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (74).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,602
+6 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (26).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,603
+6 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (58).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,604
+6 (86).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (86).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,605
+6 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (62).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,606
+6 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (54).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,607
+6 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (18).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,608
+6 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (81).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,609
+6 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (12).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,610
+6 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (41).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,611
+6 (84).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (84).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,612
+6 (89).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (89).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,613
+6 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (77).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,614
+6 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (32).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,615
+6 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (6).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,616
+6 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (42).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,617
+6 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (17).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,618
+6 (96).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (96).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,619
+6 (97).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (97).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,620
+6 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (65).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,621
+6 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (11).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,622
+6 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (23).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,623
+6 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (73).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,624
+6 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (48).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,625
+6 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (25).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,626
+6 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (3).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,627
+6 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (66).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,628
+6 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (20).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,629
+6 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (64).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,630
+6 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (22).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,631
+6 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (53).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,632
+6 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (43).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,633
+6 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (82).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,634
+6 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (13).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,635
+6 (92).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (92).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,636
+6 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (31).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,637
+6 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (59).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,638
+6 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (34).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,639
+6 (88).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (88).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,640
+6 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (78).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,641
+6 (95).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (95).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,642
+6 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (38).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,643
+6 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (15).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,644
+6 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (44).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,645
+6 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (4).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,646
+6 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (35).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,647
+6 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (49).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,648
+6 (87).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (87).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,649
+6 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (63).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,650
+6 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (61).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,651
+6 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (2).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,652
+6 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (80).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,653
+6 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (50).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,654
+6 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (7).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,655
+6 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (14).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,656
+6 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (19).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,657
+6 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (68).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,658
+6 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (51).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,659
+6 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (21).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,660
+6 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (69).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,661
+6 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (55).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,662
+6 (93).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (93).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,663
+6 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (24).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,664
+6 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (75).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,665
+6 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (27).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,666
+6 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (45).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,667
+6 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (71).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,668
+6 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (16).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,669
+6 (98).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (98).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,670
+6 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (10).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,671
+6 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (30).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,672
+6 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (60).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,673
+6 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (72).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,674
+6 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (57).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,675
+6 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (56).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,676
+6 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (9).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,677
+6 (83).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (83).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,678
+1 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (56).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,679
+1 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (13).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,680
+1 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (28).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,681
+1 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (16).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,682
+1 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (45).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,683
+1 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (33).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,684
+1 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (26).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,685
+1 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (71).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,686
+1 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (29).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,687
+1 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (21).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,688
+1 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (14).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,689
+1 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (20).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,690
+1 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (5).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,691
+1 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (41).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,692
+1 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (64).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,693
+1 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (25).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,694
+1 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (6).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,695
+1 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (7).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,696
+1 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (49).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,697
+1 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (15).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,698
+1 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (66).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,699
+1 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (1).wav,3000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,700
+1 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (53).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,701
+1 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (35).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,702
+1 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (18).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,703
+1 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (17).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,704
+1 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (32).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,705
+1 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (43).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,706
+1 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (60).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,707
+1 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (52).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,708
+1 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (37).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,709
+1 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (58).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,710
+1 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (22).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,711
+1 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (55).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,712
+1 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (72).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,713
+1 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (63).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,714
+1 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (24).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,715
+1 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (23).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,716
+1 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (34).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,717
+1 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (65).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,718
+1 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (19).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,719
+1 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (38).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,720
+1 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (39).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,721
+1 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (11).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,722
+1 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (27).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,723
+1 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (59).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,724
+1 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (46).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,725
+1 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (8).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,726
+1 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (61).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,727
+1 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (44).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,728
+1 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (10).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,729
+1 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (4).wav,3000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,730
+1 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (50).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,731
+1 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (54).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,732
+1 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (57).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,733
+1 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (69).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,734
+1 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (47).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,735
+1 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (67).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,736
+1 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (9).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,737
+1 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (70).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,738
+1 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (31).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,739
+1 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (42).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,740
+1 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (62).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,741
+1 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (12).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,742
+1 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (36).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,743
+1 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (30).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,744
+1 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (40).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,745
+1 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (2).wav,4000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,746
+1 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (51).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,747
+1 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (48).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,748
+1 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (3).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,749
+1 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (68).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,750

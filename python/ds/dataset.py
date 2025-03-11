@@ -145,7 +145,8 @@ class DataSet(abc.ABC):
         """
         Main flow/ life cycle :v of the dataset processing
         """
-        self.download()
+        
+        # self.download() # Dataset already downloaded in __init__
         self.filter_by_class()
         self.normalize()
         self.create_meta()

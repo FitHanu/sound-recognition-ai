@@ -9,7 +9,7 @@ from ds.dataset import PD_SCHEMA
 from utils.json_utils import init_default_class_name, append_empty_mapping_to_config
 from utils.file_utils import init_class_folds, get_filename_without_extension
 from utils.csv_utils import read_csv_as_dataframe, write_csv_meta
-from utils.dframe_utils import plot_classname_distribution
+from utils.dframe_utils import plot_classname_distribution, copy_update_dataset_file
 from partition.split_tdt import split_tdt, init_cfg
 from ds.esc50 import ESC50
 from ds.us8k import UrbanSound8K
@@ -66,8 +66,9 @@ def workflow():
     
     # Count missing files after filtering
     missing_files = main_df[main_df[C.DF_PATH_COL].apply(os.path.isfile)]
-    l.warning(f"Missing files: {missing_files.shape[0]}")
-    missing_files.to_csv(C.PY_PROJECT_ROOT + os.path.sep + "missing_files.csv", index=False)
+    if (missing_files.shape[0] > 0):
+        l.warning(f"Missing files: {missing_files.shape[0]}")
+        missing_files.to_csv(C.PY_PROJECT_ROOT + os.path.sep + "missing_files.csv", index=False)
     
     # Plot class name distribution
     # plot_classname_distribution(main_df)
@@ -80,13 +81,27 @@ def workflow():
     # Split
     aug_k_df = split_tdt(main_df, cfg)
     
+    # Move to filtered dataset path
+    """
+    Dataset path structure:
+    dataset/
+        meta.csv
+        audio/
+            file1.wav
+            file2.wav
+            ...
+    """
+    l.info(f"Moving files from final dataset to {DATASET_PATH_FILTERED}")
+    AUDIO_PATH = os.path.join(DATASET_PATH_FILTERED, "audio")
+    os.makedirs(AUDIO_PATH, exist_ok=True)
+    aug_k_df = copy_update_dataset_file(aug_k_df, AUDIO_PATH)
+    
     # Save augmented dataframe to .csv
     org_filename = get_filename_without_extension(FULL_META_CSV)
     aug_filename = f"{org_filename}.augmented.folded.csv"
-    from constants import META_PATH
-    aug_filepath = os.path.join(META_PATH, aug_filename)
-    l.info(f"Spliting done, saving to {aug_filepath}")
-    aug_k_df.to_csv(aug_filepath, index=False)
+    final_meta = os.path.join(DATASET_PATH_FILTERED, aug_filename)
+    l.info(f"Datasets processing done, saving meta file to {final_meta}")
+    aug_k_df.to_csv(final_meta, index=False)
     
     
 

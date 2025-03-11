@@ -1,9 +1,9 @@
 from json_utils import get_default_class_mapping
-import os
 import subprocess
 import zipfile
 import uuid
 from platformdirs import user_cache_dir
+import os
 
 def is_path(path: str) -> bool:
     """
@@ -29,11 +29,17 @@ def get_filename_without_extension(file: str) -> str:
     """
     return os.path.splitext(os.path.basename(file))[0]
 
-
 def remove_extensions(file_name):
     names = file_name.split(".")
     return names[0]
 
+def get_filename_from_path(file_path: str) -> str:
+    """
+    Get the filename from the given file path.
+    """
+    if not os.path.isfile(file_path):
+        raise FileNotFoundError(f"File not found: {file_path}")
+    return os.path.basename(file_path)
 
 def extract(file_path, output_path=".") -> None:
     print(f"Extract {file_path} to {output_path}")

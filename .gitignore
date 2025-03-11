@@ -19,3 +19,6 @@ local.properties
 
 # Python module
 python/.venv
+
+# raw dataset
+dataset

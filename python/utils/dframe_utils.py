@@ -1,6 +1,9 @@
-import pandas as pd
 import matplotlib.pyplot as plt
 import constants as C
+import os
+import pandas as pd
+import shutil
+from utils.file_utils import get_filename_from_path
 
 
 def plot_classname_distribution(df: pd.DataFrame):
@@ -24,3 +27,28 @@ def plot_classname_distribution(df: pd.DataFrame):
 
     # Show the plot
     plt.show()
+
+def copy_update_dataset_file(df: pd.DataFrame, dest_path: str) -> pd.DataFrame:
+    """
+    Copy dataset files from df to the given path\n
+    Then, return a copy of the DataFrame with updated file paths.
+    """
+    cp_df = df.copy()
+    os.makedirs(dest_path, exist_ok=True)
+    shutil.rmtree(dest_path)
+    os.makedirs(dest_path, exist_ok=True)
+    
+    # Copy files
+    new_paths = []
+    for old_path in cp_df["file_path"]:
+        try:
+            org_filename = get_filename_from_path(old_path)
+            new_file_path = os.path.join(dest_path, org_filename)
+            shutil.copy2(old_path, new_file_path)
+            new_paths.append(new_file_path)
+        except FileNotFoundError:
+            new_paths.append("FILE_NOT_FOUND")
+
+    # Update paths
+    cp_df["file_path"] = new_paths
+    return cp_df
