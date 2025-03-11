@@ -26,10 +26,11 @@
       "16": "FOOTSTEPS",
       "17": "FIRE",
       "18": "RAIN",
-      "19": "DOOR_KNOCK"
+      "19": "DOOR_KNOCK",
+      "20": "DOG_BARK"
     },
     "esc50": {
-      "dog": 0,
+      "dog": 20,
       "chirping_birds": 0,
       "vacuum_cleaner": 0,
       "thunderstorm": 8,
@@ -84,7 +85,7 @@
       "air_conditioner": 0,
       "car_horn": 2,
       "children_playing": 0,
-      "dog_bark": 0,
+      "dog_bark": 20,
       "drilling": 0,
       "engine_idling": 0,
       "gun_shot": 0,
@@ -97,7 +98,7 @@
       "alarms": 15,
       "applause": 0,
       "birds": 0,
-      "dogs": 0,
+      "dogs": 20,
       "motorcycles": 0,
       "rain": 18,
       "rivers": 0,
@@ -106,14 +107,14 @@
     },
     "gad": {
       "M16": 0,
-      "Zastava M92": 0,
-      "AK-47": 0,
+      "Zastava M92": 5,
+      "AK-47": 5,
       "M4": 0,
-      "M249": 0,
-      "IMI Desert Eagle": 0,
-      "MG-42": 0,
+      "M249": 6,
+      "IMI Desert Eagle": 4,
+      "MG-42": 6,
       "MP5": 0,
-      "AK-12": 0
+      "AK-12": 5
     }
   }
 }

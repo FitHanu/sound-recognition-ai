@@ -93,8 +93,8 @@ class GAD(DataSet):
     
 # def main():
 #     ds = GAD()
-#     append_empty_mapping_to_config(ds, overwrite=False)
 #     ds.hell_yeah()
-
+#     print(ds.df.head(10)) # Columns: [id, file_name, file_path, length, class_id, class_name, sub_ds_name, sub_ds_id]
+    
 # if __name__ == "__main__":
 #     main()
