@@ -180,6 +180,6 @@ cython_debug/
 # Project specifics
 test.py
 test/test.py
-ds/meta/*
+# ds/meta/*
 logs/*
 missing_files.csv
