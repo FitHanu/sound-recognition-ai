@@ -3,6 +3,7 @@ import os
 import subprocess
 import zipfile
 import uuid
+from platformdirs import user_cache_dir
 
 def is_path(path: str) -> bool:
     """
@@ -66,3 +67,17 @@ def download(url, file_path=".", file_name=None) -> None:
     print(f"Done downloading, file name: {local_filepath}")
 
     return local_filepath
+
+
+def clean_user_cache_dir():
+    """
+    Clean user cache dir \n
+    In this context
+    remove all cached downloaded dataset contents 
+    """
+    cache_dir = user_cache_dir()
+    try:
+        subprocess.run(["rm", "-rf", cache_dir])
+        return cache_dir
+    except Exception as e:
+        raise e
