@@ -48,13 +48,13 @@ def workflow():
         
         # Call ds life cycle methods
         ds.hell_yeah()
-        
+        l.info(f"Dataset: \"{ds.name}\" saved to {ds.ds_abs_path}")
         # Read filtered metafile
         df = read_csv_as_dataframe(ds.get_filtered_meta_path())
         
         # Append to main dataframe
-        l.info(f"\"{ds.key}\" shape after filter: {df.shape}")
         main_df = pd.concat([main_df, df], ignore_index=True)
+        l.info(f"main_df shape after filter: {main_df.shape}")
 
     l.info(f"Done filtering & mapping class names for all datasets")
     l.info(f"Main dataframe shape: {main_df.shape}")
