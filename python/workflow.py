@@ -26,8 +26,8 @@ def workflow():
     datasets_registry = [
         ESC50(),
         GAD(),
-        UrbanSound8K(),
-        BDLib2(),
+        UrbanSound8K()
+        # BDLib2(),
     ]
     
     # Init paths, Default class names
