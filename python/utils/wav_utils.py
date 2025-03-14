@@ -9,10 +9,10 @@ class InvalidArgument(Exception):
 def get_wav_data_length(file_path: str) -> float:
     # Validate file path
     if not os.path.isfile(file_path):
-        raise InvalidArgument("The provided path is not a valid file.")
+        raise InvalidArgument(f"The provided path is not a valid file: {file_path}")
     # Validate file type
     if not file_path.lower().endswith('.wav'):
-        raise InvalidArgument("The provided file is not a WAV file.")
+        raise InvalidArgument(f"The provided file is not a WAV file: {file_path}")
     
     # Read WAV file and calculate length in milliseconds
     try:

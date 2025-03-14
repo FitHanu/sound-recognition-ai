@@ -87,3 +87,12 @@ def clean_user_cache_dir():
         return cache_dir
     except Exception as e:
         raise e
+    
+
+def init_folds(final_path: str, fold_num: int) -> None:
+    """
+    Initialize fold directories to final dataset path
+    """
+    for i in range(fold_num):
+        f_path = os.path.join(final_path, str(i))
+        os.makedirs(f_path, exist_ok=True) 

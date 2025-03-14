@@ -58,7 +58,6 @@ class GAD(DataSet):
         # Eliminate classes not in class_map
         df_filtered = df[df["category"].isin(class_map.keys())]
         df = df_filtered
-        print(df.head(10))
         
         # # Map filtered dataframe to self.df with the right schema
         # # self.df[C.DF_ID_COL] = range(len(df))

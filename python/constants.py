@@ -27,4 +27,4 @@ DATASET_JSON = os.path.join(PY_PROJECT_ROOT, "datasets.json")
 META_PATH = os.path.join(PY_PROJECT_ROOT, "ds", "meta")
 FULL_META_CSV = os.path.join(PY_PROJECT_ROOT, "ds", "meta", "merged.csv")
 CLASSES_CSV = os.path.join(PY_PROJECT_ROOT, "classes.csv")
-
+FINAL_DATASET_PATH = os.path.join(PROJECT_ROOT, "dataset")
