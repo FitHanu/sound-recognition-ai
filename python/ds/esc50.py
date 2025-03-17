@@ -1,4 +1,3 @@
-import kagglehub
 import os
 import pandas as pd
 import constants as C
@@ -30,7 +29,7 @@ class ESC50(DataSet):
         df = pd.read_csv(self.get_paths().get_meta_path())
         self.class_names = df["category"].unique()
 
-    def filter_by_class(self):
+    def filter_by_class(self) -> pd.DataFrame:
         meta_path = self.get_paths().get_meta_path()
         audio_path = self.get_paths().get_data_path()
         # Load and filter the original meta file
@@ -69,12 +68,11 @@ class ESC50(DataSet):
     def get_filtered_meta_path(self):
         return self.filtered_meta_path
 
-    def move_files(self):
-        """
-        Currently no need to move files, planned datasets would not be stotage comsuming after extracted  
-        """
-        pass
-    
+    # def move_files(self):
+    #     """
+    #     Currently no need to move files, planned datasets would not be stotage comsuming after extracted  
+    #     """
+    #     pass
 
 
 def main():

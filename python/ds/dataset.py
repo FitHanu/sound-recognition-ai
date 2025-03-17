@@ -4,10 +4,12 @@ import pandas as pd
 import constants as C
 from pathlib import Path
 from typing import final
-from utils.file_utils import init_folds
 from utils.json_utils import get_config_json
 import shutil
 import kagglehub
+from logging_cfg import get_logger
+import uuid
+l = get_logger(__name__)
 
 """
 Default Schema for each dataset meta file/ pandas DataFrame
@@ -68,6 +70,7 @@ class DataSet(abc.ABC):
     THIS_SCRIPT_PATH = Path(__file__).resolve().parent.parent
     DEFAULT_CLASSNAME_PATH = os.path.join(THIS_SCRIPT_PATH, "classes.csv")
     DEFAULT_CLASSNAMES_DF = pd.read_csv(DEFAULT_CLASSNAME_PATH)
+    NEW_PATH_COL = "new_path"
     
     """
     "FILTERED_DATASET_PATH": Our full dataset (filtered) path
@@ -84,6 +87,7 @@ class DataSet(abc.ABC):
     def __init__(self, key: str):
 
         from utils.json_utils import get_dataset_info
+
         info = get_dataset_info(key)
         self.json_meta = info
         self.key = info["key"]
@@ -155,11 +159,29 @@ class DataSet(abc.ABC):
         
     
     @abc.abstractmethod
-    def normalize(self):
+    def normalize(self) -> pd.DataFrame:
         """
-        - Normalize the dataset by renaming the audio files to the default class name
+        - Normalize the dataset\n
+        - Rename all filtered files to format: `f"{uuid.uuid4()}.wav"`\n
+        - Called after `filter_by_class()`
         """
-        pass
+        df = self.df.copy()
+        print(df)
+        audio_path = self.ds_paths.get_data_path()
+        sample_row = df.iloc[0]
+        def rename_to_uuid(row):
+            if os.path.isfile(row[C.DF_PATH_COL]):
+                new_name = f"{uuid.uuid4()}.wav"
+                new_path = os.path.join(audio_path, new_name)
+                os.rename(row[C.DF_PATH_COL], new_path)
+                row[C.DF_PATH_COL] = new_path
+                return row
+            else:
+                raise FileNotFoundError(f"File not found: {row[C.DF_PATH_COL]}")
+        
+        print(rename_to_uuid(sample_row))
+        df = df.apply(rename_to_uuid, axis=1)
+        return df
     
     @abc.abstractmethod
     def create_meta(self) -> str:
@@ -169,20 +191,36 @@ class DataSet(abc.ABC):
         meta_path_after_create = ""
         return meta_path_after_create
     
-    @abc.abstractmethod
-    def move_files(self):
+    # @abc.abstractmethod
+    def move_files(self) -> pd.DataFrame:
         """
-        - Move files from the dataset to the target directory
+        - Move files from the dataset to the target directory\n
+        - Kaggle datasets are downloaded to `user cache directory` by default -> need to move to the final dataset path\n
         - The target directory is defined in the config.json
         """
         target_path = C.FINAL_DATASET_PATH
-        self.df.apply["new_path"] = self.df.apply(lambda row: os.path.join(target_path, row[C.DF_NAME_COL]), axis=1)
-        self.df.apply(lambda row: shutil.copy(row[C.DF_PATH_COL], row["new_path"]), axis=1)
-        missin = self.df[self.df["new_path"].apply(lambda x: not os.path.isfile(x))]
-        if(len(missin) > 0):
-            print(f"Missing {len(missin)} files for ds: {self.key}")
-        
-            
+        os.makedirs(target_path, exist_ok=True)
+        df = self.df.copy()
+        df["new_path"] = df.apply(lambda row: os.path.join(target_path, row[C.DF_NAME_COL]), axis=1)
+        df.apply(lambda row: shutil.copy(row[C.DF_PATH_COL], row["new_path"]), axis=1)
+        df[C.DF_PATH_COL] = df["new_path"]
+        df.drop(columns=["new_path"], inplace=True)
+        return df
+    
+    @final
+    def ensure_files(self) -> bool:
+        """
+        - Ensure all files in the dataset are available/n
+        Final method, should not be overriden to ensure files in dataset are available
+        """
+        exist_files = self.df[self.df[C.DF_PATH_COL].apply(lambda x: os.path.isfile(x))]
+        missing_no = len(self.df) - len(exist_files)
+        if(missing_no > 0):
+            l.error(f"Missing {missing_no} files for ds: {self.key}")
+            return False
+        else:
+            return True
+
     @final
     def get_paths(self):
         """
@@ -191,7 +229,7 @@ class DataSet(abc.ABC):
         try:
             return self.ds_paths
         except AttributeError:
-            raise AttributeError("Call hell_yeah() first to get the dataset paths")
+            raise AttributeError("Call `hell_yeah()` first to get the dataset paths")
     
     @final
     def hell_yeah(self):
@@ -201,16 +239,25 @@ class DataSet(abc.ABC):
         # Download and init paths
         ds_paths = self.download()
         self.ds_paths = ds_paths
-
+        
         # Init class names (Might not neccessary)
         self.init_class_names()
         
         # Filter by class map from config.json
-        df = self.filter_by_class()
-        self.df = df
-        # self.normalize()
+        self.df = self.filter_by_class()
         
+        # Normalize the dataset (Optional)
+        self.df = self.normalize()
+        print(self.df)
+        
+        # Move files to the final dataset path
+        m_df = self.move_files()
+        self.df = m_df
+        
+        # Ensure all files are available
+        if not self.ensure_files():
+            raise FileNotFoundError("Missing files for dataset")
+        
+        # Create meta file
         filtered_meta_path = self.create_meta()
         self.filtered_meta_path = filtered_meta_path
-        # self.move_files()
-    

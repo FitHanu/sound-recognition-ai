@@ -2,7 +2,6 @@ import json
 import os
 import pandas as pd
 from pathlib import Path
-from ds.dataset import DataSet
 from logging_cfg import get_logger
 l = get_logger(__name__)
 
@@ -28,11 +27,16 @@ def get_dataset_info(key: str):
             "data_path": obj["data_path"]
         }
         
-def append_empty_mapping_to_config(ds: DataSet, overwrite: bool = False):
+def append_empty_mapping_to_config(ds, overwrite: bool = False):
     """
     Append empty class mapping to `config.json`. Should be called with `overwrite=False`\n
     Unless you want to reset the class mapping to remap manually
     """
+    
+    from ds.dataset import DataSet
+    if not isinstance(ds, DataSet):
+        raise TypeError("ds must be an instance of ds.DataSet")
+    
     l.info(f"Writing config to {config_file_path}, Overiding: {overwrite}")
     parent_property = "class_mapping"
     ds_key = ds.get_key()
@@ -76,6 +80,7 @@ def init_default_class_name():
     """
     Initialize default class names to `config.json`
     """
+    from ds.dataset import DataSet
     parent_property = "class_mapping"
     default_cn_property = "default"
     df = pd.read_csv(DataSet.DEFAULT_CLASSNAME_PATH)

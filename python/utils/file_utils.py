@@ -95,4 +95,4 @@ def init_folds(final_path: str, fold_num: int) -> None:
     """
     for i in range(fold_num):
         f_path = os.path.join(final_path, str(i))
-        os.makedirs(f_path, exist_ok=True) 
+        os.makedirs(f_path, exist_ok=True)
