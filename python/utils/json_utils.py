@@ -3,13 +3,18 @@ import os
 import pandas as pd
 from pathlib import Path
 from logging_cfg import get_logger
+
 l = get_logger(__name__)
 
 cwd = Path(__file__).resolve().parent.parent
 datasets_file_path = os.path.join(cwd, "datasets.json")
 config_file_path = os.path.join(cwd, "config.json")
 
+
 def get_dataset_info(key: str):
+    """
+    Get dataset meta from `datasets.json` based on the key
+    """
     with open(datasets_file_path) as f:
         data = json.load(f)
         try:
@@ -18,25 +23,27 @@ def get_dataset_info(key: str):
             msg = f"No dataset found in {datasets_file_path} for key: {key}"
             raise KeyError(msg)
         return {
-            "key": key,
-            "name": obj["name"],
-            "format": obj["format"],
-            "kaggle_path": obj["kaggle_path"],
-            "url": obj["url"],
-            "csv_meta_path": obj["csv_meta_path"],
-            "data_path": obj["data_path"]
+            "key":            key,
+            "name":           obj["name"],
+            "format":         obj["format"],
+            "kaggle_path":    obj["kaggle_path"],
+            "url":            obj["url"],
+            "csv_meta_path":  obj["csv_meta_path"],
+            "data_path":      obj["data_path"],
         }
-        
+
+
 def append_empty_mapping_to_config(ds, overwrite: bool = False):
     """
     Append empty class mapping to `config.json`. Should be called with `overwrite=False`\n
     Unless you want to reset the class mapping to remap manually
     """
-    
+
     from ds.dataset import DataSet
+
     if not isinstance(ds, DataSet):
         raise TypeError("ds must be an instance of ds.DataSet")
-    
+
     l.info(f"Writing config to {config_file_path}, Overiding: {overwrite}")
     parent_property = "class_mapping"
     ds_key = ds.get_key()
@@ -57,15 +64,20 @@ def append_empty_mapping_to_config(ds, overwrite: bool = False):
             data[parent_property] = {}
         else:
             if not is_key_empty() and overwrite == False:
-                l.warning(f"Overwrite is set to off but {ds_key} is already exists. Skipping ...")
+                l.warning(
+                    f"Overwrite is set to off but {ds_key} is already exists. Skipping ..."
+                )
                 return
         data[parent_property][ds_key] = {}
         l.info(f"Appending empty classes to config.{parent_property}.{ds_key} ...")
         """
-        Append empty class1: "",
-                     class2: "",
-                     ...
-        for dataset class mapping manually
+        Append empty 
+        "ds_key": {
+            class1: "",
+            class2: "",
+            ...
+        }
+        template for manual dataset class mapping
         """
         column = ds.class_names
         for label in column:
@@ -73,14 +85,17 @@ def append_empty_mapping_to_config(ds, overwrite: bool = False):
                 data[parent_property][ds_key][label] = 0
     with open(config_file_path, "w") as file:
         json.dump(data, file, indent=2)
-    l.info(f"Appended {column.size} empty classes to config.{parent_property}.{ds_key}.")
-        
+    l.info(
+        f"Appended {column.size} empty classes to config.{parent_property}.{ds_key}."
+    )
+
 
 def init_default_class_name():
     """
     Initialize default class names to `config.json`
     """
     from ds.dataset import DataSet
+
     parent_property = "class_mapping"
     default_cn_property = "default"
     df = pd.read_csv(DataSet.DEFAULT_CLASSNAME_PATH)
@@ -91,7 +106,9 @@ def init_default_class_name():
             data[parent_property][default_cn_property][row["id"]] = row["class_name"]
     with open(config_file_path, "w") as file:
         json.dump(data, file, indent=2)
-    l.info(f"default class names written to config.{parent_property}.{default_cn_property}")
+    l.info(
+        f"default class names written to config.{parent_property}.{default_cn_property}"
+    )
 
 
 def get_post_class_mapping(key: str):
@@ -116,12 +133,13 @@ def get_post_class_mapping(key: str):
         except Exception as e:
             l.error(e)
             raise e
-    
+
     for k, v in dataset_class_map.items():
         if v != 0:
             result[k] = [v, default_class[v]]
 
     return result
+
 
 def get_default_class_mapping():
     """
@@ -142,7 +160,7 @@ def get_config_json(key: str = None) -> dict:
     Get `config.json` content for the given key\n
     Returns a `dict` of `config.json`
     """
-    is_key = key != None and key != "" 
+    is_key = key != None and key != ""
     with open(config_file_path, "r") as f:
         data = json.load(f)
         if is_key:

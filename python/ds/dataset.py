@@ -193,11 +193,13 @@ class DataSet(abc.ABC):
     
     # @abc.abstractmethod
     def move_files(self) -> pd.DataFrame:
+        
         """
         - Move files from the dataset to the target directory\n
         - Kaggle datasets are downloaded to `user cache directory` by default -> need to move to the final dataset path\n
         - The target directory is defined in the config.json
         """
+        
         target_path = C.FINAL_DATASET_PATH
         os.makedirs(target_path, exist_ok=True)
         df = self.df.copy()
@@ -248,7 +250,6 @@ class DataSet(abc.ABC):
         
         # Normalize the dataset (Optional)
         self.df = self.normalize()
-        print(self.df)
         
         # Move files to the final dataset path
         m_df = self.move_files()
