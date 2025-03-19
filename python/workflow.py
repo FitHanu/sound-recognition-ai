@@ -30,7 +30,7 @@ def workflow():
         ESC50(),
         GAD(),
         UrbanSound8K(),
-        # BDLib2(),
+        BDLib2(),
     ]
 
     # Init paths, Default class names
