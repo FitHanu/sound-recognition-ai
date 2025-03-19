@@ -8,15 +8,22 @@ import pandas as pd
 import os
 
 class GAD(DataSet):
-    """_summary_
-        Gunshot Audio Dataset
+
     """
+    Gunshot Audio Dataset
+    """
+
     def __init__(self):
         super().__init__("gad")
 
     def download(self):
+        from dataset import DsPaths
         ds_abs_path = kagglehub.dataset_download(self.kaggle_path)
-        return ds_abs_path
+        # No meta file
+        meta_rel_path = ""
+        data_rel_path = ""
+        ds_paths = DsPaths(ds_abs_path, meta_rel_path, data_rel_path)
+        return ds_paths
     
     def init_class_names(self):
         """_summary_

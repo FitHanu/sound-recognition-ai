@@ -6,7 +6,7 @@ import site
 # default meta column config
 DF_ID_COL = "id"
 DF_NAME_COL = "file_name"
-DF_PATH_COL = "file_path"
+DF_PATH_COL = "system_file_path"
 DF_LENGTH_COL = "length"
 DF_CLASS_ID_COL = "class_id"
 DF_CLASS_NAME_COL = "class_name"

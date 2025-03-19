@@ -3,12 +3,12 @@ import os
 import pandas as pd
 import constants as C
 from pathlib import Path
-from typing import final
+from typing import final, Optional, List
+from dataclasses import dataclass
 from utils.json_utils import get_config_json
 import shutil
 import kagglehub
 from logging_cfg import get_logger
-import uuid
 l = get_logger(__name__)
 
 """
@@ -32,6 +32,40 @@ PD_SCHEMA = {
     # ID in the original dataset
     C.DF_SUB_DS_ID_COL: "string", 
 }
+
+@dataclass
+class DsMeta:
+    key: str
+    name: str
+    format: str
+    kaggle_path: Optional[str] = None
+    url: Optional[str] = None
+    csv_meta_path: Optional[List[str]] = None
+    data_path: Optional[List[str]] = None
+    
+    @staticmethod
+    def load_from_json(dataset_key: str) -> Optional["DsMeta"]:
+        
+        """
+        Loads a dataset metadata from `datasets.json` on ds key.
+        """
+        
+        from utils.json_utils import get_dataset_info
+        raw_meta = get_dataset_info(dataset_key)
+        return DsMeta(**raw_meta)  # Unpack dictionary into DsMeta fields
+    
+    def has_csv_meta(self) -> bool:
+        return self.csv_meta_path is not None and self.csv_meta_path != []
+
+
+# dataset = DsMeta(
+#     name="ESC-50",
+#     format="kaggle",
+#     kaggle_path="mmoreaux/environmental-sound-classification-50",
+#     url="https://www.kaggle.com/datasets/mmoreaux/environmental-sound-classification-50",
+#     csv_meta_path=["esc50.csv"],
+#     data_path=["audio", "audio"]
+# )
 
 class DsPaths:
     """
@@ -158,29 +192,31 @@ class DataSet(abc.ABC):
         return df
         
     
-    @abc.abstractmethod
+    # @abc.abstractmethod
     def normalize(self) -> pd.DataFrame:
         """
         - Normalize the dataset\n
-        - Rename all filtered files to format: `f"{uuid.uuid4()}.wav"`\n
+        - Rename all filtered files to ds file format: \n
+        `f"{row[C.class_name]}_{self.key}_{row[C.DF_SUB_DS_ID_COL]}.wav"`\n
         - Called after `filter_by_class()`
         """
         df = self.df.copy()
-        print(df)
         audio_path = self.ds_paths.get_data_path()
-        sample_row = df.iloc[0]
-        def rename_to_uuid(row):
+        def rename_to_format(row):
+            """
+            Rename to normalized format
+            """
             if os.path.isfile(row[C.DF_PATH_COL]):
-                new_name = f"{uuid.uuid4()}.wav"
+                new_name = f"{row[C.DF_CLASS_NAME_COL]}_{self.key}_{row[C.DF_SUB_DS_ID_COL]}.wav"
                 new_path = os.path.join(audio_path, new_name)
                 os.rename(row[C.DF_PATH_COL], new_path)
+                row[C.DF_NAME_COL] = new_name
                 row[C.DF_PATH_COL] = new_path
                 return row
             else:
                 raise FileNotFoundError(f"File not found: {row[C.DF_PATH_COL]}")
         
-        print(rename_to_uuid(sample_row))
-        df = df.apply(rename_to_uuid, axis=1)
+        df = df.apply(rename_to_format, axis=1)
         return df
     
     @abc.abstractmethod
@@ -203,6 +239,8 @@ class DataSet(abc.ABC):
         target_path = C.FINAL_DATASET_PATH
         os.makedirs(target_path, exist_ok=True)
         df = self.df.copy()
+        
+        # Create temp column to store new path
         df["new_path"] = df.apply(lambda row: os.path.join(target_path, row[C.DF_NAME_COL]), axis=1)
         df.apply(lambda row: shutil.copy(row[C.DF_PATH_COL], row["new_path"]), axis=1)
         df[C.DF_PATH_COL] = df["new_path"]
@@ -262,3 +300,13 @@ class DataSet(abc.ABC):
         # Create meta file
         filtered_meta_path = self.create_meta()
         self.filtered_meta_path = filtered_meta_path
+
+
+
+def main():
+    ds_meta = DsMeta.load_from_json("us8k")
+    print(ds_meta)
+    print(ds_meta.has_csv_meta())
+
+if __name__ == "__main__":
+    main()

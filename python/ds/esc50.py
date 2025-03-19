@@ -5,25 +5,12 @@ from dataset import DataSet
 from utils.json_utils import get_post_class_mapping
 from utils.wav_utils import get_wav_data_length
 from utils.csv_utils import write_csv_meta
-# from concurrent.futures import ProcessPoolExecutor
 
 
 
 class ESC50(DataSet):
     def __init__(self):
         super().__init__("esc50")
-
-    # def download(self):
-    #     ds_abs_path = kagglehub.dataset_download(self.kaggle_path)
-        
-    #     meta_rel_path = self.json_meta["csv_meta_path"]
-    #     meta_rel_path = os.path.join(*meta_rel_path)
-        
-    #     data_rel_path = self.json_meta["data_path"]
-    #     data_rel_path = os.path.join(*data_rel_path)
-        
-    #     ds_paths = DataSetPaths(ds_abs_path, meta_rel_path, data_rel_path)
-    #     return ds_abs_path
 
     def init_class_names(self):
         df = pd.read_csv(self.get_paths().get_meta_path())
@@ -53,12 +40,6 @@ class ESC50(DataSet):
         
         return final_df
 
-    def normalize(self):
-        """
-        Currently not implemented
-        """
-        pass
-
     def create_meta(self):
         df = pd.read_csv(self.get_paths().get_meta_path())
         path = write_csv_meta(self.df, self.key + ".filtered")
@@ -68,20 +49,20 @@ class ESC50(DataSet):
     def get_filtered_meta_path(self):
         return self.filtered_meta_path
 
-    # def move_files(self):
-    #     """
-    #     Currently no need to move files, planned datasets would not be stotage comsuming after extracted  
-    #     """
-    #     pass
-
-
 def main():
-    ds = ESC50()
-    ds.hell_yeah()
-    df = pd.read_csv(ds.get_paths().get_meta_path())
-    print(ds.df) # Columns: [id, file_name, file_path, length, class_id, class_name, sub_ds_name, sub_ds_id]
-    print(df.columns) # Index(['filename', 'fold', 'target', 'category', 'esc10', 'src_file', 'take'], dtype='object')
+    # ds = ESC50()
+    # ds.hell_yeah()
+    # df = pd.read_csv(ds.get_paths().get_meta_path())
+    # print(ds.df) # Columns: [id, file_name, file_path, length, class_id, class_name, sub_ds_name, sub_ds_id]
+    # print(df.columns) # Index(['filename', 'fold', 'target', 'category', 'esc10', 'src_file', 'take'], dtype='object')
 
-    
+    # Set the directory path
+    directory = C.FINAL_DATASET_PATH
+    print(len(os.listdir(directory)))
+    df = pd.read_csv(os.path.join(C.META_PATH, "esc50.filtered.csv"))
+    print(df.shape)
+
+
+
 if __name__ == "__main__":
     main()
