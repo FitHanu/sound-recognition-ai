@@ -218,7 +218,7 @@ class DataSet(abc.ABC):
         return df
     
     # @abc.abstractmethod
-    def create_meta(self):
+    def create_meta(self) -> str:
         from utils.csv_utils import write_csv_meta
         df = pd.read_csv(self.get_paths().get_meta_path())
         path = write_csv_meta(self.df, self.key + ".filtered")
