@@ -1,7 +1,7 @@
 from ds.dataset import DataSet
 from utils.csv_utils import write_csv_meta
 from utils.json_utils import get_post_class_mapping
-from utils.wav_utils import get_wav_data_length
+from utils.wav_utils import get_wave_data_length_2
 from platformdirs import user_cache_dir
 import constants as C
 import pandas as pd
@@ -16,51 +16,43 @@ class BDLib2(DataSet):
     def __init__(self):
         # Determine the dataset path
         cache_dir = user_cache_dir()
-        self.ds_abs_path = os.path.join(cache_dir, "datasets", "bdlib2")
-
-        # Ensure the directory exists before calling super()
-        os.makedirs(self.ds_abs_path, exist_ok=True)
-
+        self.tmp_ds_abs_path = os.path.join(cache_dir, "datasets", "bdlib2")
+        os.makedirs(self.tmp_ds_abs_path, exist_ok=True)
         super().__init__("bdlib2")
 
     def download(self):
         zip_url = "https://research.playcompass.com/files/BDLib-2.zip"
-        zip_path = os.path.join(self.ds_abs_path, "BDLib2.zip")
-        extract_path = os.path.join(self.ds_abs_path, "BDLib2")
+        zip_path = os.path.join(self.tmp_ds_abs_path, "BDLib2.zip")
 
         # Ensure the directory exists before downloading the file
-        os.makedirs(self.ds_abs_path, exist_ok=True)
+        os.makedirs(self.tmp_ds_abs_path, exist_ok=True)
 
         # Download the ZIP file if it does not exist
         if not os.path.exists(zip_path):
-            print(f"📥 Downloading BDLib2 dataset from {zip_url}...")
             response = requests.get(zip_url, stream=True)
             with open(zip_path, "wb") as f:
                 for chunk in response.iter_content(chunk_size=8192):
                     f.write(chunk)
 
-        # Download the ZIP file if it does not exist
-        if not os.path.exists(extract_path):
-            print("📂 Extracting BDLib2 dataset...")
-            with zipfile.ZipFile(zip_path, "r") as zip_ref:
-                zip_ref.extractall(self.ds_abs_path)
+        with zipfile.ZipFile(zip_path, "r") as zip_ref:
+            zip_ref.extractall(self.tmp_ds_abs_path)
 
-        return extract_path 
+        from dataset import DsPaths
+        extracted_path = self.tmp_ds_abs_path
+        self.tmp_ds_abs_path = None
+        return DsPaths(extracted_path, "", "")
 
     def init_class_names(self):
         """Create a class list from the directory"""
-        if not os.path.exists(self.ds_abs_path):
-            self.download()  
         columns = ["idx", "filename", "filepath", "category"]
         original_ds_df = pd.DataFrame(columns=columns)
         index = 0
 
         valid_classes = set(get_post_class_mapping(self.key).keys())
-
         for fold in ["fold-1", "fold-2", "fold-3"]:
-            sub_f_path = os.path.join(self.ds_abs_path, fold)
+            sub_f_path = os.path.join(self.get_paths().get_dir(), fold)
             if not os.path.exists(sub_f_path):
-                continue  # Skip if the directory does not exist
+                continue 
 
             for f in os.listdir(sub_f_path):
                 if f.endswith(".wav"):
@@ -81,39 +73,40 @@ class BDLib2(DataSet):
                     original_ds_df.loc[len(original_ds_df)] = [index, file_name, file_path, category]
                     index += 1
 
-        # Create meta `.csv` file
         path = write_csv_meta(original_ds_df, self.key + ".original")
-        self.meta_sub_path = path
+        self.ds_paths.set_meta_path(path)
+        self.original_ds_df = original_ds_df
 
     def filter_by_class(self):
         """Filter data by class mapping"""
-        df = pd.read_csv(self.meta_sub_path)
+        df = self.original_ds_df
         class_map = get_post_class_mapping(self.key)
-        df_filtered = df[df["category"].isin(class_map)]
-        df = df_filtered
+        df = df[df["category"].isin(class_map)]
+        from ds.dataset import PD_SCHEMA
+        df_filtered = pd.DataFrame(columns=PD_SCHEMA.keys()).astype(PD_SCHEMA)
 
-        self.df[C.DF_NAME_COL] = df["filename"]
-        self.df[C.DF_PATH_COL] = df["filepath"].apply(lambda fp: os.path.join(self.ds_abs_path, fp))
-        self.df[C.DF_LENGTH_COL] = self.df[C.DF_PATH_COL].apply(get_wav_data_length)
-        self.df[C.DF_CLASS_ID_COL] = df["category"].apply(lambda original_classname: class_map[original_classname][C.CLASS_ID])
-        self.df[C.DF_CLASS_NAME_COL] = df["category"].apply(lambda original_classname: class_map[original_classname][C.CLASS_NAME])
-        self.df[C.DF_SUB_DS_NAME_COL] = self.name
-        self.df[C.DF_SUB_DS_ID_COL] = df.index
+        df_filtered[C.DF_NAME_COL] = df["filename"]
+        df_filtered[C.DF_PATH_COL] = df["filepath"].apply(
+            lambda fp: os.path.join(self.ds_paths.get_dir(), fp))
+        df_filtered[C.DF_CLASS_ID_COL] = df["category"].apply(
+            lambda original_classname: class_map[original_classname][C.CLASS_ID])
+        df_filtered[C.DF_CLASS_NAME_COL] = df["category"].apply(
+            lambda original_classname: class_map[original_classname][C.CLASS_NAME])
+        df_filtered[C.DF_SUB_DS_NAME_COL] = self.name
+        df_filtered[C.DF_SUB_DS_ID_COL] = df.index
+        
+        # init length
+        df_filtered = df_filtered.apply(
+            lambda x: get_wave_data_length_2(x),
+            axis=1
+        )
+        return df_filtered
+    
+def main():
+    ds = BDLib2()
+    ds.hell_yeah()
+    print(ds.df.head(10))
 
-    def normalize(self):
-        """Not implemented yet"""
-        pass
 
-    def create_meta(self):
-        """Create the filtered meta file"""
-        df = pd.read_csv(self.meta_sub_path)
-        path = write_csv_meta(self.df, self.key + ".filtered")
-        _ = write_csv_meta(df, self.key + ".original")
-        self.filtered_meta_path = path
-
-    def get_filtered_meta_path(self):
-        return self.filtered_meta_path
-
-    def move_files(self):
-        """No need to move files"""
-        pass
+if __name__ == "__main__":
+    main()

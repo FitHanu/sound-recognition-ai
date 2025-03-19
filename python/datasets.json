@@ -5,7 +5,7 @@
         "kaggle_path": "chrisfilo/urbansound8k",
         "url": "https://www.kaggle.com/datasets/chrisfilo/urbansound8k",
         "csv_meta_path": ["UrbanSound8K.csv"],
-        "data_path": ["audio"]
+        "data_path": []
     },
     "esc50": {
         "name": "ESC-50",

@@ -2,6 +2,7 @@ import os
 import wave
 import tensorflow as tf
 import tensorflow_io as tfio
+import pandas as pd
 
 class InvalidArgument(Exception):
     pass
@@ -21,9 +22,25 @@ def get_wav_data_length(file_path: str) -> float:
             rate = wav_file.getframerate()
             duration = frames / float(rate)
             return duration * 1000  # Convert to milliseconds
-    except wave.Error as e:
-        raise InvalidArgument(f"Error reading WAV file: {e}")
-    
+    except Exception as e:
+        print(f"Error processing WAV file: {file_path}, error: {e}")
+        raise e
+
+
+def get_wave_data_length_2(row: pd.Series) -> float:
+    """
+    For large and possibly falsy dataset, `return -1` for defect .wav file for further processing
+    """
+    # Validate file path
+    import constants as C
+    try:
+        file_length = get_wav_data_length(row[C.DF_PATH_COL])
+        row[C.DF_LENGTH_COL] = file_length
+    except Exception:
+        row[C.DF_LENGTH_COL] = -1
+    return row
+
+
 @tf.function
 def load_wav_16k_mono(filename):
     """ Load a WAV file, convert it to a float tensor, resample to 16 kHz single-channel audio. """

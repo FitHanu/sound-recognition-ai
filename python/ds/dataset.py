@@ -135,11 +135,11 @@ class DataSet(abc.ABC):
     def get_key(self):
         return self.key
 
-    @abc.abstractmethod  
     def get_filtered_meta_path(self):
-        """
-        After filter & create meta
-        """
+        try:
+            return self.filtered_meta_path
+        except AttributeError:
+            raise AttributeError("Call `hell_yeah()` first to get the filtered meta path")
 
     def __str__(self):
         return (f"DataSet(\n"
@@ -163,7 +163,11 @@ class DataSet(abc.ABC):
         pass
 
     def download(self) -> DsPaths:
-        
+        """
+        Download the dataset if `self.format` is "kaggle"\n
+        - Else format must be overriden, or it would raise this shit: `NotImplementedError`\n
+        Returns a `dataset.DsPaths` object.
+        """
         if self.format == "kaggle":
             
             ds_abs_path = kagglehub.dataset_download(self.kaggle_path)
@@ -194,46 +198,44 @@ class DataSet(abc.ABC):
     
     # @abc.abstractmethod
     def normalize(self) -> pd.DataFrame:
+
         """
-        - Normalize the dataset\n
-        - Rename all filtered files to ds file format: \n
-        `f"{row[C.class_name]}_{self.key}_{row[C.DF_SUB_DS_ID_COL]}.wav"`\n
-        - Called after `filter_by_class()`
+        #### Normalize the dataset file names\n
+        - Call after `filter_by_class()`
+        - Verify original file existance, throws `FileNotFoundError`\n
+        - rename `C.DF_NAME_COL` with format: \n
+        `f"{row[C.DF_CLASS_NAME_COL]}_{self.key}_{row[C.DF_SUB_DS_ID_COL]}.wav"`\n
         """
+
         df = self.df.copy()
-        audio_path = self.ds_paths.get_data_path()
-        def rename_to_format(row):
+        def create_new_name(row):
             """
             Rename to normalized format
             """
             if os.path.isfile(row[C.DF_PATH_COL]):
                 new_name = f"{row[C.DF_CLASS_NAME_COL]}_{self.key}_{row[C.DF_SUB_DS_ID_COL]}.wav"
-                new_path = os.path.join(audio_path, new_name)
-                os.rename(row[C.DF_PATH_COL], new_path)
                 row[C.DF_NAME_COL] = new_name
-                row[C.DF_PATH_COL] = new_path
                 return row
             else:
                 raise FileNotFoundError(f"File not found: {row[C.DF_PATH_COL]}")
         
-        df = df.apply(rename_to_format, axis=1)
+        df = df.apply(create_new_name, axis=1)
         return df
     
-    @abc.abstractmethod
-    def create_meta(self) -> str:
-        """
-        - Create a new meta file for the dataset with "PD_SCHEMA" defined above
-        """
-        meta_path_after_create = ""
-        return meta_path_after_create
+    # @abc.abstractmethod
+    def create_meta(self):
+        from utils.csv_utils import write_csv_meta
+        df = pd.read_csv(self.get_paths().get_meta_path())
+        path = write_csv_meta(self.df, self.key + ".filtered")
+        _ = write_csv_meta(df, self.key + ".original")
+        return path
     
     # @abc.abstractmethod
-    def move_files(self) -> pd.DataFrame:
+    def copy_files(self) -> pd.DataFrame:
         
         """
-        - Move files from the dataset to the target directory\n
-        - Kaggle datasets are downloaded to `user cache directory` by default -> need to move to the final dataset path\n
-        - The target directory is defined in the config.json
+        #### Copy files of original dataset from `user_cache_dir` to `C.FINAL_DATASET_PATH`
+        - Call after `normalize()`\n
         """
         
         target_path = C.FINAL_DATASET_PATH
@@ -245,13 +247,15 @@ class DataSet(abc.ABC):
         df.apply(lambda row: shutil.copy(row[C.DF_PATH_COL], row["new_path"]), axis=1)
         df[C.DF_PATH_COL] = df["new_path"]
         df.drop(columns=["new_path"], inplace=True)
+
         return df
     
     @final
     def ensure_files(self) -> bool:
         """
-        - Ensure all files in the dataset are available/n
-        Final method, should not be overriden to ensure files in dataset are available
+        #### Ensure availability of all files of the dataset inside final path.
+        - Call after `copy_files()`
+        - Final method, should not be overriden to ensure files in dataset are available
         """
         exist_files = self.df[self.df[C.DF_PATH_COL].apply(lambda x: os.path.isfile(x))]
         missing_no = len(self.df) - len(exist_files)
@@ -262,9 +266,10 @@ class DataSet(abc.ABC):
             return True
 
     @final
-    def get_paths(self):
+    def get_paths(self) -> DsPaths:
         """
-        Callable after `hell_yeah()`
+        #### Get dataset paths, type: `dataset.DsPaths`
+        - Callable after `download()`
         """
         try:
             return self.ds_paths
@@ -272,9 +277,9 @@ class DataSet(abc.ABC):
             raise AttributeError("Call `hell_yeah()` first to get the dataset paths")
     
     @final
-    def hell_yeah(self):
+    def hell_yeah(self, ditch_cache: bool = False):
         """
-        Main flow/ life cycle :v of the dataset processing
+        Processing flows of datasets, `@final` should not change/ override this\n
         """
         # Download and init paths
         ds_paths = self.download()
@@ -290,16 +295,20 @@ class DataSet(abc.ABC):
         self.df = self.normalize()
         
         # Move files to the final dataset path
-        m_df = self.move_files()
+        m_df = self.copy_files()
         self.df = m_df
         
         # Ensure all files are available
         if not self.ensure_files():
-            raise FileNotFoundError("Missing files for dataset")
+            raise FileNotFoundError(f"Missing data files for dataset: {self.key} after processing")
         
         # Create meta file
         filtered_meta_path = self.create_meta()
         self.filtered_meta_path = filtered_meta_path
+        
+        if ditch_cache:
+            l.info(f"ditch_cache = True, removing {self.ds_paths.get_dir()}")
+            shutil.rmtree(self.ds_paths.get_dir())
 
 
 

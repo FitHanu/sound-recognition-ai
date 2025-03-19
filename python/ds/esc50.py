@@ -3,7 +3,7 @@ import pandas as pd
 import constants as C
 from dataset import DataSet
 from utils.json_utils import get_post_class_mapping
-from utils.wav_utils import get_wav_data_length
+from utils.wav_utils import get_wave_data_length_2
 from utils.csv_utils import write_csv_meta
 
 
@@ -32,11 +32,14 @@ class ESC50(DataSet):
         # self.df[C.DF_ID_COL] = range(len(df))
         final_df[C.DF_NAME_COL] = df["filename"]
         final_df[C.DF_PATH_COL] = df["filename"].apply(lambda filename: os.path.join(audio_path, filename))
-        final_df[C.DF_LENGTH_COL] = final_df[C.DF_PATH_COL].apply(get_wav_data_length)
         final_df[C.DF_CLASS_ID_COL] = df["category"].apply(lambda original_classname: class_map[original_classname][C.CLASS_ID])
         final_df[C.DF_CLASS_NAME_COL] = df["category"].apply(lambda original_classname: class_map[original_classname][C.CLASS_NAME])
         final_df[C.DF_SUB_DS_NAME_COL] = self.name
         final_df[C.DF_SUB_DS_ID_COL] = df.index
+        
+        
+        # Get length
+        df_filtered = df_filtered.apply(get_wave_data_length_2, axis=1)
         
         return final_df
 
@@ -45,9 +48,7 @@ class ESC50(DataSet):
         path = write_csv_meta(self.df, self.key + ".filtered")
         _ = write_csv_meta(df, self.key + ".original")
         return path
-    
-    def get_filtered_meta_path(self):
-        return self.filtered_meta_path
+
 
 def main():
     # ds = ESC50()

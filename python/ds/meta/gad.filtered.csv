@@ -1,552 +1,552 @@
 file_name,file_path,length,class_id,class_name,sub_ds_name,sub_ds_index
-9 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (80).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,0
-9 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (36).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,1
-9 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (44).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,2
-9 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (74).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,3
-9 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (46).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,4
-9 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (14).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,5
-9 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (47).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,6
-9 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (28).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,7
-9 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (19).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,8
-9 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (38).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,9
-9 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (12).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,10
-9 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (64).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,11
-9 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (81).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,12
-9 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (13).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,13
-9 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (1).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,14
-9 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (60).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,15
-9 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (22).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,16
-9 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (33).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,17
-9 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (77).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,18
-9 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (63).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,19
-9 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (59).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,20
-9 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (26).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,21
-9 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (8).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,22
-9 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (35).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,23
-9 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (30).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,24
-9 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (23).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,25
-9 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (53).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,26
-9 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (73).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,27
-9 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (24).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,28
-9 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (2).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,29
-9 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (71).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,30
-9 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (45).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,31
-9 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (20).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,32
-9 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (18).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,33
-9 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (70).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,34
-9 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (7).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,35
-9 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (39).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,36
-9 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (76).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,37
-9 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (3).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,38
-9 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (65).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,39
-9 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (40).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,40
-9 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (54).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,41
-9 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (67).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,42
-9 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (75).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,43
-9 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (6).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,44
-9 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (55).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,45
-9 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (58).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,46
-9 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (11).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,47
-9 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (5).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,48
-9 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (9).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,49
-9 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (72).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,50
-9 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (56).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,51
-9 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (82).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,52
-9 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (79).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,53
-9 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (43).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,54
-9 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (25).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,55
-9 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (37).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,56
-9 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (41).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,57
-9 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (27).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,58
-9 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (78).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,59
-9 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (57).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,60
-9 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (61).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,61
-9 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (66).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,62
-9 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (68).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,63
-9 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (29).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,64
-9 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (48).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,65
-9 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (21).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,66
-9 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (32).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,67
-9 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (4).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,68
-9 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (15).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,69
-9 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (51).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,70
-9 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (69).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,71
-9 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (17).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,72
-9 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (62).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,73
-9 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (10).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,74
-9 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (50).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,75
-9 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (49).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,76
-9 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (42).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,77
-9 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (34).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,78
-9 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (16).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,79
-9 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (31).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,80
-9 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/Zastava M92/9 (52).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,81
-3 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (52).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,82
-3 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (65).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,83
-3 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (17).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,84
-3 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (23).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,85
-3 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (11).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,86
-3 (94).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (94).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,87
-3 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (8).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,88
-3 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (26).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,89
-3 (95).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (95).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,90
-3 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (55).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,91
-3 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (2).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,92
-3 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (75).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,93
-3 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (38).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,94
-3 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (1).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,95
-3 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (82).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,96
-3 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (35).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,97
-3 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (18).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,98
-3 (83).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (83).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,99
-3 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (27).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,100
-3 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (78).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,101
-3 (85).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (85).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,102
-3 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (37).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,103
-3 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (80).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,104
-3 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (25).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,105
-3 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (4).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,106
-3 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (7).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,107
-3 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (71).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,108
-3 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (44).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,109
-3 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (9).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,110
-3 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (76).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,111
-3 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (54).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,112
-3 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (24).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,113
-3 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (56).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,114
-3 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (64).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,115
-3 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (58).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,116
-3 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (70).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,117
-3 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (14).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,118
-3 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (67).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,119
-3 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (40).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,120
-3 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (41).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,121
-3 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (28).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,122
-3 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (77).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,123
-3 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (19).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,124
-3 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (68).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,125
-3 (87).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (87).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,126
-3 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (60).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,127
-3 (93).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (93).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,128
-3 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (20).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,129
-3 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (57).wav,360000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,130
-3 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (73).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,131
-3 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (49).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,132
-3 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (45).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,133
-3 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (81).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,134
-3 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (74).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,135
-3 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (31).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,136
-3 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (62).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,137
-3 (91).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (91).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,138
-3 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (46).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,139
-3 (96).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (96).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,140
-3 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (36).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,141
-3 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (16).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,142
-3 (90).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (90).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,143
-3 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (13).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,144
-3 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (10).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,145
-3 (86).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (86).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,146
-3 (97).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (97).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,147
-3 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (29).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,148
-3 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (22).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,149
-3 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (48).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,150
-3 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (32).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,151
-3 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (15).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,152
-3 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (69).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,153
-3 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (6).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,154
-3 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (53).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,155
-3 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (50).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,156
-3 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (51).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,157
-3 (89).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (89).wav,305000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,158
-3 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (79).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,159
-3 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (39).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,160
-3 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (3).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,161
-3 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (21).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,162
-3 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (12).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,163
-3 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (5).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,164
-3 (92).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (92).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,165
-3 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (33).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,166
-3 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (66).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,167
-3 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (63).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,168
-3 (98).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (98).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,169
-3 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (30).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,170
-3 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (42).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,171
-3 (88).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (88).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,172
-3 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (59).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,173
-3 (84).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (84).wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,174
-3 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (47).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,175
-3 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (34).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,176
-3 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (43).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,177
-3 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (72).wav,320000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,178
-3 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-12/3 (61).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,179
-2 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (67).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,280
-2 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (19).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,281
-2 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (74).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,282
-2 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (22).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,283
-2 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (53).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,284
-2 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (82).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,285
-2 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (52).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,286
-2 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (40).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,287
-2 (95).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (95).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,288
-2 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (80).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,289
-2 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (34).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,290
-2 (87).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (87).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,291
-2 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (59).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,292
-2 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (70).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,293
-2 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (73).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,294
-2 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (38).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,295
-2 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (68).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,296
-2 (98).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (98).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,297
-2 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (35).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,298
-2 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (14).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,299
-2 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (66).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,300
-2 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (42).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,301
-2 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (71).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,302
-2 (84).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (84).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,303
-2 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (16).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,304
-2 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (36).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,305
-2 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (79).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,306
-2 (92).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (92).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,307
-2 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (51).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,308
-2 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (39).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,309
-2 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (3).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,310
-2 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (72).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,311
-2 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (26).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,312
-2 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (18).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,313
-2 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (45).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,314
-2 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (63).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,315
-2 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (17).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,316
-2 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (5).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,317
-2 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (23).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,318
-2 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (65).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,319
-2 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (60).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,320
-2 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (78).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,321
-2 (88).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (88).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,322
-2 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (49).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,323
-2 (89).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (89).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,324
-2 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (2).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,325
-2 (96).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (96).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,326
-2 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (6).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,327
-2 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (29).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,328
-2 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (43).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,329
-2 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (9).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,330
-2 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (44).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,331
-2 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (30).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,332
-2 (91).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (91).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,333
-2 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (12).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,334
-2 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (1).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,335
-2 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (7).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,336
-2 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (33).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,337
-2 (93).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (93).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,338
-2 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (4).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,339
-2 (90).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (90).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,340
-2 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (57).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,341
-2 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (58).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,342
-2 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (77).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,343
-2 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (69).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,344
-2 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (15).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,345
-2 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (32).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,346
-2 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (47).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,347
-2 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (11).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,348
-2 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (37).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,349
-2 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (31).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,350
-2 (94).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (94).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,351
-2 (85).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (85).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,352
-2 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (48).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,353
-2 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (64).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,354
-2 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (46).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,355
-2 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (10).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,356
-2 (100).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (100).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,357
-2 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (24).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,358
-2 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (75).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,359
-2 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (8).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,360
-2 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (56).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,361
-2 (97).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (97).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,362
-2 (99).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (99).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,363
-2 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (50).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,364
-2 (86).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (86).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,365
-2 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (13).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,366
-2 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (27).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,367
-2 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (25).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,368
-2 (83).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (83).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,369
-2 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (61).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,370
-2 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (62).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,371
-2 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (28).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,372
-2 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (54).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,373
-2 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (21).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,374
-2 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (55).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,375
-2 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (20).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,376
-2 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (81).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,377
-2 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (41).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,378
-2 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/IMI Desert Eagle/2 (76).wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,379
-7 (90).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (90).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,480
-7 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (73).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,481
-7 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (68).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,482
-7 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (57).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,483
-7 (96).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (96).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,484
-7 (87).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (87).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,485
-7 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (79).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,486
-7 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (80).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,487
-7 (99).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (99).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,488
-7 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (5).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,489
-7 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (72).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,490
-7 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (37).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,491
-7 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (28).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,492
-7 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (6).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,493
-7 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (35).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,494
-7 (91).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (91).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,495
-7 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (41).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,496
-7 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (21).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,497
-7 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (34).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,498
-7 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (29).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,499
-7 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (11).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,500
-7 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (71).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,501
-7 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (52).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,502
-7 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (20).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,503
-7 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (75).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,504
-7 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (40).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,505
-7 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (55).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,506
-7 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (26).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,507
-7 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (13).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,508
-7 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (33).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,509
-7 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (10).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,510
-7 (85).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (85).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,511
-7 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (67).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,512
-7 (94).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (94).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,513
-7 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (63).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,514
-7 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (15).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,515
-7 (88).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (88).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,516
-7 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (61).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,517
-7 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (82).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,518
-7 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (76).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,519
-7 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (59).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,520
-7 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (38).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,521
-7 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (45).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,522
-7 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (60).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,523
-7 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (77).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,524
-7 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (42).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,525
-7 (89).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (89).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,526
-7 (98).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (98).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,527
-7 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (27).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,528
-7 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (50).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,529
-7 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (8).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,530
-7 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (53).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,531
-7 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (2).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,532
-7 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (24).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,533
-7 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (36).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,534
-7 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (74).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,535
-7 (84).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (84).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,536
-7 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (14).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,537
-7 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (3).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,538
-7 (97).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (97).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,539
-7 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (47).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,540
-7 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (19).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,541
-7 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (64).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,542
-7 (93).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (93).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,543
-7 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (81).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,544
-7 (95).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (95).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,545
-7 (100).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (100).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,546
-7 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (70).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,547
-7 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (23).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,548
-7 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (1).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,549
-7 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (54).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,550
-7 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (48).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,551
-7 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (44).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,552
-7 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (51).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,553
-7 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (46).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,554
-7 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (39).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,555
-7 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (12).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,556
-7 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (30).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,557
-7 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (7).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,558
-7 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (65).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,559
-7 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (62).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,560
-7 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (25).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,561
-7 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (22).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,562
-7 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (18).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,563
-7 (86).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (86).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,564
-7 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (9).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,565
-7 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (78).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,566
-7 (92).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (92).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,567
-7 (83).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (83).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,568
-7 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (16).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,569
-7 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (31).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,570
-7 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (66).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,571
-7 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (56).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,572
-7 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (4).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,573
-7 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (32).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,574
-7 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (43).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,575
-7 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (49).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,576
-7 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (58).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,577
-7 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (17).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,578
-7 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/MG-42/7 (69).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,579
-6 (90).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (90).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,580
-6 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (36).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,581
-6 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (5).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,582
-6 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (67).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,583
-6 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (8).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,584
-6 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (40).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,585
-6 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (47).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,586
-6 (85).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (85).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,587
-6 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (33).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,588
-6 (94).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (94).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,589
-6 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (52).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,590
-6 (76).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (76).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,591
-6 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (39).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,592
-6 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (29).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,593
-6 (99).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (99).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,594
-6 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (1).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,595
-6 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (28).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,596
-6 (79).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (79).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,597
-6 (91).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (91).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,598
-6 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (46).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,599
-6 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (37).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,600
-6 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (70).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,601
-6 (74).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (74).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,602
-6 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (26).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,603
-6 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (58).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,604
-6 (86).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (86).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,605
-6 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (62).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,606
-6 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (54).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,607
-6 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (18).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,608
-6 (81).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (81).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,609
-6 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (12).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,610
-6 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (41).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,611
-6 (84).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (84).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,612
-6 (89).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (89).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,613
-6 (77).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (77).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,614
-6 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (32).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,615
-6 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (6).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,616
-6 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (42).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,617
-6 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (17).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,618
-6 (96).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (96).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,619
-6 (97).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (97).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,620
-6 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (65).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,621
-6 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (11).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,622
-6 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (23).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,623
-6 (73).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (73).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,624
-6 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (48).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,625
-6 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (25).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,626
-6 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (3).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,627
-6 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (66).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,628
-6 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (20).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,629
-6 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (64).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,630
-6 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (22).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,631
-6 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (53).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,632
-6 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (43).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,633
-6 (82).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (82).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,634
-6 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (13).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,635
-6 (92).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (92).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,636
-6 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (31).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,637
-6 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (59).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,638
-6 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (34).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,639
-6 (88).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (88).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,640
-6 (78).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (78).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,641
-6 (95).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (95).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,642
-6 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (38).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,643
-6 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (15).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,644
-6 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (44).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,645
-6 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (4).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,646
-6 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (35).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,647
-6 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (49).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,648
-6 (87).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (87).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,649
-6 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (63).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,650
-6 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (61).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,651
-6 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (2).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,652
-6 (80).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (80).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,653
-6 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (50).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,654
-6 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (7).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,655
-6 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (14).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,656
-6 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (19).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,657
-6 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (68).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,658
-6 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (51).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,659
-6 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (21).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,660
-6 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (69).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,661
-6 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (55).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,662
-6 (93).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (93).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,663
-6 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (24).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,664
-6 (75).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (75).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,665
-6 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (27).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,666
-6 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (45).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,667
-6 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (71).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,668
-6 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (16).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,669
-6 (98).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (98).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,670
-6 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (10).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,671
-6 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (30).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,672
-6 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (60).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,673
-6 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (72).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,674
-6 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (57).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,675
-6 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (56).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,676
-6 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (9).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,677
-6 (83).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/M249/6 (83).wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,678
-1 (56).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (56).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,679
-1 (13).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (13).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,680
-1 (28).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (28).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,681
-1 (16).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (16).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,682
-1 (45).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (45).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,683
-1 (33).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (33).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,684
-1 (26).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (26).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,685
-1 (71).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (71).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,686
-1 (29).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (29).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,687
-1 (21).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (21).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,688
-1 (14).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (14).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,689
-1 (20).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (20).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,690
-1 (5).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (5).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,691
-1 (41).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (41).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,692
-1 (64).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (64).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,693
-1 (25).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (25).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,694
-1 (6).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (6).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,695
-1 (7).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (7).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,696
-1 (49).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (49).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,697
-1 (15).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (15).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,698
-1 (66).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (66).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,699
-1 (1).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (1).wav,3000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,700
-1 (53).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (53).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,701
-1 (35).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (35).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,702
-1 (18).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (18).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,703
-1 (17).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (17).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,704
-1 (32).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (32).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,705
-1 (43).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (43).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,706
-1 (60).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (60).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,707
-1 (52).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (52).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,708
-1 (37).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (37).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,709
-1 (58).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (58).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,710
-1 (22).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (22).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,711
-1 (55).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (55).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,712
-1 (72).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (72).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,713
-1 (63).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (63).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,714
-1 (24).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (24).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,715
-1 (23).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (23).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,716
-1 (34).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (34).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,717
-1 (65).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (65).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,718
-1 (19).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (19).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,719
-1 (38).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (38).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,720
-1 (39).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (39).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,721
-1 (11).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (11).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,722
-1 (27).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (27).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,723
-1 (59).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (59).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,724
-1 (46).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (46).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,725
-1 (8).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (8).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,726
-1 (61).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (61).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,727
-1 (44).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (44).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,728
-1 (10).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (10).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,729
-1 (4).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (4).wav,3000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,730
-1 (50).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (50).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,731
-1 (54).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (54).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,732
-1 (57).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (57).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,733
-1 (69).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (69).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,734
-1 (47).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (47).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,735
-1 (67).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (67).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,736
-1 (9).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (9).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,737
-1 (70).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (70).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,738
-1 (31).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (31).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,739
-1 (42).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (42).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,740
-1 (62).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (62).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,741
-1 (12).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (12).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,742
-1 (36).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (36).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,743
-1 (30).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (30).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,744
-1 (40).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (40).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,745
-1 (2).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (2).wav,4000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,746
-1 (51).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (51).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,747
-1 (48).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (48).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,748
-1 (3).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (3).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,749
-1 (68).wav,/home/thanh/.cache/kagglehub/datasets/emrahaydemr/gunshot-audio-dataset/versions/1/AK-47/1 (68).wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,750
+GUNSHOT_RIFLE_gad_0.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_0.wav,305000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,0
+GUNSHOT_RIFLE_gad_1.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_1.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,1
+GUNSHOT_RIFLE_gad_2.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_2.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,2
+GUNSHOT_RIFLE_gad_3.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_3.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,3
+GUNSHOT_RIFLE_gad_4.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_4.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,4
+GUNSHOT_RIFLE_gad_5.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_5.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,5
+GUNSHOT_RIFLE_gad_6.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_6.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,6
+GUNSHOT_RIFLE_gad_7.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_7.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,7
+GUNSHOT_RIFLE_gad_8.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_8.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,8
+GUNSHOT_RIFLE_gad_9.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_9.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,9
+GUNSHOT_RIFLE_gad_10.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_10.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,10
+GUNSHOT_RIFLE_gad_11.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_11.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,11
+GUNSHOT_RIFLE_gad_12.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_12.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,12
+GUNSHOT_RIFLE_gad_13.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_13.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,13
+GUNSHOT_RIFLE_gad_14.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_14.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,14
+GUNSHOT_RIFLE_gad_15.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_15.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,15
+GUNSHOT_RIFLE_gad_16.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_16.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,16
+GUNSHOT_RIFLE_gad_17.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_17.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,17
+GUNSHOT_RIFLE_gad_18.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_18.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,18
+GUNSHOT_RIFLE_gad_19.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_19.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,19
+GUNSHOT_RIFLE_gad_20.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_20.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,20
+GUNSHOT_RIFLE_gad_21.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_21.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,21
+GUNSHOT_RIFLE_gad_22.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_22.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,22
+GUNSHOT_RIFLE_gad_23.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_23.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,23
+GUNSHOT_RIFLE_gad_24.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_24.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,24
+GUNSHOT_RIFLE_gad_25.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_25.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,25
+GUNSHOT_RIFLE_gad_26.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_26.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,26
+GUNSHOT_RIFLE_gad_27.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_27.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,27
+GUNSHOT_RIFLE_gad_28.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_28.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,28
+GUNSHOT_RIFLE_gad_29.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_29.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,29
+GUNSHOT_RIFLE_gad_30.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_30.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,30
+GUNSHOT_RIFLE_gad_31.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_31.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,31
+GUNSHOT_RIFLE_gad_32.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_32.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,32
+GUNSHOT_RIFLE_gad_33.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_33.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,33
+GUNSHOT_RIFLE_gad_34.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_34.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,34
+GUNSHOT_RIFLE_gad_35.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_35.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,35
+GUNSHOT_RIFLE_gad_36.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_36.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,36
+GUNSHOT_RIFLE_gad_37.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_37.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,37
+GUNSHOT_RIFLE_gad_38.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_38.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,38
+GUNSHOT_RIFLE_gad_39.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_39.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,39
+GUNSHOT_RIFLE_gad_40.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_40.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,40
+GUNSHOT_RIFLE_gad_41.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_41.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,41
+GUNSHOT_RIFLE_gad_42.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_42.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,42
+GUNSHOT_RIFLE_gad_43.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_43.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,43
+GUNSHOT_RIFLE_gad_44.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_44.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,44
+GUNSHOT_RIFLE_gad_45.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_45.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,45
+GUNSHOT_RIFLE_gad_46.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_46.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,46
+GUNSHOT_RIFLE_gad_47.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_47.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,47
+GUNSHOT_RIFLE_gad_48.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_48.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,48
+GUNSHOT_RIFLE_gad_49.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_49.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,49
+GUNSHOT_RIFLE_gad_50.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_50.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,50
+GUNSHOT_RIFLE_gad_51.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_51.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,51
+GUNSHOT_RIFLE_gad_52.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_52.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,52
+GUNSHOT_RIFLE_gad_53.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_53.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,53
+GUNSHOT_RIFLE_gad_54.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_54.wav,360000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,54
+GUNSHOT_RIFLE_gad_55.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_55.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,55
+GUNSHOT_RIFLE_gad_56.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_56.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,56
+GUNSHOT_RIFLE_gad_57.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_57.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,57
+GUNSHOT_RIFLE_gad_58.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_58.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,58
+GUNSHOT_RIFLE_gad_59.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_59.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,59
+GUNSHOT_RIFLE_gad_60.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_60.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,60
+GUNSHOT_RIFLE_gad_61.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_61.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,61
+GUNSHOT_RIFLE_gad_62.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_62.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,62
+GUNSHOT_RIFLE_gad_63.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_63.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,63
+GUNSHOT_RIFLE_gad_64.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_64.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,64
+GUNSHOT_RIFLE_gad_65.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_65.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,65
+GUNSHOT_RIFLE_gad_66.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_66.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,66
+GUNSHOT_RIFLE_gad_67.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_67.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,67
+GUNSHOT_RIFLE_gad_68.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_68.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,68
+GUNSHOT_RIFLE_gad_69.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_69.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,69
+GUNSHOT_RIFLE_gad_70.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_70.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,70
+GUNSHOT_RIFLE_gad_71.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_71.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,71
+GUNSHOT_RIFLE_gad_72.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_72.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,72
+GUNSHOT_RIFLE_gad_73.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_73.wav,320000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,73
+GUNSHOT_RIFLE_gad_74.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_74.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,74
+GUNSHOT_RIFLE_gad_75.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_75.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,75
+GUNSHOT_RIFLE_gad_76.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_76.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,76
+GUNSHOT_RIFLE_gad_77.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_77.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,77
+GUNSHOT_RIFLE_gad_78.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_78.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,78
+GUNSHOT_RIFLE_gad_79.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_79.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,79
+GUNSHOT_RIFLE_gad_80.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_80.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,80
+GUNSHOT_RIFLE_gad_81.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_81.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,81
+GUNSHOT_RIFLE_gad_82.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_82.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,82
+GUNSHOT_RIFLE_gad_83.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_83.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,83
+GUNSHOT_RIFLE_gad_84.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_84.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,84
+GUNSHOT_RIFLE_gad_85.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_85.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,85
+GUNSHOT_RIFLE_gad_86.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_86.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,86
+GUNSHOT_RIFLE_gad_87.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_87.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,87
+GUNSHOT_RIFLE_gad_88.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_88.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,88
+GUNSHOT_RIFLE_gad_89.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_89.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,89
+GUNSHOT_RIFLE_gad_90.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_90.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,90
+GUNSHOT_RIFLE_gad_91.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_91.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,91
+GUNSHOT_RIFLE_gad_92.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_92.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,92
+GUNSHOT_RIFLE_gad_93.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_93.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,93
+GUNSHOT_RIFLE_gad_94.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_94.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,94
+GUNSHOT_RIFLE_gad_95.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_95.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,95
+GUNSHOT_RIFLE_gad_96.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_96.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,96
+GUNSHOT_RIFLE_gad_97.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_97.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,97
+GUNSHOT_RIFLE_gad_98.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_98.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,98
+GUNSHOT_RIFLE_gad_99.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_99.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,99
+GUNSHOT_RIFLE_gad_100.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_100.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,100
+GUNSHOT_RIFLE_gad_101.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_101.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,101
+GUNSHOT_RIFLE_gad_102.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_102.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,102
+GUNSHOT_RIFLE_gad_103.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_103.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,103
+GUNSHOT_RIFLE_gad_104.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_104.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,104
+GUNSHOT_RIFLE_gad_105.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_105.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,105
+GUNSHOT_RIFLE_gad_106.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_106.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,106
+GUNSHOT_RIFLE_gad_107.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_107.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,107
+GUNSHOT_RIFLE_gad_108.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_108.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,108
+GUNSHOT_RIFLE_gad_109.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_109.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,109
+GUNSHOT_RIFLE_gad_110.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_110.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,110
+GUNSHOT_RIFLE_gad_111.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_111.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,111
+GUNSHOT_RIFLE_gad_112.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_112.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,112
+GUNSHOT_RIFLE_gad_113.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_113.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,113
+GUNSHOT_RIFLE_gad_114.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_114.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,114
+GUNSHOT_RIFLE_gad_115.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_115.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,115
+GUNSHOT_RIFLE_gad_116.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_116.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,116
+GUNSHOT_RIFLE_gad_117.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_117.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,117
+GUNSHOT_RIFLE_gad_118.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_118.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,118
+GUNSHOT_RIFLE_gad_119.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_119.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,119
+GUNSHOT_RIFLE_gad_120.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_120.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,120
+GUNSHOT_RIFLE_gad_121.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_121.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,121
+GUNSHOT_RIFLE_gad_122.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_122.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,122
+GUNSHOT_RIFLE_gad_123.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_123.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,123
+GUNSHOT_RIFLE_gad_124.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_124.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,124
+GUNSHOT_RIFLE_gad_125.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_125.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,125
+GUNSHOT_RIFLE_gad_126.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_126.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,126
+GUNSHOT_RIFLE_gad_127.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_127.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,127
+GUNSHOT_RIFLE_gad_128.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_128.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,128
+GUNSHOT_RIFLE_gad_129.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_129.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,129
+GUNSHOT_RIFLE_gad_130.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_130.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,130
+GUNSHOT_RIFLE_gad_131.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_131.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,131
+GUNSHOT_RIFLE_gad_132.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_132.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,132
+GUNSHOT_RIFLE_gad_133.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_133.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,133
+GUNSHOT_RIFLE_gad_134.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_134.wav,3000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,134
+GUNSHOT_RIFLE_gad_135.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_135.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,135
+GUNSHOT_RIFLE_gad_136.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_136.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,136
+GUNSHOT_RIFLE_gad_137.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_137.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,137
+GUNSHOT_RIFLE_gad_138.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_138.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,138
+GUNSHOT_RIFLE_gad_139.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_139.wav,4000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,139
+GUNSHOT_RIFLE_gad_140.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_140.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,140
+GUNSHOT_RIFLE_gad_141.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_141.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,141
+GUNSHOT_RIFLE_gad_142.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_142.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,142
+GUNSHOT_RIFLE_gad_143.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_143.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,143
+GUNSHOT_RIFLE_gad_144.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_144.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,144
+GUNSHOT_RIFLE_gad_145.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_145.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,145
+GUNSHOT_RIFLE_gad_146.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_146.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,146
+GUNSHOT_RIFLE_gad_147.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_147.wav,3000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,147
+GUNSHOT_RIFLE_gad_148.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_148.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,148
+GUNSHOT_RIFLE_gad_149.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_149.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,149
+GUNSHOT_RIFLE_gad_150.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_150.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,150
+GUNSHOT_RIFLE_gad_151.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_151.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,151
+GUNSHOT_RIFLE_gad_152.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_152.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,152
+GUNSHOT_RIFLE_gad_153.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_153.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,153
+GUNSHOT_RIFLE_gad_154.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_154.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,154
+GUNSHOT_RIFLE_gad_155.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_155.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,155
+GUNSHOT_RIFLE_gad_156.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_156.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,156
+GUNSHOT_RIFLE_gad_157.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_157.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,157
+GUNSHOT_RIFLE_gad_158.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_158.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,158
+GUNSHOT_RIFLE_gad_159.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_159.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,159
+GUNSHOT_RIFLE_gad_160.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_160.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,160
+GUNSHOT_RIFLE_gad_161.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_161.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,161
+GUNSHOT_RIFLE_gad_162.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_162.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,162
+GUNSHOT_RIFLE_gad_163.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_163.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,163
+GUNSHOT_RIFLE_gad_164.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_164.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,164
+GUNSHOT_RIFLE_gad_165.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_165.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,165
+GUNSHOT_RIFLE_gad_166.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_166.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,166
+GUNSHOT_RIFLE_gad_167.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_167.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,167
+GUNSHOT_RIFLE_gad_168.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_168.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,168
+GUNSHOT_RIFLE_gad_169.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_169.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,169
+GUNSHOT_MACHINE_GUN_gad_170.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_170.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,170
+GUNSHOT_MACHINE_GUN_gad_171.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_171.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,171
+GUNSHOT_MACHINE_GUN_gad_172.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_172.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,172
+GUNSHOT_MACHINE_GUN_gad_173.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_173.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,173
+GUNSHOT_MACHINE_GUN_gad_174.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_174.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,174
+GUNSHOT_MACHINE_GUN_gad_175.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_175.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,175
+GUNSHOT_MACHINE_GUN_gad_176.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_176.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,176
+GUNSHOT_MACHINE_GUN_gad_177.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_177.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,177
+GUNSHOT_MACHINE_GUN_gad_178.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_178.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,178
+GUNSHOT_MACHINE_GUN_gad_179.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_179.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,179
+GUNSHOT_MACHINE_GUN_gad_180.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_180.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,180
+GUNSHOT_MACHINE_GUN_gad_181.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_181.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,181
+GUNSHOT_MACHINE_GUN_gad_182.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_182.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,182
+GUNSHOT_MACHINE_GUN_gad_183.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_183.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,183
+GUNSHOT_MACHINE_GUN_gad_184.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_184.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,184
+GUNSHOT_MACHINE_GUN_gad_185.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_185.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,185
+GUNSHOT_MACHINE_GUN_gad_186.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_186.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,186
+GUNSHOT_MACHINE_GUN_gad_187.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_187.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,187
+GUNSHOT_MACHINE_GUN_gad_188.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_188.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,188
+GUNSHOT_MACHINE_GUN_gad_189.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_189.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,189
+GUNSHOT_MACHINE_GUN_gad_190.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_190.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,190
+GUNSHOT_MACHINE_GUN_gad_191.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_191.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,191
+GUNSHOT_MACHINE_GUN_gad_192.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_192.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,192
+GUNSHOT_MACHINE_GUN_gad_193.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_193.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,193
+GUNSHOT_MACHINE_GUN_gad_194.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_194.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,194
+GUNSHOT_MACHINE_GUN_gad_195.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_195.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,195
+GUNSHOT_MACHINE_GUN_gad_196.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_196.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,196
+GUNSHOT_MACHINE_GUN_gad_197.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_197.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,197
+GUNSHOT_MACHINE_GUN_gad_198.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_198.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,198
+GUNSHOT_MACHINE_GUN_gad_199.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_199.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,199
+GUNSHOT_MACHINE_GUN_gad_200.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_200.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,200
+GUNSHOT_MACHINE_GUN_gad_201.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_201.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,201
+GUNSHOT_MACHINE_GUN_gad_202.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_202.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,202
+GUNSHOT_MACHINE_GUN_gad_203.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_203.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,203
+GUNSHOT_MACHINE_GUN_gad_204.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_204.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,204
+GUNSHOT_MACHINE_GUN_gad_205.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_205.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,205
+GUNSHOT_MACHINE_GUN_gad_206.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_206.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,206
+GUNSHOT_MACHINE_GUN_gad_207.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_207.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,207
+GUNSHOT_MACHINE_GUN_gad_208.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_208.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,208
+GUNSHOT_MACHINE_GUN_gad_209.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_209.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,209
+GUNSHOT_MACHINE_GUN_gad_210.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_210.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,210
+GUNSHOT_MACHINE_GUN_gad_211.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_211.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,211
+GUNSHOT_MACHINE_GUN_gad_212.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_212.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,212
+GUNSHOT_MACHINE_GUN_gad_213.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_213.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,213
+GUNSHOT_MACHINE_GUN_gad_214.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_214.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,214
+GUNSHOT_MACHINE_GUN_gad_215.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_215.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,215
+GUNSHOT_MACHINE_GUN_gad_216.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_216.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,216
+GUNSHOT_MACHINE_GUN_gad_217.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_217.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,217
+GUNSHOT_MACHINE_GUN_gad_218.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_218.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,218
+GUNSHOT_MACHINE_GUN_gad_219.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_219.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,219
+GUNSHOT_MACHINE_GUN_gad_220.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_220.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,220
+GUNSHOT_MACHINE_GUN_gad_221.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_221.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,221
+GUNSHOT_MACHINE_GUN_gad_222.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_222.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,222
+GUNSHOT_MACHINE_GUN_gad_223.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_223.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,223
+GUNSHOT_MACHINE_GUN_gad_224.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_224.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,224
+GUNSHOT_MACHINE_GUN_gad_225.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_225.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,225
+GUNSHOT_MACHINE_GUN_gad_226.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_226.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,226
+GUNSHOT_MACHINE_GUN_gad_227.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_227.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,227
+GUNSHOT_MACHINE_GUN_gad_228.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_228.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,228
+GUNSHOT_MACHINE_GUN_gad_229.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_229.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,229
+GUNSHOT_MACHINE_GUN_gad_230.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_230.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,230
+GUNSHOT_MACHINE_GUN_gad_231.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_231.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,231
+GUNSHOT_MACHINE_GUN_gad_232.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_232.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,232
+GUNSHOT_MACHINE_GUN_gad_233.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_233.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,233
+GUNSHOT_MACHINE_GUN_gad_234.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_234.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,234
+GUNSHOT_MACHINE_GUN_gad_235.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_235.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,235
+GUNSHOT_MACHINE_GUN_gad_236.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_236.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,236
+GUNSHOT_MACHINE_GUN_gad_237.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_237.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,237
+GUNSHOT_MACHINE_GUN_gad_238.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_238.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,238
+GUNSHOT_MACHINE_GUN_gad_239.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_239.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,239
+GUNSHOT_MACHINE_GUN_gad_240.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_240.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,240
+GUNSHOT_MACHINE_GUN_gad_241.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_241.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,241
+GUNSHOT_MACHINE_GUN_gad_242.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_242.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,242
+GUNSHOT_MACHINE_GUN_gad_243.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_243.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,243
+GUNSHOT_MACHINE_GUN_gad_244.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_244.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,244
+GUNSHOT_MACHINE_GUN_gad_245.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_245.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,245
+GUNSHOT_MACHINE_GUN_gad_246.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_246.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,246
+GUNSHOT_MACHINE_GUN_gad_247.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_247.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,247
+GUNSHOT_MACHINE_GUN_gad_248.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_248.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,248
+GUNSHOT_MACHINE_GUN_gad_249.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_249.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,249
+GUNSHOT_MACHINE_GUN_gad_250.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_250.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,250
+GUNSHOT_MACHINE_GUN_gad_251.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_251.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,251
+GUNSHOT_MACHINE_GUN_gad_252.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_252.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,252
+GUNSHOT_MACHINE_GUN_gad_253.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_253.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,253
+GUNSHOT_MACHINE_GUN_gad_254.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_254.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,254
+GUNSHOT_MACHINE_GUN_gad_255.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_255.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,255
+GUNSHOT_MACHINE_GUN_gad_256.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_256.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,256
+GUNSHOT_MACHINE_GUN_gad_257.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_257.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,257
+GUNSHOT_MACHINE_GUN_gad_258.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_258.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,258
+GUNSHOT_MACHINE_GUN_gad_259.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_259.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,259
+GUNSHOT_MACHINE_GUN_gad_260.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_260.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,260
+GUNSHOT_MACHINE_GUN_gad_261.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_261.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,261
+GUNSHOT_MACHINE_GUN_gad_262.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_262.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,262
+GUNSHOT_MACHINE_GUN_gad_263.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_263.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,263
+GUNSHOT_MACHINE_GUN_gad_264.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_264.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,264
+GUNSHOT_MACHINE_GUN_gad_265.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_265.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,265
+GUNSHOT_MACHINE_GUN_gad_266.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_266.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,266
+GUNSHOT_MACHINE_GUN_gad_267.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_267.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,267
+GUNSHOT_MACHINE_GUN_gad_268.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_268.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,268
+GUNSHOT_MACHINE_GUN_gad_269.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_269.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,269
+GUNSHOT_MACHINE_GUN_gad_270.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_270.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,270
+GUNSHOT_MACHINE_GUN_gad_271.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_271.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,271
+GUNSHOT_MACHINE_GUN_gad_272.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_272.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,272
+GUNSHOT_MACHINE_GUN_gad_273.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_273.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,273
+GUNSHOT_MACHINE_GUN_gad_274.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_274.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,274
+GUNSHOT_MACHINE_GUN_gad_275.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_275.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,275
+GUNSHOT_MACHINE_GUN_gad_276.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_276.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,276
+GUNSHOT_MACHINE_GUN_gad_277.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_277.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,277
+GUNSHOT_MACHINE_GUN_gad_278.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_278.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,278
+GUNSHOT_MACHINE_GUN_gad_279.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_279.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,279
+GUNSHOT_MACHINE_GUN_gad_280.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_280.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,280
+GUNSHOT_MACHINE_GUN_gad_281.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_281.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,281
+GUNSHOT_MACHINE_GUN_gad_282.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_282.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,282
+GUNSHOT_MACHINE_GUN_gad_283.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_283.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,283
+GUNSHOT_MACHINE_GUN_gad_284.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_284.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,284
+GUNSHOT_MACHINE_GUN_gad_285.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_285.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,285
+GUNSHOT_MACHINE_GUN_gad_286.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_286.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,286
+GUNSHOT_MACHINE_GUN_gad_287.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_287.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,287
+GUNSHOT_MACHINE_GUN_gad_288.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_288.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,288
+GUNSHOT_MACHINE_GUN_gad_289.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_289.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,289
+GUNSHOT_MACHINE_GUN_gad_290.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_290.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,290
+GUNSHOT_MACHINE_GUN_gad_291.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_291.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,291
+GUNSHOT_MACHINE_GUN_gad_292.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_292.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,292
+GUNSHOT_MACHINE_GUN_gad_293.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_293.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,293
+GUNSHOT_MACHINE_GUN_gad_294.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_294.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,294
+GUNSHOT_MACHINE_GUN_gad_295.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_295.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,295
+GUNSHOT_MACHINE_GUN_gad_296.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_296.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,296
+GUNSHOT_MACHINE_GUN_gad_297.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_297.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,297
+GUNSHOT_MACHINE_GUN_gad_298.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_298.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,298
+GUNSHOT_MACHINE_GUN_gad_299.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_299.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,299
+GUNSHOT_MACHINE_GUN_gad_300.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_300.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,300
+GUNSHOT_MACHINE_GUN_gad_301.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_301.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,301
+GUNSHOT_MACHINE_GUN_gad_302.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_302.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,302
+GUNSHOT_MACHINE_GUN_gad_303.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_303.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,303
+GUNSHOT_MACHINE_GUN_gad_304.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_304.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,304
+GUNSHOT_MACHINE_GUN_gad_305.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_305.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,305
+GUNSHOT_MACHINE_GUN_gad_306.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_306.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,306
+GUNSHOT_MACHINE_GUN_gad_307.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_307.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,307
+GUNSHOT_MACHINE_GUN_gad_308.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_308.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,308
+GUNSHOT_MACHINE_GUN_gad_309.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_309.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,309
+GUNSHOT_MACHINE_GUN_gad_310.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_310.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,310
+GUNSHOT_MACHINE_GUN_gad_311.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_311.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,311
+GUNSHOT_MACHINE_GUN_gad_312.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_312.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,312
+GUNSHOT_MACHINE_GUN_gad_313.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_313.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,313
+GUNSHOT_MACHINE_GUN_gad_314.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_314.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,314
+GUNSHOT_MACHINE_GUN_gad_315.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_315.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,315
+GUNSHOT_MACHINE_GUN_gad_316.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_316.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,316
+GUNSHOT_MACHINE_GUN_gad_317.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_317.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,317
+GUNSHOT_MACHINE_GUN_gad_318.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_318.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,318
+GUNSHOT_MACHINE_GUN_gad_319.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_319.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,319
+GUNSHOT_MACHINE_GUN_gad_320.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_320.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,320
+GUNSHOT_MACHINE_GUN_gad_321.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_321.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,321
+GUNSHOT_MACHINE_GUN_gad_322.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_322.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,322
+GUNSHOT_MACHINE_GUN_gad_323.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_323.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,323
+GUNSHOT_MACHINE_GUN_gad_324.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_324.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,324
+GUNSHOT_MACHINE_GUN_gad_325.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_325.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,325
+GUNSHOT_MACHINE_GUN_gad_326.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_326.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,326
+GUNSHOT_MACHINE_GUN_gad_327.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_327.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,327
+GUNSHOT_MACHINE_GUN_gad_328.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_328.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,328
+GUNSHOT_MACHINE_GUN_gad_329.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_329.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,329
+GUNSHOT_MACHINE_GUN_gad_330.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_330.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,330
+GUNSHOT_MACHINE_GUN_gad_331.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_331.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,331
+GUNSHOT_MACHINE_GUN_gad_332.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_332.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,332
+GUNSHOT_MACHINE_GUN_gad_333.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_333.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,333
+GUNSHOT_MACHINE_GUN_gad_334.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_334.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,334
+GUNSHOT_MACHINE_GUN_gad_335.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_335.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,335
+GUNSHOT_MACHINE_GUN_gad_336.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_336.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,336
+GUNSHOT_MACHINE_GUN_gad_337.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_337.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,337
+GUNSHOT_MACHINE_GUN_gad_338.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_338.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,338
+GUNSHOT_MACHINE_GUN_gad_339.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_339.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,339
+GUNSHOT_MACHINE_GUN_gad_340.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_340.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,340
+GUNSHOT_MACHINE_GUN_gad_341.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_341.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,341
+GUNSHOT_MACHINE_GUN_gad_342.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_342.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,342
+GUNSHOT_MACHINE_GUN_gad_343.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_343.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,343
+GUNSHOT_MACHINE_GUN_gad_344.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_344.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,344
+GUNSHOT_MACHINE_GUN_gad_345.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_345.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,345
+GUNSHOT_MACHINE_GUN_gad_346.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_346.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,346
+GUNSHOT_MACHINE_GUN_gad_347.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_347.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,347
+GUNSHOT_MACHINE_GUN_gad_348.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_348.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,348
+GUNSHOT_MACHINE_GUN_gad_349.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_349.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,349
+GUNSHOT_MACHINE_GUN_gad_350.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_350.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,350
+GUNSHOT_MACHINE_GUN_gad_351.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_351.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,351
+GUNSHOT_MACHINE_GUN_gad_352.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_352.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,352
+GUNSHOT_MACHINE_GUN_gad_353.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_353.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,353
+GUNSHOT_MACHINE_GUN_gad_354.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_354.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,354
+GUNSHOT_MACHINE_GUN_gad_355.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_355.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,355
+GUNSHOT_MACHINE_GUN_gad_356.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_356.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,356
+GUNSHOT_MACHINE_GUN_gad_357.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_357.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,357
+GUNSHOT_MACHINE_GUN_gad_358.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_358.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,358
+GUNSHOT_MACHINE_GUN_gad_359.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_359.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,359
+GUNSHOT_MACHINE_GUN_gad_360.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_360.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,360
+GUNSHOT_MACHINE_GUN_gad_361.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_361.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,361
+GUNSHOT_MACHINE_GUN_gad_362.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_362.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,362
+GUNSHOT_MACHINE_GUN_gad_363.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_363.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,363
+GUNSHOT_MACHINE_GUN_gad_364.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_364.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,364
+GUNSHOT_MACHINE_GUN_gad_365.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_365.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,365
+GUNSHOT_MACHINE_GUN_gad_366.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_366.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,366
+GUNSHOT_MACHINE_GUN_gad_367.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_367.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,367
+GUNSHOT_MACHINE_GUN_gad_368.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_MACHINE_GUN_gad_368.wav,2000.0,6,GUNSHOT_MACHINE_GUN,Gunshot audio dataset,368
+GUNSHOT_HANDGUN_gad_369.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_369.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,369
+GUNSHOT_HANDGUN_gad_370.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_370.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,370
+GUNSHOT_HANDGUN_gad_371.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_371.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,371
+GUNSHOT_HANDGUN_gad_372.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_372.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,372
+GUNSHOT_HANDGUN_gad_373.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_373.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,373
+GUNSHOT_HANDGUN_gad_374.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_374.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,374
+GUNSHOT_HANDGUN_gad_375.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_375.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,375
+GUNSHOT_HANDGUN_gad_376.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_376.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,376
+GUNSHOT_HANDGUN_gad_377.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_377.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,377
+GUNSHOT_HANDGUN_gad_378.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_378.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,378
+GUNSHOT_HANDGUN_gad_379.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_379.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,379
+GUNSHOT_HANDGUN_gad_380.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_380.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,380
+GUNSHOT_HANDGUN_gad_381.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_381.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,381
+GUNSHOT_HANDGUN_gad_382.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_382.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,382
+GUNSHOT_HANDGUN_gad_383.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_383.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,383
+GUNSHOT_HANDGUN_gad_384.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_384.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,384
+GUNSHOT_HANDGUN_gad_385.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_385.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,385
+GUNSHOT_HANDGUN_gad_386.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_386.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,386
+GUNSHOT_HANDGUN_gad_387.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_387.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,387
+GUNSHOT_HANDGUN_gad_388.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_388.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,388
+GUNSHOT_HANDGUN_gad_389.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_389.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,389
+GUNSHOT_HANDGUN_gad_390.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_390.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,390
+GUNSHOT_HANDGUN_gad_391.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_391.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,391
+GUNSHOT_HANDGUN_gad_392.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_392.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,392
+GUNSHOT_HANDGUN_gad_393.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_393.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,393
+GUNSHOT_HANDGUN_gad_394.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_394.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,394
+GUNSHOT_HANDGUN_gad_395.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_395.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,395
+GUNSHOT_HANDGUN_gad_396.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_396.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,396
+GUNSHOT_HANDGUN_gad_397.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_397.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,397
+GUNSHOT_HANDGUN_gad_398.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_398.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,398
+GUNSHOT_HANDGUN_gad_399.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_399.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,399
+GUNSHOT_HANDGUN_gad_400.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_400.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,400
+GUNSHOT_HANDGUN_gad_401.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_401.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,401
+GUNSHOT_HANDGUN_gad_402.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_402.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,402
+GUNSHOT_HANDGUN_gad_403.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_403.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,403
+GUNSHOT_HANDGUN_gad_404.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_404.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,404
+GUNSHOT_HANDGUN_gad_405.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_405.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,405
+GUNSHOT_HANDGUN_gad_406.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_406.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,406
+GUNSHOT_HANDGUN_gad_407.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_407.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,407
+GUNSHOT_HANDGUN_gad_408.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_408.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,408
+GUNSHOT_HANDGUN_gad_409.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_409.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,409
+GUNSHOT_HANDGUN_gad_410.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_410.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,410
+GUNSHOT_HANDGUN_gad_411.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_411.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,411
+GUNSHOT_HANDGUN_gad_412.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_412.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,412
+GUNSHOT_HANDGUN_gad_413.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_413.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,413
+GUNSHOT_HANDGUN_gad_414.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_414.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,414
+GUNSHOT_HANDGUN_gad_415.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_415.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,415
+GUNSHOT_HANDGUN_gad_416.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_416.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,416
+GUNSHOT_HANDGUN_gad_417.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_417.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,417
+GUNSHOT_HANDGUN_gad_418.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_418.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,418
+GUNSHOT_HANDGUN_gad_419.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_419.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,419
+GUNSHOT_HANDGUN_gad_420.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_420.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,420
+GUNSHOT_HANDGUN_gad_421.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_421.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,421
+GUNSHOT_HANDGUN_gad_422.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_422.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,422
+GUNSHOT_HANDGUN_gad_423.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_423.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,423
+GUNSHOT_HANDGUN_gad_424.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_424.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,424
+GUNSHOT_HANDGUN_gad_425.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_425.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,425
+GUNSHOT_HANDGUN_gad_426.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_426.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,426
+GUNSHOT_HANDGUN_gad_427.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_427.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,427
+GUNSHOT_HANDGUN_gad_428.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_428.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,428
+GUNSHOT_HANDGUN_gad_429.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_429.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,429
+GUNSHOT_HANDGUN_gad_430.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_430.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,430
+GUNSHOT_HANDGUN_gad_431.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_431.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,431
+GUNSHOT_HANDGUN_gad_432.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_432.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,432
+GUNSHOT_HANDGUN_gad_433.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_433.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,433
+GUNSHOT_HANDGUN_gad_434.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_434.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,434
+GUNSHOT_HANDGUN_gad_435.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_435.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,435
+GUNSHOT_HANDGUN_gad_436.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_436.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,436
+GUNSHOT_HANDGUN_gad_437.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_437.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,437
+GUNSHOT_HANDGUN_gad_438.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_438.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,438
+GUNSHOT_HANDGUN_gad_439.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_439.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,439
+GUNSHOT_HANDGUN_gad_440.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_440.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,440
+GUNSHOT_HANDGUN_gad_441.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_441.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,441
+GUNSHOT_HANDGUN_gad_442.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_442.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,442
+GUNSHOT_HANDGUN_gad_443.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_443.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,443
+GUNSHOT_HANDGUN_gad_444.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_444.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,444
+GUNSHOT_HANDGUN_gad_445.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_445.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,445
+GUNSHOT_HANDGUN_gad_446.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_446.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,446
+GUNSHOT_HANDGUN_gad_447.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_447.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,447
+GUNSHOT_HANDGUN_gad_448.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_448.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,448
+GUNSHOT_HANDGUN_gad_449.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_449.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,449
+GUNSHOT_HANDGUN_gad_450.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_450.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,450
+GUNSHOT_HANDGUN_gad_451.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_451.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,451
+GUNSHOT_HANDGUN_gad_452.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_452.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,452
+GUNSHOT_HANDGUN_gad_453.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_453.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,453
+GUNSHOT_HANDGUN_gad_454.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_454.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,454
+GUNSHOT_HANDGUN_gad_455.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_455.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,455
+GUNSHOT_HANDGUN_gad_456.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_456.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,456
+GUNSHOT_HANDGUN_gad_457.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_457.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,457
+GUNSHOT_HANDGUN_gad_458.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_458.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,458
+GUNSHOT_HANDGUN_gad_459.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_459.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,459
+GUNSHOT_HANDGUN_gad_460.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_460.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,460
+GUNSHOT_HANDGUN_gad_461.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_461.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,461
+GUNSHOT_HANDGUN_gad_462.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_462.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,462
+GUNSHOT_HANDGUN_gad_463.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_463.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,463
+GUNSHOT_HANDGUN_gad_464.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_464.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,464
+GUNSHOT_HANDGUN_gad_465.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_465.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,465
+GUNSHOT_HANDGUN_gad_466.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_466.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,466
+GUNSHOT_HANDGUN_gad_467.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_467.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,467
+GUNSHOT_HANDGUN_gad_468.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_HANDGUN_gad_468.wav,2000.0,4,GUNSHOT_HANDGUN,Gunshot audio dataset,468
+GUNSHOT_RIFLE_gad_769.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_769.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,769
+GUNSHOT_RIFLE_gad_770.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_770.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,770
+GUNSHOT_RIFLE_gad_771.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_771.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,771
+GUNSHOT_RIFLE_gad_772.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_772.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,772
+GUNSHOT_RIFLE_gad_773.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_773.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,773
+GUNSHOT_RIFLE_gad_774.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_774.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,774
+GUNSHOT_RIFLE_gad_775.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_775.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,775
+GUNSHOT_RIFLE_gad_776.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_776.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,776
+GUNSHOT_RIFLE_gad_777.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_777.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,777
+GUNSHOT_RIFLE_gad_778.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_778.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,778
+GUNSHOT_RIFLE_gad_779.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_779.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,779
+GUNSHOT_RIFLE_gad_780.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_780.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,780
+GUNSHOT_RIFLE_gad_781.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_781.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,781
+GUNSHOT_RIFLE_gad_782.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_782.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,782
+GUNSHOT_RIFLE_gad_783.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_783.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,783
+GUNSHOT_RIFLE_gad_784.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_784.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,784
+GUNSHOT_RIFLE_gad_785.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_785.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,785
+GUNSHOT_RIFLE_gad_786.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_786.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,786
+GUNSHOT_RIFLE_gad_787.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_787.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,787
+GUNSHOT_RIFLE_gad_788.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_788.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,788
+GUNSHOT_RIFLE_gad_789.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_789.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,789
+GUNSHOT_RIFLE_gad_790.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_790.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,790
+GUNSHOT_RIFLE_gad_791.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_791.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,791
+GUNSHOT_RIFLE_gad_792.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_792.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,792
+GUNSHOT_RIFLE_gad_793.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_793.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,793
+GUNSHOT_RIFLE_gad_794.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_794.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,794
+GUNSHOT_RIFLE_gad_795.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_795.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,795
+GUNSHOT_RIFLE_gad_796.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_796.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,796
+GUNSHOT_RIFLE_gad_797.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_797.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,797
+GUNSHOT_RIFLE_gad_798.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_798.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,798
+GUNSHOT_RIFLE_gad_799.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_799.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,799
+GUNSHOT_RIFLE_gad_800.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_800.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,800
+GUNSHOT_RIFLE_gad_801.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_801.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,801
+GUNSHOT_RIFLE_gad_802.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_802.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,802
+GUNSHOT_RIFLE_gad_803.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_803.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,803
+GUNSHOT_RIFLE_gad_804.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_804.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,804
+GUNSHOT_RIFLE_gad_805.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_805.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,805
+GUNSHOT_RIFLE_gad_806.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_806.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,806
+GUNSHOT_RIFLE_gad_807.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_807.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,807
+GUNSHOT_RIFLE_gad_808.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_808.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,808
+GUNSHOT_RIFLE_gad_809.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_809.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,809
+GUNSHOT_RIFLE_gad_810.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_810.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,810
+GUNSHOT_RIFLE_gad_811.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_811.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,811
+GUNSHOT_RIFLE_gad_812.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_812.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,812
+GUNSHOT_RIFLE_gad_813.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_813.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,813
+GUNSHOT_RIFLE_gad_814.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_814.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,814
+GUNSHOT_RIFLE_gad_815.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_815.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,815
+GUNSHOT_RIFLE_gad_816.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_816.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,816
+GUNSHOT_RIFLE_gad_817.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_817.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,817
+GUNSHOT_RIFLE_gad_818.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_818.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,818
+GUNSHOT_RIFLE_gad_819.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_819.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,819
+GUNSHOT_RIFLE_gad_820.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_820.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,820
+GUNSHOT_RIFLE_gad_821.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_821.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,821
+GUNSHOT_RIFLE_gad_822.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_822.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,822
+GUNSHOT_RIFLE_gad_823.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_823.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,823
+GUNSHOT_RIFLE_gad_824.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_824.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,824
+GUNSHOT_RIFLE_gad_825.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_825.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,825
+GUNSHOT_RIFLE_gad_826.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_826.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,826
+GUNSHOT_RIFLE_gad_827.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_827.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,827
+GUNSHOT_RIFLE_gad_828.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_828.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,828
+GUNSHOT_RIFLE_gad_829.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_829.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,829
+GUNSHOT_RIFLE_gad_830.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_830.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,830
+GUNSHOT_RIFLE_gad_831.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_831.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,831
+GUNSHOT_RIFLE_gad_832.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_832.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,832
+GUNSHOT_RIFLE_gad_833.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_833.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,833
+GUNSHOT_RIFLE_gad_834.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_834.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,834
+GUNSHOT_RIFLE_gad_835.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_835.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,835
+GUNSHOT_RIFLE_gad_836.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_836.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,836
+GUNSHOT_RIFLE_gad_837.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_837.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,837
+GUNSHOT_RIFLE_gad_838.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_838.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,838
+GUNSHOT_RIFLE_gad_839.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_839.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,839
+GUNSHOT_RIFLE_gad_840.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_840.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,840
+GUNSHOT_RIFLE_gad_841.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_841.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,841
+GUNSHOT_RIFLE_gad_842.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_842.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,842
+GUNSHOT_RIFLE_gad_843.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_843.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,843
+GUNSHOT_RIFLE_gad_844.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_844.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,844
+GUNSHOT_RIFLE_gad_845.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_845.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,845
+GUNSHOT_RIFLE_gad_846.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_846.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,846
+GUNSHOT_RIFLE_gad_847.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_847.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,847
+GUNSHOT_RIFLE_gad_848.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_848.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,848
+GUNSHOT_RIFLE_gad_849.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_849.wav,1000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,849
+GUNSHOT_RIFLE_gad_850.wav,/workspaces/sound-recognition-ai/dataset/GUNSHOT_RIFLE_gad_850.wav,2000.0,5,GUNSHOT_RIFLE,Gunshot audio dataset,850

@@ -75,9 +75,10 @@ def workflow():
         missing_files.to_csv(
             C.PY_PROJECT_ROOT + os.path.sep + "missing_files.csv", index=False
         )
-
-    # Plot class name distribution
-    # plot_classname_distribution(main_df)
+        
+    no_length_row = ds.df[ds.df[C.DF_LENGTH_COL] == -1]
+    l.warning(f"Could not get .wav length for {len(no_length_row)} row(s)")
+    l.warning(no_length_row)
 
     # Get split config
     cfg = init_cfg()
