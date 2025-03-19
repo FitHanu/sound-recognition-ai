@@ -51,7 +51,7 @@ def workflow():
 
         # Call ds life cycle methods
         ds.hell_yeah()
-        l.info(f'Dataset: "{ds.name}" saved to {ds.ds_abs_path}')
+        l.info(f'Dataset: "{ds.name}" saved to {C.FINAL_DATASET_PATH}')
         # Read filtered metafile
         df = read_csv_as_dataframe(ds.get_filtered_meta_path())
 
