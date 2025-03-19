@@ -41,8 +41,8 @@ def append_empty_mapping_to_config(ds, overwrite: bool = False):
 
     from ds.dataset import DataSet
 
-    if not isinstance(ds, DataSet):
-        raise TypeError("ds must be an instance of ds.DataSet")
+    # if not isinstance(ds, DataSet):
+    #     raise TypeError("ds must be an instance of ds.DataSet")
 
     l.info(f"Writing config to {config_file_path}, Overiding: {overwrite}")
     parent_property = "class_mapping"
