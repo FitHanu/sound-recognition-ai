@@ -146,11 +146,6 @@ class DataSet(abc.ABC):
                 f"  key={self.key},\n"
                 f"  name={self.name},\n"
                 f"  format={self.format},\n"
-                f"  abs_path={self.ds_abs_path}\n"
-                f"  meta_sub_path={self.meta_sub_path}\n"
-                f"  data_sub_path={self.data_sub_path}\n"
-                f"  df_shape={self.df.shape}\n"
-                f"  df_types={self.df.dtypes}\n"
                 f")")
         
     @abc.abstractmethod
@@ -223,7 +218,7 @@ class DataSet(abc.ABC):
         return df
     
     # @abc.abstractmethod
-    def create_meta(self):
+    def create_meta(self) -> str:
         from utils.csv_utils import write_csv_meta
         df = pd.read_csv(self.get_paths().get_meta_path())
         path = write_csv_meta(self.df, self.key + ".filtered")

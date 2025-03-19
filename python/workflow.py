@@ -5,6 +5,7 @@ The project entry script
 import os
 import pandas as pd
 import constants as C
+import traceback
 from constants import PROJECT_ROOT
 from ds.dataset import PD_SCHEMA
 from utils.json_utils import init_default_class_name, append_empty_mapping_to_config
@@ -51,7 +52,7 @@ def workflow():
 
         # Call ds life cycle methods
         ds.hell_yeah()
-        l.info(f'Dataset: "{ds.name}" saved to {ds.ds_abs_path}')
+        l.info(f'Dataset: "{ds.name}" saved to {C.FINAL_DATASET_PATH}')
         # Read filtered metafile
         df = read_csv_as_dataframe(ds.get_filtered_meta_path())
 
@@ -136,5 +137,6 @@ if __name__ == "__main__":
         workflow()
     except Exception as e:
         l.error(f"Error while executing workflow: {e}")
+        l.error(f"{traceback.print_exc()}")
         l.info(f"Exiting with code 1, full log saved to {C.LOG_PATH}")
         exit(1)

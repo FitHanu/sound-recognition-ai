@@ -43,12 +43,6 @@ class UrbanSound8K(DataSet):
         )
         return filtered_df
 
-    def create_meta(self):
-        df = pd.read_csv(self.get_paths().get_meta_path())
-        path = write_csv_meta(self.df, self.key + ".filtered")
-        _ = write_csv_meta(df, self.key + ".original")
-        self.filtered_meta_path = path
-
     def get_filtered_meta_path(self):
         return self.filtered_meta_path
 
