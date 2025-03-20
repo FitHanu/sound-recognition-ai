@@ -28,10 +28,10 @@ def workflow():
     Main procedure
     """
     datasets_registry = [
-        ESC50(),
-        GAD(),
+        # ESC50(),
+        # GAD(),
         UrbanSound8K(),
-        BDLib2(),
+        # BDLib2(),
     ]
 
     # Init paths, Default class names
@@ -90,19 +90,19 @@ def workflow():
     aug_k_df = split_tdt(main_df, cfg)
 
     # Move to filtered dataset path
-    """
-    Dataset path structure:
-    dataset/
-        meta.csv
-        audio/
-            file1.wav
-            file2.wav
-            ...
-    """
-    l.info(f"Moving files from final dataset to {DATASET_PATH_FILTERED}")
-    AUDIO_PATH = os.path.join(DATASET_PATH_FILTERED, "audio")
-    os.makedirs(AUDIO_PATH, exist_ok=True)
-    aug_k_df = copy_update_dataset_file(aug_k_df, AUDIO_PATH)
+    # """
+    # Dataset path structure:
+    # dataset/
+    #     meta.csv
+    #     audio/
+    #         file1.wav
+    #         file2.wav
+    #         ...
+    # """
+    # l.info(f"Moving files from final dataset to {DATASET_PATH_FILTERED}")
+    # AUDIO_PATH = os.path.join(DATASET_PATH_FILTERED, "audio")
+    # os.makedirs(AUDIO_PATH, exist_ok=True)
+    # aug_k_df = copy_update_dataset_file(aug_k_df, AUDIO_PATH)
 
     # Save augmented dataframe to .csv
     org_filename = get_filename_without_extension(FULL_META_CSV)

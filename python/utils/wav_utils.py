@@ -3,6 +3,7 @@ import wave
 import tensorflow as tf
 import tensorflow_io as tfio
 import pandas as pd
+import soundfile as sf
 
 class InvalidArgument(Exception):
     pass
@@ -34,7 +35,12 @@ def get_wave_data_length_2(row: pd.Series) -> float:
     # Validate file path
     import constants as C
     try:
-        file_length = get_wav_data_length(row[C.DF_PATH_COL])
+        file_path = row[C.DF_PATH_COL]
+        with sf.SoundFile(file_path) as audio_file:
+            len = len(audio_file)
+            sr = audio_file.samplerate
+            duration = len / sr
+            return duration * 1000  # Convert to milliseconds
         row[C.DF_LENGTH_COL] = file_length
     except Exception:
         row[C.DF_LENGTH_COL] = -1

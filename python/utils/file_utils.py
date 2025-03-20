@@ -87,6 +87,14 @@ def clean_user_cache_dir():
         return cache_dir
     except Exception as e:
         raise e
+
+def clean_dataset_dir():
+    from constants import FINAL_DATASET_PATH
+    rm_path = os.path.join(FINAL_DATASET_PATH, "*")
+    try:
+        subprocess.run(["rm", "-rf", rm_path])
+    except Exception as e:
+        raise e
     
 
 def init_folds(final_path: str, fold_num: int) -> None:
@@ -96,3 +104,14 @@ def init_folds(final_path: str, fold_num: int) -> None:
     for i in range(fold_num):
         f_path = os.path.join(final_path, str(i))
         os.makedirs(f_path, exist_ok=True)
+        
+
+
+
+def main():
+    clean_user_cache_dir()
+    clean_dataset_dir()
+
+
+if __name__ == "__main__":
+    main()
