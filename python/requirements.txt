@@ -2,7 +2,7 @@ kagglehub
 pandas
 matplotlib
 gdown
-tensorflow
+tensorflow==2.14.*
 tensorflow-hub
-tensorflow-io
+tensorflow-io==0.35.0
 soundfile
