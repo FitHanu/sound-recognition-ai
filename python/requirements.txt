@@ -5,3 +5,4 @@ gdown
 tensorflow
 tensorflow-hub
 tensorflow-io
+soundfile
