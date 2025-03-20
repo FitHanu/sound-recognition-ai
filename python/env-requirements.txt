@@ -1,13 +1,3 @@
-# kagglehub
-# pandas
-# matplotlib
-# gdown
-# tensorflow==2.14.*
-# tensorflow-hub
-# tensorflow-io==0.35.0
-# # ml_dtype==
-# soundfile
-
 absl-py==1.4.0
 accelerate==1.5.2
 aiohappyeyeballs==2.6.1
