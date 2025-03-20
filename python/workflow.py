@@ -28,10 +28,10 @@ def workflow():
     Main procedure
     """
     datasets_registry = [
-        # ESC50(),
-        # GAD(),
+        ESC50(),
+        GAD(),
         UrbanSound8K(),
-        # BDLib2(),
+        BDLib2(),
     ]
 
     # Init paths, Default class names
