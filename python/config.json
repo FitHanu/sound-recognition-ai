@@ -28,7 +28,10 @@
       "17": "FIRE",
       "18": "RAIN",
       "19": "DOOR_KNOCK",
-      "20": "DOG_BARK"
+      "20": "DOG_BARK",
+      "21": "BRAKE",
+      "22": "ELECTRIC_SHOCK",
+      "23": "ROCKSLIDE"
     },
     "esc50": {
       "dog": 20,
@@ -116,6 +119,17 @@
       "MG-42": 6,
       "MP5": 0,
       "AK-12": 5
+    },
+    "thaoLp": {
+      "Brake": 21,
+      "Car crash": 7,
+      "Electric shock": 22,
+      "Fire arlam": 15,
+      "Glass broken": 14,
+      "Long horn": 2,
+      "Rockslide": 23,
+      "Scream": 13,
+      "Siren": 1
     }
   }
 }

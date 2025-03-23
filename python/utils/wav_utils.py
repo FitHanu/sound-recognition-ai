@@ -24,7 +24,8 @@ def get_wav_data_length(file_path: str) -> float:
             return duration * 1000  # Convert to milliseconds
     except Exception as e:
         print(f"Error processing WAV file: {file_path}, error: {e}")
-        raise e
+        return -1  # Return -1 if an error occurs
+
 
 
 def get_wave_data_length_2(row: pd.Series) -> float:

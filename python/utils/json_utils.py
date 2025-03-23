@@ -86,7 +86,7 @@ def append_empty_mapping_to_config(ds, overwrite: bool = False):
     with open(config_file_path, "w") as file:
         json.dump(data, file, indent=2)
     l.info(
-        f"Appended {column.size} empty classes to config.{parent_property}.{ds_key}."
+        f"Appended {len(column)} empty classes to config.{parent_property}.{ds_key}."
     )
 
 
@@ -98,12 +98,29 @@ def init_default_class_name():
 
     parent_property = "class_mapping"
     default_cn_property = "default"
-    df = pd.read_csv(DataSet.DEFAULT_CLASSNAME_PATH)
+    
+    # Read the current config.json file
     with open(config_file_path, "r") as f:
         data = json.load(f)
+    # If `class_mapping` or `default` keys do not exist, create them
+    if parent_property not in data:
+        data[parent_property] = {}
+    if default_cn_property not in data[parent_property]:
         data[parent_property][default_cn_property] = {}
-        for _, row in df.iterrows():
-            data[parent_property][default_cn_property][row["id"]] = row["class_name"]
+
+    existing_classes = data[parent_property][default_cn_property]  # Store existing classes
+
+    # Read default class names from CSV file
+    df = pd.read_csv(DataSet.DEFAULT_CLASSNAME_PATH)
+    for _, row in df.iterrows():
+        class_id = str(row["id"])  # Convert ID to string to match JSON format
+        class_name = row["class_name"]
+
+        # **Only add if the class_id does not already exist**
+        if class_id not in existing_classes:
+            data[parent_property][default_cn_property][class_id] = class_name
+
+    # Save the updated config file while preserving existing class names
     with open(config_file_path, "w") as file:
         json.dump(data, file, indent=2)
     l.info(

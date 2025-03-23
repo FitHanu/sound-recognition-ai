@@ -17,6 +17,7 @@ from ds.esc50 import ESC50
 from ds.us8k import UrbanSound8K
 from ds.bdlib2 import BDLib2
 from ds.gad import GAD
+from ds.thaolp import ThaoLp
 
 from logging_cfg import get_logger
 
@@ -28,10 +29,11 @@ def workflow():
     Main procedure
     """
     datasets_registry = [
-        ESC50(),
-        GAD(),
-        UrbanSound8K(),
-        BDLib2(),
+        # ESC50(),
+        # GAD(),
+        # UrbanSound8K(),
+        # BDLib2(),
+        ThaoLp(),
     ]
 
     # Init paths, Default class names
