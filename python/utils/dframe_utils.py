@@ -3,6 +3,7 @@ import constants as C
 import os
 import pandas as pd
 import shutil
+import tensorflow as tf
 from utils.file_utils import get_filename_from_path
 
 
@@ -52,3 +53,23 @@ def copy_update_dataset_file(df: pd.DataFrame, dest_path: str) -> pd.DataFrame:
     # Update paths
     cp_df["file_path"] = new_paths
     return cp_df
+
+
+def to_tensor_dataset(df: pd.DataFrame) -> tf.data.Dataset:
+
+    """
+    convert df to tensorflow compatible dataset     
+    """
+
+    from utils.wav_utils import load_wav_16k_mono
+    
+    def transform_wav(filename: str, class_id, fold):
+        return load_wav_16k_mono(filename), class_id, fold
+    
+    filenames = df[C.DF_PATH_COL]
+    targets = df[C.DF_CLASS_ID_COL]
+    folds = df[C.DF_FOLD_COL]
+
+    ts_ds = tf.data.Dataset.from_tensor_slices((filenames, targets, folds))
+    return ts_ds.map(transform_wav)
+    # return ts_ds

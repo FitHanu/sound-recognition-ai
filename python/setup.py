@@ -24,9 +24,8 @@ def install_requirements():
     try:
         subprocess.call(args)
         l.info(f"Successfully installed dependencies from requirements.txt")
-    except subprocess.CalledProcessError as e:
+    except Exception as e:
         l.error(f"Failed to install requirements: {e}")
-
 
 def append_project_path():
     """

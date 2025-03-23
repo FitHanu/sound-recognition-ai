@@ -13,6 +13,7 @@ DF_CLASS_ID_COL = "class_id"
 DF_CLASS_NAME_COL = "class_name"
 DF_SUB_DS_NAME_COL = "sub_ds_name"
 DF_SUB_DS_ID_COL = "sub_ds_index"
+DF_FOLD_COL = "fold"
 
 # Constant when working with class mapping
 CLASS_ID = 0
