@@ -29,10 +29,10 @@ def workflow():
     Main procedure
     """
     datasets_registry = [
-        # ESC50(),
-        # GAD(),
-        # UrbanSound8K(),
-        # BDLib2(),
+        ESC50(),
+        GAD(),
+        UrbanSound8K(),
+        BDLib2(),
         ThaoLp(),
     ]
 
