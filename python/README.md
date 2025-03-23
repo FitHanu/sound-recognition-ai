@@ -1,3 +1,13 @@
+## Enviroment
+
++ Python 3.11.11
++ Ubuntu 22.04.4 LTS x86_64
++ CUDA Version: 12.4
+
+## Dependencies
+
+See `requirements.txt`
+
 ## Setup
 
 1. Run setup
