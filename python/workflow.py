@@ -121,19 +121,19 @@ def test():
     
     
 if __name__ == "__main__":
-    # args = get_args()
-    # if args.clean_cache == True:
-    #     from utils.file_utils import clean_user_cache_dir
+    args = get_args()
+    if args.clean_cache == True:
+        from utils.file_utils import clean_user_cache_dir
 
-    #     l.info("Cleaning user cache dir ...")
-    #     c_dir = clean_user_cache_dir()
-    #     l.info(f"Contents in {c_dir} has been cleaned.")
-    # try:
-    #     workflow()
-    # except Exception as e:
-    #     l.error(f"Error while executing workflow: {e}")
-    #     l.error(f"{traceback.print_exc()}")
-    #     l.info(f"Exiting with code 1, full log saved to {C.LOG_PATH}")
-    #     exit(1)
-    test()
+        l.info("Cleaning user cache dir ...")
+        c_dir = clean_user_cache_dir()
+        l.info(f"Contents in {c_dir} has been cleaned.")
+    try:
+        workflow()
+    except Exception as e:
+        l.error(f"Error while executing workflow: {e}")
+        l.error(f"{traceback.print_exc()}")
+        l.info(f"Exiting with code 1, full log saved to {C.LOG_PATH}")
+        exit(1)
+    # test()
  
