@@ -7,6 +7,7 @@ import pandas as pd
 import constants as C
 import tensorflow as tf
 import uuid
+import traceback
 from constants import PROJECT_ROOT
 from ds.dataset import PD_SCHEMA
 from utils.json_utils import init_default_class_name, append_empty_mapping_to_config
@@ -112,8 +113,7 @@ def workflow():
     class_names = get_classes_from_config()
     
     yamnet_tweaked = tf.keras.Sequential([
-    tf.keras.layers.Input(shape=(1024), dtype=tf.float32,
-                          name='input_embedding'),
+    tf.keras.layers.Input(shape=(1024, ), dtype=tf.float32, name='input_embedding'),
     tf.keras.layers.Dense(512, activation='relu'),
     tf.keras.layers.Dense(len(class_names))
     ], name='yamnet_tweaked')
@@ -152,23 +152,21 @@ def test():
         file_name = os.path.join(C.PY_PROJECT_ROOT, "plots", file_name)
         from wav_utils import plot_mono_wav
         plot_mono_wav(audio_waveform, figname=file_name)
-    
-    
-    
-if __name__ == "__main__":
-    # args = get_args()
-    # if args.clean_cache == True:
-    #     from utils.file_utils import clean_user_cache_dir
 
-    #     l.info("Cleaning user cache dir ...")
-    #     c_dir = clean_user_cache_dir()
-    #     l.info(f"Contents in {c_dir} has been cleaned.")
-    # try:
-    #     workflow()
-    # except Exception as e:
-    #     l.error(f"Error while executing workflow: {e}")
-    #     l.error(f"{traceback.print_exc()}")
-    #     l.info(f"Exiting with code 1, full log saved to {C.LOG_PATH}")
-    #     exit(1)
-    test()
+if __name__ == "__main__":
+    args = get_args()
+    if args.clean_cache == True:
+        from utils.file_utils import clean_user_cache_dir
+
+        l.info("Cleaning user cache dir ...")
+        c_dir = clean_user_cache_dir()
+        l.info(f"Contents in {c_dir} has been cleaned.")
+    try:
+        workflow()
+    except Exception as e:
+        l.error(f"Error while executing workflow: {e}")
+        l.error(f"{traceback.print_exc()}")
+        l.info(f"Exiting with code 1, full log saved to {C.LOG_PATH}")
+        exit(1)
+    # test()
 
