@@ -30,4 +30,8 @@ META_PATH = os.path.join(PY_PROJECT_ROOT, "ds", "meta")
 FULL_META_CSV = os.path.join(PY_PROJECT_ROOT, "ds", "meta", "merged.csv")
 CLASSES_CSV = os.path.join(PY_PROJECT_ROOT, "classes.csv")
 FINAL_DATASET_PATH = os.path.join(PROJECT_ROOT, "dataset")
+FINAL_DATASET_PATH_META_FILE = os.path.join(FINAL_DATASET_PATH, "merged.augmented.folded.csv")
 LOG_PATH = os.path.join(PY_PROJECT_ROOT, "logs")
+# FINAL_DS_CSV_PATH = os.path.join(FINAL_DATASET_PATH, "final.csv")
+
+YAMNET_MODEL_URL = "https://tfhub.dev/google/yamnet/1"

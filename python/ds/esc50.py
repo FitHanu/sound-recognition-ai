@@ -39,7 +39,7 @@ class ESC50(DataSet):
         
         
         # Get length
-        df_filtered = df_filtered.apply(get_wave_data_length_2, axis=1)
+        # df_filtered = df_filtered.apply(get_wave_data_length_2, axis=1)
         
         return final_df
 

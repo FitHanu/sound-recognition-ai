@@ -5,7 +5,8 @@ The project entry script
 import os
 import pandas as pd
 import constants as C
-import traceback
+import tensorflow as tf
+import uuid
 from constants import PROJECT_ROOT
 from ds.dataset import PD_SCHEMA
 from utils.json_utils import init_default_class_name, append_empty_mapping_to_config
@@ -35,9 +36,9 @@ def workflow():
     ]
 
     # Init paths, Default class names
-    DATASET_PATH_FILTERED = os.path.join(PROJECT_ROOT, "dataset")
-    l.info(f"Creating empty dataset directory to {DATASET_PATH_FILTERED}")
-    os.makedirs(DATASET_PATH_FILTERED, exist_ok=True)
+    # DATASET_PATH_FILTERED = os.path.join(PROJECT_ROOT, "dataset")
+    l.info(f"Creating empty dataset directory to {C.FINAL_DATASET_PATH}")
+    os.makedirs(C.FINAL_DATASET_PATH, exist_ok=True)
     init_default_class_name()
     # init_class_folds(DATASET_PATH_FILTERED)
 
@@ -77,9 +78,9 @@ def workflow():
             C.PY_PROJECT_ROOT + os.path.sep + "missing_files.csv", index=False
         )
         
-    no_length_row = ds.df[ds.df[C.DF_LENGTH_COL] == -1]
-    l.warning(f"Could not get .wav length for {len(no_length_row)} row(s)")
-    l.warning(no_length_row)
+    # no_length_row = ds.df[ds.df[C.DF_LENGTH_COL] == -1]
+    # l.warning(f"Could not get .wav length for {len(no_length_row)} row(s)")
+    # l.warning(no_length_row)
 
     # Get split config
     cfg = init_cfg()
@@ -90,11 +91,34 @@ def workflow():
     aug_k_df = split_tdt(main_df, cfg)
 
     # Save augmented dataframe to .csv
-    aug_filename = "merged.augmented.folded.csv"
-    final_meta = os.path.join(DATASET_PATH_FILTERED, aug_filename)
+    final_meta = C.FINAL_DATASET_PATH_META_FILE
     l.info(f"Datasets processing done, saving meta file to {final_meta}")
     aug_k_df.to_csv(final_meta, index=False)
+    from utils.dframe_utils import to_tensor_ds_embedding_extracted
+    ds_ts = to_tensor_ds_embedding_extracted(aug_k_df)
 
+    cached_ds = ds_ts.cache()
+    train_ds = cached_ds.filter(lambda embedding, class_name, fold: fold < 8)
+    val_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 8)
+    test_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 9)
+    
+    remove_fold_column = lambda embedding, class_name, fold: (embedding, class_name)
+
+    train_ds = train_ds.map(remove_fold_column)
+    val_ds = val_ds.map(remove_fold_column)
+    test_ds = test_ds.map(remove_fold_column)
+    
+    from utils.csv_utils import get_classes_from_config
+    class_names = get_classes_from_config()
+    
+    yamnet_tweaked = tf.keras.Sequential([
+    tf.keras.layers.Input(shape=(1024), dtype=tf.float32,
+                          name='input_embedding'),
+    tf.keras.layers.Dense(512, activation='relu'),
+    tf.keras.layers.Dense(len(class_names))
+    ], name='yamnet_tweaked')
+
+    yamnet_tweaked.summary()
 
 
 
@@ -115,25 +139,36 @@ def test():
     workflow()
     pth = os.path.join(PROJECT_ROOT, "dataset", "merged.augmented.folded.csv")
     ds = pd.read_csv(pth)
-    from utils.dframe_utils import to_tensor_dataset
-    ds_ts = to_tensor_dataset(ds)
-    ds_ts.element_spec
+    from utils.dframe_utils import to_tensor_ds_embedding_extracted
+    ds_ts = to_tensor_ds_embedding_extracted(ds)
+    print(ds_ts)
+    print(ds_ts.element_spec)
+    for i, (audio_waveform, label, fold) in enumerate(ds_ts.take(10)):
+        if tf.reduce_any(tf.math.is_nan(audio_waveform)):
+            print(f"⚠️ Found NaN values in audio at index {i}")
+        if tf.size(audio_waveform) == 0:
+            print(f"⚠️ Empty audio tensor at index {i}")
+        file_name = f"{label}_{fold}_{uuid.uuid1()}.png"
+        file_name = os.path.join(C.PY_PROJECT_ROOT, "plots", file_name)
+        from wav_utils import plot_mono_wav
+        plot_mono_wav(audio_waveform, figname=file_name)
+    
     
     
 if __name__ == "__main__":
-    args = get_args()
-    if args.clean_cache == True:
-        from utils.file_utils import clean_user_cache_dir
+    # args = get_args()
+    # if args.clean_cache == True:
+    #     from utils.file_utils import clean_user_cache_dir
 
-        l.info("Cleaning user cache dir ...")
-        c_dir = clean_user_cache_dir()
-        l.info(f"Contents in {c_dir} has been cleaned.")
-    try:
-        workflow()
-    except Exception as e:
-        l.error(f"Error while executing workflow: {e}")
-        l.error(f"{traceback.print_exc()}")
-        l.info(f"Exiting with code 1, full log saved to {C.LOG_PATH}")
-        exit(1)
-    # test()
- 
+    #     l.info("Cleaning user cache dir ...")
+    #     c_dir = clean_user_cache_dir()
+    #     l.info(f"Contents in {c_dir} has been cleaned.")
+    # try:
+    #     workflow()
+    # except Exception as e:
+    #     l.error(f"Error while executing workflow: {e}")
+    #     l.error(f"{traceback.print_exc()}")
+    #     l.info(f"Exiting with code 1, full log saved to {C.LOG_PATH}")
+    #     exit(1)
+    test()
+

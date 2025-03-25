@@ -182,4 +182,5 @@ test.py
 test/test.py
 # ds/meta/*
 logs/*
+plots/*
 missing_files.csv

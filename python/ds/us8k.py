@@ -37,10 +37,10 @@ class UrbanSound8K(DataSet):
         filtered_df[C.DF_CLASS_NAME_COL] = df["class"].apply(lambda original_classname: class_map[original_classname][C.CLASS_NAME])
         filtered_df[C.DF_SUB_DS_NAME_COL] = self.key
         filtered_df[C.DF_SUB_DS_ID_COL] = df.index
-        filtered_df = filtered_df.apply(
-            lambda x: get_wave_data_length_2(x),
-            axis=1
-        )
+        # filtered_df = filtered_df.apply(
+        #     lambda x: get_wave_data_length_2(x),
+        #     axis=1
+        # )
         return filtered_df
 
     def get_filtered_meta_path(self):

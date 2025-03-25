@@ -22,7 +22,7 @@ PD_SCHEMA = {
     # Audio file path
     C.DF_PATH_COL: "string",
     # Audio file length (must be in milliseconds)
-    C.DF_LENGTH_COL: "int64",
+    # C.DF_LENGTH_COL: "int64",
     # Class Name ID
     C.DF_CLASS_ID_COL: "int16",
     # Class Name (string)
