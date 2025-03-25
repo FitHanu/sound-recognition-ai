@@ -14,8 +14,8 @@ dependencies:
   - tensorboard
   - numpy
   - librosa
-  - xorg-xserver
   - pip:
     - gdown
     - soundfile
     - kagglehub==0.3.10
+    - matplotlib-inline
