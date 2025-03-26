@@ -8,6 +8,7 @@ import constants as C
 import tensorflow as tf
 import uuid
 import traceback
+from tensorflow import keras
 from constants import PROJECT_ROOT
 from ds.dataset import PD_SCHEMA
 from utils.json_utils import init_default_class_name, append_empty_mapping_to_config
@@ -109,6 +110,10 @@ def workflow():
     val_ds = val_ds.map(remove_fold_column)
     test_ds = test_ds.map(remove_fold_column)
     
+    train_ds = train_ds.cache().shuffle(1000).batch(32).prefetch(tf.data.AUTOTUNE)
+    val_ds = val_ds.cache().batch(32).prefetch(tf.data.AUTOTUNE)
+    test_ds = test_ds.cache().batch(32).prefetch(tf.data.AUTOTUNE)
+    
     from utils.csv_utils import get_classes_from_config
     class_names = get_classes_from_config()
     
@@ -119,6 +124,36 @@ def workflow():
     ], name='yamnet_tweaked')
 
     yamnet_tweaked.summary()
+    
+    from utils.metric_utils import f1_score
+    # raw scores (logits) instead of probabilities (if the final layer doesn’t have softmax).
+    yamnet_tweaked.compile(loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+                            optimizer="adamax",
+                            metrics=[
+                                keras.metrics.Precision(name="precision"),  
+                                keras.metrics.Recall(name="recall"),
+                                f1_score
+                            ])
+
+    callback = tf.keras.callbacks.EarlyStopping(monitor='loss',
+                                                patience=5,
+                                                restore_best_weights=True)
+
+    history = yamnet_tweaked.fit(train_ds,
+                        epochs=100,
+                        validation_data=val_ds,
+                        callbacks=callback)
+    
+    # Save training history to log directory
+    history_log_path = os.path.join(C.LOG_PATH, "training_history.txt")
+    with open(history_log_path, "w") as f:
+        for key, values in history.history.items():
+            f.write(f"{key}: {values}\n")
+    l.info(f"Training history saved to {history_log_path}")
+    
+    loss, accuracy = yamnet_tweaked.evaluate(test_ds)
+    l.info(f"Loss: {loss}")
+    l.info(f"Accuracy: {accuracy}")
 
 
 
@@ -157,7 +192,6 @@ if __name__ == "__main__":
     args = get_args()
     if args.clean_cache == True:
         from utils.file_utils import clean_user_cache_dir
-
         l.info("Cleaning user cache dir ...")
         c_dir = clean_user_cache_dir()
         l.info(f"Contents in {c_dir} has been cleaned.")

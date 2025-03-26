@@ -9,7 +9,7 @@ dependencies:
   - pandas
   - matplotlib
   - tensorflow-hub
-  - tensorflow==2.16.*
+  - tensorflow
   - tf-keras
   - tensorboard
   - numpy
