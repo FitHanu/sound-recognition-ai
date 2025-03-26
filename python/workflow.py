@@ -8,6 +8,7 @@ import constants as C
 import tensorflow as tf
 import uuid
 import traceback
+import tensorflow_hub as hub
 from tensorflow import keras
 from constants import PROJECT_ROOT
 from ds.dataset import PD_SCHEMA
@@ -154,6 +155,26 @@ def workflow():
     loss, accuracy = yamnet_tweaked.evaluate(test_ds)
     l.info(f"Loss: {loss}")
     l.info(f"Accuracy: {accuracy}")
+    
+    class ReduceMeanLayer(tf.keras.layers.Layer):
+        def __init__(self, axis=0, **kwargs):
+            super(ReduceMeanLayer, self).__init__(**kwargs)
+            self.axis = axis
+
+        def call(self, input):
+            return tf.math.reduce_mean(input, axis=self.axis)
+    
+    saved_model_path = './yamnet_tweaked'
+    input_segment = tf.keras.layers.Input(shape=(), dtype=tf.float32, name='audio')
+    embedding_extraction_layer = hub.KerasLayer('https://tfhub.dev/google/yamnet/1',
+                                                trainable=False, name='yamnet')
+    _, embeddings_output, _ = embedding_extraction_layer(input_segment)
+    serving_outputs = yamnet_tweaked(embeddings_output)
+    serving_outputs = ReduceMeanLayer(axis=0, name='classifier')(serving_outputs)
+    serving_model = tf.keras.Model(input_segment, serving_outputs)
+    serving_model.save(saved_model_path, include_optimizer=False)
+    
+    
 
 
 
