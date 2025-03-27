@@ -274,7 +274,6 @@ def validate_wav_pcm_format(file_path) -> bool:
     """
     try:
         if get_wave_format(file_path) != KnownWavFormat.WAVE_FORMAT_PCM:
-            l.warning(f"{file_path} is in {format} ❌")
             return False
     except Exception as e:
         l.warning(f"Error occur when validating WAV file: {file_path}, error: {e}")
@@ -284,15 +283,13 @@ def validate_wav_pcm_format(file_path) -> bool:
 
     
 def convert_pcm_pd_row(row: pd.Series) -> None:
-    file_path = row[C.DF_PATH_COL] 
+    file_path = row[C.DF_PATH_COL]
     if not validate_wav_pcm_format(file_path):
-        l.info(f"Converting {file_path} to PCM")
         convert_to_pcm_replace_ffmpeg(file_path)
 
 def convert_pcm_pd_row_2(row: pd.Series) -> None:
     file_path = row[C.DF_PATH_COL] 
     if not validate_wav_pcm_format(file_path):
-        l.info(f"Converting {file_path} to PCM")
         convert_to_pcm_replace_sox(file_path)
 
 def validate_wav_pd_row(row: pd.Series) -> bool:

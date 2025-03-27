@@ -14,11 +14,16 @@ from constants import PROJECT_ROOT
 from ds.dataset import PD_SCHEMA
 from utils.json_utils import init_default_class_name, append_empty_mapping_to_config
 from utils.file_utils import init_class_folds, get_filename_without_extension
-from utils.csv_utils import read_csv_as_dataframe, write_csv_meta
-from utils.dframe_utils import plot_classname_distribution, copy_update_dataset_file
+from utils.csv_utils import (read_csv_as_dataframe,
+                            write_csv_meta,
+                            get_classes_from_config)
+from utils.dframe_utils import (plot_classname_distribution,
+                                copy_update_dataset_file,
+                                to_tensor_ds_embedding_extracted)
 from utils.wav_utils import (convert_pcm_pd_row,
                             convert_pcm_pd_row_2,
                             validate_wav_pd_row)
+from utils.metric_utils import f1_score
 from partition.split_tdt import split_tdt, init_cfg
 from ds.esc50 import ESC50
 from ds.us8k import UrbanSound8K
@@ -115,84 +120,86 @@ def workflow():
     final_meta = C.FILTERED_AUG_FOLDED_META_CSV
     l.info(f"Datasets processing done, saving meta file to {final_meta}")
     aug_k_df.to_csv(final_meta, index=False)
-    # from utils.dframe_utils import to_tensor_ds_embedding_extracted
-    # ds_ts = to_tensor_ds_embedding_extracted(aug_k_df)
 
-    # cached_ds = ds_ts.cache()
-    # train_ds = cached_ds.filter(lambda embedding, class_name, fold: fold < 8)
-    # val_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 8)
-    # test_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 9)
-    
-    # remove_fold_column = lambda embedding, class_name, fold: (embedding, class_name)
+    ds_ts = to_tensor_ds_embedding_extracted(aug_k_df)
 
-    # train_ds = train_ds.map(remove_fold_column)
-    # val_ds = val_ds.map(remove_fold_column)
-    # test_ds = test_ds.map(remove_fold_column)
+    # Filter train, val, test by fold label
+    cached_ds = ds_ts.cache()
+    train_ds = cached_ds.filter(lambda embedding, class_name, fold: fold < 8)
+    val_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 8)
+    test_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 9)
     
-    # train_ds = train_ds.cache().shuffle(1000).batch(32).prefetch(tf.data.AUTOTUNE)
-    # val_ds = val_ds.cache().batch(32).prefetch(tf.data.AUTOTUNE)
-    # test_ds = test_ds.cache().batch(32).prefetch(tf.data.AUTOTUNE)
+    # Remove fold column
+    remove_fold_column = lambda embedding, class_name, fold: (embedding, class_name)
+    train_ds = train_ds.map(remove_fold_column)
+    val_ds = val_ds.map(remove_fold_column)
+    test_ds = test_ds.map(remove_fold_column)
     
-    # from utils.csv_utils import get_classes_from_config
-    # class_names = get_classes_from_config()
+    train_ds = train_ds.cache().shuffle(1000).batch(32).prefetch(tf.data.AUTOTUNE)
+    val_ds = val_ds.cache().batch(32).prefetch(tf.data.AUTOTUNE)
+    test_ds = test_ds.cache().batch(32).prefetch(tf.data.AUTOTUNE)
     
-    # yamnet_tweaked = tf.keras.Sequential([
-    # tf.keras.layers.Input(shape=(1024, ), dtype=tf.float32, name='input_embedding'),
-    # tf.keras.layers.Dense(512, activation='relu'),
-    # tf.keras.layers.Dense(len(class_names))
-    # ], name='yamnet_tweaked')
+    # Model setup
+    class_names = get_classes_from_config()
+    yamnet_tweaked = tf.keras.Sequential([
+    tf.keras.layers.Input(shape=(1024, ), dtype=tf.float32, name='input_embedding'),
+    tf.keras.layers.Dense(512, activation='relu'),
+    tf.keras.layers.Dense(len(class_names))
+    ], name='yamnet_tweaked')
 
-    # yamnet_tweaked.summary()
+    yamnet_tweaked.summary()
     
-    # from utils.metric_utils import f1_score
-    # # raw scores (logits) instead of probabilities (if the final layer doesn’t have softmax).
-    # yamnet_tweaked.compile(loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-    #                         optimizer="adamax",
-    #                         metrics=[
-    #                             keras.metrics.Precision(name="precision"),  
-    #                             keras.metrics.Recall(name="recall"),
-    #                             f1_score
-    #                         ])
+    # Compile the model
+    # raw scores (logits) instead of probabilities (if the final layer doesn’t have softmax).
+    yamnet_tweaked.compile(loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+                            optimizer="adamax",
+                            metrics=[
+                                keras.metrics.Precision(name="precision"),  
+                                keras.metrics.Recall(name="recall"),
+                                f1_score
+                            ])
 
-    # callback = tf.keras.callbacks.EarlyStopping(monitor='loss',
-    #                                             patience=5,
-    #                                             restore_best_weights=True)
+    callback = tf.keras.callbacks.EarlyStopping(monitor='loss',
+                                                patience=5,
+                                                restore_best_weights=True)
 
-    # history = yamnet_tweaked.fit(train_ds,
-    #                     epochs=100,
-    #                     validation_data=val_ds,
-    #                     callbacks=callback)
+    history = yamnet_tweaked.fit(train_ds,
+                        epochs=100,
+                        validation_data=val_ds,
+                        callbacks=callback)
     
-    # # Save training history to log directory
-    # history_log_path = os.path.join(C.LOG_PATH, "training_history.txt")
-    # with open(history_log_path, "w") as f:
-    #     for key, values in history.history.items():
-    #         f.write(f"{key}: {values}\n")
-    # l.info(f"Training history saved to {history_log_path}")
+    # Save training history to log directory
+    history_log_path = os.path.join(C.LOG_PATH, "training_history.txt")
+    with open(history_log_path, "w") as f:
+        for key, values in history.history.items():
+            f.write(f"{key}: {values}\n")
+    l.info(f"Training history saved to {history_log_path}")
     
-    # loss, accuracy = yamnet_tweaked.evaluate(test_ds)
-    # l.info(f"Loss: {loss}")
-    # l.info(f"Accuracy: {accuracy}")
+    loss, accuracy = yamnet_tweaked.evaluate(test_ds)
+    l.info(f"Loss: {loss}")
+    l.info(f"Accuracy: {accuracy}")
     
-    # class ReduceMeanLayer(tf.keras.layers.Layer):
-    #     def __init__(self, axis=0, **kwargs):
-    #         super(ReduceMeanLayer, self).__init__(**kwargs)
-    #         self.axis = axis
+    class ReduceMeanLayer(tf.keras.layers.Layer):
+        def __init__(self, axis=0, **kwargs):
+            super(ReduceMeanLayer, self).__init__(**kwargs)
+            self.axis = axis
 
-    #     def call(self, input):
-    #         return tf.math.reduce_mean(input, axis=self.axis)
+        def call(self, input):
+            return tf.math.reduce_mean(input, axis=self.axis)
     
-    # saved_model_path = './yamnet_tweaked'
-    # input_segment = tf.keras.layers.Input(shape=(), dtype=tf.float32, name='audio')
-    # embedding_extraction_layer = hub.KerasLayer('https://tfhub.dev/google/yamnet/1',
-    #                                             trainable=False, name='yamnet')
-    # _, embeddings_output, _ = embedding_extraction_layer(input_segment)
-    # serving_outputs = yamnet_tweaked(embeddings_output)
-    # serving_outputs = ReduceMeanLayer(axis=0, name='classifier')(serving_outputs)
-    # serving_model = tf.keras.Model(input_segment, serving_outputs)
-    # serving_model.save(saved_model_path, include_optimizer=False)
-    
-    
+    saved_model_path = os.path.join(C.MODELS_PATH, "yamnet_tweaked")
+    input_segment = tf.keras.layers.Input(shape=(), dtype=tf.float32, name='audio')
+    embedding_extraction_layer = hub.KerasLayer(C.YAMNET_MODEL_URL,
+                                                trainable=False, name='yamnet')
+    _, embeddings_output, _ = embedding_extraction_layer(input_segment)
+    serving_outputs = yamnet_tweaked(embeddings_output)
+    serving_outputs = ReduceMeanLayer(axis=0, name='classifier')(serving_outputs)
+    serving_model = tf.keras.Model(input_segment, serving_outputs)
+    l.info(f"Model summary:")
+    serving_model.summary()
+    l.info(f"Saving model...")
+    serving_model.save(saved_model_path, include_optimizer=False)
+    l.info(f"Model saved to {saved_model_path}")
 
 
 

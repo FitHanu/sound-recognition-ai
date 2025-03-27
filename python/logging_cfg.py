@@ -20,7 +20,7 @@ LOGGING_CONFIG = {
     "disable_existing_loggers": False,
     "formatters": {
         "detailed": {
-            "format": "<%(asctime)s><%(levelname)-8s><%(module)s>: %(message)s"
+            "format": "<%(asctime)s> <%(levelname)-8s> <%(module)s>: %(message)s"
         },
         "simple": {
             "format": "<%(levelname)-8s>: %(message)s"

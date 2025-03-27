@@ -32,5 +32,6 @@ CLASSNAMES_CSV = os.path.join(PY_PROJECT_ROOT, "classes.csv")
 FILTERED_DATASET_PATH = os.path.join(PROJECT_ROOT, "dataset")
 FILTERED_AUG_FOLDED_META_CSV = os.path.join(FILTERED_DATASET_PATH, "merged.augmented.folded.csv")
 LOG_PATH = os.path.join(PY_PROJECT_ROOT, "logs")
+MODELS_PATH = os.path.join(PROJECT_ROOT, "saved_models")
 
 YAMNET_MODEL_URL = "https://tfhub.dev/google/yamnet/1"
