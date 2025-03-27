@@ -3,28 +3,65 @@ import '../data/settings_repository.dart';
 import '../domain/settings.dart';
 
 class SettingsService extends ChangeNotifier {
-  final SettingsRepository _repository;
+  final SettingsRepository _repository = SettingsRepository();
+  late Settings _settings;
+  Settings get settings => _settings;
 
-  bool _alertSound = false;
-  bool get alertSound => _alertSound;
-
-  SettingsService(this._repository);
+  SettingsService() {
+    loadSettings();
+  }
 
   Future<void> loadSettings() async {
-    final settings = await _repository.loadSettings();
-    _alertSound = settings.alertSound;
-
-    // Initialize default if not found
-    if (!settings.isInitialized) {
-      await updateAlertSound(false);
-    }
-
+    _settings = await _repository.loadSettings();
     notifyListeners();
   }
 
+  /// Update sound sensitivity level
+  Future<void> updateSoundSensitivity(double level) async {
+    _settings.soundSensitivityLevel = level;
+    await _repository.saveSoundSensitivityLevel(level);
+    notifyListeners();
+  }
+
+  /// Update vibration setting
+  Future<void> updateVibration(bool value) async {
+    _settings.vibration = value;
+    await _repository.saveVibration(value);
+    notifyListeners();
+  }
+
+  /// Update alert sound
   Future<void> updateAlertSound(bool value) async {
-    _alertSound = value;
-    await _repository.saveSettings(Settings(alertSound: value, isInitialized: true));
+    _settings.alertSound = value;
+    await _repository.saveAlertSound(value);
+    notifyListeners(); // Notify UI of the change
+  }
+
+  /// Update RecognisedSound
+  Future<void> updateRecognisedSound(Map<String, bool> sounds) async {
+    _settings.recognisedSound = sounds;
+    await _repository.saveRecognisedSound(sounds);
+    notifyListeners();
+  }
+
+  /// Update operation mode
+  Future<void> updateOperationMode(String mode) async {
+    _settings.operationMode = mode;
+    await _repository.saveOperationMode(mode);
+    notifyListeners();
+  }
+
+  /// Update battery saver mode
+  Future<void> updateBatterySaverMode(bool value) async {
+    _settings.batterySaverMode = value;
+    await _repository.saveBatterySaverMode(value);
+    notifyListeners();
+  }
+
+  /// Update language setting
+  Future<void> updateLanguage(String language) async {
+    _settings.language = language;
+    await _repository.saveLanguage(language);
     notifyListeners();
   }
 }
