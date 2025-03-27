@@ -1,22 +1,48 @@
-## Enviroment
+## Enviroment (Conda based)
 
-+ Python 3.11.11
-+ Ubuntu 22.04.4 LTS x86_64
-+ CUDA Version: 12.4
++ Python 3.12.9 (dev) 3.11.11 (op)
++ Target OS: Linux (No support for windows)
++ Operate: Ubuntu 22.04.4 LTS x86_64 (Google colab Q1 2025)
++ Develop: Debian GNU/Linux 12 x86_64
++ CUDA Version: 12.*
 
 ## Dependencies
 
-See `requirements.txt`
+See `environment.yml`
 
 ## Setup
 
-1. Run setup
+1. install conda/ miniconda into your distribution
+2. Run setup
 
 ```
 python setup.py
 ```
 
 ## Process & implement steps for new dataset
+
+### Flow map
+
++ For each dataset:
+    - Download dataset
+        - From kagglehub
+        - Or download zipfile
+    - Filter desired (in system used) sound class, omit unused
+    - Move used sound files (datapoints) into main dataset path
+    - Normalize: Rename sound files to new system rule f"{class_name}_{original_dataset}_{original_idx}"
+    - Save filtered dataset info into a .csv file
+    - Append to the main dataset info (.csv) file
+
++ For the whole (filtered, merged) dataset
+    - Normalize: Convert soundfiles to PCM wav format (final merged processed)
+    - Save final dataset state as .csv file
+    - Augment data
+    - Asign fold label for each data points
+    - Save augmented, folded dataset state as .csv file
+
+
+
+### New dataset implementation steps
 
 0. Register the new dataset entry to `datasets.json`
 1. Create a new `.py` file which filename is the dataset `key` name registered to `datasets.json`

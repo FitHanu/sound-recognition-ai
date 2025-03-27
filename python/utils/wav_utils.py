@@ -1,4 +1,5 @@
 import os
+import subprocess
 import wave
 import tensorflow as tf
 import pandas as pd
@@ -9,6 +10,8 @@ import numpy as np
 from dataclasses import dataclass
 from typing import Optional
 import traceback
+import struct
+import constants as C
 
 from logging_cfg import get_logger
 l = get_logger(__name__)
@@ -22,6 +25,29 @@ class WavInfo:
 
 class InvalidArgument(Exception):
     pass
+
+
+class KnownWavFormat:
+    """
+        #WAVE_FORMAT_GSM610 - 49
+        #WAVE_FORMAT_PCM - 1
+        #WAVE_FORMAT_EXTENSIBLE - 65534
+        #WAVE_IEEE_FLOAT - 3
+    """
+    WAVE_FORMAT_GSM610 = 0x0031
+    WAVE_FORMAT_PCM = 0x0001
+    WAVE_FORMAT_EXTENSIBLE = 0xFFFE
+    WAVE_IEEE_FLOAT = 0x0003
+    WAVE_UNKNOWN = -1
+    as_set = {
+            WAVE_FORMAT_GSM610: "WAVE_FORMAT_GSM610",
+            WAVE_FORMAT_PCM: "WAVE_FORMAT_PCM",
+            WAVE_FORMAT_EXTENSIBLE: "WAVE_FORMAT_EXTENSIBLE",
+            WAVE_IEEE_FLOAT: "WAVE_IEEE_FLOAT",
+            WAVE_UNKNOWN: "WAVE_UNKNOWN"
+            }
+
+
 
 def get_wav_data_length(file_path: str) -> float:
     # Validate file path
@@ -42,13 +68,89 @@ def get_wav_data_length(file_path: str) -> float:
         print(f"Error processing WAV file: {file_path}, error: {e}")
         raise e
 
+def convert_to_pcm_replace_ffmpeg(input_file:str) -> None:
+    """
+    Converts a WAV file from WAVE_FORMAT_EXTENSIBLE or WAVE_IEEE_FLOAT to WAVE_FORMAT_PCM
+    and replaces the original file.
+    
+    Args:
+        input_file (str): Path to the input WAV file.
+    """
+    # Create a temporary output file
+    temp_file = input_file + ".tmp.wav"
+    sussy_message = [
+        "Unsupported codec",
+        "Invalid channel layout",
+        "Invalid sample format"
+    ]
+    # FFmpeg command to convert to PCM (signed 16-bit little-endian)
+    command = [
+        "ffmpeg", "-y",  # Overwrite existing file
+        "-i", input_file,  # Input file
+        "-acodec", "pcm_s16le",  # Convert to PCM 16-bit
+        temp_file  # Output temporary file
+    ]
+
+    try:
+        # Run FFmpeg conversion
+        subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        # Capture FFmpeg output
+        result = subprocess.run(command, check=True, capture_output=True, text=True)
+        # Check if any suspicious message is in the output
+        for message in sussy_message:
+            if message in result.stderr:
+                l.warning(f"Error might be occurred while processing file {input_file}, error: \n {result.stderr}")
+                break
+
+        # Replace original file
+        os.replace(temp_file, input_file)
+        l.info(f"Converted and replaced: {input_file}")
+        
+    except subprocess.CalledProcessError as e:
+        l.error(f"Error converting {input_file}: {e}")
+
+def convert_to_pcm_replace_sox(input_file: str) -> None:
+    """
+    Converts a WAV file from WAVE_FORMAT_EXTENSIBLE or WAVE_IEEE_FLOAT to WAVE_FORMAT_PCM
+    and replaces the original file using SoX.
+
+    Args:
+        input_file (str): Path to the input WAV file.
+    """
+    temp_file = input_file + ".tmp.wav"
+
+    # SoX command to convert to PCM (signed 16-bit little-endian)
+    command = [
+        "sox",
+        input_file,
+        # "-c", "1", # chanel
+        # "-r", "44100", # sample rate
+        # "-b", "16", # bit depth
+        "-e", "signed-integer",
+        temp_file, 
+    ]
+
+    try:
+        # Run SoX conversion
+        result = subprocess.run(command, check=True, capture_output=True, text=True)
+        
+        # Check for potential warnings/errors
+        if result.stderr:
+            l.warning(f"Warnings or errors encountered while processing {input_file}:\n{result.stderr}")
+
+        # Replace original file
+        os.replace(temp_file, input_file)
+        l.info(f"Converted and replaced: {input_file}")
+        
+    except subprocess.CalledProcessError as e:
+        l.error(f"Error converting {input_file}: {e}")
+
 
 def get_wave_data_length_2(row: pd.Series) -> float:
     """
     For large and possibly falsy dataset, `return -1` for defect .wav file for further processing
     """
     # Validate file path
-    import constants as C
     try:
         file_path = row[C.DF_PATH_COL]
         with sf.SoundFile(file_path) as audio_file:
@@ -116,44 +218,127 @@ def load_wav_16k_mono_3(filename):
     wav = tf.squeeze(wav, axis=-1)
 
     def resample_audio(wav, org_sr):
-        # wav = wav.numpy()
         resampled_wav = librosa.resample(y=wav, orig_sr=org_sr, target_sr=16000)
         return resampled_wav.astype(np.float32) 
     
     def tf_resample_audio(wav, org_sr):
         return tf.numpy_function(func=resample_audio, inp=[wav, org_sr], Tout=tf.float32)
-
-    # # Convert to numpy, process with librosa, and convert back to tensor
-    # wav_numpy = wav.numpy()
-    # wav_resampled = librosa.resample(wav_numpy, orig_sr=sample_rate.numpy(), target_sr=16000)
     
     return tf_resample_audio(wav, sample_rate)
 
-def get_wav_info(file_path: str) -> WavInfo:
-    """Extract WAV file information using soundfile."""
-    wav_info = sf.info(file_path)
-    return WavInfo(
-        sample_rate=wav_info.samplerate,
-        num_channels=wav_info.channels,
-        duration=wav_info.duration,
-        audio_format=wav_info.format
-    )
+
+def get_wave_format(file_path: str) -> KnownWavFormat:
+    """_summary_
+    Get the format of a WAV file. The function reads the file header to determine the format code.
+    Args:
+        file_path (str): _description_
+
+    Returns:
+        KnownWavFormat: _description_
+    """
+    try:
+        with open(file_path, "rb") as f:
+            f.seek(20)  # Seek to the format code position
+            format_code = struct.unpack("<H", f.read(2))[0]
+
+        match format_code:
+            # 0x0001
+            case KnownWavFormat.WAVE_FORMAT_PCM:
+                return KnownWavFormat.WAVE_FORMAT_PCM
+            # 0xFFFE
+            case KnownWavFormat.WAVE_FORMAT_EXTENSIBLE:
+                return KnownWavFormat.WAVE_FORMAT_EXTENSIBLE
+            # 0x0031
+            case KnownWavFormat.WAVE_FORMAT_GSM610:
+                return KnownWavFormat.WAVE_FORMAT_GSM610
+            # 0x0003
+            case KnownWavFormat.WAVE_IEEE_FLOAT:
+                return KnownWavFormat.WAVE_IEEE_FLOAT
+            # Unknown format
+            case _:
+                l.warning(f"{file_path} has an unknown WAV format: {format_code}")
+                return KnownWavFormat.WAVE_UNKNOWN
+
+    except Exception as e:
+        l.error(f"Error validating WAV file: {file_path}, error: {e}")
+        return KnownWavFormat.WAVE_UNKNOWN
+
+def validate_wav_pcm_format(file_path) -> bool:
+    """_summary_
+    Return False if the file is not in PCM format.
+    Args:
+        file_path (_type_): _description_
+
+    Returns:
+        bool: _description_
+    """
+    try:
+        if get_wave_format(file_path) != KnownWavFormat.WAVE_FORMAT_PCM:
+            l.warning(f"{file_path} is in {format} ❌")
+            return False
+    except Exception as e:
+        l.warning(f"Error occur when validating WAV file: {file_path}, error: {e}")
+        return False
+    return True
 
 
-def get_wav_info_from_tensor(wav: tf.Tensor) -> WavInfo:
-    """Extracts basic WAV info from a tf.float32 tensor."""
-    if not isinstance(wav, tf.Tensor) or wav.dtype != tf.float32:
-        raise ValueError("Input must be a tf.float32 tensor")
+    
+def convert_pcm_pd_row(row: pd.Series) -> None:
+    file_path = row[C.DF_PATH_COL] 
+    if not validate_wav_pcm_format(file_path):
+        l.info(f"Converting {file_path} to PCM")
+        convert_to_pcm_replace_ffmpeg(file_path)
 
-    wav_np = wav.numpy()  # Convert to NumPy for shape processing
-    num_channels = 1 if wav_np.ndim == 1 else wav_np.shape[0]
-    num_samples = wav_np.shape[-1]
+def convert_pcm_pd_row_2(row: pd.Series) -> None:
+    file_path = row[C.DF_PATH_COL] 
+    if not validate_wav_pcm_format(file_path):
+        l.info(f"Converting {file_path} to PCM")
+        convert_to_pcm_replace_sox(file_path)
 
-    return WavInfo(
-        num_channels=num_channels,
-        sample_rate=-1,
-        duration=-1,
-        audio_format="tf.float32 converted")
+def validate_wav_pd_row(row: pd.Series) -> bool:
+    try:
+        return validate_wav_pcm_format(row[C.DF_PATH_COL])
+    except Exception as e:
+        l.warning(f"Error validating WAV file: {row[C.DF_PATH_COL]}, error: {e}")
+        return False
+
+# if __name__ == "__main__":
+    # path = "/workspaces/sound-recognition-ai/python/ds/meta/merged.csv"
+    # import pandas as pd
+    # import constants as C
+    
+    # false_files = pd.DataFrame()
+    
+    # def validate_wav(row: pd.Series) -> bool:
+    #     global false_files
+    #     try:
+    #         file_path = row[C.DF_PATH_COL]
+    #         valid = validate_wav_format(file_path)
+    #         if not valid:
+    #             false_files = pd.concat([false_files, pd.DataFrame([row])], ignore_index=True)
+    #     except Exception as e:
+    #         l.warning(f"Error validating WAV file: {file_path}, error: {e}")
+    #         return False
+    # def reformat(row: pd.Series):
+    #     file_path = row[C.DF_PATH_COL] 
+    #     if not validate_wav_format(file_path):
+    #         l.info(f"Converting {file_path} to PCM")
+    #         convert_to_pcm_replace_ffmpeg(file_path)
+    
+    # def reformat_2(row: pd.Series):
+    #     file_path = row[C.DF_PATH_COL] 
+    #     if not validate_wav_format(file_path):
+    #         l.info(f"Converting {file_path} to PCM")
+    #         convert_to_pcm_replace_sox(file_path)
+
+    # df = pd.read_csv(path) 
+    # df.apply(reformat, axis=1)
+    # df.apply(reformat_2, axis=1)
+    # df.apply(validate_wav, axis=1)
+
+    # print(len(false_files))
+    # print(false_files.head(10))
+
 
 # def main():
 #     testing_wav_file_name = tf.keras.utils.get_file('miaow_16k.wav',

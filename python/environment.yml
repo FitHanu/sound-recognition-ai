@@ -14,8 +14,10 @@ dependencies:
   - tensorboard
   - numpy
   - librosa
+  - pydub
+  - sox
   - pip:
     - gdown
     - soundfile
-    - kagglehub==0.3.10
+    - kagglehub
     - matplotlib-inline

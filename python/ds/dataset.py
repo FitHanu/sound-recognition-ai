@@ -177,7 +177,7 @@ class DataSet(abc.ABC):
 
             return ds_paths
         else:
-            raise NotImplementedError("Format other than Kaggle needs to be implemented") 
+            raise NotImplementedError("Format other than Kaggle needs to be implemented manually") 
 
     @abc.abstractmethod
     def filter_by_class(self) -> pd.DataFrame:
@@ -233,7 +233,7 @@ class DataSet(abc.ABC):
         - Call after `normalize()`\n
         """
         
-        target_path = C.FINAL_DATASET_PATH
+        target_path = C.FILTERED_DATASET_PATH
         os.makedirs(target_path, exist_ok=True)
         df = self.df.copy()
         

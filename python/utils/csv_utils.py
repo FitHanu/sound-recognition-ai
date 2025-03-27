@@ -70,8 +70,8 @@ def get_classes_from_config():
     """
     Get class names from the config file.
     """
-    from constants import CLASSES_CSV
-    with open(CLASSES_CSV, "r") as f:
+    from constants import CLASSNAMES_CSV
+    with open(CLASSNAMES_CSV, "r") as f:
         df = pd.read_csv(f)
         return df['class_name'].tolist()
 

@@ -89,8 +89,8 @@ def clean_user_cache_dir():
         raise e
 
 def clean_dataset_dir():
-    from constants import FINAL_DATASET_PATH
-    rm_path = os.path.join(FINAL_DATASET_PATH, "*")
+    from constants import FILTERED_DATASET_PATH
+    rm_path = os.path.join(FILTERED_DATASET_PATH, "*")
     try:
         subprocess.run(["rm", "-rf", rm_path])
     except Exception as e:

@@ -5,7 +5,9 @@
     "learning_rate": 0.001,
     "optimizer": "adamax",
     "loss": "categorical_crossentropy",
-    "metrics": ["accuracy"],
+    "metrics": [
+      "accuracy"
+    ],
     "callbacks": {
       "early_stopping": {
         "monitor": "val_loss",
@@ -30,7 +32,6 @@
   },
   "class_mapping": {
     "default": {
-      "0": "NOISE",
       "1": "SIREN",
       "2": "CAR_HORN",
       "3": "EXPLOSION",

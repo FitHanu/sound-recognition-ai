@@ -26,7 +26,7 @@ Steps:
 from utils.json_utils import get_config_json
 from utils.csv_utils import read_csv_as_dataframe
 from utils.file_utils import get_filename_without_extension
-from constants import FULL_META_CSV
+from constants import MERGED_META_CSV
 from typing import Final
 import pandas as pd
 import constants as C
