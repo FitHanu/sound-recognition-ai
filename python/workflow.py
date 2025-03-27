@@ -8,7 +8,6 @@ import constants as C
 import tensorflow as tf
 import uuid
 import traceback
-import tensorflow_hub as hub
 from tensorflow import keras
 from constants import PROJECT_ROOT
 from ds.dataset import PD_SCHEMA
