@@ -1,8 +1,8 @@
 import 'package:danger_sound_recognition/src/routing/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'features/record/presentation/record_page.dart';
-import 'features/settings/application/settings_service.dart';
+import 'src/features/record/presentation/record_page.dart';
+import 'src/features/settings/application/settings_service.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
