@@ -5,7 +5,7 @@ class AppSettings {
   static const String languageKey = 'language';
 
   // Default values
-  static const double defaultSoundSensitivityLevel = 50.0;
+  static const double defaultSoundSensitivityLevel = 0.5;
   static const Map<String, bool> defaultRecognisedSound = {
     'baby cry':false,
     'glass breaking':false,
