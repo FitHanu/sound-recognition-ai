@@ -1,38 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../l10n/app_localizations.dart';
-import '../application/settings_service.dart';
+import '/l10n/generated/app_localizations.dart';
+import '/src/config/locale.dart';
 
-class LanguageSelection extends StatefulWidget {
+class LanguageSelection extends StatelessWidget {
   const LanguageSelection({super.key});
-
-  @override
-  State<LanguageSelection> createState() => _LanguageSelectionState();
-}
-
-class _LanguageSelectionState extends State<LanguageSelection> {
-  final List<String> _languages = ['en', 'vi', 'English'];
-
   @override
   Widget build(BuildContext context) {
-    final settingsService = context.watch<SettingsService>();
-    final settings = settingsService.settings;
-    final localizations = AppLocalizations.of(context)!;
+    final languages = LanguageLocal();
+    final l10n = AppLocalizations.of(context)!;
+    final selectedLocale = Localizations.localeOf(context).toString();
+    final List<Locale> locales  = AppLocalizations.supportedLocales;
     return ListTile(
-      title: Text(localizations.language),
-      trailing: DropdownButton<String>(
-        value: settings.language,
-        items: _languages.map((String lang) {
-          return DropdownMenuItem<String>(
-            value: lang,
-            child: Text(lang),
-          );
-        }).toList(),
-        onChanged: (value) {
-          settingsService.updateLanguage(value!);
-        },
+      title: Text(l10n.language),
+      trailing: Consumer<LocaleModel> (
+        builder: 
+          (context, localeModel, child) => DropdownButton<String>(
+            value: selectedLocale,
+            items: locales.map((Locale locale) {
+              var languageCode = locale.languageCode;
+              var displayName = languages
+              .getDisplayLanguage(languageCode)[LanguageLocal.NATIVE_NAME];
+              return DropdownMenuItem<String>(
+                value: languageCode,
+                child: Text(displayName),
+              );
+            }).toList(),
+            onChanged: (String? value) {
+              if (value != null) {
+                localeModel.set(Locale(value));
+            }
+          },
       ),
+      )
     );
   }
 }

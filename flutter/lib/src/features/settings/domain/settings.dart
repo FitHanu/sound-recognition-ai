@@ -11,7 +11,7 @@ class Settings {
   Map<String, bool> recognisedSound;
   bool vibration = false;
   bool alertSound = false;
-  String operationMode = '';
+  String operationMode = 'Normal';
   bool batterySaverMode = false;
   String language = '';
 

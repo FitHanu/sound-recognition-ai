@@ -1,36 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../l10n/app_localizations.dart';
+import '/l10n/generated/app_localizations.dart';
 import '../application/settings_service.dart';
 
-class AlertMode extends StatefulWidget {
+class AlertMode extends StatelessWidget {
   const AlertMode({super.key});
 
   @override
-  State<AlertMode> createState() => _AlertModeState();
-}
-
-class _AlertModeState extends State<AlertMode> {
-  @override
   Widget build(BuildContext context) {
-    final settingsService = context.watch<SettingsService>();
+    final settingsService = Provider.of<SettingsService>(context);
     final settings = settingsService.settings;
-    final localizations = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
-         Padding(
+        Padding(
           padding: EdgeInsets.all(16.0),
-          child: Text(localizations.alertTitle,
+          child: Text(l10n.alertTitle,
               style: TextStyle(fontWeight: FontWeight.bold)),
         ),
         SwitchListTile(
-          title: Text(localizations.vibration),
+          title: Text(l10n.vibration),
           value: settings.vibration,
           onChanged: (value) => settingsService.updateVibration(value),
         ),
         SwitchListTile(
-          title: Text(localizations.alertSound),
+          title: Text(l10n.alertSound),
           value: settings.alertSound,
           onChanged: (value) => settingsService.updateAlertSound(value),
         ),

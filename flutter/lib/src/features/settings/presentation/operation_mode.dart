@@ -1,39 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../l10n/app_localizations.dart';
+import '/l10n/generated/app_localizations.dart';
 import '../application/settings_service.dart';
 
-class OperationMode extends StatefulWidget {
+class OperationMode extends StatelessWidget {
   const OperationMode({super.key});
-
-  @override
-  State<OperationMode> createState() => _OperationModeState();
-}
-
-class _OperationModeState extends State<OperationMode> {
-  final List<String> _modes = ['scheduled', 'continuously', 'Normal'];
-
   @override
   Widget build(BuildContext context) {
-    final settingsService = context.watch<SettingsService>();
-    final settings = settingsService.settings;
-    final localizations = AppLocalizations.of(context)!;
+    final List<String> modes = ['Scheduled', 'Continuously', 'Normal'];
+    final l10n = AppLocalizations.of(context)!;
 
-    return ListTile(
-      title: Text(localizations.operationMode),
-      trailing: DropdownButton<String>(
-        value: settings.operationMode,
-        items: _modes.map((String mode) {
-          return DropdownMenuItem<String>(
-            value: mode,
-            child: Text(mode),
+    return Consumer<SettingsService>(
+      builder: 
+        (context, settingsService, child) {
+          String currentOperationMode = settingsService.settings.operationMode;
+          if (!modes.contains(currentOperationMode)) {
+            modes.add(currentOperationMode);
+          }
+          return ListTile(
+            title: Text(l10n.operationMode),
+            trailing: DropdownButton<String>(
+              value: settingsService.settings.operationMode,
+              items: modes.map((String mode) {
+                return DropdownMenuItem<String>(
+                value: mode,
+                child: Text(mode),
+                );
+              }).toList(),
+              onChanged: (value) {
+                settingsService.updateOperationMode(value!);
+              },
+            ),
           );
-        }).toList(),
-        onChanged: (value) {
-          settingsService.updateOperationMode(value!);
-        },
-      ),
+      },
     );
   }
 }

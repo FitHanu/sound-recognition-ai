@@ -6,8 +6,8 @@ class SettingsService extends ChangeNotifier {
   final SettingsRepository _repository = SettingsRepository();
   late Settings _settings;
   Settings get settings => _settings;
-  late Locale _locale;
-  Locale get locale => _locale;
+  // late Locale _locale;
+  // Locale get locale => _locale;
 
   SettingsService() {
     loadSettings();
@@ -16,8 +16,8 @@ class SettingsService extends ChangeNotifier {
   Future<void> loadSettings() async {
     _settings = await _repository.loadSettings();
     //set Locale object after loading
-    final code = (_settings.language=='vi')?'VN':'US';
-    _locale = Locale(_settings.language, code);
+    // final code = (_settings.language=='vi')?'VN':'US';
+    // _locale = Locale(_settings.language, code);
     notifyListeners();
   }
 
@@ -63,13 +63,13 @@ class SettingsService extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Update language setting
-  Future<void> updateLanguage(String languageCode) async {
-    _settings.language = languageCode;
-    final language = (languageCode=='vi')?'VN':'US';
-    _locale = Locale(languageCode, language);
-    await _repository.saveLanguage(languageCode);
-    notifyListeners();
-  }
+  // /// Update language setting
+  // Future<void> updateLanguage(String languageCode) async {
+  //   _settings.language = languageCode;
+  //   final language = (languageCode=='vi')?'VN':'US';
+  //   _locale = Locale(languageCode, language);
+  //   await _repository.saveLanguage(languageCode);
+  //   notifyListeners();
+  // }
 
 }

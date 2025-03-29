@@ -1,31 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../l10n/app_localizations.dart';
+import '/l10n/generated/app_localizations.dart';
 import '../application/settings_service.dart';
 
-class SoundSensitivitySlider extends StatefulWidget {
+class SoundSensitivitySlider extends StatelessWidget {
   const SoundSensitivitySlider({super.key});
 
   @override
-  State<SoundSensitivitySlider> createState() => _SoundSensitivitySliderState();
-}
-
-class _SoundSensitivitySliderState extends State<SoundSensitivitySlider> {
-  @override
   Widget build(BuildContext context) {
-    final settingsService = context.watch<SettingsService>();
-    final settings = settingsService.settings;
+    var l10n = AppLocalizations.of(context)!;
     return ListTile(
-     title: Text(AppLocalizations.of(context)!.soundSensitivityLevel ?? 'Sound Sensitivity Level'),
-      subtitle: Slider(
-        value: settings.soundSensitivityLevel,
-        onChanged: (value) {
-          settingsService.updateSoundSensitivity(value);
-        },
-        min: 0,
-        max: 1,
+    title: Text(l10n.soundSensitivityLevel),
+      subtitle: Consumer<SettingsService>(
+        builder: (context, settingsService, child) => 
+          Slider(
+          value: settingsService.settings.soundSensitivityLevel,
+          onChanged: (value) {
+            settingsService.updateSoundSensitivity(value);
+          },
+          min: 0,
+          max: 1,
       ),
+        ) 
     );
   }
 }

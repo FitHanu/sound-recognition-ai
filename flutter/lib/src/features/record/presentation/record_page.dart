@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../l10n/app_localizations.dart';
+import '/l10n/generated/app_localizations.dart';
 import '../../../common_widgets/settings_drawer.dart';
 
 class RecordPage extends StatelessWidget {
