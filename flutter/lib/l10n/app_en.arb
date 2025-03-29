@@ -1,0 +1,25 @@
+{
+  "@@locale": "en",
+  "appBar" : "ABA SYSTEMS",
+  "@appBar":
+  {
+    "description": "Our app bar title"
+  },
+  "setting" : "ABA Settings",
+  "soundSensitivityLevel": "Sound sensitivity level",
+  "soundFormTitle":"Select the sound type to recognize",
+  "scream": "Scream",
+    "glassBreaking": "Glass breaking",
+    "siren":"Siren",
+    "gunShot":"Gun shot",
+    "babyCry":"Baby cry",
+    "alertTitle": "Alert Notification",
+    "vibration":"Vibration",
+    "alertSound":"Alert Sound",
+    "operationMode":"Operation Mode",
+    "continuously": "Continuously",
+    "normal": "Normal",
+    "silent":"Silent",
+    "batterySaverMode": "Battery Saver Mode",
+    "language": "Language"
+}
