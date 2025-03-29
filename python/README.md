@@ -13,8 +13,15 @@ See `environment.yml`
 ## Setup
 
 1. install conda/ miniconda into your distribution
-2. Run setup
-
+2. create conda environment from `environemnt.yml`
+```
+conda env update --file ./environment.yml --prune
+```
+3. activate conda environment
+```
+conda activate sra-env
+```
+4. Run setup
 ```
 python setup.py
 ```
