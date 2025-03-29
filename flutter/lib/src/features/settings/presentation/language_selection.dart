@@ -12,7 +12,7 @@ class LanguageSelection extends StatefulWidget {
 }
 
 class _LanguageSelectionState extends State<LanguageSelection> {
-  final List<String> _languages = ['en', 'vi'];
+  final List<String> _languages = ['en', 'vi', 'English'];
 
   @override
   Widget build(BuildContext context) {

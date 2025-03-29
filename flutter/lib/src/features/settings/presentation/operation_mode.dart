@@ -12,7 +12,7 @@ class OperationMode extends StatefulWidget {
 }
 
 class _OperationModeState extends State<OperationMode> {
-  final List<String> _modes = ['scheduled','continuously'];
+  final List<String> _modes = ['scheduled', 'continuously', 'Normal'];
 
   @override
   Widget build(BuildContext context) {

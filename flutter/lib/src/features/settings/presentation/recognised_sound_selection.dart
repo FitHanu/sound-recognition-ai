@@ -49,7 +49,7 @@ class _RecognisedSoundSelectionState extends State<RecognisedSoundSelection> {
           itemBuilder: (context, index) {
             final key = (settings.recognisedSound.keys.elementAt(index));
             return CheckboxListTile(
-              title: Text(localizedMap[key]!),
+              title: Text(localizedMap[key] ?? key),
               //English value should be kept instead of Vietnamese
               value: settings.recognisedSound[key],
               onChanged: (bool? value) {
