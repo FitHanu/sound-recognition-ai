@@ -177,4 +177,45 @@ def to_tensor_ds_embedding_extracted(dataset) -> tf.data.Dataset:
 
     # extract embedding
     return dataset.map(extract_embedding).unbatch()
+
+
+def main():
+    point_map = {
+        "alarm": "ALARM_bdlib2_1.wav",
+        "car_horn": "CAR_HORN_us8k_3703.wav",
+        "dog_bark": "DOG_BARK_bdlib2_2.wav",
+        "gunshot": "GUNSHOT_HANDGUN_gad_373.wav",
+    }
+    model = YamnetWrapper()
+    model._load_model()
+    def get_path(path):
+        return os.path.join(C.PROJECT_ROOT, "dataset", path)
+    from utils.wav_utils import load_wav_16k_mono_3
     
+    for key, path in point_map.items():
+        path = get_path(path)
+        audio_tensor = load_wav_16k_mono_3(path)
+        spectrogram = model.extract_spectrogram(audio_tensor)
+        
+        file_name = f"{key}_spectrogram.png"
+    
+        # Ensure the plots directory exists
+        plots_dir = os.path.join(C.PROJECT_ROOT, "plots")
+        os.makedirs(plots_dir, exist_ok=True)
+
+        # Plot the spectrogram
+        plt.figure(figsize=(10, 4))
+        plt.imshow(spectrogram.numpy().T, aspect='auto', origin='lower', cmap='viridis')
+        plt.colorbar(format='%+2.0f dB')
+        plt.title("Spectrogram")
+        plt.xlabel("Time")
+        plt.ylabel("Frequency")
+        
+        # Save the plot as a .png file
+        plot_path = os.path.join(plots_dir, file_name)
+        plt.savefig(plot_path)
+        plt.close()
+        l.info(f"Spectrogram saved to {plot_path}")
+
+if __name__ == "__main__":
+    main()

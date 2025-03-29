@@ -6,6 +6,5 @@ tensorflow-hub
 tensorflow
 tf-keras
 tensorboard
-tensorflow-io
 soundfile
 numpy
