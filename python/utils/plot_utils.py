@@ -1,0 +1,79 @@
+
+
+import os
+from matplotlib import pyplot as plt
+import numpy as np
+import tensorflow as tf
+import constants as C
+from dframe_utils import YamnetWrapper
+from wav_utils import load_wav_16k_mono_3
+
+
+def plot_tf_float32_converted_from_mono_wav(
+    file_path: str,
+    output_path: str,
+) -> None:
+    """
+    Plot a waveform from a tf.float32 tensor.
+    
+    Args:
+    """
+    waveform = load_wav_16k_mono_3(file_path)
+    # Create time axis
+    time = np.linspace(0, len(waveform), num=len(waveform))
+
+    # Plot the waveform
+    plt.figure(figsize=(10, 4))
+    plt.plot(time, waveform, label="Audio Waveform", color="blue")
+    plt.xlabel("Sample Index")
+    plt.ylabel("Amplitude")
+    plt.title("Plot of Mono WAV Tensor (tf.float32)")
+    
+    plt.savefig(output_path)
+
+def plot_spectrogram_wav(
+    file_path: str,
+    output_path: str,
+) -> None:
+    """
+    Plot a spectrogram from a WAV file.
+    
+    Args:
+    """
+    yamnet = YamnetWrapper()
+    yamnet._load_model()
+    
+    audio_tensor = load_wav_16k_mono_3(file_path)
+    spectrogram = yamnet.extract_spectrogram(audio_tensor)
+
+    # Plot the spectrogram
+    plt.figure(figsize=(10, 4))
+    plt.imshow(spectrogram.numpy().T, aspect='auto', origin='lower', cmap='viridis')
+    plt.colorbar(format='%+2.0f dB')
+    plt.title("Spectrogram")
+    plt.xlabel("Time")
+    plt.ylabel("Frequency")
+    
+    plt.savefig(output_path)
+
+
+if __name__ == "__main__":
+    point_map = {
+        "alarm": "ALARM_bdlib2_1.wav",
+        "car_horn": "CAR_HORN_us8k_3703.wav",
+        "dog_bark": "DOG_BARK_bdlib2_2.wav",
+        "gunshot": "GUNSHOT_HANDGUN_gad_373.wav",
+    }
+    for key, path in point_map.items():
+        original_file_path = os.path.join("dataset", path)
+        output_plot_wav_path = os.path.join(C.PROJECT_ROOT, "plots", f"{key}_waveform.png")
+        output_plot_spec_path = os.path.join(C.PROJECT_ROOT, "plots", f"{key}_spectrogram.png")
+        output_copy_wav_path = os.path.join(C.PROJECT_ROOT, "plots", f"{key}.copied.wav")
+        
+        os.makedirs("plots", exist_ok=True)
+        # Plot spectrogram lấy được từ Yamnet
+        plot_spectrogram_wav(original_file_path, output_plot_spec_path)
+        # Plot dạng cuối cùng của data trước khi cho vào train
+        plot_tf_float32_converted_from_mono_wav(original_file_path, output_plot_wav_path)
+        # Copy file
+        os.system(f"cp {original_file_path} {output_copy_wav_path}")
