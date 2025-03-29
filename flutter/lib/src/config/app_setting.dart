@@ -15,7 +15,7 @@ class AppSettings {
   };
   static const bool defaultVibration = true;
   static const bool defaultAlertSound = true;
-  static const String defaultOperationMode = 'Normal';
+  static const String defaultOperationMode = 'continuously';
   static const bool defaultBatterySaverMode = false;
-  static const String defaultLanguage = 'English';
+  static const String defaultLanguage = 'en';
 }

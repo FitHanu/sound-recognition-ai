@@ -1,4 +1,3 @@
-import 'package:danger_sound_recognition/src/features/settings/presentation/battery_saver_mode.dart';
 import 'package:flutter/cupertino.dart';
 
 class Settings {

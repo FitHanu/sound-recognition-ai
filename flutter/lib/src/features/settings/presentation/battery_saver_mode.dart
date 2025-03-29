@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../l10n/app_localizations.dart';
 import '../application/settings_service.dart';
 
 class BatterySaverMode extends StatefulWidget {
@@ -16,8 +17,10 @@ class _BatterySaverModeState extends State<BatterySaverMode> {
   Widget build(BuildContext context) {
     final settingsService = context.watch<SettingsService>();
     final settings = settingsService.settings;
+    final localizations = AppLocalizations.of(context)!;
+
     return SwitchListTile(
-      title: const Text('Battery Saver Mode'),
+      title: Text(localizations.batterySaverMode),
       value: settings.batterySaverMode,
       onChanged: (value) {
         settingsService.updateBatterySaverMode(value);

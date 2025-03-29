@@ -23,6 +23,7 @@ class SettingsRepository {
       batterySaverMode: prefs.getBool('batterySaverMode') ?? AppSettings.defaultBatterySaverMode,
       language: prefs.getString('language') ?? AppSettings.defaultLanguage,
     );
+    debugPrint("Load the latest setting repository");
     setting.print();
     return setting;
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../../common_widgets/settings_drawer.dart';
 
 class RecordPage extends StatelessWidget {
@@ -9,10 +10,12 @@ class RecordPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context)!;
+
     return Scaffold(
       key: _scaffoldKey, // Assigning the GlobalKey here
       appBar: AppBar(
-        title: const Text('ABA Systems'),
+        title: Text(localizations.appBar),
         leading: IconButton(
           icon: const Icon(Icons.menu), // Open Main Drawer
           onPressed: () {
@@ -30,7 +33,7 @@ class RecordPage extends StatelessWidget {
       ),
       drawer: const MainDrawer(), // Main Navigation Drawer (left)
       endDrawer: const SettingsDrawer(), // Settings Drawer (right)
-      body: const Center(child: Text('Main Content Here')),
+      body: Center(child: Text('Main Content Here')),
     );
   }
 }

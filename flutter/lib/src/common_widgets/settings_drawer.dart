@@ -5,6 +5,8 @@ import '../features/settings/presentation/alert_mode.dart';
 import '../features/settings/presentation/operation_mode.dart';
 import '../features/settings/presentation/battery_saver_mode.dart';
 import '../features/settings/presentation/language_selection.dart';
+import '../../l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class SettingsDrawer extends StatelessWidget {
   const SettingsDrawer({super.key});
@@ -16,11 +18,12 @@ class SettingsDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
           children: [
             // Header
-            const DrawerHeader(
-              decoration: BoxDecoration(color: Colors.blue),
+             DrawerHeader(
+              decoration: const BoxDecoration(color: Colors.blue),
               child: Text(
-                'ABA Settings',
-                style: TextStyle(color: Colors.white, fontSize: 24),
+                AppLocalizations.of(context)!.appBar,
+                // 'ABA Settings',
+                style: const TextStyle(color: Colors.white, fontSize: 24),
               ),
             ),
             // Sub-components (modular)
