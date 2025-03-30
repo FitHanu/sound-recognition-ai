@@ -1,20 +1,45 @@
+import 'package:danger_sound_recognition/src/config/app_setting.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class LocaleModel extends ChangeNotifier {
+class LocaleService extends ChangeNotifier {
+  
   Locale? _locale;
 
   Locale? get locale => _locale;
 
-  void set(Locale locale) {
+  static const String _localeKey = "app_locale";
+
+  LocaleService() {
+    _loadLocale();
+  }
+
+  Future<void> _loadLocale() async {
+    final prefs = await SharedPreferences.getInstance();
+    String? localeCode = prefs.getString(_localeKey);
+    
+    if (localeCode != null) {
+      _locale = Locale(localeCode);
+      notifyListeners();
+    } else {
+      _locale = Locale(AppSettings.defaultLanguageCode); 
+    }
+  }
+
+  Future<void> set(Locale locale) async {
     _locale = locale;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_localeKey, locale.languageCode); // Save locale
     notifyListeners();
   }
+
 }
+
 
 
 class LanguageLocal {
   static const String NAME = "name";
-  static const String NATIVE_NAME = "nativeName";
+  static final String NATIVE_NAME = "nativeName";
   final isoLangs = {
     "ab": {"name": "Abkhaz", "nativeName": "аҧсуа"},
     "aa": {"name": "Afar", "nativeName": "Afaraf"},

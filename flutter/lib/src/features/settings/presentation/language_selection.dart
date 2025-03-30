@@ -14,7 +14,7 @@ class LanguageSelection extends StatelessWidget {
     final List<Locale> locales  = AppLocalizations.supportedLocales;
     return ListTile(
       title: Text(l10n.language),
-      trailing: Consumer<LocaleModel> (
+      trailing: Consumer<LocaleService> (
         builder: 
           (context, localeModel, child) => DropdownButton<String>(
             value: selectedLocale,

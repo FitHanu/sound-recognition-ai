@@ -21,7 +21,7 @@ class SettingsRepository {
       alertSound: prefs.getBool('alertSound') ?? AppSettings.defaultAlertSound,
       operationMode: prefs.getString('operationMode') ?? AppSettings.defaultOperationMode,
       batterySaverMode: prefs.getBool('batterySaverMode') ?? AppSettings.defaultBatterySaverMode,
-      language: prefs.getString('language') ?? AppSettings.defaultLanguage,
+      language: prefs.getString('language') ?? AppSettings.defaultLanguageCode,
     );
     debugPrint("Load the latest setting repository");
     setting.print();

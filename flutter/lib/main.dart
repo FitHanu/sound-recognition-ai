@@ -16,7 +16,7 @@ void main() async{
   runApp(
       MultiProvider(
         providers: [
-          ChangeNotifierProvider(create: (context) => LocaleModel()),
+          ChangeNotifierProvider(create: (context) => LocaleService()),
           ChangeNotifierProvider(create: (context) => settingsService),
         ],
         child: const MyApp(),
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localeModel = Provider.of<LocaleModel>(context);
+    final localeModel = Provider.of<LocaleService>(context);
 
     return MaterialApp(
         // supportedLocales: const [
