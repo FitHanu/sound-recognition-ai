@@ -15,7 +15,7 @@ class AppSettings {
   };
   static const bool defaultVibration = true;
   static const bool defaultAlertSound = true;
-  static const String defaultOperationMode = 'continuously';
+  static const String defaultOperationMode = 'Continuously';
   static const bool defaultBatterySaverMode = false;
   static const String defaultLanguageCode = 'en';
   static const Set<String> operationModes = {

@@ -1,3 +1,4 @@
+import 'package:danger_sound_recognition/src/config/app_setting.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -8,21 +9,18 @@ class OperationMode extends StatelessWidget {
   const OperationMode({super.key});
   @override
   Widget build(BuildContext context) {
-    final List<String> modes = ['Scheduled', 'Continuously', 'Normal'];
+    var operationModes = AppSettings.operationModes;
     final l10n = AppLocalizations.of(context)!;
 
     return Consumer<SettingsService>(
       builder: 
         (context, settingsService, child) {
           String currentOperationMode = settingsService.settings.operationMode;
-          if (!modes.contains(currentOperationMode)) {
-            modes.add(currentOperationMode);
-          }
           return ListTile(
             title: Text(l10n.operationMode),
             trailing: DropdownButton<String>(
-              value: settingsService.settings.operationMode,
-              items: modes.map((String mode) {
+              value: currentOperationMode,
+              items: operationModes.map((String mode) {
                 return DropdownMenuItem<String>(
                 value: mode,
                 child: Text(mode),
