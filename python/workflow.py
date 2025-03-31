@@ -160,7 +160,7 @@ def workflow():
         tf.keras.layers.Dense(512, activation='relu'),
         # Add GAP1D layer to reduce the dimensionality (None part of the shape=(None, 1024))
         # Make the model dimension independent
-        tf.keras.layers.GlobalAveragePooling1D(),
+        # tf.keras.layers.GlobalAveragePooling1D(),
         tf.keras.layers.Dense(NUMBER_OF_CLASSES, activation='softmax', name="class_scores")  # Output class probabilities
     ], name='yamnet_tweaked')
 
@@ -249,70 +249,68 @@ def get_args():
     return parser.parse_args()
 
 
-# def test():
-#     # workflow()
-#     pth = os.path.join(PROJECT_ROOT, "dataset", "merged.augmented.folded.csv")
-#     ds = pd.read_csv(pth)
-#     ds_ts = to_tensor_ds_embedding_extracted(ds)
-#     print(ds_ts)
-#     print(ds_ts.element_spec)
+def test():
+    # workflow()
+    pth = os.path.join(PROJECT_ROOT, "dataset", "merged.augmented.folded.csv")
+    ds = pd.read_csv(pth)
+    ds_ts = to_tensor_ds_embedding_extracted(ds)
+    print(ds_ts)
+    print(ds_ts.element_spec)
     
-#     cached_ds = ds_ts.cache()
-#     train_ds = cached_ds.filter(lambda embedding, class_name, fold: fold < 8)
-#     val_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 8)
-#     test_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 9)
+    cached_ds = ds_ts.cache()
+    train_ds = cached_ds.filter(lambda embedding, class_name, fold: fold < 8)
+    val_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 8)
+    test_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 9)
     
-#     # Remove fold column
-#     remove_fold_column = lambda embedding, class_name, fold: (embedding, class_name)
-#     train_ds = train_ds.map(remove_fold_column)
-#     val_ds = val_ds.map(remove_fold_column)
-#     test_ds = test_ds.map(remove_fold_column)
+    # Remove fold column
+    remove_fold_column = lambda embedding, class_name, fold: (embedding, class_name)
+    train_ds = train_ds.map(remove_fold_column)
+    val_ds = val_ds.map(remove_fold_column)
+    test_ds = test_ds.map(remove_fold_column)
     
-#     from dframe_utils import encode_label_tf
-#     train_ds = train_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
-#     val_ds = val_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
-#     test_ds = test_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
-    
-    
-#     print(train_ds.element_spec)
-#     print(val_ds.element_spec)
-#     print(test_ds.element_spec)
+    from dframe_utils import encode_label_tf
+    train_ds = train_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
+    val_ds = val_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
+    test_ds = test_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
     
     
     
-#     def count_dataset_size(dataset):
-#         return sum(1 for _ in dataset)
+    def count_dataset_size(dataset):
+        return sum(1 for _ in dataset)
     
-#     dataset_size = count_dataset_size(train_ds)
-#     print(f"Dataset size: {dataset_size}")
+    dataset_size = count_dataset_size(train_ds)
+    print(f"Dataset size: {dataset_size}")
 
-#     train_ds = train_ds.cache().shuffle(min(1000, dataset_size)).batch(32).prefetch(TRAVIS_SCOTT)
-#     val_ds = val_ds.cache().batch(32).prefetch(TRAVIS_SCOTT)
-#     test_ds = test_ds.cache().batch(32).prefetch(TRAVIS_SCOTT)
-#     for i, (audio_waveform, label) in enumerate(train_ds.take(10)):
-#         if tf.reduce_any(tf.math.is_nan(audio_waveform)):
-#             print(f"⚠️ Found NaN values in audio at index {i}")
-#         if tf.size(audio_waveform) == 0:
-#             print(f"⚠️ Empty audio tensor at index {i}")
-#         print(f"{i}| data shape: {audio_waveform.shape}, label shape: {label.shape}\n {label}")
-#         # file_name = f"{label}_f{fold}_{i}.png"
-#         # file_name = os.path.join(C.PY_PROJECT_ROOT, "plots", file_name)
-#         # from wav_utils import plot_mono_wav
-#         # plot_mono_wav(audio_waveform, figname=file_name)
+    train_ds = train_ds.cache().shuffle(min(1000, dataset_size)).batch(32).prefetch(TRAVIS_SCOTT)
+    val_ds = val_ds.cache().batch(32).prefetch(TRAVIS_SCOTT)
+    test_ds = test_ds.cache().batch(32).prefetch(TRAVIS_SCOTT)
+    
+    for x, y in train_ds.take(1):
+        print(x.shape, y.shape)
+    # for i, (audio_waveform, label) in enumerate(train_ds.take(10)):
+    #     if tf.reduce_any(tf.math.is_nan(audio_waveform)):
+    #         print(f"⚠️ Found NaN values in audio at index {i}")
+    #     if tf.size(audio_waveform) == 0:
+    #         print(f"⚠️ Empty audio tensor at index {i}")
+    #     print(f"{i}| data shape: {audio_waveform.shape}, label shape: {label.shape}\n {label}")
+    #     # file_name = f"{label}_f{fold}_{i}.png"
+    #     # file_name = os.path.join(C.PY_PROJECT_ROOT, "plots", file_name)
+    #     # from wav_utils import plot_mono_wav
+    #     # plot_mono_wav(audio_waveform, figname=file_name)
 
 if __name__ == "__main__":
-    args = get_args()
-    if args.clean_cache == True:
-        from utils.file_utils import clean_user_cache_dir
-        l.info("Cleaning user cache dir ...")
-        c_dir = clean_user_cache_dir()
-        l.info(f"Contents in {c_dir} has been cleaned.")
-    try:
-        workflow()
-    except Exception as e:
-        l.error(f"Error while executing workflow: {e}")
-        l.error(f"{traceback.print_exc()}")
-        l.info(f"Exiting with code 1, full log saved to {C.LOG_PATH}")
-        exit(1)
-    # test()
+    # args = get_args()
+    # if args.clean_cache == True:
+    #     from utils.file_utils import clean_user_cache_dir
+    #     l.info("Cleaning user cache dir ...")
+    #     c_dir = clean_user_cache_dir()
+    #     l.info(f"Contents in {c_dir} has been cleaned.")
+    # try:
+    #     workflow()
+    # except Exception as e:
+    #     l.error(f"Error while executing workflow: {e}")
+    #     l.error(f"{traceback.print_exc()}")
+    #     l.info(f"Exiting with code 1, full log saved to {C.LOG_PATH}")
+    #     exit(1)
+    test()
 
