@@ -76,6 +76,16 @@ def get_classes_from_config():
         return df['class_name'].tolist()
 
 
+def get_classes_ordinal_from_config():
+    """
+    Get class names from the config file.
+    """
+    from constants import CLASSNAMES_CSV
+    with open(CLASSNAMES_CSV, "r") as f:
+        df = pd.read_csv(f)
+        return df['id'].tolist()
+
+
 def main():
     """
     Main function to test get_classes_from_config.

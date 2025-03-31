@@ -39,15 +39,30 @@ def check_conda_installed():
         l.error("Conda is installed but not working properly.")
         raise subprocess.CalledProcessError("Conda is installed but not working properly.")
 
-def install_requirements():
-    req_file = os.path.join(PY_PROJECT_ROOT, "environment.yml")
-    # conda env create -f environment.yml
-    args = ["conda", "env", "create", "-f", req_file]
-    try:
-        subprocess.call(args)
-        l.info(f"Successfully installed dependencies from environment.yml")
-    except Exception as e:
-        l.error(f"Failed to install requirements: {e}")
+def install_requirements(strategy = "pip"):
+    package_strategy = ["pip", "conda"]
+    if strategy not in package_strategy:
+        l.error(f"Strategy must be one of {package_strategy}")
+        raise ValueError(f"Strategy must be one of {package_strategy}")
+    if strategy == "pip":
+        req_file = os.path.join(PY_PROJECT_ROOT, "requirements.txt")
+        # pip install -r requirements.txt
+        args = ["pip", "install", "-r", req_file]
+        try:
+            subprocess.call(args)
+            l.info(f"Successfully installed dependencies from requirements.txt")
+        except Exception as e:
+            l.error(f"Failed to install requirements: {e}")
+    else:
+        check_conda_installed()
+        req_file = os.path.join(PY_PROJECT_ROOT, "environment.yml")
+        # conda env create -f environment.yml
+        args = ["conda", "env", "create", "-f", req_file]
+        try:
+            subprocess.call(args)
+            l.info(f"Successfully installed dependencies from environment.yml")
+        except Exception as e:
+            l.error(f"Failed to install requirements: {e}")
 
 def append_project_path():
     """
@@ -67,10 +82,7 @@ def validate_packages(package_names):
         except ImportError:
             l.warning(f"❌ {package} is missing or failed to install.")
             
-def force_reinstall_kaggle():
-    args = ["pip", "install", "--upgrade", "--force-reinstall", "--no-deps", "kaggle"]
-    subprocess.run(args)
-    
+
 def init_split_ds_config(overwrite = False):
     """
     Will init partition configs to config.json
@@ -101,7 +113,6 @@ def main():
         [f"Installing requirements", install_requirements],
         [f"Appending project paths to {SITE_PKG_PATH}", append_project_path],
         [f"Initialize default paritioning config", init_split_ds_config],
-        # "force_reinstall_kaggle": [force_reinstall_kaggle],
         [f"Validating packages ...", validate_packages, [
             "ds.dataset", "utils.json_utils"]],
     ]

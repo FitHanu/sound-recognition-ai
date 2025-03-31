@@ -1,3 +1,4 @@
+from csv_utils import get_classes_ordinal_from_config
 import matplotlib.pyplot as plt
 import constants as C
 import os
@@ -12,24 +13,9 @@ from logging_cfg import get_logger
 l = get_logger(__name__)
 
 
-# class YamInferResult:
-#     _SCORE = 0
-#     _EMBEDDINGS = 1
-#     _SPECTROGRAM = 2
-#     def __init__(self, scores, embeddings, spectrogrram):
-#         self.data = [scores, embeddings, spectrogrram]
-        
-    
-#     def __getitem__(self, key):
-#         if (key < 0 or key > 2):
-#             raise IndexError("Index out of range")
-#         return self.data[key]
-
-#     def __str__(self):
-#         return f"YamInferResult(scores={self.scores}, embeddings={self.embeddings}, spectrogrram={self.spectrogrram})"
-
-#     def __repr__(self):
-#         return self.__str__()
+CLASS_ORDINAL_IDS = sorted(get_classes_ordinal_from_config())
+NUMBER_OF_CLASSES = len(CLASS_ORDINAL_IDS)
+ID_TO_INDEX_MAP = {id_: i for i, id_ in enumerate(CLASS_ORDINAL_IDS)}
 
 class YamnetWrapper:
     _instance = None
@@ -216,6 +202,17 @@ def main():
         plt.savefig(plot_path)
         plt.close()
         l.info(f"Spectrogram saved to {plot_path}")
+
+def encode_label(embedding, label):
+    """Convert numeric label ID to one-hot encoding."""
+
+    label_index = ID_TO_INDEX_MAP[label.numpy()]  # Convert ID to index
+    return embedding, tf.one_hot(label_index, depth=NUMBER_OF_CLASSES, dtype=tf.float32)
+
+# Wrap it for tf.data compatibility
+def encode_label_tf(embedding, label):
+    return tf.py_function(func=encode_label, inp=[embedding, label], Tout=(tf.float32, tf.float32))
+
 
 if __name__ == "__main__":
     main()

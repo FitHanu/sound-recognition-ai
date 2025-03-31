@@ -1,12 +1,12 @@
 kagglehub
-pandas==2.2.2
+pandas
 matplotlib
 gdown
 tensorflow-hub
-tensorflow==2.17.1
-tf-keras==2.17.*
-# tensorflow-text==2.17.*
-tensorboard==2.17.*
-tensorflow-io==0.37.1
+tensorflow==2.18.*
+tf-keras==2.18.*
 soundfile
-numpy==1.25.2
+numpy
+platformdirs
+librosa
+sox

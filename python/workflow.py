@@ -6,14 +6,14 @@ import os
 import pandas as pd
 import constants as C
 import tensorflow as tf
-import uuid
+import tensorflow_hub as hub
 import traceback
 from tensorflow import keras
 from constants import PROJECT_ROOT
 from ds.dataset import PD_SCHEMA
 from utils.json_utils import init_default_class_name, append_empty_mapping_to_config
 from utils.file_utils import init_class_folds, get_filename_without_extension
-from utils.csv_utils import (read_csv_as_dataframe,
+from utils.csv_utils import (get_classes_ordinal_from_config, read_csv_as_dataframe,
                             write_csv_meta,
                             get_classes_from_config)
 from utils.dframe_utils import (plot_classname_distribution,
@@ -32,6 +32,8 @@ from ds.gad import GAD
 from logging_cfg import get_logger
 l = get_logger(__name__)
 
+TRAVIS_SCOTT = tf.data.AUTOTUNE
+
 def workflow():
     """
     Main procedure
@@ -39,8 +41,8 @@ def workflow():
     datasets_registry = [
         ESC50(),
         GAD(),
-        UrbanSound8K(),
-        BDLib2(),
+        # UrbanSound8K(),
+        # BDLib2(),
     ]
 
     # Init paths, Default class names
@@ -102,103 +104,135 @@ def workflow():
         l.warning(f"Theres still {false_files.shape[0]}/{main_df.shape[0]} invalid .wav files after conversion, dropping them...")
         main_df = main_df[~main_df.index.isin(false_files.index)]
         l.info(f"Dataset shape after dropping invalid .wav files: {main_df.shape}")
-        
-    # no_length_row = ds.df[ds.df[C.DF_LENGTH_COL] == -1]
-    # l.warning(f"Could not get .wav length for {len(no_length_row)} row(s)")
-    # l.warning(no_length_row)
+
+
 
     # Get split config
     cfg = init_cfg()
-
     l.info(f"Spliting with cfg {cfg.__str__()}")
+
 
     # Split
     aug_k_df = split_tdt(main_df, cfg)
-
+    
+    
     # Save augmented dataframe to .csv
     final_meta = C.FILTERED_AUG_FOLDED_META_CSV
     l.info(f"Datasets processing done, saving meta file to {final_meta}")
     aug_k_df.to_csv(final_meta, index=False)
+    ds_ts = to_tensor_ds_embedding_extracted(aug_k_df)
+    
+    
+    # Filter train, val, test by fold label
+    cached_ds = ds_ts.cache()
+    train_ds = cached_ds.filter(lambda embedding, class_name, fold: fold < 8)
+    val_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 8)
+    test_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 9)
+    
+    
+    # Remove fold column
+    remove_fold_column = lambda embedding, class_name, fold: (embedding, class_name)
+    train_ds = train_ds.map(remove_fold_column)
+    val_ds = val_ds.map(remove_fold_column)
+    test_ds = test_ds.map(remove_fold_column)
+    
+    
+    # One hot encoding for labels
+    from utils.dframe_utils import encode_label_tf, NUMBER_OF_CLASSES
+    train_ds = train_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
+    val_ds = val_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
+    test_ds = test_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
+    
+    
+    # Batching and shuffling
+    def count_dataset_size(dataset):
+        return sum(1 for _ in dataset)
+    dataset_size = count_dataset_size(train_ds)
+    
+    train_ds = train_ds.cache().shuffle(min(1000, dataset_size)).batch(32).prefetch(TRAVIS_SCOTT)
+    val_ds = val_ds.cache().batch(32).prefetch(TRAVIS_SCOTT)
+    test_ds = test_ds.cache().batch(32).prefetch(TRAVIS_SCOTT)
+    
+    
+    # Model setup
+    yamnet_tweaked = tf.keras.Sequential([
+        tf.keras.layers.Input(shape=(None, 1024), dtype=tf.float32, name='input_embedding'),  
+        tf.keras.layers.Dense(512, activation='relu'),
+        # Add GAP1D layer to reduce the dimensionality (None part of the shape=(None, 1024))
+        # Make the model dimension independent
+        tf.keras.layers.GlobalAveragePooling1D(),
+        tf.keras.layers.Dense(NUMBER_OF_CLASSES, activation='softmax', name="class_scores")  # Output class probabilities
+    ], name='yamnet_tweaked')
 
-    # ds_ts = to_tensor_ds_embedding_extracted(aug_k_df)
+    yamnet_tweaked.summary()
+    
+    # Compile the model
+    yamnet_tweaked.compile(
+        # # raw scores (logits) instead of probabilities (if the final layer doesn’t have softmax).
+        # loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+        loss=tf.keras.losses.SparseCategoricalCrossentropy(),
+        optimizer="adamax",
+        metrics=[
+            keras.metrics.Precision(name="precision"),  
+            keras.metrics.Recall(name="recall"),
+            f1_score
+        ]
+    )
 
-    # # Filter train, val, test by fold label
-    # cached_ds = ds_ts.cache()
-    # train_ds = cached_ds.filter(lambda embedding, class_name, fold: fold < 8)
-    # val_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 8)
-    # test_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 9)
-    
-    # # Remove fold column
-    # remove_fold_column = lambda embedding, class_name, fold: (embedding, class_name)
-    # train_ds = train_ds.map(remove_fold_column)
-    # val_ds = val_ds.map(remove_fold_column)
-    # test_ds = test_ds.map(remove_fold_column)
-    
-    # train_ds = train_ds.cache().shuffle(1000).batch(32).prefetch(tf.data.AUTOTUNE)
-    # val_ds = val_ds.cache().batch(32).prefetch(tf.data.AUTOTUNE)
-    # test_ds = test_ds.cache().batch(32).prefetch(tf.data.AUTOTUNE)
-    
-    # # Model setup
-    # class_names = get_classes_from_config()
-    # yamnet_tweaked = tf.keras.Sequential([
-    # tf.keras.layers.Input(shape=(1024, ), dtype=tf.float32, name='input_embedding'),
-    # tf.keras.layers.Dense(512, activation='relu'),
-    # tf.keras.layers.Dense(len(class_names))
-    # ], name='yamnet_tweaked')
+    callback = tf.keras.callbacks.EarlyStopping(monitor='loss',
+                                                patience=4,
+                                                restore_best_weights=True)
 
-    # yamnet_tweaked.summary()
+    history = yamnet_tweaked.fit(train_ds,
+                        epochs=100,
+                        validation_data=val_ds,
+                        callbacks=callback)
     
-    # # Compile the model
-    # # raw scores (logits) instead of probabilities (if the final layer doesn’t have softmax).
-    # yamnet_tweaked.compile(loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-    #                         optimizer="adamax",
-    #                         metrics=[
-    #                             keras.metrics.Precision(name="precision"),  
-    #                             keras.metrics.Recall(name="recall"),
-    #                             f1_score
-    #                         ])
+    # Save training history to log directory
+    history_log_path = os.path.join(C.LOG_PATH, "training_history.txt")
+    with open(history_log_path, "w") as f:
+        for key, values in history.history.items():
+            f.write(f"{key}: {values}\n")
+    l.info(f"Training history saved to {history_log_path}")
+    
+    loss, accuracy = yamnet_tweaked.evaluate(test_ds)
+    l.info(f"Final Loss: {loss}")
+    l.info(f"Final Accuracy: {accuracy}")
 
-    # callback = tf.keras.callbacks.EarlyStopping(monitor='loss',
-    #                                             patience=5,
-    #                                             restore_best_weights=True)
+    
+    saved_model_path = os.path.join(C.MODELS_PATH, "yamnet_tweaked")
+    
+    # Define final model
+    
+    # 1st layer: input
+    input_segment = tf.keras.layers.Input(shape=(), dtype=tf.float32, name='audio')
+    
+    # 2nd layer: yamnet_embedding_extraction
+    embedding_extraction_layer = hub.KerasLayer(C.YAMNET_MODEL_URL,
+                                                trainable=False, name='yamnet')
+    _, embeddings_output, _ = embedding_extraction_layer(input_segment)
+    
+    # 3rd layer: yamnet_tweaked - on top of 2nd layer
+    serving_outputs = yamnet_tweaked(embeddings_output)
+    
+    # 4th layer: ReduceMeanLayer - on top of 3rd layer
+        # Define the final final layer
+    class ReduceMeanLayer(tf.keras.layers.Layer):
+        def __init__(self, axis=0, **kwargs):
+            super(ReduceMeanLayer, self).__init__(**kwargs)
+            self.axis = axis
 
-    # history = yamnet_tweaked.fit(train_ds,
-    #                     epochs=100,
-    #                     validation_data=val_ds,
-    #                     callbacks=callback)
+        def call(self, input):
+            return tf.math.reduce_mean(input, axis=self.axis)
+    serving_outputs = ReduceMeanLayer(axis=0, name='classifier')(serving_outputs)
     
-    # # Save training history to log directory
-    # history_log_path = os.path.join(C.LOG_PATH, "training_history.txt")
-    # with open(history_log_path, "w") as f:
-    #     for key, values in history.history.items():
-    #         f.write(f"{key}: {values}\n")
-    # l.info(f"Training history saved to {history_log_path}")
-    
-    # loss, accuracy = yamnet_tweaked.evaluate(test_ds)
-    # l.info(f"Loss: {loss}")
-    # l.info(f"Accuracy: {accuracy}")
-    
-    # class ReduceMeanLayer(tf.keras.layers.Layer):
-    #     def __init__(self, axis=0, **kwargs):
-    #         super(ReduceMeanLayer, self).__init__(**kwargs)
-    #         self.axis = axis
-
-    #     def call(self, input):
-    #         return tf.math.reduce_mean(input, axis=self.axis)
-    
-    # saved_model_path = os.path.join(C.MODELS_PATH, "yamnet_tweaked")
-    # input_segment = tf.keras.layers.Input(shape=(), dtype=tf.float32, name='audio')
-    # embedding_extraction_layer = hub.KerasLayer(C.YAMNET_MODEL_URL,
-    #                                             trainable=False, name='yamnet')
-    # _, embeddings_output, _ = embedding_extraction_layer(input_segment)
-    # serving_outputs = yamnet_tweaked(embeddings_output)
-    # serving_outputs = ReduceMeanLayer(axis=0, name='classifier')(serving_outputs)
-    # serving_model = tf.keras.Model(input_segment, serving_outputs)
-    # l.info(f"Model summary:")
-    # serving_model.summary()
-    # l.info(f"Saving model...")
-    # serving_model.save(saved_model_path, include_optimizer=False)
-    # l.info(f"Model saved to {saved_model_path}")
+    # Specify input_segment as the start layer of the sequential
+    serving_model = tf.keras.Model(input_segment, serving_outputs)
+    l.info(f"Model summary:")
+    serving_model.summary()
+    l.info(f"Saving model...")
+    serving_model.save(saved_model_path, include_optimizer=False)
+    l.info(f"Model saved to {saved_model_path}")
 
 
 
@@ -215,23 +249,56 @@ def get_args():
     return parser.parse_args()
 
 
-def test():
-    workflow()
-    pth = os.path.join(PROJECT_ROOT, "dataset", "merged.augmented.folded.csv")
-    ds = pd.read_csv(pth)
-    from utils.dframe_utils import to_tensor_ds_embedding_extracted
-    ds_ts = to_tensor_ds_embedding_extracted(ds)
-    print(ds_ts)
-    print(ds_ts.element_spec)
-    for i, (audio_waveform, label, fold) in enumerate(ds_ts.take(10)):
-        if tf.reduce_any(tf.math.is_nan(audio_waveform)):
-            print(f"⚠️ Found NaN values in audio at index {i}")
-        if tf.size(audio_waveform) == 0:
-            print(f"⚠️ Empty audio tensor at index {i}")
-        file_name = f"{label}_{fold}_{uuid.uuid1()}.png"
-        file_name = os.path.join(C.PY_PROJECT_ROOT, "plots", file_name)
-        from wav_utils import plot_mono_wav
-        plot_mono_wav(audio_waveform, figname=file_name)
+# def test():
+#     # workflow()
+#     pth = os.path.join(PROJECT_ROOT, "dataset", "merged.augmented.folded.csv")
+#     ds = pd.read_csv(pth)
+#     ds_ts = to_tensor_ds_embedding_extracted(ds)
+#     print(ds_ts)
+#     print(ds_ts.element_spec)
+    
+#     cached_ds = ds_ts.cache()
+#     train_ds = cached_ds.filter(lambda embedding, class_name, fold: fold < 8)
+#     val_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 8)
+#     test_ds = cached_ds.filter(lambda embedding, class_name, fold: fold == 9)
+    
+#     # Remove fold column
+#     remove_fold_column = lambda embedding, class_name, fold: (embedding, class_name)
+#     train_ds = train_ds.map(remove_fold_column)
+#     val_ds = val_ds.map(remove_fold_column)
+#     test_ds = test_ds.map(remove_fold_column)
+    
+#     from dframe_utils import encode_label_tf
+#     train_ds = train_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
+#     val_ds = val_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
+#     test_ds = test_ds.map(encode_label_tf, num_parallel_calls=TRAVIS_SCOTT)
+    
+    
+#     print(train_ds.element_spec)
+#     print(val_ds.element_spec)
+#     print(test_ds.element_spec)
+    
+    
+    
+#     def count_dataset_size(dataset):
+#         return sum(1 for _ in dataset)
+    
+#     dataset_size = count_dataset_size(train_ds)
+#     print(f"Dataset size: {dataset_size}")
+
+#     train_ds = train_ds.cache().shuffle(min(1000, dataset_size)).batch(32).prefetch(TRAVIS_SCOTT)
+#     val_ds = val_ds.cache().batch(32).prefetch(TRAVIS_SCOTT)
+#     test_ds = test_ds.cache().batch(32).prefetch(TRAVIS_SCOTT)
+#     for i, (audio_waveform, label) in enumerate(train_ds.take(10)):
+#         if tf.reduce_any(tf.math.is_nan(audio_waveform)):
+#             print(f"⚠️ Found NaN values in audio at index {i}")
+#         if tf.size(audio_waveform) == 0:
+#             print(f"⚠️ Empty audio tensor at index {i}")
+#         print(f"{i}| data shape: {audio_waveform.shape}, label shape: {label.shape}\n {label}")
+#         # file_name = f"{label}_f{fold}_{i}.png"
+#         # file_name = os.path.join(C.PY_PROJECT_ROOT, "plots", file_name)
+#         # from wav_utils import plot_mono_wav
+#         # plot_mono_wav(audio_waveform, figname=file_name)
 
 if __name__ == "__main__":
     args = get_args()
