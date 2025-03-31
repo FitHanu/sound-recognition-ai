@@ -156,7 +156,7 @@ def workflow():
     
     # Model setup
     yamnet_tweaked = tf.keras.Sequential([
-        tf.keras.layers.Input(shape=(None, 1024), dtype=tf.float32, name='input_embedding'),  
+        tf.keras.layers.Input(shape=(1024,), dtype=tf.float32, name='input_embedding'),  
         tf.keras.layers.Dense(512, activation='relu'),
         # Add GAP1D layer to reduce the dimensionality (None part of the shape=(None, 1024))
         # Make the model dimension independent
@@ -165,7 +165,7 @@ def workflow():
     ], name='yamnet_tweaked')
 
     yamnet_tweaked.summary()
-    
+     
     # Compile the model
     yamnet_tweaked.compile(
         # # raw scores (logits) instead of probabilities (if the final layer doesn’t have softmax).
