@@ -123,10 +123,10 @@ def convert_to_pcm_replace_sox(input_file: str) -> None:
     command = [
         "sox",
         input_file,
+        "-e", "signed-integer",
+        "-b", "16", # bit depth
         # "-c", "1", # chanel
         # "-r", "44100", # sample rate
-        # "-b", "16", # bit depth
-        "-e", "signed-integer",
         temp_file, 
     ]
 
