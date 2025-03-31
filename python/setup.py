@@ -3,6 +3,8 @@ import subprocess
 import importlib
 import json
 import sys
+import argparse
+
 
 from logging_cfg import get_logger
 l = get_logger(__name__)
@@ -39,7 +41,7 @@ def check_conda_installed():
         l.error("Conda is installed but not working properly.")
         raise subprocess.CalledProcessError("Conda is installed but not working properly.")
 
-def install_requirements(strategy = "pip"):
+def install_requirements(strategy = "conda"):
     package_strategy = ["pip", "conda"]
     if strategy not in package_strategy:
         l.error(f"Strategy must be one of {package_strategy}")
@@ -106,11 +108,28 @@ def init_split_ds_config(overwrite = False):
     with open(CONFIG_JSON, "w") as f:
         json.dump(config, f, indent=2)
     
-    
+
+
+def get_args():
+    parser = argparse.ArgumentParser(description="Setup script for the project.")
+    parser.add_argument(
+        "--env_strategy",
+        choices=["pip", "conda"],
+        default="pip",
+        help="Environment setup strategy. Choose between 'pip' or 'conda'. Default is 'pip'"
+    )
+    args = parser.parse_args()
+    return args
+
 def main():
-    l.info("Setting up project")
+    args = get_args()
+    env_strategy = args.env_strategy
+    l.info("Arguments:")
+    l.info(f"env_strategy: {env_strategy}")
+    
+    l.info("Setting up project ...")
     steps = [
-        [f"Installing requirements", install_requirements],
+        [f"Installing requirements", install_requirements, env_strategy],
         [f"Appending project paths to {SITE_PKG_PATH}", append_project_path],
         [f"Initialize default paritioning config", init_split_ds_config],
         [f"Validating packages ...", validate_packages, [
@@ -128,9 +147,6 @@ def main():
             l.error(f"Failed to run: {step[0]}")
             l.error(e)
             sys.exit(1)
-            
-    
-
 
 if __name__ == "__main__":
     main()
