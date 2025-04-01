@@ -145,25 +145,56 @@ def to_tensor_dataset(df: pd.DataFrame) -> tf.data.Dataset:
     # return ts_ds
 
 
+def extract_embedding(wav_data, label, fold):
+    ''' run YAMNet to extract embedding from the wav data '''
+    yamnet = YamnetWrapper()
+    embeddings = yamnet.extract_embedding(wav_data)
+    num_embeddings = tf.shape(embeddings)[0]
+    print(f"embedding shape: {embeddings.shape}")
+    print(f"original embedding: {embeddings}")
+    
+    # Reduce the embedding by averaging over the time dimension (axis 0)
+    reduced_embedding = tf.reduce_mean(embeddings, axis=0)
+    print(f"reduced embedding shape: {reduced_embedding.shape}")
+    print(f"reduced embedding: {reduced_embedding}")
+    return (reduced_embedding,
+                tf.repeat(label, num_embeddings),
+                tf.repeat(fold, num_embeddings))
+
 def to_tensor_ds_embedding_extracted(dataset) -> tf.data.Dataset:
     if type(dataset) == pd.DataFrame:
         dataset = to_tensor_dataset(dataset)
-    # print(type(dataset))
-    # if type(dataset) != tf.data.Dataset:
-    #     raise ValueError("Invalid dataset type, expect pd.DataFrame or tf.data.Dataset")
-
+    
     def extract_embedding(wav_data, label, fold):
         ''' run YAMNet to extract embedding from the wav data '''
         yamnet = YamnetWrapper()
         embeddings = yamnet.extract_embedding(wav_data)
         num_embeddings = tf.shape(embeddings)[0]
+        # num_embeddings_eager = tf.shape(embeddings)[0].numpy()
+        # embeddings = tf.ensure_shape(embeddings, [num_embeddings_eager, 1024])
+        # embeddings = tf.RaggedTensor.from_tensor(embeddings)
+        # Reduce the embedding by averaging over the time dimension (axis 0)
+        # reduced_embedding = tf.reduce_mean(embeddings, axis=0)
+        # return reduced_embedding, label, fold
+        
         return (embeddings,
                     tf.repeat(label, num_embeddings),
                     tf.repeat(fold, num_embeddings))
-
+    
     # extract embedding
-    return dataset.map(extract_embedding).unbatch()
+    return dataset.map(extract_embedding,
+                    num_parallel_calls=tf.data.AUTOTUNE
+                    ).unbatch()
 
+def encode_label(embedding, label):
+    """Convert numeric label ID to one-hot encoding."""
+
+    label_index = ID_TO_INDEX_MAP[label.numpy()]  # Convert ID to index
+    return embedding, tf.one_hot(label_index, depth=NUMBER_OF_CLASSES, dtype=tf.float32)
+
+# Wrap it for tf.data compatibility
+def encode_label_tf(embedding, label):
+    return tf.py_function(func=encode_label, inp=[embedding, label], Tout=(tf.float32, tf.float32))
 
 def main():
     point_map = {
@@ -181,38 +212,20 @@ def main():
     for key, path in point_map.items():
         path = get_path(path)
         audio_tensor = load_wav_16k_mono_3(path)
-        spectrogram = model.extract_spectrogram(audio_tensor)
+
+
+        print(f"Audio tensor shape: {audio_tensor.shape}")
+        # Extract embedding
+        embedding = extract_embedding(audio_tensor, 0, 0)
         
-        file_name = f"{key}_spectrogram.png"
-    
-        # Ensure the plots directory exists
-        plots_dir = os.path.join(C.PROJECT_ROOT, "plots")
-        os.makedirs(plots_dir, exist_ok=True)
-
-        # Plot the spectrogram
-        plt.figure(figsize=(10, 4))
-        plt.imshow(spectrogram.numpy().T, aspect='auto', origin='lower', cmap='viridis')
-        plt.colorbar(format='%+2.0f dB')
-        plt.title("Spectrogram")
-        plt.xlabel("Time")
-        plt.ylabel("Frequency")
+        # print(f"embedding shape: {embedding.shape}")
+        # print(f"embedding : {embedding}")
+        # num_embeddings = tf.shape(embedding)[0]
         
-        # Save the plot as a .png file
-        plot_path = os.path.join(plots_dir, file_name)
-        plt.savefig(plot_path)
-        plt.close()
-        l.info(f"Spectrogram saved to {plot_path}")
-
-def encode_label(embedding, label):
-    """Convert numeric label ID to one-hot encoding."""
-
-    label_index = ID_TO_INDEX_MAP[label.numpy()]  # Convert ID to index
-    return embedding, tf.one_hot(label_index, depth=NUMBER_OF_CLASSES, dtype=tf.float32)
-
-# Wrap it for tf.data compatibility
-def encode_label_tf(embedding, label):
-    return tf.py_function(func=encode_label, inp=[embedding, label], Tout=(tf.float32, tf.float32))
-
+        # print(f"Number of embeddings: {num_embeddings}")
+        # print(f"Embedding shape: {embedding.shape}")
+        
+        return
 
 if __name__ == "__main__":
     main()

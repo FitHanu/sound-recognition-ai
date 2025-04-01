@@ -72,15 +72,25 @@ def plot_embedding_extracted(
     audio_tensor = load_wav_16k_mono_3(file_path)
     embedding = yamnet.extract_embedding(audio_tensor)
     
-    print(embedding.shape)
+    print(f"Embedding shape: {embedding.shape}")
 
     # Plot the spectrogram
-    plt.figure(figsize=(10, 4))
-    plt.imshow(embedding.numpy().T, aspect='auto', origin='lower', cmap='viridis')
-    # plt.colorbar(format='%+2.0f dB')
-    plt.title("Embedding Frame")
-    plt.ylabel("Frame ?")
-    plt.xlabel("Frame ?")
+    # plt.figure(figsize=(10, 4))
+    # plt.imshow(embedding.numpy().T, aspect='auto', origin='lower', cmap='viridis')
+    # # plt.colorbar(format='%+2.0f dB')
+    # plt.title("Embedding")
+    # plt.ylabel("Embedding dimension")
+    # plt.xlabel("Number of samples")
+    plt.figure(figsize=(16, 6))
+    plt.imshow(embedding.numpy().T, aspect='auto', origin='lower', cmap='plasma') # or cmap='viridis' 
+    y_start = 0
+    y_end = embedding.shape[1]
+    y_mid = y_end // 2
+    plt.yticks([y_start, y_mid, y_end])
+    plt.xticks(ticks=np.arange(embedding.shape[0]), labels=np.arange(embedding.shape[0]))
+    plt.ylabel("Feature Index (1024-D)")
+    plt.xlabel("Time Frames")
+    plt.title("YAMNet Embeddings Heatmap")
     
     plt.savefig(output_path)
 
