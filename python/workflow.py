@@ -200,7 +200,7 @@ def workflow():
                                                 restore_best_weights=True)
 
     history = yamnet_tweaked.fit(train_ds,
-                        epochs=10,
+                        epochs=200,
                         validation_data=val_ds,
                         callbacks=callback)
     
