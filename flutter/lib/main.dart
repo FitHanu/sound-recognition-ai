@@ -1,14 +1,18 @@
+import 'package:danger_sound_recognition/init_yamnet_tflite_model.dart';
 import 'package:danger_sound_recognition/src/config/locale.dart';
 import 'package:danger_sound_recognition/src/features/settings/application/settings_service.dart';
 import 'package:danger_sound_recognition/src/routing/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:tflite_flutter/tflite_flutter.dart';
 import 'src/features/record/presentation/record_page.dart';
 import '/l10n/generated/app_localizations.dart';
 
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  //load model successfully
+  Interpreter? yamModel = await loadYamnetModel();
 
   // Initialize Settings
   final settingsService = SettingsService();
