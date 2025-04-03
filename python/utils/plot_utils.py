@@ -1,5 +1,3 @@
-
-
 import os
 from matplotlib import pyplot as plt
 import numpy as np
@@ -15,7 +13,7 @@ def plot_tf_float32_converted_from_mono_wav(
 ) -> None:
     """
     Plot a waveform from a tf.float32 tensor.
-    
+
     Args:
     """
     waveform = load_wav_16k_mono_3(file_path)
@@ -28,8 +26,9 @@ def plot_tf_float32_converted_from_mono_wav(
     plt.xlabel("Sample Index")
     plt.ylabel("Amplitude")
     plt.title("Plot of Mono WAV Tensor (tf.float32)")
-    
+
     plt.savefig(output_path)
+
 
 def plot_spectrogram_wav(
     file_path: str,
@@ -37,23 +36,23 @@ def plot_spectrogram_wav(
 ) -> None:
     """
     Plot a spectrogram from a WAV file.
-    
+
     Args:
     """
     yamnet = YamnetWrapper()
     yamnet._load_model()
-    
+
     audio_tensor = load_wav_16k_mono_3(file_path)
     spectrogram = yamnet.extract_spectrogram(audio_tensor)
 
     # Plot the spectrogram
     plt.figure(figsize=(10, 4))
-    plt.imshow(spectrogram.numpy().T, aspect='auto', origin='lower', cmap='viridis')
-    plt.colorbar(format='%+2.0f dB')
+    plt.imshow(spectrogram.numpy().T, aspect="auto", origin="lower", cmap="viridis")
+    plt.colorbar(format="%+2.0f dB")
     plt.title("Spectrogram")
     plt.xlabel("Time")
     plt.ylabel("Frequency")
-    
+
     plt.savefig(output_path)
 
 
@@ -63,15 +62,15 @@ def plot_embedding_extracted(
 ) -> None:
     """
     Plot a spectrogram from a WAV file.
-    
+
     Args:
     """
     yamnet = YamnetWrapper()
     yamnet._load_model()
-    
+
     audio_tensor = load_wav_16k_mono_3(file_path)
     embedding = yamnet.extract_embedding(audio_tensor)
-    
+
     print(f"Embedding shape: {embedding.shape}")
 
     # Plot the spectrogram
@@ -82,39 +81,66 @@ def plot_embedding_extracted(
     # plt.ylabel("Embedding dimension")
     # plt.xlabel("Number of samples")
     plt.figure(figsize=(16, 6))
-    plt.imshow(embedding.numpy().T, aspect='auto', origin='lower', cmap='plasma') # or cmap='viridis' 
+    plt.imshow(
+        embedding.numpy().T, aspect="auto", origin="lower", cmap="plasma"
+    )  # or cmap='viridis'
     y_start = 0
     y_end = embedding.shape[1]
     y_mid = y_end // 2
     plt.yticks([y_start, y_mid, y_end])
-    plt.xticks(ticks=np.arange(embedding.shape[0]), labels=np.arange(embedding.shape[0]))
+    plt.xticks(
+        ticks=np.arange(embedding.shape[0]), labels=np.arange(embedding.shape[0])
+    )
     plt.ylabel("Feature Index (1024-D)")
     plt.xlabel("Time Frames")
     plt.title("YAMNet Embeddings Heatmap")
-    
+
     plt.savefig(output_path)
 
 
 if __name__ == "__main__":
-    point_map = {
-        "alarm": "ALARM_bdlib2_1.wav",
-        "car_horn": "CAR_HORN_us8k_3703.wav",
-        "dog_bark": "DOG_BARK_bdlib2_2.wav",
-        "gunshot": "GUNSHOT_HANDGUN_gad_373.wav",
-    }
-    for key, path in point_map.items():
+
+    def get_file_name_without_extension(file_name: str) -> str:
+        return os.path.splitext(file_name)[0]
+
+    point_map = [
+        "ALARM_bdlib2_1.wav",
+        "CAR_HORN_us8k_3703.wav",
+        "DOG_BARK_bdlib2_2.wav",
+        "GUNSHOT_HANDGUN_gad_373.wav",
+        "CRYING_BABY_esc50_1728.wav",
+        "THUNDER_STORM_esc50_1287.wav",
+        "SIREN_us8k_7739.wav",
+        "RAIN_esc50_1404.wav",
+        "GUNSHOT_RIFLE_gad_145.wav",
+        "CHAINSAW_esc50_861.wav",
+        "GLASS_BREAKING_esc50_595.wav"
+    ]
+
+    for path in point_map:
+        bare_name = get_file_name_without_extension(path)
         original_file_path = os.path.join("dataset", path)
-        output_plot_wav_path = os.path.join(C.PROJECT_ROOT, "plots", f"{key}_waveform.png")
-        output_plot_spec_path = os.path.join(C.PROJECT_ROOT, "plots", f"{key}_spectrogram.png")
-        output_copy_wav_path = os.path.join(C.PROJECT_ROOT, "plots", f"{key}.copied.wav")
-        output_embedding_path = os.path.join(C.PROJECT_ROOT, "plots", f"{key}_embedding.png")
-        
+        output_plot_wav_path = os.path.join(
+            C.PROJECT_ROOT, "plots", "new", f"{bare_name}_waveform.png"
+        )
+        output_plot_spec_path = os.path.join(
+            C.PROJECT_ROOT, "plots", "new", f"{bare_name}_spectrogram.png"
+        )
+        output_copy_wav_path = os.path.join(
+            C.PROJECT_ROOT, "plots", "new", f"{bare_name}.copied.wav"
+        )
+        output_embedding_path = os.path.join(
+            C.PROJECT_ROOT, "plots", "new", f"{bare_name}_embedding.png"
+        )
+
         os.makedirs("plots", exist_ok=True)
         # Plot spectrogram lấy được từ Yamnet
         plot_spectrogram_wav(original_file_path, output_plot_spec_path)
         # Plot dạng cuối cùng của data trước khi cho vào train
-        plot_tf_float32_converted_from_mono_wav(original_file_path, output_plot_wav_path)
-        
+        plot_tf_float32_converted_from_mono_wav(
+            original_file_path, output_plot_wav_path
+        )
+
         plot_embedding_extracted(original_file_path, output_embedding_path)
         # Copy file
         os.system(f"cp {original_file_path} {output_copy_wav_path}")
