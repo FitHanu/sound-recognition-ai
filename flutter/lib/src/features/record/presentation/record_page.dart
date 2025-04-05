@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '/l10n/generated/app_localizations.dart';
 import '../../../common_widgets/settings_drawer.dart';
+import '../../../routing/route_names.dart';
 
 class RecordPage extends StatelessWidget {
   RecordPage({super.key});
@@ -33,7 +34,21 @@ class RecordPage extends StatelessWidget {
       ),
       drawer: const MainDrawer(), // Main Navigation Drawer (left)
       endDrawer: const SettingsDrawer(), // Settings Drawer (right)
-      body: Center(child: Text('Main Content Here')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Main Content Here'),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, RouteNames.classificationConfig);
+                print('Navigating to ClassificationConfig'); // Debug print
+              },
+              child: const Text('Classification Settings'),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -43,14 +58,46 @@ class MainDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Drawer(
       child: ListView(
-        children: const [
+        children: [
           DrawerHeader(
-            decoration: BoxDecoration(color: Colors.blue),
-            child: Text('Main Navigation'),
+            decoration: const BoxDecoration(color: Colors.blue),
+            child: Text(
+              'Main Navigation',
+              style: const TextStyle(color: Colors.white, fontSize: 24),
+            ),
           ),
-          ListTile(title: Text('Home')),
+          ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text('Home'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushReplacementNamed(context, RouteNames.record);
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.history),
+            title: const Text('Records History'), // Using hardcoded string
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, RouteNames.recordsHistory);
+            },
+          ),
+          // Add Classification Config navigation option
+          ListTile(
+            leading: const Icon(Icons.tune),
+            title: const Text('Classification Settings'),
+            onTap: () {
+              Navigator.pop(context);
+              print(
+                'Navigating to ClassificationConfig from drawer',
+              ); // Debug print
+              Navigator.pushNamed(context, RouteNames.classificationConfig);
+            },
+          ),
         ],
       ),
     );
