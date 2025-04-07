@@ -64,3 +64,37 @@ def read_csv_as_dataframe(file_path: str) -> pd.DataFrame:
     if not file_path.endswith('.csv'):
         raise ValueError(f"File is not a CSV: '{file_path}'")
     return pd.read_csv(file_path)
+
+
+def get_classes_from_config():
+    """
+    Get class names from the config file.
+    """
+    from constants import CLASSNAMES_CSV
+    with open(CLASSNAMES_CSV, "r") as f:
+        df = pd.read_csv(f)
+        return df['class_name'].tolist()
+
+
+def get_classes_ordinal_from_config():
+    """
+    Get class names from the config file.
+    """
+    from constants import CLASSNAMES_CSV
+    with open(CLASSNAMES_CSV, "r") as f:
+        df = pd.read_csv(f)
+        return df['id'].tolist()
+
+
+def main():
+    """
+    Main function to test get_classes_from_config.
+    """
+    try:
+        class_names = get_classes_from_config()
+        print("Class names:", class_names)
+    except Exception as e:
+        l.error(f"An error occurred: {e}")
+
+if __name__ == "__main__":
+    main()

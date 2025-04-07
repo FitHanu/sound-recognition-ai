@@ -15,7 +15,7 @@ from utils.wav_utils import load_wav_16k_mono
 import pandas as pd
 
 def main():
-    from constants import FULL_META_CSV
+    from constants import MERGED_META_CSV
     main_df = pd.read_csv
 
 if __name__ == "__main__":

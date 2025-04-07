@@ -2,6 +2,11 @@ kagglehub
 pandas
 matplotlib
 gdown
-tensorflow
 tensorflow-hub
-tensorflow-io
+tensorflow==2.18.*
+tf-keras==2.18.*
+soundfile
+numpy
+platformdirs
+librosa
+sox

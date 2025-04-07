@@ -20,16 +20,16 @@ LOGGING_CONFIG = {
     "disable_existing_loggers": False,
     "formatters": {
         "detailed": {
-            "format": "%(asctime)s | %(levelname)s | %(module)s | %(message)s"
+            "format": "<%(asctime)s> <%(levelname)-8s> <%(module)s>: %(message)s"
         },
         "simple": {
-            "format": "%(levelname)s | %(message)s"
+            "format": "<%(levelname)-8s>: %(message)s"
         }
     },
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
-            "formatter": "simple",
+            "formatter": "detailed",
             "level": "INFO"
         },
         "file": {
@@ -51,3 +51,12 @@ logging.config.dictConfig(LOGGING_CONFIG)
 # Create a logger for modules to use
 def get_logger(name):
     return logging.getLogger(name)
+
+# L = logging.getLogger(__name__)
+
+# Test different log levels
+# L.debug("This is a DEBUG message")
+# L.info("This is an INFO message")
+# L.warning("This is a WARNING message")
+# L.error("This is an ERROR message")
+# L.critical("This is a CRITICAL message")

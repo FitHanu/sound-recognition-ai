@@ -96,10 +96,10 @@ class BDLib2(DataSet):
         df_filtered[C.DF_SUB_DS_ID_COL] = df.index
         
         # init length
-        df_filtered = df_filtered.apply(
-            lambda x: get_wave_data_length_2(x),
-            axis=1
-        )
+        # df_filtered = df_filtered.apply(
+        #     lambda x: get_wave_data_length_2(x),
+        #     axis=1
+        # )
         return df_filtered
     
 def main():

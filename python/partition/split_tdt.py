@@ -26,10 +26,10 @@ Steps:
 from utils.json_utils import get_config_json
 from utils.csv_utils import read_csv_as_dataframe
 from utils.file_utils import get_filename_without_extension
-from constants import FULL_META_CSV
+from constants import MERGED_META_CSV
 from typing import Final
 import pandas as pd
-import os
+import constants as C
 from logging_cfg import get_logger
 l = get_logger(__name__)
 
@@ -147,7 +147,7 @@ def augment_df(df: pd.DataFrame) -> pd.DataFrame:
     augmented_df = pd.DataFrame()
     median = get_median(df, int)
 
-    for _class_name, group in df.groupby('class_name'):
+    for _class_name, group in df.groupby(C.DF_CLASS_NAME_COL):
         if len(group) < median:
             # Allow duplicate sampling when group size is limited 
             sampled_group = group.sample(median, replace=True)
@@ -171,9 +171,9 @@ def assign_fold(df: pd.DataFrame, cfg: SplitCfg) -> pd.DataFrame:
     """
     aug_k_fold_df = df.copy()
     fold_number = cfg.get_folds()
-    df['fold'] = -1
+    df[C.DF_FOLD_COL] = -1
     # Asume that the dataframe is already augmented, each class has the same number of datapoints
-    for _class_name, group in df.groupby('class_name'):
+    for _class_name, group in df.groupby(C.DF_CLASS_NAME_COL):
         # Assign fold 0 -> fold_number foreach points in classname
         class_f_len = len(group) // fold_number
         fi = 0
@@ -181,7 +181,7 @@ def assign_fold(df: pd.DataFrame, cfg: SplitCfg) -> pd.DataFrame:
             fold_start = i * class_f_len
             fold_end = fold_start + class_f_len
             for j in range(fold_start, fold_end):
-                aug_k_fold_df.loc[group.index[j], 'fold'] = int(fi)
+                aug_k_fold_df.loc[group.index[j], C.DF_FOLD_COL] = int(fi)
             fi += 1
             
     return aug_k_fold_df

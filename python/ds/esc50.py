@@ -39,7 +39,7 @@ class ESC50(DataSet):
         
         
         # Get length
-        df_filtered = df_filtered.apply(get_wave_data_length_2, axis=1)
+        # df_filtered = df_filtered.apply(get_wave_data_length_2, axis=1)
         
         return final_df
 
@@ -58,7 +58,7 @@ def main():
     # print(df.columns) # Index(['filename', 'fold', 'target', 'category', 'esc10', 'src_file', 'take'], dtype='object')
 
     # Set the directory path
-    directory = C.FINAL_DATASET_PATH
+    directory = C.FILTERED_DATASET_PATH
     print(len(os.listdir(directory)))
     df = pd.read_csv(os.path.join(C.META_PATH, "esc50.filtered.csv"))
     print(df.shape)

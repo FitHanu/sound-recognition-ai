@@ -1,4 +1,28 @@
 {
+  "train": {
+    "batch_size": 32,
+    "epochs": 100,
+    "learning_rate": 0.001,
+    "optimizer": "adamax",
+    "loss": "categorical_crossentropy",
+    "metrics": [
+      "accuracy"
+    ],
+    "callbacks": {
+      "early_stopping": {
+        "monitor": "val_loss",
+        "patience": 10,
+        "restore_best_weights": true
+      },
+      "model_checkpoint": {
+        "monitor": "val_loss",
+        "save_best_only": true
+      },
+      "tensorboard": {
+        "log_dir": "logs"
+      }
+    }
+  },
   "final_dataset_dir": "dataset",
   "partition": {
     "train": 0.8,
@@ -8,7 +32,6 @@
   },
   "class_mapping": {
     "default": {
-      "0": "NOISE",
       "1": "SIREN",
       "2": "CAR_HORN",
       "3": "EXPLOSION",

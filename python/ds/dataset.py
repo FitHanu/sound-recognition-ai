@@ -22,7 +22,7 @@ PD_SCHEMA = {
     # Audio file path
     C.DF_PATH_COL: "string",
     # Audio file length (must be in milliseconds)
-    C.DF_LENGTH_COL: "int64",
+    # C.DF_LENGTH_COL: "int64",
     # Class Name ID
     C.DF_CLASS_ID_COL: "int16",
     # Class Name (string)
@@ -177,7 +177,7 @@ class DataSet(abc.ABC):
 
             return ds_paths
         else:
-            raise NotImplementedError("Format other than Kaggle needs to be implemented") 
+            raise NotImplementedError("Format other than Kaggle needs to be implemented manually") 
 
     @abc.abstractmethod
     def filter_by_class(self) -> pd.DataFrame:
@@ -233,7 +233,7 @@ class DataSet(abc.ABC):
         - Call after `normalize()`\n
         """
         
-        target_path = C.FINAL_DATASET_PATH
+        target_path = C.FILTERED_DATASET_PATH
         os.makedirs(target_path, exist_ok=True)
         df = self.df.copy()
         

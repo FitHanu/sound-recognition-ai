@@ -1,5 +1,4 @@
 id,class_name,severity
-0,NOISE,LOW
 1,SIREN,LOW
 2,CAR_HORN,MEDIUM
 3,EXPLOSION,HIGH
