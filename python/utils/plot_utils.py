@@ -1,4 +1,5 @@
 import os
+import kagglehub
 from matplotlib import pyplot as plt
 import numpy as np
 import tensorflow as tf
@@ -98,8 +99,14 @@ def plot_embedding_extracted(
     plt.savefig(output_path)
 
 
-if __name__ == "__main__":
 
+def down_1():
+    path = kagglehub.dataset_download("chibuzokelechi/explosion-sound")
+    print(path)
+    return path
+
+def test_1():
+    
     def get_file_name_without_extension(file_name: str) -> str:
         return os.path.splitext(file_name)[0]
 
@@ -116,6 +123,17 @@ if __name__ == "__main__":
         "CHAINSAW_esc50_861.wav",
         "GLASS_BREAKING_esc50_595.wav"
     ]
+    
+
+    
+    path = down_1()
+    extended_sound = [
+        ["explosion", path, "336007__rudmer_rotteveel__multiple-deep-explosions-noisy-rec.wav"],
+        # ["car_crash", C.FILTERED_DATASET_PATH, ""],
+        # ["scream"]
+    ]
+    
+    # req: explosion, car crash, scream
 
     for path in point_map:
         bare_name = get_file_name_without_extension(path)
@@ -144,3 +162,38 @@ if __name__ == "__main__":
         plot_embedding_extracted(original_file_path, output_embedding_path)
         # Copy file
         os.system(f"cp {original_file_path} {output_copy_wav_path}")
+        
+    new_1_path = os.path.join(C.PROJECT_ROOT, "plots", "new_1")
+    for path in extended_sound:
+        bare_name = path[0]
+        original_file_path = os.path.join(path[1], path[2])
+        output_plot_wav_path = os.path.join(
+            new_1_path, f"{bare_name}_waveform.png"
+        )
+        output_plot_spec_path = os.path.join(
+            new_1_path, f"{bare_name}_spectrogram.png"
+        )
+        output_copy_wav_path = os.path.join(
+            new_1_path, f"{bare_name}.copied.wav"
+        )
+        output_embedding_path = os.path.join(
+            new_1_path, f"{bare_name}_embedding.png"
+        )
+
+        os.makedirs("plots", exist_ok=True)
+        os.makedirs("plots/new_1", exist_ok=True)
+        # Plot spectrogram lấy được từ Yamnet
+        plot_spectrogram_wav(original_file_path, output_plot_spec_path)
+        # Plot dạng cuối cùng của data trước khi cho vào train
+        plot_tf_float32_converted_from_mono_wav(
+            original_file_path, output_plot_wav_path
+        )
+
+        plot_embedding_extracted(original_file_path, output_embedding_path)
+        # Copy file
+        os.system(f"cp {original_file_path} {output_copy_wav_path}")
+        
+
+if __name__ == "__main__":
+    down_1()
+    test_1()
