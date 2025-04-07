@@ -1,3 +1,4 @@
+import 'package:danger_sound_recognition/src/routing/route_names.dart';
 import 'package:flutter/material.dart';
 import '/l10n/generated/app_localizations.dart';
 import '../../../common_widgets/settings_drawer.dart';
@@ -45,12 +46,28 @@ class MainDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        children: const [
+        children: [
           DrawerHeader(
             decoration: BoxDecoration(color: Colors.blue),
             child: Text('Main Navigation'),
           ),
-          ListTile(title: Text('Home')),
+          ListTile(
+            title: Text('Home'),
+            leading: Icon(Icons.home),
+            onTap: () => {
+              // Handle navigation to home page
+              Navigator.pushNamed(context, RouteNames.RECORD)
+            },
+          ),
+          ListTile(
+            title: Text('Debugging and Testing'),
+            leading: Icon(Icons.bug_report),
+            onTap: () => {
+              // Handle navigation to home page
+              Navigator.pushNamed(context, RouteNames.DEBUG_TEST)
+            },
+          ),
+          // ListTile(,)
         ],
       ),
     );

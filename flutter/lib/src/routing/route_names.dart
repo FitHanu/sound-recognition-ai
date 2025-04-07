@@ -1,4 +1,5 @@
 class RouteNames {
-  static const String record = '/record';
-  static const String settings = '/settings';
+  static const String RECORD = '/record';
+  static const String SETTINGS = '/settings';
+  static const String DEBUG_TEST = '/debug_test';
 }

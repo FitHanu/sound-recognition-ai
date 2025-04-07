@@ -1,0 +1,18 @@
+{
+    "yamnet": 
+        {
+            "name": "Yamnet Classifier",
+            "type": "sound_classification",
+            "format": "tflite",
+            "version": "Version 1",
+            "path": "/assets/models/yamnet/yamnet.tflite"
+        },
+    "yamnet_tweaked": 
+        {
+            "name": "Danger Recognition",
+            "type": "sound_classification",
+            "format": "tflite",
+            "version": "0.0.1",
+            "path": "/assets/models/yamnet_tweaked/yamnet_tweaked.tflite"
+        }
+}

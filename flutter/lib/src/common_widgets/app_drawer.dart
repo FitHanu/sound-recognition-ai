@@ -18,7 +18,7 @@ class AppDrawer extends StatelessWidget {
             leading: const Icon(Icons.home),
             title: const Text('Record'),
             onTap: () {
-              Navigator.pushNamed(context, RouteNames.record);
+              Navigator.pushNamed(context, RouteNames.RECORD);
             },
           ),
         ],

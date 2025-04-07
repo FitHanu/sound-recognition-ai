@@ -15,7 +15,7 @@ class SettingsRepository {
     Settings setting = Settings(
       soundSensitivityLevel: prefs.getDouble('soundSensitivityLevel') ?? AppSettings.defaultSoundSensitivityLevel,
       recognisedSound: flag
-          ? StringConverter.stringToMap(recognisedSounds)
+          ? StringUtils.stringToMap(recognisedSounds)
           : AppSettings.defaultRecognisedSound,
       vibration: prefs.getBool('vibration') ?? AppSettings.defaultVibration,
       alertSound: prefs.getBool('alertSound') ?? AppSettings.defaultAlertSound,
@@ -39,7 +39,7 @@ class SettingsRepository {
   Future<bool> saveRecognisedSound(Map<String, bool> sounds) async {
     final prefs = await SharedPreferences.getInstance();
     factorySetting?.recognisedSound = sounds;
-    String handledSound = StringConverter.mapToString(sounds);
+    String handledSound = StringUtils.mapToString(sounds);
     debugPrint('Alert RecognisedSound to $handledSound');
     return await prefs.setString('recognisedSound', handledSound);
   }
