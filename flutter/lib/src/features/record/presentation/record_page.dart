@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '/l10n/generated/app_localizations.dart';
 import '../../../common_widgets/settings_drawer.dart';
+import '../../../routing/route_names.dart';
 
 class RecordPage extends StatelessWidget {
   RecordPage({super.key});
@@ -43,14 +44,34 @@ class MainDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Drawer(
       child: ListView(
-        children: const [
+        children: [
           DrawerHeader(
-            decoration: BoxDecoration(color: Colors.blue),
-            child: Text('Main Navigation'),
+            decoration: const BoxDecoration(color: Colors.blue),
+            child: Text(
+              'Main Navigation',
+              style: const TextStyle(color: Colors.white, fontSize: 24),
+            ),
           ),
-          ListTile(title: Text('Home')),
+          ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text('Home'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushReplacementNamed(context, RouteNames.record);
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.history),
+            title: const Text('Records History'), // Using hardcoded string
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, RouteNames.recordsHistory);
+            },
+          ),
         ],
       ),
     );
