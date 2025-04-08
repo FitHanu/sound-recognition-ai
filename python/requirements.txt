@@ -1,0 +1,8 @@
+kagglehub
+pandas
+matplotlib
+gdown
+tensorflow
+tensorflow-hub
+tensorflow-io
+soundfile

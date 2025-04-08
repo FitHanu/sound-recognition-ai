@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package proto;
+
+option java_package = "org.fit.sra.protog";
+option java_multiple_files = true;
+
+enum Severity {
+    OTHERS = 0;
+    LOW = 1;
+    MEDIUM = 2;
+    HIGH = 3;
+}
+
+enum SoundClass {
+    UNKNOWN = 0;
+    SIREN = 1; // LOW
+    CAR_HORN = 2; // MEDIUM
+    EXPLOSION = 3; // HIGH
+    GUNSHOT_HANDGUN = 4; // HIGH
+    GUNSHOT_RIFLE = 5; // HIGH
+    GUNSHOT_MACHINE_GUN = 6; // HIGH
+    CAR_CRASH = 7; // HIGH
+    THUNDER_STORM = 8; // MEDIUM
+    CRYING_BABY = 9; // LOW
+    FIRE_WORKS = 10; // MEDIUM
+    CHAINSAW = 11; // MEDIUM
+    EMERGENCY_VEHICLE_SIREN = 12;
+    SCREAMING = 13; // MEDIUM
+    GLASS_BREAKING = 14; // MEDIUM
+}
+
+message SoundEvent {
+    string id = 1;
+    // timestamp
+    SoundClass category = 2;
+    Severity severity = 3;
+    float confidence = 4;
+}
