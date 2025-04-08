@@ -34,7 +34,21 @@ class RecordPage extends StatelessWidget {
       ),
       drawer: const MainDrawer(), // Main Navigation Drawer (left)
       endDrawer: const SettingsDrawer(), // Settings Drawer (right)
-      body: Center(child: Text('Main Content Here')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Main Content Here'),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, RouteNames.classificationConfig);
+                print('Navigating to ClassificationConfig'); // Debug print
+              },
+              child: const Text('Classification Settings'),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -70,6 +84,18 @@ class MainDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               Navigator.pushNamed(context, RouteNames.recordsHistory);
+            },
+          ),
+          // Add Classification Config navigation option
+          ListTile(
+            leading: const Icon(Icons.tune),
+            title: const Text('Classification Settings'),
+            onTap: () {
+              Navigator.pop(context);
+              print(
+                'Navigating to ClassificationConfig from drawer',
+              ); // Debug print
+              Navigator.pushNamed(context, RouteNames.classificationConfig);
             },
           ),
         ],
