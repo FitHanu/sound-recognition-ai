@@ -1,0 +1,32 @@
+[versions]
+agp = "8.8.0"
+commonsCsv = "1.13.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.6.1"
+litertSupport = "1.1.2"
+material = "1.10.0"
+activity = "1.10.0"
+constraintlayout = "2.1.4"
+runtimeAndroid = "1.7.7"
+tensorflowLite = "2.17.0"
+tensorflowLiteTaskAudio = "0.4.0"
+
+[libraries]
+commons-csv = { module = "org.apache.commons:commons-csv", version.ref = "commonsCsv" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+litert-support = { module = "com.google.ai.edge.litert:litert-support", version.ref = "litertSupport" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+runtime-android = { group = "androidx.compose.runtime", name = "runtime-android", version.ref = "runtimeAndroid" }
+tensorflow-lite = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowLite" }
+tensorflow-lite-task-audio = { module = "org.tensorflow:tensorflow-lite-task-audio", version.ref = "tensorflowLiteTaskAudio" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

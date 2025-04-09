@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sound Recognition AI</string>
+    <string name="status_initial">Tap record to perform recognizing.</string>
+    <string name="status_recoding">Listening …</string>
+    <string name="button_initial">Record</string>
+    <string name="button_recording">Stop</string>
+    <string name="classifier_initial">…</string>
+    <string name="model_path">models/yamnet.tflite</string>
+</resources>
