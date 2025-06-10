@@ -13,6 +13,9 @@ public class CategoryUtils {
    * @return String
    */
   public static String convertString(List<Category> categories) {
+    if (CommonUtils.isListNullOrEmpty(categories)) {
+      return "";
+    }
     StringBuilder outputStr = new StringBuilder();
     for (Category cat : categories) {
       outputStr.append(cat.getLabel()).append(": ").append(cat.getScore()).append("\n");

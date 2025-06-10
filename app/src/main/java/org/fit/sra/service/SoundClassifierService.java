@@ -2,9 +2,12 @@ package org.fit.sra.service;
 
 import android.content.Context;
 import android.media.AudioRecord;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 
 import org.fit.sra.R;
+import org.fit.sra.state.AppStateManager;
 import org.tensorflow.lite.support.audio.TensorAudio;
 import org.tensorflow.lite.support.label.Category;
 import org.tensorflow.lite.task.audio.classifier.AudioClassifier;
@@ -23,17 +26,14 @@ public class SoundClassifierService {
   private final TensorAudio tensor;
   private final AudioCaptureService audioService;
   private Timer timer;
+  private final Handler mainHandler;
   private final float threshold = 0.3f;
-  private final ClassificationCallback callback;
 
-  public interface ClassificationCallback {
+  private final AppStateManager stateManager;
 
-    void onResult(List<Category> categories);
-  }
-
-  public SoundClassifierService(Context context,
-      ClassificationCallback callback) {
-    this.callback = callback;
+  public SoundClassifierService(Context context) {
+    this.stateManager = AppStateManager.getInstance();
+    this.mainHandler = new Handler(Looper.getMainLooper());
 
     try {
       String[] files = context.getAssets().list("models");
@@ -68,7 +68,10 @@ public class SoundClassifierService {
 
         filtered.sort((a, b) -> Float.compare(b.getScore(), a.getScore()));
 
-        callback.onResult(filtered);
+        // Post to main thread
+        mainHandler.post(() -> {
+          stateManager.setRecognitionCategories(filtered);
+        });
       }
     }, 0, 500);
   }

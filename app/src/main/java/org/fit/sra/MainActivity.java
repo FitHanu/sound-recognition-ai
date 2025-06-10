@@ -17,8 +17,10 @@ import org.fit.sra.ui.SettingsFragment;
 import org.fit.sra.ui.SoundClassifierFragment;
 
 public class MainActivity
-    extends AppCompatActivity
-    implements NavigationView.OnNavigationItemSelectedListener,
+    extends
+    AppCompatActivity
+    implements
+    NavigationView.OnNavigationItemSelectedListener,
     SoundClassifierFragment.ClassifierProvider {
 
   private DrawerLayout drawerLayout;
@@ -51,17 +53,21 @@ public class MainActivity
       permissionService.requestAllPermissions();
     }
 
-    classifierService = new SoundClassifierService(this, result -> {
-      // Optional: Handle result globally if needed
-    });
+    classifierService = new SoundClassifierService(this);
 
     // Load default fragment
     getSupportFragmentManager()
         .beginTransaction()
-        .replace(R.id.content_frame, new RecognitionHistoryFragment())
+        .replace(R.id.content_frame, new SoundClassifierFragment())
         .commit();
   }
 
+  /**
+   * Routing condition
+   *
+   * @param item The selected item
+   * @return boolean
+   */
   @Override
   public boolean onNavigationItemSelected(@NonNull MenuItem item) {
     Fragment selected = null;
