@@ -1,240 +1,118 @@
 package org.fit.sra;
 
-import static android.Manifest.permission.RECORD_AUDIO;
-import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
-
-import android.content.pm.PackageManager;
-import android.graphics.Color;
-import android.media.AudioRecord;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
-
+import android.view.MenuItem;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import com.google.android.material.navigation.NavigationView;
+import org.fit.sra.service.PermissionService;
+import org.fit.sra.service.SoundClassifierService;
+import org.fit.sra.ui.RecognitionHistoryFragment;
+import org.fit.sra.ui.SettingsFragment;
+import org.fit.sra.ui.SoundClassifierFragment;
 
-import org.tensorflow.lite.support.audio.TensorAudio;
-import org.tensorflow.lite.support.label.Category;
-import org.tensorflow.lite.task.audio.classifier.AudioClassifier;
-import org.tensorflow.lite.task.audio.classifier.Classifications;
+public class MainActivity
+    extends AppCompatActivity
+    implements NavigationView.OnNavigationItemSelectedListener,
+    SoundClassifierFragment.ClassifierProvider {
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
+  private DrawerLayout drawerLayout;
+  private PermissionService permissionService;
+  private SoundClassifierService classifierService;
 
-public class MainActivity extends AppCompatActivity {
-    private final int VERSION = Build.VERSION.SDK_INT;
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
 
-    /**
-     * Layouts
-     */
-    private TextView tvClassifier, tvStatus;
-    private Button bRecord;
+    Toolbar toolbar = findViewById(R.id.toolbar);
+    setSupportActionBar(toolbar);
 
-    /**
-     * State
-     */
-    private boolean isRecording = false;
-    AudioClassifier classifier;
-    private TensorAudio tensor;
-    private AudioRecord record;
-    private TimerTask timerTask;
-    private final float probabilityThreshold = 0.3f;
+    drawerLayout = findViewById(R.id.drawer_layout);
+    NavigationView navigationView = findViewById(R.id.navigation_view);
+    navigationView.setNavigationItemSelectedListener(this);
 
-    public static final int REQUEST_AUDIO_PERMISSION_CODE = 1;
+    ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+        this, drawerLayout, toolbar,
+        R.string.navigation_drawer_open,
+        R.string.navigation_drawer_close
+    );
+    drawerLayout.addDrawerListener(toggle);
+    toggle.syncState();
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        // initialize all variables with their layout items.
-        this.tvStatus = findViewById(R.id.tvStatus);
-        this.tvClassifier = findViewById(R.id.tvClassifier);
-        this.bRecord = findViewById(R.id.bRecord);
-        // Apply the theme based on the current mode
-        int currentNightMode = getResources().getConfiguration().uiMode &
-                android.content.res.Configuration.UI_MODE_NIGHT_MASK;
-        if (currentNightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
-            this.tvStatus.setTextColor(Color.WHITE);
-            this.tvClassifier.setTextColor(Color.WHITE);
-            this.bRecord.setTextColor(Color.WHITE);
-        }
-
-        try {
-            String modelPath = getString(R.string.model_path);
-            classifier = AudioClassifier.createFromFile(this, modelPath);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        this.tensor = classifier.createInputTensorAudio();
-        TensorAudio.TensorAudioFormat format = classifier.getRequiredTensorAudioFormat();
-        String specs = "Number of channels: " + format.getChannels() + "\n" + "Sample Rate: " +
-                format.getSampleRate();
-        Log.d("Input format", specs);
-
-        bRecord.setOnClickListener(v -> {
-            if (!checkPermission()) {
-                requestPermissions();
-            }
-            this.isRecording = !isRecording;
-            updateLayout();
-            handleRecordButton();
-        });
+    // Initialize Services
+    permissionService = new PermissionService(this);
+    if (permissionService.hasPermissionNotGranted()) {
+      permissionService.requestAllPermissions();
     }
 
-    private void updateLayout() {
-        //handle change layout
-        if (isRecording) {
-            this.bRecord.setText(R.string.button_recording);
-            this.tvStatus.setText(R.string.status_recoding);
-        } else {
-            this.bRecord.setText(R.string.button_initial);
-            this.tvStatus.setText(R.string.status_initial);
-            this.tvClassifier.setText(R.string.classifier_initial);
+    classifierService = new SoundClassifierService(this, result -> {
+      // Optional: Handle result globally if needed
+    });
 
-        }
+    // Load default fragment
+    getSupportFragmentManager()
+        .beginTransaction()
+        .replace(R.id.content_frame, new RecognitionHistoryFragment())
+        .commit();
+  }
+
+  @Override
+  public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+    Fragment selected = null;
+
+    // use if else instead of switch bc Android Team said so
+    // https://web.archive.org/web/20230203152426/http://tools.android.com/tips/non-constant-fields
+    int itemId = item.getItemId();
+
+    if (itemId == R.id.nav_sound_classifier) {
+      selected = new SoundClassifierFragment();
+    } else if (itemId == R.id.nav_recognition_history) {
+      selected = new RecognitionHistoryFragment();
+    } else if (itemId == R.id.nav_settings) {
+      selected = new SettingsFragment();
     }
 
-    private void handleRecordButton() {
-        if (this.isRecording) {
-            this.record = this.classifier.createAudioRecord();
-            this.record.startRecording();
-            this.timerTask = new TimerTask() {
-                @Override
-                public void run() {
-                    // Classifying audio data
-                    // val numberOfSamples = tensor.load(record)
-                    // val output = classifier.classify(tensor)
-                    int numberOfSamples = tensor.load(record);
-                    List<Classifications> output = classifier.classify(tensor);
-
-                    // Filtering out classifications with low probability
-                    List<Category> finalOutput = new ArrayList<>();
-                    for (Classifications classifications : output) {
-                        for (Category category : classifications.getCategories()) {
-                            if (category.getScore() > probabilityThreshold) {
-                                finalOutput.add(category);
-                            }
-                        }
-                    }
-
-                    // Sorting the results
-                    finalOutput.sort((o1, o2) -> (int) (o1.getScore() - o2.getScore()));
-
-                    // Creating a multiline string with the filtered results
-                    StringBuilder outputStr = new StringBuilder();
-                    for (Category category : finalOutput) {
-                        outputStr
-                                .append(category.getLabel())
-                                .append(": ")
-                                .append(category.getScore())
-                                .append("\n");
-                    }
-
-                    // Updating the UI
-                    runOnUiThread(() -> {
-                        if (finalOutput.isEmpty()) {
-                            MainActivity.this.tvClassifier.setText(R.string.classifier_initial);
-                        } else {
-                            MainActivity.this.tvClassifier.setText(outputStr.toString());
-                        }
-                    });
-                }
-            };
-
-            int TASK_PERIOD_MS = 500;
-            int TASK_DELAY_MS = 1;
-            new Timer().schedule(timerTask, TASK_DELAY_MS, TASK_PERIOD_MS);
-        } else {
-            timerTask.cancel();
-            record.stop();
-        }
+    if (selected != null) {
+      getSupportFragmentManager()
+          .beginTransaction()
+          .replace(R.id.content_frame, selected)
+          .commit();
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           @NonNull String[] permissions,
-                                           @NonNull int[] grantResults) {
-        // this method is called when user will
-        // grant the permission for audio recording.
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        Log.d("Permission", "Required permissions: " + Arrays.toString(permissions));
-        Log.d("Permission", "Granted permission results: " + Arrays.toString(grantResults));
-        switch (requestCode) {
-            case REQUEST_AUDIO_PERMISSION_CODE:
-                if (grantResults.length > 0) {
-                    boolean permissionToRecord =
-                            grantResults[0] == PackageManager.PERMISSION_GRANTED;
-                    boolean permissionToStore =
-                            grantResults[1] == PackageManager.PERMISSION_GRANTED;
-                    if (permissionToRecord && permissionToStore) {
-                        Toast
-                                .makeText(getApplicationContext(),
-                                        "Permission Granted",
-                                        Toast.LENGTH_LONG)
-                                .show();
-                    } else {
-                        Toast
-                                .makeText(getApplicationContext(),
-                                        "Permission Denied",
-                                        Toast.LENGTH_LONG)
-                                .show();
-                    }
-                }
-                break;
-        }
-    }
+    drawerLayout.closeDrawer(GravityCompat.START);
+    return true;
+  }
 
-    public boolean checkPermission() {
-        boolean hasRecordPermission = this.checkRecordPermission();
-        boolean hasWritePermission = this.checkWritePermission();
-        if (!hasWritePermission) {
-            Log.w("Permission", "No write permission.");
-        }
-        if (!hasRecordPermission) {
-            Log.w("Permission", "No record permission.");
-        }
-        return hasRecordPermission && hasWritePermission;
+  @Override
+  public void onBackPressed() {
+    if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+      drawerLayout.closeDrawer(GravityCompat.START);
+    } else {
+      super.onBackPressed();
     }
+  }
 
-    private boolean checkWritePermission() {
-        boolean hasWritePermission;
-        if (this.VERSION <= 32) {
-            hasWritePermission = ContextCompat.checkSelfPermission(getApplicationContext(),
-                    WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
-        } else {
-            File filesDir = getFilesDir();
-            hasWritePermission = filesDir.exists() && filesDir.canWrite();
-        }
-        return hasWritePermission;
-    }
+  // Provide Services to Fragment
+  @Override
+  public PermissionService getPermissionService() {
+    return permissionService;
+  }
 
-    private boolean checkRecordPermission() {
-        return ContextCompat.checkSelfPermission(getApplicationContext(), RECORD_AUDIO) ==
-                PackageManager.PERMISSION_GRANTED;
-    }
+  @Override
+  public SoundClassifierService getSoundClassifierService() {
+    return classifierService;
+  }
 
-    private void requestPermissions() {
-        if (!this.checkRecordPermission()) {
-            ActivityCompat.requestPermissions(MainActivity.this,
-                    new String[]{RECORD_AUDIO},
-                    REQUEST_AUDIO_PERMISSION_CODE);
-        }
-        if (!this.checkWritePermission()) {
-            ActivityCompat.requestPermissions(MainActivity.this,
-                    new String[]{WRITE_EXTERNAL_STORAGE},
-                    REQUEST_AUDIO_PERMISSION_CODE);
-        }
-    }
-
+  @Override
+  public void onRequestPermissionsResult(int requestCode,
+      @NonNull String[] permissions, @NonNull int[] grantResults) {
+    super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    permissionService.handlePermissionsResult(requestCode, permissions, grantResults);
+  }
 }

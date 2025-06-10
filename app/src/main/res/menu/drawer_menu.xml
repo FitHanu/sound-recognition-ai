@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/nav_sound_classifier"
+    android:title="Sound Recognition"
+    android:icon="@android:drawable/ic_menu_manage"/>
+  <item android:id="@+id/nav_recognition_history"
+    android:title="History"
+    android:icon="@android:drawable/ic_menu_manage"/>
+  <item android:id="@+id/nav_settings"
+    android:title="Settings"
+    android:icon="@android:drawable/ic_menu_manage"/>
+</menu>
