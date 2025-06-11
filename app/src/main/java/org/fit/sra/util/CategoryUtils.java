@@ -1,7 +1,7 @@
 package org.fit.sra.util;
 
 import org.tensorflow.lite.support.label.Category;
-
+import org.fit.sra.model.CategoryWithSeverity;
 import java.util.List;
 
 public class CategoryUtils {
@@ -12,13 +12,24 @@ public class CategoryUtils {
    * @param categories List<Category>
    * @return String
    */
-  public static String convertString(List<Category> categories) {
+  public static String convertString(List<CategoryWithSeverity> categories) {
     if (CommonUtils.isListNullOrEmpty(categories)) {
       return "";
     }
     StringBuilder outputStr = new StringBuilder();
-    for (Category cat : categories) {
-      outputStr.append(cat.getLabel()).append(": ").append(cat.getScore()).append("\n");
+    for (CategoryWithSeverity cat : categories) {
+      outputStr.append(cat.toString()).append("\n");
+    }
+    return outputStr.toString();
+  }
+
+  public static String getSeverity(List<CategoryWithSeverity> categories) {
+    if (CommonUtils.isListNullOrEmpty(categories)) {
+      return "";
+    }
+    StringBuilder outputStr = new StringBuilder();
+    for (CategoryWithSeverity cat : categories) {
+      outputStr.append(cat.getSeverity()).append("\n");
     }
     return outputStr.toString();
   }
