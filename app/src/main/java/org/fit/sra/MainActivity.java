@@ -1,5 +1,4 @@
 package org.fit.sra;
-
 import android.os.Bundle;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
