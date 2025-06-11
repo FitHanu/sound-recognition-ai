@@ -1,5 +1,5 @@
 package org.fit.sra.state;
-
+import org.fit.sra.model.CategoryWithSeverity;
 import java.util.ArrayList;
 import java.util.List;
 import org.tensorflow.lite.support.label.Category;
@@ -9,7 +9,7 @@ public class AppStateManager {
   private static AppStateManager instance;
   private boolean isRecording = false;
 
-  private List<Category> recognitionCategories;
+  private List<CategoryWithSeverity> recognitionCategories;
   private List<RecordingStateListener> isRecordingListeners = new ArrayList<>();
   private List<CategoryStateListener>  categoriesListeners  = new ArrayList<>();
 
@@ -25,7 +25,7 @@ public class AppStateManager {
   }
 
   public interface CategoryStateListener {
-    void onCategoryStateChanged(List<Category> categories);
+    void onCategoryStateChanged(List<CategoryWithSeverity> categories);
   }
 
 
@@ -57,12 +57,12 @@ public class AppStateManager {
     return isRecording;
   }
 
-  public List<Category> getRecognitionCategories() {
+  public List<CategoryWithSeverity> getRecognitionCategories() {
     return recognitionCategories;
   }
 
   public void setRecognitionCategories(
-      List<Category> recognitionCategories) {
+      List<CategoryWithSeverity> recognitionCategories) {
     this.recognitionCategories = recognitionCategories;
     notifyCategoryListeners();
   }
