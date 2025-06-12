@@ -47,7 +47,7 @@ public class SoundClassifierService {
       String[] files = context.getAssets().list("models");
       CsvUtils.readSoundCsv(context);
       this.classifier = AudioClassifier
-          .createFromFile(context, "models/yamnet/1.tflite");
+          .createFromFile(context, "models/yamnet_tweaked/pelase.tflite");
            
 //          .createFromFile(context, "models/yamnet_tweaked/ydr_m_2025_06_10.tflite");
     } catch (IOException e) {
@@ -66,7 +66,15 @@ public class SoundClassifierService {
       public void run() {
         AudioRecord record = audioService.getRecord();
         tensor.load(record);
-        List<Classifications> results = classifier.classify(tensor);
+        List<Classifications> results;
+
+        try {
+          results = classifier.classify(tensor);
+        } catch (IllegalStateException | NullPointerException e) {
+          Log.e("Classifier", "Failed to classify audio: " + e.getMessage());
+          results = List.of();
+        }
+
         List<CategoryWithSeverity> filtered = new ArrayList<>();
         
         for (Classifications c : results) {
