@@ -49,7 +49,7 @@ public class SoundClassifierService {
       this.classifier = AudioClassifier
           .createFromFile(context, "models/yamnet_tweaked/pelase.tflite");
            
-//          .createFromFile(context, "models/yamnet_tweaked/ydr_m_2025_06_10.tflite");
+//          .createFromFile(context, "models/yamnet/yamnet.tflite");
     } catch (IOException e) {
       
       throw new RuntimeException(e);
