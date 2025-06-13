@@ -1,0 +1,14 @@
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- color for alert screen -->
+    <color name="severity_none">#FFFFFF</color>     <!-- No color -->
+     <color name="severity_low">#4CAF50</color>     <!-- Green -->
+    <color name="severity_medium">#FFC107</color>  <!-- Amber -->
+    <color name="severity_high">#F44336</color>    <!-- Red -->
+    <color name="severity_others">#9E9E9E</color> 
+</resources>

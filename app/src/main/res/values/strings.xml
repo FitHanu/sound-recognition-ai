@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Danger Sound Classifier</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="status_initial">Tap record to perform recognizing.</string>
+    <string name="status_recoding">Listening …</string>
+    <string name="button_initial">Record</string>
+    <string name="button_recording">Stop</string>
+    <string name="classifier_initial">…</string>
+
+
+    <string name="model_yamnet">YAMnet</string>
+    <string name="model_yamnet_path">models/yamnet/yamnet.tflite</string>
+    <string name="model_danger_classifier">Danger Classifier v0.1</string>
+    <string name="model_danger_classifier_path">models/yamnet_tweaked/yamnet_tweaked_with_metadata.tflite</string>
+</resources>
