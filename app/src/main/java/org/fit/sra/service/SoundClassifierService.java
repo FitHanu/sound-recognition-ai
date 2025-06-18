@@ -7,6 +7,7 @@ import android.os.Looper;
 import android.util.Log;
 
 import org.fit.sra.R;
+import org.fit.sra.components.FileLogger;
 import org.fit.sra.state.AppStateManager;
 import org.fit.sra.util.CsvUtils;
 import org.fit.sra.model.CategoryWithSeverity;
@@ -31,15 +32,16 @@ public class SoundClassifierService {
   private Timer timer;
   private final Handler mainHandler;
   private final float threshold = 0.3f;
+  private final FileLogger fileLogger;
 
   private final AppStateManager stateManager;
 
  
 
-  public SoundClassifierService(Context context) {
+  public SoundClassifierService(Context context)  {
     this.stateManager = AppStateManager.getInstance();
-    this.mainHandler = new Handler(Looper.getMainLooper());
-
+    this.mainHandler  = new Handler(Looper.getMainLooper());
+    this.fileLogger   = new FileLogger(context.getFileStreamPath("logs"));
     
 
     try { 
@@ -47,9 +49,7 @@ public class SoundClassifierService {
       String[] files = context.getAssets().list("models");
       CsvUtils.readSoundCsv(context);
       this.classifier = AudioClassifier
-          .createFromFile(context, "models/yamnet_tweaked/pelase.tflite");
-           
-//          .createFromFile(context, "models/yamnet/yamnet.tflite");
+          .createFromFile(context, "models/yamnet/yamnet.tflite");
     } catch (IOException e) {
       
       throw new RuntimeException(e);
@@ -97,7 +97,13 @@ public class SoundClassifierService {
 
         // Post to main thread
         mainHandler.post(() -> {
+          // Set new data for rendering
           stateManager.setRecognitionCategories(filtered);
+          // File logger append
+          for (CategoryWithSeverity category : filtered) {
+            Category cat = category.getCat();
+            fileLogger.append(cat);
+          }
         });
       }
     }, 0, 500);

@@ -21,13 +21,13 @@ public class FileLogger {
     /**
      * Application default storage path
      */
-    private final String storagePath;
-    private CSVPrinter printer;
+    private final File storagePath;
+    private CSVPrinter csvPrinter;
 
     /**
      * Create instance
      */
-    public FileLogger(String storagePath) throws IOException {
+    public FileLogger(File storagePath) {
         this.storagePath = storagePath;
         this.renew();
     }
@@ -35,31 +35,40 @@ public class FileLogger {
     /**
      * Renew the printer with new file
      */
-    public void renew() throws IOException{
+    public void renew() {
         String currentTs = getCurrentTsStr();
         String fileName = this.storagePath + File.pathSeparator + currentTs + ".csv";
         File loggingFile = new File(fileName);
         boolean isAppending = true;
-        FileWriter fw = new FileWriter(loggingFile, isAppending);
-        this.printer = new CSVPrinter(fw, CSVFormat.DEFAULT);
+        try {
+            FileWriter fw = new FileWriter(loggingFile, isAppending);
+            this.csvPrinter = new CSVPrinter(fw, CSVFormat.DEFAULT);
+        } catch (IOException exception) {
+            //TODO: do something
+        }
+
     }
 
 
     /**
      * Append Category as log line to file
      */
-    public void append(Category category) throws IOException {
+    public void append(Category category) {
         String time = getCurrentTsStr();
         String label = category.getLabel();
         String score = String.valueOf(category.getScore());
-        this.printer.printRecord(time, label, score);
+        try {
+            this.csvPrinter.printRecord(time, label, score);
+        } catch (IOException exception) {
+            //TODO: do something
+        }
     }
 
     /**
      * Close printer
      */
     public void close() throws IOException {
-        this.printer.close(true);
+        this.csvPrinter.close(true);
     }
 
     /**
