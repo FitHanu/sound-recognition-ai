@@ -1,4 +1,4 @@
-package org.fit.sra.util;
+package org.fit.sra.service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,14 +6,24 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
+import org.fit.sra.DangerLevel;
 import org.fit.sra.constant.ModelConst;
 import android.util.Log;
 import android.content.Context;
 
 
-public class CsvUtils {
+/**
+ * CategorySeverityFilterService
+ */
+public class CategorySeverityFilterService {
 
-  public static Map<Integer, String> severityByIndex = new HashMap<>();
+  private static CategorySeverityFilterService THE_INSTANCE;
+
+  private CategorySeverityFilterService() {}
+
+  private static Map<Integer, String> severityByIndex = new HashMap<>();
+
+//  private static Map<String, DangerLevel>
 
   public static void readSoundCsv(Context context) {
     try {
@@ -32,7 +42,6 @@ public class CsvUtils {
         int index = Integer.parseInt(tokens[0].trim()); // e.g. "0"
         String label = tokens[1].trim();               // e.g. "Explosion"
         String severity = tokens[2].trim();
-        Log.d("CSV", severity);          // e.g. "High"
         severityByIndex.put(index, severity);
       }
       reader.close();
