@@ -91,7 +91,7 @@ public class MainActivity
     }
 
     drawerLayout.closeDrawer(GravityCompat.START);
-    return true;
+    return super.onOptionsItemSelected(item);
   }
 
   @Override

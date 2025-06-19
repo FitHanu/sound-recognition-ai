@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import org.fit.sra.DangerLevel;
 import org.fit.sra.constant.ModelConst;
 import android.util.Log;
@@ -17,19 +18,35 @@ import android.content.Context;
  */
 public class CategorySeverityFilterService {
 
+  /** the .csv config file path */
+  private final String modelConfigFilePath = ModelConst.DEFAULT_CONFIG_CSV;
+
+  /** singleton instance */
   private static CategorySeverityFilterService THE_INSTANCE;
 
-  private CategorySeverityFilterService() {}
+  /** privey constructor */
+  private CategorySeverityFilterService(Context context) {
+    initialize(context);
+  }
 
-  private static Map<Integer, String> severityByIndex = new HashMap<>();
+  /** Map: category_id -> severity */
+  private final Map<Integer, DangerLevel> idDangerLevelMap = new HashMap<>();
 
-//  private static Map<String, DangerLevel>
+  /** Map: category_id -> display name */
+  private final Map<Integer, String> idAlternateClassnameMap = new HashMap<>();
 
-  public static void readSoundCsv(Context context) {
+  /** singleton instance getter*/
+  public static CategorySeverityFilterService getTheInstance(Context context) {
+    if (Objects.isNull(THE_INSTANCE)) {
+      THE_INSTANCE = new CategorySeverityFilterService(context);
+    }
+    return THE_INSTANCE;
+  }
+
+  private void initialize(Context context) {
     try {
       Log.d("CSV", "Reading from assets...");
-      String classCSVPath = "models/yamnet/" + ModelConst.DEFAULT__CONFIG_CSV;
-      InputStream is = context.getAssets().open(classCSVPath);
+      InputStream is = context.getAssets().open(modelConfigFilePath);
       BufferedReader reader = new BufferedReader(new InputStreamReader(is));
       String line;
       boolean firstLine = true;
@@ -41,12 +58,25 @@ public class CategorySeverityFilterService {
         String[] tokens = line.split(",");
         int index = Integer.parseInt(tokens[0].trim()); // e.g. "0"
         String label = tokens[1].trim();               // e.g. "Explosion"
-        String severity = tokens[2].trim();
-        severityByIndex.put(index, severity);
+        boolean isDisplaying = Objects.equals(tokens[3].trim(), "1");
+        if (isDisplaying) {
+          String severity = tokens[2].trim();
+          String displayLabel = tokens[4].trim();
+          this.idAlternateClassnameMap.put(index, displayLabel);
+          this.idDangerLevelMap.put(index, DangerLevel.createFromStr(severity));
+        }
       }
       reader.close();
     } catch (IOException e) {
       Log.e("CSV", "Failed to read CSV", e);
     }
+  }
+
+  public String getAlternateClassNameById(Integer id) {
+    return this.idAlternateClassnameMap.getOrDefault(id, "Unknown");
+  }
+
+  public DangerLevel getDangerLevelById(Integer id) {
+    return this.idDangerLevelMap.getOrDefault(id, DangerLevel.NONE);
   }
 }

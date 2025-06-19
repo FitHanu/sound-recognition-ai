@@ -1,5 +1,6 @@
 package org.fit.sra.service;
 
+import android.content.Context;
 import android.util.Log;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
@@ -21,13 +22,23 @@ public class FileLoggerService {
    */
   private final File storagePath;
   private CSVPrinter csvPrinter;
+  private final CategorySeverityFilterService categoryService;
 
   /**
    * Create instance
    */
-  public FileLoggerService(File storagePath) {
-    this.storagePath = storagePath;
+  public FileLoggerService(Context context) {
+    this.storagePath = new File(context.getFilesDir(), "logs");
+    if (!storagePath.exists()) {
+      boolean isSuccess = storagePath.mkdirs();
+      if (isSuccess) {
+        Log.d("FileLoggerService", this.storagePath + " created successfully");
+      } else {
+        Log.e("FileLoggerService", "Failed creating :" + this.storagePath);
+      }
+    }
     this.renew();
+    this.categoryService = CategorySeverityFilterService.getTheInstance(context);
   }
 
   /**
@@ -35,8 +46,8 @@ public class FileLoggerService {
    */
   public void renew() {
     String currentTs = getCurrentTsStr();
-    String fileName = this.storagePath + File.pathSeparator + currentTs + ".csv";
-    File loggingFile = new File(fileName);
+    String fileName = currentTs + ".csv";
+    File loggingFile = new File(storagePath, fileName);
     boolean isAppending = true;
     try {
       FileWriter fw = new FileWriter(loggingFile, isAppending);
@@ -55,10 +66,13 @@ public class FileLoggerService {
     String time = getCurrentTsStr();
     String label = category.getLabel();
     String score = String.valueOf(category.getScore());
+    String severity = categoryService
+        .getDangerLevelById(category.getIndex())
+        .getDisplayName();
     try {
-      this.csvPrinter.printRecord(time, label, score);
+      this.csvPrinter.printRecord(time, severity, label, score);
     } catch (IOException exception) {
-      //TODO: do something
+      Log.e("", "error appending log", exception);
     }
   }
 
