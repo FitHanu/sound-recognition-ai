@@ -28,6 +28,19 @@ android {
     }
     buildToolsVersion '35.0.0'
     ndkVersion '27.0.12077973'
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def appName = "4T1L_danger_sound_recognition"
+            def versionName = variant.versionName
+            def buildType = variant.buildType.name
+            def date = new Date().format("yyyyMMdd_HHmm")
+
+            // Tên file APK bạn muốn
+            def newApkName = "${appName}-${versionName}-${buildType}-${date}.apk"
+
+            outputFileName = newApkName
+        }
+    }
 }
 
 dependencies {
