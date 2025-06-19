@@ -12,12 +12,12 @@ public class CategoryUtils {
    * @param categories List<Category>
    * @return String
    */
-  public static String convertString(List<CategoryWithSeverity> categories) {
+  public static String convertString(List<Category> categories) {
     if (CommonUtils.isListNullOrEmpty(categories)) {
       return "";
     }
     StringBuilder outputStr = new StringBuilder();
-    for (CategoryWithSeverity cat : categories) {
+    for (Category cat : categories) {
       outputStr.append(cat.toString()).append("\n");
     }
     return outputStr.toString();

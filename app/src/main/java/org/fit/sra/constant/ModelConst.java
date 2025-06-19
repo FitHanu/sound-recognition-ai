@@ -1,10 +1,14 @@
 package org.fit.sra.constant;
 
+import org.tensorflow.lite.support.label.Category;
+
 public class ModelConst {
 
     private ModelConst() {}
 
-    public static final String MODEL_INDEX_JSON = "json/models.json";
-    public static final String DEFAULT_CLASSES_CSV = "classes.csv";
-    public static final String  DEFAULT__CONFIG_CSV= "classes_default_config.csv";
+    public static final String MODEL_PATH = "models/yamnet/yamnet.tflite";
+    public static final String DEFAULT_CONFIG_CSV = "models/yamnet/classes_default_config_filter.csv";
+    public static final int SILENCE_EVENT_YAMNET = 494;
+    public static final Category SILENCE_YAMNET = Category.create(
+        "SILENCE", "SILENCE", 0.8f, SILENCE_EVENT_YAMNET);
 }

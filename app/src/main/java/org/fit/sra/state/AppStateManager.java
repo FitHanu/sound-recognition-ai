@@ -1,5 +1,4 @@
 package org.fit.sra.state;
-import org.fit.sra.model.CategoryWithSeverity;
 import java.util.ArrayList;
 import java.util.List;
 import org.tensorflow.lite.support.label.Category;
@@ -9,9 +8,9 @@ public class AppStateManager {
   private static AppStateManager instance;
   private boolean isRecording = false;
 
-  private List<CategoryWithSeverity> recognitionCategories;
-  private List<RecordingStateListener> isRecordingListeners = new ArrayList<>();
-  private List<CategoryStateListener>  categoriesListeners  = new ArrayList<>();
+  private List<Category> recognitionCategories;
+  private final List<RecordingStateListener> isRecordingListeners = new ArrayList<>();
+  private final List<CategoryStateListener>  categoriesListeners  = new ArrayList<>();
 
   public static AppStateManager getInstance() {
     if (instance == null) {
@@ -25,7 +24,7 @@ public class AppStateManager {
   }
 
   public interface CategoryStateListener {
-    void onCategoryStateChanged(List<CategoryWithSeverity> categories);
+    void onCategoryStateChanged(List<Category> categories);
   }
 
 
@@ -39,8 +38,12 @@ public class AppStateManager {
 
 
 
-  public void removeListener(RecordingStateListener listener) {
+  public void removeIsRecordingListener(RecordingStateListener listener) {
     isRecordingListeners.remove(listener);
+  }
+
+  public void removeCategoryListener(CategoryStateListener listener) {
+    categoriesListeners.remove(listener);
   }
 
   public void setRecording(boolean recording) {
@@ -57,12 +60,12 @@ public class AppStateManager {
     return isRecording;
   }
 
-  public List<CategoryWithSeverity> getRecognitionCategories() {
+  public List<Category> getRecognitionCategories() {
     return recognitionCategories;
   }
 
   public void setRecognitionCategories(
-      List<CategoryWithSeverity> recognitionCategories) {
+      List<Category> recognitionCategories) {
     this.recognitionCategories = recognitionCategories;
     notifyCategoryListeners();
   }
