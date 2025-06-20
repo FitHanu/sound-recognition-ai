@@ -13,7 +13,6 @@ import java.util.Objects;
 import org.fit.sra.DangerLevel;
 import org.fit.sra.constant.ModelConst;
 import org.fit.sra.state.AppStateManager;
-import org.fit.sra.model.CategoryWithSeverity;
 import org.tensorflow.lite.support.audio.TensorAudio;
 import org.tensorflow.lite.support.label.Category;
 import org.tensorflow.lite.task.audio.classifier.AudioClassifier;
@@ -25,7 +24,12 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
+/**
+ * SoundClassifierService
+ * -----
+ * central service
+ *
+ */
 public class SoundClassifierService {
 
   private final AudioClassifier classifier;
@@ -96,7 +100,7 @@ public class SoundClassifierService {
                     filtered.get(0).getIndex()
                 ) : DangerLevel.NONE;
 
-        vibrateOnGivenSeverity(dangerLevel.getDisplayName());
+        vibrateOnGivenSeverity(dangerLevel);
 
         // Post to main thread
         mainHandler.post(() -> {
@@ -119,7 +123,7 @@ public class SoundClassifierService {
     this.audioService.stop();
   }
 
-  private void vibrateOnGivenSeverity(String severity) {
+  private void vibrateOnGivenSeverity(DangerLevel severity) {
     // Get instance of Vibrator from current Context
     Vibrator v = (Vibrator) appContext.getSystemService(Context.VIBRATOR_SERVICE);
 
@@ -131,8 +135,8 @@ public class SoundClassifierService {
 
     long[] pattern;
 
-    switch (severity.toUpperCase()) {
-      case "LOW":
+    switch (severity) {
+      case LOW:
         pattern = new long[] {
             0,
             200, // vibrate
@@ -140,7 +144,7 @@ public class SoundClassifierService {
             200, // vibrate
         };
         break;
-      case "MEDIUM":
+      case MEDIUM:
         pattern = new long[] {
             0,
             300, // vibrate
@@ -150,7 +154,7 @@ public class SoundClassifierService {
             300, // vibrate
         };
         break;
-      case "HIGH":
+      case HIGH:
         pattern = new long[] {
             0,
             350, // vibrate
@@ -163,6 +167,7 @@ public class SoundClassifierService {
         };
         break;
       default:
+        // do nothing on NONE or others
         return;
     }
 

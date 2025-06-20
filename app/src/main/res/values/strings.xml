@@ -16,4 +16,7 @@
     <string name="model_yamnet_path">models/yamnet/yamnet.tflite</string>
     <string name="model_danger_classifier">Danger Classifier v0.1</string>
     <string name="model_danger_classifier_path">models/yamnet_tweaked/yamnet_tweaked_with_metadata.tflite</string>
+  <string name="go_to_history_details">Go to History Details</string>
+    <string name="history_item_default_duration">00.00</string>
+    <string name="history_default_filename">example.csv</string>
 </resources>
