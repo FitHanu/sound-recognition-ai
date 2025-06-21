@@ -19,4 +19,5 @@
   <string name="go_to_history_details">Go to History Details</string>
     <string name="history_item_default_duration">00.00</string>
     <string name="history_default_filename">example.csv</string>
+  <string name="recognition_history_title">Recognition History</string>
 </resources>

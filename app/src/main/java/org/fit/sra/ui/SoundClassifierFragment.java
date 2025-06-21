@@ -14,10 +14,9 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import java.util.List;
-import java.util.Objects;
 import org.fit.sra.DangerLevel;
 import org.fit.sra.R;
-import org.fit.sra.constant.ModelConst;
+import org.fit.sra.constant.AppConst;
 import org.fit.sra.service.CategorySeverityFilterService;
 import org.fit.sra.service.SoundClassifierService;
 import org.fit.sra.state.AppStateManager;
@@ -98,7 +97,7 @@ public class SoundClassifierFragment
       List<Category> categories  = stateManager.getRecognitionCategories();
       Category       topCategory = (!categories.isEmpty())
           ? categories.get(0)
-          : ModelConst.SILENCE_YAMNET;
+          : AppConst.SILENCE_YAMNET;
       Integer        id          = topCategory.getIndex();
       DangerLevel    dangerLevel = categoryService.getDangerLevelById(id);
       String         severity    = dangerLevel.name();

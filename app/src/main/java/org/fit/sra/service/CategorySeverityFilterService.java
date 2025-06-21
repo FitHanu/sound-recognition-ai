@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import org.fit.sra.DangerLevel;
-import org.fit.sra.constant.ModelConst;
+import org.fit.sra.constant.AppConst;
 import android.util.Log;
 import android.content.Context;
 
@@ -19,7 +19,7 @@ import android.content.Context;
 public class CategorySeverityFilterService {
 
   /** the .csv config file path */
-  private final String modelConfigFilePath = ModelConst.DEFAULT_CONFIG_CSV;
+  private final String modelConfigFilePath = AppConst.DEFAULT_CONFIG_CSV;
 
   /** singleton instance */
   private static CategorySeverityFilterService THE_INSTANCE;

@@ -2,7 +2,6 @@ package org.fit.sra.service;
 
 import android.content.Context;
 import android.media.AudioRecord;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.VibrationEffect;
@@ -11,7 +10,7 @@ import android.util.Log;
 
 import java.util.Objects;
 import org.fit.sra.DangerLevel;
-import org.fit.sra.constant.ModelConst;
+import org.fit.sra.constant.AppConst;
 import org.fit.sra.state.AppStateManager;
 import org.tensorflow.lite.support.audio.TensorAudio;
 import org.tensorflow.lite.support.label.Category;
@@ -55,7 +54,7 @@ public class SoundClassifierService {
     try {
 
       this.classifier = AudioClassifier
-          .createFromFile(context, ModelConst.MODEL_PATH);
+          .createFromFile(context, AppConst.MODEL_PATH);
     } catch (IOException e) {
 
       throw new RuntimeException(e);
@@ -66,6 +65,7 @@ public class SoundClassifierService {
 
   public void start() {
     this.audioService.start();
+    this.fileLogger.renew();
     this.timer = new Timer();
     this.timer.schedule(new TimerTask() {
       @Override
@@ -121,6 +121,7 @@ public class SoundClassifierService {
       timer = null;
     }
     this.audioService.stop();
+    this.fileLogger.saveLog();
   }
 
   private void vibrateOnGivenSeverity(DangerLevel severity) {
@@ -170,11 +171,6 @@ public class SoundClassifierService {
         // do nothing on NONE or others
         return;
     }
-
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-      v.vibrate(VibrationEffect.createWaveform(pattern, -1));
-    } else {
-      v.vibrate(pattern, -1);
-    }
+    v.vibrate(VibrationEffect.createWaveform(pattern, -1));
   }
 }

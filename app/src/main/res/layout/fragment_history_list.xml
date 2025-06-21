@@ -5,13 +5,14 @@
   android:layout_height="match_parent"
   android:orientation="vertical"
   android:padding="16dp"
-  android:background="?android:attr/windowBackground">
+  android:background="#FFFFFF">
 
   <TextView
     android:id="@+id/tv_csv_list_title"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Recognition History"
+    android:text="@string/recognition_history_title"
+    android:textColor="@color/black"
     android:textSize="20sp"
     android:textStyle="bold"
     android:paddingBottom="8dp" />
