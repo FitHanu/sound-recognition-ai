@@ -2,31 +2,34 @@ package org.fit.sra.ui;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.Arrays;
-import java.util.stream.Collectors;
-import org.fit.sra.R;
-
 import java.io.File;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import org.fit.sra.DangerLevel;
+import org.fit.sra.R;
+import org.fit.sra.constant.AppConst;
+import org.fit.sra.service.FileLoggerService;
+import org.fit.sra.util.CommonUtils;
 
 public class RecognitionHistoryFragment extends Fragment {
 
   private File storagePath;
-  private final List<File> csvFiles = new ArrayList<>();
+  private final List<CsvFileMeta> csvFileMeta = new ArrayList<>();
 
   public RecognitionHistoryFragment() {
     // Required empty public constructor
@@ -44,11 +47,11 @@ public class RecognitionHistoryFragment extends Fragment {
     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
     Context context = requireContext();
-    storagePath = new File(context.getFilesDir(), "logs");
+    this.storagePath = new File(context.getFilesDir(), "logs");
 
-    loadCsvFiles();
+    this.loadCsvFiles();
 
-    CsvFileAdapter adapter = new CsvFileAdapter(csvFiles, file -> {
+    CsvFileAdapter adapter = new CsvFileAdapter(this.csvFileMeta, file -> {
       // Handle file click (replace with navigation or fragment swap as needed)
       Toast.makeText(context, "Clicked: " + file.getName(), Toast.LENGTH_SHORT).show();
       // TODO: You can pass `file.getAbsolutePath()` to a detail fragment here
@@ -60,17 +63,53 @@ public class RecognitionHistoryFragment extends Fragment {
   }
 
   private void loadCsvFiles() {
-    if (storagePath.exists() && storagePath.isDirectory()) {
+    if (this.storagePath.exists()
+        && this.storagePath.isDirectory()) {
+
       File[] files = storagePath.listFiles((dir, name) -> name.endsWith(".csv"));
-      if (files != null) {
-        List<File> sortedFiles = Arrays.stream(files)
-            .sorted((f1, f2) -> {
-              long n1 = Long.parseLong(f1.getName().replace(".csv", ""));
-              long n2 = Long.parseLong(f2.getName().replace(".csv", ""));
-              return Long.compare(n2, n1); // descending
-            })
-            .collect(Collectors.toList());
-        csvFiles.addAll(sortedFiles);
+      List<CsvFileMeta> listMeta = new ArrayList<>();
+      if (!CommonUtils.isArrayNullOrEmpty(files)) {
+
+        // Decode filename
+        for (File file : files) {
+          String fileNameWOExtension = file.getName().replace(".csv", "");
+          String[] parts = fileNameWOExtension.split(FileLoggerService.DE);
+
+          if (parts.length != 3) {
+            throw new IllegalStateException("File name format is not correct,"
+                + " expecting %s_%s_%s.csv format, got: " + file.getName());
+          }
+
+          String startTimeStr       = parts[0];
+          String highestSeverityStr = parts[1];
+          String durationStr        = parts[2];
+
+          ZonedDateTime startTime = CommonUtils
+              .parseFormattedDatetimeStr(startTimeStr, AppConst.LOG_DATETIME_FORMAT);
+          long durationInSeconds = 0;
+          try {
+            durationInSeconds = Long.parseLong(durationStr);
+          } catch (NumberFormatException e) {
+            Log.w("", "Fail converting " + durationStr + " to type long");
+          }
+          DangerLevel highestSeverity = DangerLevel.createFromStr(highestSeverityStr);
+
+
+          listMeta.add(new CsvFileMeta(
+              startTime,
+              durationInSeconds,
+              highestSeverity,
+              file)
+          );
+        }
+
+        listMeta.sort((fm1, fm2) -> {
+          long n1 = fm1.getDuration();
+          long n2 = fm2.getDuration();
+          return Long.compare(n2, n1); // Descending
+        });
+
+        this.csvFileMeta.addAll(listMeta);
       }
     }
   }
@@ -81,10 +120,10 @@ public class RecognitionHistoryFragment extends Fragment {
       void onItemClick(File file);
     }
 
-    private final List<File> files;
+    private final List<CsvFileMeta> files;
     private final OnItemClickListener listener;
 
-    public CsvFileAdapter(List<File> files, OnItemClickListener listener) {
+    public CsvFileAdapter(List<CsvFileMeta> files, OnItemClickListener listener) {
       this.files = files;
       this.listener = listener;
     }
@@ -99,8 +138,8 @@ public class RecognitionHistoryFragment extends Fragment {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-      File file = files.get(position);
-      holder.bind(file, listener);
+      CsvFileMeta fileMeta = files.get(position);
+      holder.bind(fileMeta, listener);
     }
 
     @Override
@@ -109,19 +148,88 @@ public class RecognitionHistoryFragment extends Fragment {
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-      TextView filenameView;
+      TextView startTimeTv;
+      TextView durationTv;
+      ImageView highestSeverityIv;
       CardView cardView;
+      View itemView;
 
       ViewHolder(@NonNull View itemView) {
         super(itemView);
-        filenameView = itemView.findViewById(R.id.tv_csv_filename);
+        this.itemView = itemView;
+        startTimeTv = itemView.findViewById(R.id.tv_log_start_time);
+        durationTv = itemView.findViewById(R.id.tv_history_duration);
+        highestSeverityIv = itemView.findViewById(R.id.iv_highest_severity);
         cardView = (CardView) itemView;
       }
 
-      void bind(File file, OnItemClickListener listener) {
-        filenameView.setText(file.getName());
-        cardView.setOnClickListener(v -> listener.onItemClick(file));
+      void bind(CsvFileMeta fileMeta, OnItemClickListener listener) {
+        startTimeTv.setText(CommonUtils.getFormattedDatetimeStr(
+            fileMeta.getStartTime(), AppConst.LOG_DATETIME_DISPLAY_FORMAT));
+        durationTv.setText(CommonUtils.getFormatedDuration(fileMeta.getDuration()));
+        DangerLevel highestDangerLevel = fileMeta.getHighestDangerLevel();
+
+        switch (highestDangerLevel) {
+          case NONE:
+            highestSeverityIv.setBackground(
+                ContextCompat.getDrawable(this.itemView.getContext(),
+                    R.drawable.baseline_circle_ok_16)
+            );
+            break;
+          case LOW:
+            highestSeverityIv.setBackground(
+                ContextCompat.getDrawable(this.itemView.getContext(),
+                    R.drawable.baseline_circle_low_16)
+            );
+            break;
+          case MEDIUM:
+            highestSeverityIv.setBackground(
+                ContextCompat.getDrawable(this.itemView.getContext(),
+                    R.drawable.baseline_circle_med_16)
+            );
+            break;
+          case HIGH:
+            highestSeverityIv.setBackground(
+                ContextCompat.getDrawable(this.itemView.getContext(),
+                    R.drawable.baseline_circle_hi_16)
+            );
+            break;
+        }
+
+        cardView.setOnClickListener(v -> listener.onItemClick(fileMeta.getCsvFile()));
       }
+    }
+  }
+
+  private static class CsvFileMeta {
+
+    private final ZonedDateTime startTime;
+    private final long duration;
+    private final DangerLevel highestDangerLevel;
+    private final File csvFile;
+
+    public CsvFileMeta(ZonedDateTime startTime, long duration,
+        DangerLevel highestDangerLevel, File csvFile) {
+      this.startTime = startTime;
+      this.duration = duration;
+      this.highestDangerLevel = highestDangerLevel;
+      this.csvFile = csvFile;
+    }
+
+    public ZonedDateTime getStartTime() {
+      return startTime;
+    }
+
+    public long getDuration() {
+      return duration;
+    }
+
+    public DangerLevel getHighestDangerLevel() {
+      return highestDangerLevel;
+    }
+
+    public File getCsvFile() {
+      return csvFile;
     }
   }
 }

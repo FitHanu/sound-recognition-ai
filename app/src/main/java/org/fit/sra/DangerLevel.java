@@ -27,6 +27,7 @@ public enum DangerLevel {
     }
 
     public static DangerLevel createFromStr(String value) {
+        value = value.trim();
         switch (value) {
             case "LOW":
                 return LOW;

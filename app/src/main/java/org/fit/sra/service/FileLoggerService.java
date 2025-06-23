@@ -7,7 +7,11 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.CopyOption;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.time.ZonedDateTime;
+import java.util.Objects;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.fit.sra.DangerLevel;
@@ -26,7 +30,7 @@ public class FileLoggerService {
 
 
   /** meta delimiter in filename */
-  private static final String DE = "_";
+  public static final String DE = "_";
 
   /** str format: time_create _ highest_severity _ duration */
   private static final String LOG_FILENAME_FORMAT = "%s" + DE + "%s" + DE + "%s";
@@ -39,13 +43,18 @@ public class FileLoggerService {
    */
   private final File storagePath;
 
+  /**
+   * Temp storage path
+   */
+  private final File tmpStoragePath;
+
   /** start timestamp */
   private ZonedDateTime startTime;
 
   /**
    * temp file for session data
    */
-  private File tempFile;
+  private File tmpFile;
 
   private CSVPrinter csvPrinter;
   private final CategorySeverityFilterService categoryService;
@@ -54,6 +63,8 @@ public class FileLoggerService {
    * Create instance
    */
   public FileLoggerService(Context context) {
+
+    // Final log path
     this.storagePath = new File(context.getFilesDir(), "logs");
     if (!storagePath.exists()) {
       boolean isSuccess = storagePath.mkdirs();
@@ -63,7 +74,21 @@ public class FileLoggerService {
         Log.e("FileLoggerService", "Failed creating :" + this.storagePath);
       }
     }
-    this.renew();
+
+    // Temp log path
+    this.tmpStoragePath = new File(context.getFilesDir(), "tmp_logs");
+    if (!this.tmpStoragePath.exists()) {
+      boolean isSuccess = tmpStoragePath.mkdirs();
+      if (isSuccess) {
+        Log.d("FileLoggerService", this.tmpStoragePath + " created successfully");
+      } else {
+        Log.e("FileLoggerService", "Failed creating :" + this.tmpStoragePath);
+      }
+    }
+    Log.d("", "FileLoggerService initialized with storage path: "
+        + this.storagePath.getAbsolutePath());
+    Log.d("", "FileLoggerService initialized with temporary storage path: "
+        + this.tmpStoragePath.getAbsolutePath());
     this.categoryService = CategorySeverityFilterService.getTheInstance(context);
   }
 
@@ -75,15 +100,20 @@ public class FileLoggerService {
     this.startTime = CommonUtils.getCurrentDatetimeWithZone();
     String filenameStr = CommonUtils.getFormattedDatetimeStr(this.startTime,
         AppConst.LOG_DATETIME_FORMAT);
-    this.tempFile = new File(this.storagePath, filenameStr + "_temp.csv");
-    boolean isAppending = true;
+    this.tmpFile = new File(this.tmpStoragePath, filenameStr + "_temp.csv");
+
     try {
-      FileWriter fw = new FileWriter(this.tempFile, isAppending);
+      if (Objects.nonNull(this.csvPrinter)) {
+        this.csvPrinter.flush();
+      }
+      boolean isAppending = true;
+      FileWriter fw = new FileWriter(this.tmpFile, isAppending);
       this.csvPrinter = new CSVPrinter(fw, CSVFormat.DEFAULT);
     } catch (IOException exception) {
       Log.e("", "cannot renew log file", exception);
     }
-
+    Log.d("", "Log session renewed, temporary saving to: "
+        + this.tmpFile.getAbsolutePath());
   }
 
   public void saveLog() {
@@ -105,23 +135,19 @@ public class FileLoggerService {
         )
     );
 
-
+    // Copy contents in temp file to final file
     File finalFile = new File(this.storagePath, formatedFilename + ".csv");
 
-    try (FileInputStream in = new FileInputStream(this.tempFile);
-        FileOutputStream out = new FileOutputStream(finalFile)) {
-
-      byte[] buffer = new byte[1024];
-      int length;
-      while ((length = in.read(buffer)) > 0) {
-        out.write(buffer, 0, length);
-      }
+    try  {
+      this.csvPrinter.close(true);
+      CopyOption replace = StandardCopyOption.REPLACE_EXISTING;
+      Files.copy(this.tmpFile.toPath(), finalFile.toPath(), replace);
     } catch (IOException e) {
-      Log.d("", "Cannot save file: " + finalFile.getAbsolutePath());
+      Log.e("", "Cannot save file: " + finalFile.getAbsolutePath(), e);
     }
 
-    // Delete temp file
-    this.tempFile.deleteOnExit();
+    this.tmpFile.deleteOnExit();
+
   }
 
 
@@ -130,6 +156,10 @@ public class FileLoggerService {
    * Append Category as log line to file
    */
   public void append(Category category) {
+    if (Objects.isNull(this.tmpFile) || Objects.isNull(this.csvPrinter)) {
+      this.renew();
+    }
+
     String time = CommonUtils.getFormattedDatetimeStr(ZonedDateTime.now(),
         AppConst.LOG_DATA_DATETIME_FORMAT);
     String label = category.getLabel();
@@ -150,12 +180,4 @@ public class FileLoggerService {
       Log.e("", "error appending log", exception);
     }
   }
-
-  /**
-   * Close printer
-   */
-  public void close() throws IOException {
-    this.csvPrinter.close(true);
-  }
-
 }
