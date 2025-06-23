@@ -2,7 +2,7 @@ index,class_name,severity,filter,filter_str
 0,Speech,LOW,1,SPEECH
 1,"Child speech, kid speaking",LOW,1,SPEECH
 2,Conversation,LOW,1,SPEECH
-3,"Narration, monologue",LOW,1,SPEECH
+3,"Narration, monologue",NONE,0,0
 4,Babbling,NONE,0,0
 5,Speech synthesizer,LOW,0,0
 6,Shout,MEDIUM,1,SCREAMING
@@ -28,26 +28,26 @@ index,class_name,severity,filter,filter_str
 26,Yodeling,NONE,0,0
 27,Chant,NONE,0,0
 28,Mantra,NONE,0,0
-29,Child singing,LOW,1,SPEECH
-30,Synthetic singing,LOW,1,SPEECH
-31,Rapping,LOW,1,SPEECH
+29,Child singing,NONE,0,0
+30,Synthetic singing,NONE,0,0
+31,Rapping,NONE,0,0
 32,Humming,NONE,0,0
-33,Groan,LOW,1,SPEECH
-34,Grunt,LOW,1,SPEECH
+33,Groan,NONE,0,0
+34,Grunt,NONE,0,0
 35,Whistling,NONE,0,0
-36,Breathing,LOW,1,SPEECH
+36,Breathing,NONE,0,0
 37,Wheeze,NONE,0,0
 38,Snoring,NONE,0,0
 39,Gasp,NONE,0,0
 40,Pant,NONE,0,0
 41,Snort,NONE,0,0
-42,Cough,NONE,LOW,1,SPEECH
-43,Throat clearing,LOW,1,SPEECH
+42,Cough,NONE,0,0
+43,Throat clearing,NONE,0,0
 44,Sneeze,NONE,0,0
 45,Sniff,NONE,0,0
 46,Run,NONE,0,0
 47,Shuffle,NONE,0,0
-48,"Walk, footsteps",LOW,1,FOOTSTEPS
+48,"Walk, footsteps",MEDIUM,1,FOOTSTEPS
 49,"Chewing, mastication",NONE,0,0
 50,Biting,NONE,0,0
 51,Gargling,NONE,0,0
@@ -60,7 +60,7 @@ index,class_name,severity,filter,filter_str
 58,Clapping,NONE,0,0
 59,"Heart sounds, heartbeat",NONE,0,0
 60,Heart murmur,NONE,0,0
-61,Cheering,LOW,1,SPEECH
+61,Cheering,NONE,0,0
 62,Applause,NONE,0,0
 63,Chatter,NONE,0,0
 64,Crowd,NONE,0,0
