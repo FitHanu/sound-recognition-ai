@@ -293,38 +293,38 @@ index,class_name,severity,filter,filter_str
 291,Gurgling,NONE,0,0
 292,Fire,MEDIUM,1,FIRE
 293,Crackle,NONE,0,0
-294,Vehicle,LOW,1,VEHICLE
+294,Vehicle,MEDIUM,1,VEHICLE
 295,"Boat, Water vehicle",NONE,0,0
 296,"Sailboat, sailing ship",NONE,0,0
 297,"Rowboat, canoe, kayak",NONE,0,0
-298,"Motorboat, speedboat",LOW,1,VEHICLE
+298,"Motorboat, speedboat",MEDIUM,1,VEHICLE
 299,Ship,NONE,0,0
-300,Motor vehicle (road),LOW,1,VEHICLE
-301,Car,LOW,1,VEHICLE
+300,Motor vehicle (road),MEDIUM,1,VEHICLE
+301,Car,MEDIUM,1,VEHICLE
 302,"Vehicle horn, car horn, honking",MEDIUM,1,CAR_HORN
 303,Toot,NONE,0,0
-304,Car alarm,MEDIUM,1,ALARM
+304,Car alarm,HIGH,1,ALARM
 305,"Power windows, electric windows",NONE,0,0
 306,Skidding,NONE,0,0
 307,Tire squeal,NONE,0,0
-308,Car passing by,LOW,1,VEHICLE
-309,"Race car, auto racing",LOW,1,VEHICLE
-310,Truck,LOW,1,VEHICLE
+308,Car passing by,MEDIUM,1,VEHICLE
+309,"Race car, auto racing",MEDIUM,1,VEHICLE
+310,Truck,MEDIUM,1,VEHICLE
 311,Air brake,NONE,0,0
 312,"Air horn, truck horn",MEDIUM,1,CAR_HORN
 313,Reversing beeps,NONE,0,0
-314,"Ice cream truck, ice cream van",LOW,1,VEHICLE
-315,Bus,LOW,1,VEHICLE
-316,Emergency vehicle,MEDIUM,1,EMERGENCY_VEHICLE_SIREN
-317,Police car (siren),MEDIUM,1,EMERGENCY_VEHICLE_SIREN
-318,Ambulance (siren),MEDIUM,1,EMERGENCY_VEHICLE_SIREN
-319,"Fire engine, fire truck (siren)",MEDIUM,1,EMERGENCY_VEHICLE_SIREN
-320,Motorcycle,LOW,1,VEHICLE
-321,"Traffic noise, roadway noise",LOW,1,VEHICLE
+314,"Ice cream truck, ice cream van",MEDIUM,1,VEHICLE
+315,Bus,MEDIUM,1,VEHICLE
+316,Emergency vehicle,HIGH,1,EMERGENCY_VEHICLE_SIREN
+317,Police car (siren),HIGH,1,EMERGENCY_VEHICLE_SIREN
+318,Ambulance (siren),HIGH,1,EMERGENCY_VEHICLE_SIREN
+319,"Fire engine, fire truck (siren)",HIGH,1,EMERGENCY_VEHICLE_SIREN
+320,Motorcycle,MEDIUM,1,VEHICLE
+321,"Traffic noise, roadway noise",MEDIUM,1,VEHICLE
 322,Rail transport,NONE,0,0
 323,Train,NONE,0,0
 324,Train whistle,NONE,0,0
-325,Train horn,NONE,0,0
+325,Train horn,MEDIUM,1,CAR_HORN
 326,"Railroad car, train wagon",NONE,0,0
 327,Train wheels squealing,NONE,0,0
 328,"Subway, metro, underground",NONE,0,0
@@ -336,19 +336,19 @@ index,class_name,severity,filter,filter_str
 334,"Fixed-wing aircraft, airplane",NONE,0,0
 335,Bicycle,NONE,0,0
 336,Skateboard,NONE,0,0
-337,Engine,LOW,1,VEHICLE
-338,Light engine (high frequency),LOW,1,VEHICLE
+337,Engine,MEDIUM,1,VEHICLE
+338,Light engine (high frequency),MEDIUM,1,VEHICLE
 339,"Dental drill, dentist's drill",NONE,0,0
 340,Lawn mower,NONE,0,0
 341,Chainsaw,MEDIUM,1,CHAINSAW
-342,Medium engine (mid frequency),LOW,1,VEHICLE
-343,Heavy engine (low frequency),LOW,1,VEHICLE
+342,Medium engine (mid frequency),MEDIUM,1,VEHICLE
+343,Heavy engine (low frequency),MEDIUM,1,VEHICLE
 344,Engine knocking,NONE,0,0
 345,Engine starting,NONE,0,0
 346,Idling,NONE,0,0
-347,"Accelerating, revving, vroom",LOW,1,VEHICLE
+347,"Accelerating, revving, vroom",MEDIUM,1,VEHICLE
 348,Door,LOW,1,DOOR_KNOCK
-349,Doorbell,MEDIUM,1,ALARM
+349,Doorbell,NONE,0,0
 350,Ding-dong,NONE,0,0
 351,Sliding door,NONE,0,0
 352,Slam,NONE,0,0
@@ -381,19 +381,19 @@ index,class_name,severity,filter,filter_str
 379,Typewriter,NONE,0,0
 380,Computer keyboard,NONE,0,0
 381,Writing,NONE,0,0
-382,Alarm,MEDIUM,1,ALARM
-383,Telephone,MEDIUM,1,ALARM
-384,Telephone bell ringing,MEDIUM,1,ALARM
-385,Ringtone,MEDIUM,1,ALARM
+382,Alarm,HIGH,1,ALARM
+383,Telephone,NONE,0,0
+384,Telephone bell ringing,NONE,0,0
+385,Ringtone,NONE,0,0
 386,"Telephone dialing, DTMF",NONE,0,0
 387,Dial tone,NONE,0,0
 388,Busy signal,NONE,0,0
-389,Alarm clock,MEDIUM,1,ALARM
+389,Alarm clock,NONE,0,0
 390,Siren,HIGH,1,SIREN
 391,Civil defense siren,HIGH,1,SIREN
 392,Buzzer,NONE,0,0
-393,"Smoke detector, smoke alarm",MEDIUM,1,ALARM
-394,Fire alarm,MEDIUM,1,ALARM
+393,"Smoke detector, smoke alarm",HIGH,1,ALARM
+394,Fire alarm,HIGH,1,ALARM
 395,Foghorn,NONE,0,0
 396,Whistle,NONE,0,0
 397,Steam whistle,NONE,0,0
@@ -423,7 +423,7 @@ index,class_name,severity,filter,filter_str
 421,"Gunshot, gunfire",HIGH,1,GUNSHOT_HANDGUN
 422,Machine gun,NONE,HIGH,1,GUNSHOT_MACHINE_GUN
 423,Fusillade,NONE,0,0
-424,Artillery fire,NONE,0,0
+424,Artillery fire,HIGH,1,FIRE_WORKS
 425,Cap gun,HIGH,1,GUNSHOT_HANDGUN
 426,Fireworks,HIGH,1,FIRE_WORKS
 427,Firecracker,HIGH,1,FIRE_WORKS

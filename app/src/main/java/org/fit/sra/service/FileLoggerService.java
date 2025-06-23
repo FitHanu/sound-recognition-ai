@@ -162,7 +162,7 @@ public class FileLoggerService {
 
     String time = CommonUtils.getFormattedDatetimeStr(ZonedDateTime.now(),
         AppConst.LOG_DATA_DATETIME_FORMAT);
-    String label = category.getLabel();
+    String label = this.categoryService.getAlternateClassNameById(category.getIndex());
     String score = String.valueOf(category.getScore());
     DangerLevel severity = categoryService
         .getDangerLevelById(category.getIndex());

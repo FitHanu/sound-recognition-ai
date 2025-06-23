@@ -73,7 +73,7 @@ public class CategorySeverityFilterService {
   }
 
   public String getAlternateClassNameById(Integer id) {
-    return this.idAlternateClassnameMap.getOrDefault(id, "Unknown");
+    return this.idAlternateClassnameMap.getOrDefault(id, "SILENCE");
   }
 
   public DangerLevel getDangerLevelById(Integer id) {
