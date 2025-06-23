@@ -6,7 +6,7 @@ public class AppConst {
 
     private AppConst() {}
 
-    public static final String MODEL_PATH = "models/yamnet/yamnet.tflite";
+    public static final String MODEL_PATH = "models/yamnet/yamnet_4.tflite";
     public static final String DEFAULT_CONFIG_CSV = "models/yamnet/classes_default_config_filter.csv";
     public static final int SILENCE_EVENT_ID_YAMNET = 494;
     public static final Category SILENCE_YAMNET = Category.create(

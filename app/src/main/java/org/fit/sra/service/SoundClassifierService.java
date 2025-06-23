@@ -42,6 +42,8 @@ public class SoundClassifierService {
 
   private final Context appContext;
   private final AppStateManager stateManager;
+  Vibrator vibrator;
+
 
 
   public SoundClassifierService(Context context) {
@@ -50,6 +52,7 @@ public class SoundClassifierService {
     this.mainHandler = new Handler(Looper.getMainLooper());
     this.fileLogger = new FileLoggerService(context);
     this.categoryService = CategorySeverityFilterService.getTheInstance(context);
+    this.vibrator = (Vibrator) appContext.getSystemService(Context.VIBRATOR_SERVICE);
 
     try {
 
@@ -64,6 +67,7 @@ public class SoundClassifierService {
   }
 
   public void start() {
+    android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_AUDIO);
     this.audioService.start();
     this.fileLogger.renew();
     this.timer = new Timer();
@@ -85,9 +89,7 @@ public class SoundClassifierService {
 
         for (Classifications c : results) {
           for (Category cat : c.getCategories()) {
-
             if (cat.getScore() > threshold) {
-
               filtered.add(cat);
             }
           }
@@ -125,11 +127,8 @@ public class SoundClassifierService {
   }
 
   private void vibrateOnGivenSeverity(DangerLevel severity) {
-    // Get instance of Vibrator from current Context
-    Vibrator v = (Vibrator) appContext.getSystemService(Context.VIBRATOR_SERVICE);
-
     // Output yes if can vibrate, no otherwise
-    if (Objects.isNull(v) || !v.hasVibrator()) {
+    if (Objects.isNull(vibrator) || !vibrator.hasVibrator()) {
       Log.v("Can Vibrate", "CANNOT VIBRATE, VIBRATOR NOT AVAILABLE");
       return;
     }
@@ -171,6 +170,6 @@ public class SoundClassifierService {
         // do nothing on NONE or others
         return;
     }
-    v.vibrate(VibrationEffect.createWaveform(pattern, -1));
+    vibrator.vibrate(VibrationEffect.createWaveform(pattern, -1));
   }
 }

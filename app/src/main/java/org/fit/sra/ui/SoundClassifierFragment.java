@@ -28,12 +28,20 @@ public class SoundClassifierFragment
     implements AppStateManager.RecordingStateListener,
                AppStateManager.CategoryStateListener {
 
-  private TextView tvClassifier, tvStatus;
+  private TextView tvSoundEventInMomentClassName, tvClassifier, tvStatus;
   private ConstraintLayout clClassifier;
   private Button bRecord;
   private AppStateManager stateManager;
   private SoundClassifierService classifierService;
   private CategorySeverityFilterService categoryService;
+
+
+  private Runnable resetUIRunnable;
+  private final android.os.Handler uiHandler = new android.os.Handler();
+
+  private boolean isHoldBackground;
+  private final int MIN_HOLD_SEVERITY = DangerLevel.LOW.getValue();
+  private int holdSeverity = MIN_HOLD_SEVERITY;
 
   public SoundClassifierFragment() {}
 
@@ -56,6 +64,7 @@ public class SoundClassifierFragment
 
     tvStatus = view.findViewById(R.id.tvStatus);
     tvClassifier = view.findViewById(R.id.tvClassifier);
+    tvSoundEventInMomentClassName = view.findViewById(R.id.tv_sound_event_in_moment);
     clClassifier = view.findViewById(R.id.my_container);
     bRecord = view.findViewById(R.id.bRecord);
 
@@ -94,40 +103,70 @@ public class SoundClassifierFragment
 
   private void updateCategoriesUI() {
     if (stateManager.isRecording()) {
-      List<Category> categories  = stateManager.getRecognitionCategories();
-      Category       topCategory = (!categories.isEmpty())
+      List<Category> categories = stateManager.getRecognitionCategories();
+      Category topCategory = (!categories.isEmpty())
           ? categories.get(0)
           : AppConst.SILENCE_YAMNET;
-      Integer        id          = topCategory.getIndex();
-      DangerLevel    dangerLevel = categoryService.getDangerLevelById(id);
-      String         severity    = dangerLevel.name();
-      String         outputText  = "Event: " + categoryService.getAlternateClassNameById(id)
-                                    + ", Level: " + severity
-                                    + ", Confidence (%): " + topCategory.getScore();
+      int id = topCategory.getIndex();
+      DangerLevel dangerLevel = categoryService.getDangerLevelById(id);
+      String label = categoryService.getAlternateClassNameById(id);
+      String severity = dangerLevel.name();
+      String outputText = "Event: " + label
+          + ", Level: " + severity
+          + ", Confidence (%): " + topCategory.getScore();
 
       int color;
+      int delayMillis = 0;
+
       switch (severity) {
         case "NONE":
-          color = ContextCompat.getColor(requireContext(), R.color.severity_none); // gray
+          color = ContextCompat.getColor(requireContext(), R.color.severity_none);   // white
           break;
         case "LOW":
-          color = ContextCompat.getColor(requireContext(), R.color.severity_low); // green
+          color = ContextCompat.getColor(requireContext(), R.color.severity_low);    // green
+          delayMillis = 1500; // 1.5 seconds
           break;
         case "MEDIUM":
           color = ContextCompat.getColor(requireContext(), R.color.severity_medium); // yellow
+          delayMillis = 3000; // 3 seconds
           break;
         case "HIGH":
-          color = ContextCompat.getColor(requireContext(), R.color.severity_high); // red
+          color = ContextCompat.getColor(requireContext(), R.color.severity_high);   // red
+          delayMillis = 5000; // 5 seconds
           break;
         default:
-          color = ContextCompat.getColor(requireContext(), R.color.severity_others);// blue gray
+          color = ContextCompat.getColor(requireContext(), R.color.severity_others); // blue gray
           break;
       }
+
       Log.d("", "OUTPUT TEXT: " + outputText);
-      clClassifier.setBackgroundColor(color);
       tvClassifier.setText(outputText);
+
+      boolean isSeverityGreaterOrEqual = (dangerLevel.getValue() >= this.holdSeverity);
+      if (delayMillis > 0 && isSeverityGreaterOrEqual) {
+        // Cancel any pending reset
+        if (resetUIRunnable != null) {
+          uiHandler.removeCallbacks(resetUIRunnable);
+        }
+        this.isHoldBackground = true;
+        this.holdSeverity = dangerLevel.getValue();
+        this.tvSoundEventInMomentClassName.setText(CommonUtils.getMomentSoundEventText(label));
+        clClassifier.setBackgroundColor(color);
+        resetUIRunnable = () -> {
+          this.isHoldBackground = false;
+          this.holdSeverity = MIN_HOLD_SEVERITY;
+          this.tvSoundEventInMomentClassName.setText(R.string.classifier_initial);
+        };
+        uiHandler.postDelayed(resetUIRunnable, delayMillis);
+      }
+
+      // Update if bg color is not holding
+      if (!this.isHoldBackground) {
+        clClassifier.setBackgroundColor(color);
+      }
     }
   }
+
 
   private void handleRecordButton() {
     if (stateManager.isRecording()) {
@@ -142,6 +181,9 @@ public class SoundClassifierFragment
     super.onDestroy();
     AppStateManager.getInstance().removeIsRecordingListener(this);
     AppStateManager.getInstance().removeCategoryListener(this);
+    if (resetUIRunnable != null) {
+      uiHandler.removeCallbacks(resetUIRunnable);
+    }
   }
 
   @Override
@@ -152,11 +194,6 @@ public class SoundClassifierFragment
 
   @Override
   public void onCategoryStateChanged(List<Category> categories) {
-    String opStr = "";
-    if (!CommonUtils.isListNullOrEmpty(categories)) {
-      opStr = categories.toString();
-    }
-//    Log.d("", "onCategoryStateChanged :" + opStr);
     updateCategoriesUI();
   }
 
@@ -165,7 +202,6 @@ public class SoundClassifierFragment
     super.onStop();
     AppStateManager.getInstance().removeIsRecordingListener(this);
     AppStateManager.getInstance().removeCategoryListener(this);
-
   }
 
   @Override

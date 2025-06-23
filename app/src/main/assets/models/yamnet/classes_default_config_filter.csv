@@ -18,8 +18,8 @@ index,class_name,severity,filter,filter_str
 16,Snicker,NONE,0,0
 17,Belly laugh,NONE,0,0
 18,"Chuckle, chortle",NONE,0,0
-19,"Crying, sobbing",NONE,0,0
-20,"Baby cry, infant cry",MEDIUM,0,0
+19,"Crying, sobbing",MEDIUM,1,CRYING
+20,"Baby cry, infant cry",MEDIUM,1,CRYING
 21,Whimper,NONE,0,0
 22,"Wail, moan",NONE,0,0
 23,Sigh,NONE,0,0

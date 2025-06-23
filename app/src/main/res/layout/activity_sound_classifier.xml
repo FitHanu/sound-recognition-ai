@@ -41,20 +41,35 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintVertical_bias="0.1" />
 
+  <!--Danger Moment Text View-->
+
   <!--Classifier Text View-->
   <TextView
-    android:id="@+id/tvClassifier"
+    android:id="@+id/tv_sound_event_in_moment"
+    android:textStyle="bold"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:text="@string/classifier_initial"
     android:textAlignment="center"
-    android:textStyle="bold"
-    app:layout_constraintTop_toBottomOf="@id/tvStatus"
-    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintVertical_bias="0.1" />
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:layout_editor_absoluteY="83dp"
+    app:layout_constraintTop_toBottomOf="@id/tvStatus"/>
 
   <!--Record Button-->
+  <TextView
+    android:id="@+id/tvClassifier"
+    android:textStyle="bold"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="52dp"
+    android:text="@string/classifier_initial"
+    android:textAlignment="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_sound_event_in_moment" />
   <Button
     android:id="@+id/bRecord"
     android:layout_width="wrap_content"

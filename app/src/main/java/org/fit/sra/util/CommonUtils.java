@@ -78,4 +78,8 @@ public class CommonUtils {
 
     return String.format(Locale.getDefault(), format, hours, minutes, seconds);
   }
+
+  public static String getMomentSoundEventText(String label) {
+    return "In moment sound event: " + label;
+  }
 }
