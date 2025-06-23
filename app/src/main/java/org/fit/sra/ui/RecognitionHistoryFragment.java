@@ -20,6 +20,7 @@ import java.io.File;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import org.fit.sra.CsvDetailActivity;
 import org.fit.sra.DangerLevel;
 import org.fit.sra.R;
 import org.fit.sra.constant.AppConst;
@@ -42,7 +43,6 @@ public class RecognitionHistoryFragment extends Fragment {
       @Nullable Bundle savedInstanceState) {
 
     View view = inflater.inflate(R.layout.fragment_history_list, container, false);
-
     RecyclerView recyclerView = view.findViewById(R.id.recycler_csv_files);
     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -53,8 +53,8 @@ public class RecognitionHistoryFragment extends Fragment {
 
     CsvFileAdapter adapter = new CsvFileAdapter(this.csvFileMeta, file -> {
       // Handle file click (replace with navigation or fragment swap as needed)
-      Toast.makeText(context, "Clicked: " + file.getName(), Toast.LENGTH_SHORT).show();
-      // TODO: You can pass `file.getAbsolutePath()` to a detail fragment here
+//      Toast.makeText(context, "Clicked: " + file.getName(), Toast.LENGTH_SHORT).show();
+      CsvDetailActivity.start(requireContext(), file.getAbsolutePath());
     });
 
     recyclerView.setAdapter(adapter);
