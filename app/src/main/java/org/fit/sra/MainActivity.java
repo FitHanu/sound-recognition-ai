@@ -25,6 +25,7 @@ public class MainActivity
   private DrawerLayout drawerLayout;
   private PermissionService permissionService;
   private SoundClassifierService classifierService;
+  private String currentFragmentTag = "";
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -70,28 +71,44 @@ public class MainActivity
   @Override
   public boolean onNavigationItemSelected(@NonNull MenuItem item) {
     Fragment selected = null;
+    String tag = "";
 
-    // use if else instead of switch bc Android Team said so
-    // https://web.archive.org/web/20230203152426/http://tools.android.com/tips/non-constant-fields
     int itemId = item.getItemId();
 
     if (itemId == R.id.nav_sound_classifier) {
+      tag = "SoundClassifierFragment";
+      if (tag.equals(currentFragmentTag)) {
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true; // Already showing
+      }
       selected = new SoundClassifierFragment();
     } else if (itemId == R.id.nav_recognition_history) {
+      tag = "RecognitionHistoryFragment";
+      if (tag.equals(currentFragmentTag)) {
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+      }
       selected = new RecognitionHistoryFragment();
     } else if (itemId == R.id.nav_settings) {
+      tag = "SettingsFragment";
+      if (tag.equals(currentFragmentTag)) {
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+      }
       selected = new SettingsFragment();
     }
 
     if (selected != null) {
       getSupportFragmentManager()
           .beginTransaction()
-          .replace(R.id.content_frame, selected)
+          .replace(R.id.content_frame, selected, tag)
           .commit();
+
+      currentFragmentTag = tag;
     }
 
     drawerLayout.closeDrawer(GravityCompat.START);
-    return true;
+    return super.onOptionsItemSelected(item);
   }
 
   @Override

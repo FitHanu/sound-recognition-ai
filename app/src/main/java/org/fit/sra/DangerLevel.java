@@ -5,10 +5,10 @@ package org.fit.sra;
  */
 public enum DangerLevel {
 
-    NONE(0, "none"),
-    LOW(1, "low"),
-    MEDIUM(2, "medium"),
-    HIGH(3, "high");
+    NONE(0, "NONE"),
+    LOW(1, "LOW"),
+    MEDIUM(2, "MEDIUM"),
+    HIGH(3, "HIGH");
 
     private final int value;
     private final String displayName;
@@ -24,5 +24,19 @@ public enum DangerLevel {
 
     public String getDisplayName() {
         return displayName;
+    }
+
+    public static DangerLevel createFromStr(String value) {
+        value = value.trim();
+        switch (value) {
+            case "LOW":
+                return LOW;
+            case "MEDIUM":
+                return MEDIUM;
+            case "HIGH":
+                return HIGH;
+            default:
+                return NONE;
+        }
     }
 }

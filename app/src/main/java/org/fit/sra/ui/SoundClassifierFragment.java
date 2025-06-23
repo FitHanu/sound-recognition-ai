@@ -1,5 +1,4 @@
 package org.fit.sra.ui;
-import androidx.core.content.ContextCompat;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,15 +10,18 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 import java.util.List;
+import org.fit.sra.DangerLevel;
 import org.fit.sra.R;
+import org.fit.sra.constant.AppConst;
+import org.fit.sra.service.CategorySeverityFilterService;
 import org.fit.sra.service.SoundClassifierService;
 import org.fit.sra.state.AppStateManager;
-import org.fit.sra.util.CategoryUtils;
 import org.fit.sra.util.CommonUtils;
-import org.fit.sra.model.CategoryWithSeverity;
+import org.tensorflow.lite.support.label.Category;
 
 public class SoundClassifierFragment
     extends Fragment
@@ -30,8 +32,8 @@ public class SoundClassifierFragment
   private ConstraintLayout clClassifier;
   private Button bRecord;
   private AppStateManager stateManager;
-
   private SoundClassifierService classifierService;
+  private CategorySeverityFilterService categoryService;
 
   public SoundClassifierFragment() {}
 
@@ -50,8 +52,6 @@ public class SoundClassifierFragment
 
     // Init state
     this.stateManager = AppStateManager.getInstance();
-    AppStateManager.getInstance().addIsRecordListener(this);
-    AppStateManager.getInstance().addCategoriesListener(this);
 
 
     tvStatus = view.findViewById(R.id.tvStatus);
@@ -59,17 +59,13 @@ public class SoundClassifierFragment
     clClassifier = view.findViewById(R.id.my_container);
     bRecord = view.findViewById(R.id.bRecord);
 
-    // UI Mode theming
-    int currentNightMode = requireContext().getResources().getConfiguration().uiMode &
-        android.content.res.Configuration.UI_MODE_NIGHT_MASK;
-    if (currentNightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
-      tvStatus.setTextColor(Color.WHITE);
-      tvClassifier.setTextColor(Color.WHITE);
-      bRecord.setTextColor(Color.WHITE);
-    }
+    tvClassifier.setTextColor(Color.BLACK);
+    bRecord.setTextColor(Color.WHITE);
+
 
     // Get classifierService from activity
     classifierService = ((ClassifierProvider) requireActivity()).getSoundClassifierService();
+    categoryService = CategorySeverityFilterService.getTheInstance(getContext());
 
     bRecord.setOnClickListener(v -> {
       if (((ClassifierProvider) requireActivity()).getPermissionService().hasPermissionNotGranted()) {
@@ -98,30 +94,36 @@ public class SoundClassifierFragment
 
   private void updateCategoriesUI() {
     if (stateManager.isRecording()) {
-      List<CategoryWithSeverity> categories = stateManager.getRecognitionCategories();
-      String outputText = CategoryUtils.convertString(categories);
-      String severity = CategoryUtils.getSeverity(categories);
+      List<Category> categories  = stateManager.getRecognitionCategories();
+      Category       topCategory = (!categories.isEmpty())
+          ? categories.get(0)
+          : AppConst.SILENCE_YAMNET;
+      Integer        id          = topCategory.getIndex();
+      DangerLevel    dangerLevel = categoryService.getDangerLevelById(id);
+      String         severity    = dangerLevel.name();
+      String         outputText  = "Event: " + categoryService.getAlternateClassNameById(id)
+                                    + ", Level: " + severity
+                                    + ", Confidence (%): " + topCategory.getScore();
 
       int color;
-      switch (severity.toUpperCase()) {
-          case "NONE":
-            color = ContextCompat.getColor(requireContext(), R.color.severity_none); // gray from colors.xml
+      switch (severity) {
+        case "NONE":
+          color = ContextCompat.getColor(requireContext(), R.color.severity_none); // gray
           break;
-          case "LOW":
+        case "LOW":
           color = ContextCompat.getColor(requireContext(), R.color.severity_low); // green
           break;
-          case "MEDIUM":
+        case "MEDIUM":
           color = ContextCompat.getColor(requireContext(), R.color.severity_medium); // yellow
           break;
-          case "HIGH":
+        case "HIGH":
           color = ContextCompat.getColor(requireContext(), R.color.severity_high); // red
           break;
-          default:
+        default:
           color = ContextCompat.getColor(requireContext(), R.color.severity_others);// blue gray
           break;
       }
-
-      // clClassifier.setBackgroundColor(Color.parseColor("#90A4AE"));
+      Log.d("", "OUTPUT TEXT: " + outputText);
       clClassifier.setBackgroundColor(color);
       tvClassifier.setText(outputText);
     }
@@ -138,7 +140,8 @@ public class SoundClassifierFragment
   @Override
   public void onDestroy() {
     super.onDestroy();
-    AppStateManager.getInstance().removeListener(this);
+    AppStateManager.getInstance().removeIsRecordingListener(this);
+    AppStateManager.getInstance().removeCategoryListener(this);
   }
 
   @Override
@@ -148,14 +151,31 @@ public class SoundClassifierFragment
   }
 
   @Override
-  public void onCategoryStateChanged(List<CategoryWithSeverity> categories) {
+  public void onCategoryStateChanged(List<Category> categories) {
     String opStr = "";
     if (!CommonUtils.isListNullOrEmpty(categories)) {
       opStr = categories.toString();
     }
-    Log.d("", "onCategoryStateChanged :" + opStr);
+//    Log.d("", "onCategoryStateChanged :" + opStr);
     updateCategoriesUI();
   }
+
+  @Override
+  public void onStop() {
+    super.onStop();
+    AppStateManager.getInstance().removeIsRecordingListener(this);
+    AppStateManager.getInstance().removeCategoryListener(this);
+
+  }
+
+  @Override
+  public void onStart() {
+    super.onStart();
+    AppStateManager.getInstance().addCategoriesListener(this);
+    AppStateManager.getInstance().addIsRecordListener(this);
+  }
+
+
 
   public interface ClassifierProvider {
     SoundClassifierService getSoundClassifierService();
